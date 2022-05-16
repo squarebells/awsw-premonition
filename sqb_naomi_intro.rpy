@@ -2,7 +2,6 @@
 #I came up with the idea of this being an alternate timeline after ASM's ending A. 
 #Because of how the the multiverse operates here, the PC and eventually Naomi feel like they have already met before, leading to different dialogue.
 #Thanks to this I can show some of my other ideas I had while playing the game. I felt like there were some things you could have talked about more.
-#TI project a few of my ideas into the PC's lines in chapter 6.
 #The PC most likely talks about things you can only be guaranteed to know if you've completed the base game's true ending, so maybe add a check for that.
 #Actually it would probably take a lot of effort to check for that, so better be safe than spoil the game.
 #As always, everyone should thank ECK for his great mods and character.
