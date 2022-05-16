@@ -1,3 +1,4 @@
 *.pyo
+*.py.old
 *.rpyc
 *.txt
