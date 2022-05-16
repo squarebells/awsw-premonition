@@ -1,0 +1,2 @@
+#Checking if you have a mod and calling a variable from it if you do
+if modinfo.has_mod("A Solitary Mind") and naomi_variable_i_want_to_check == True:
