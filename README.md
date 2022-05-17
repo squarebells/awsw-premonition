@@ -9,5 +9,5 @@ A sequel to EvilChaosKnight's A Solitary Mind.
  + BangOk by 4onen
 
 ### Resources credits:
-+ `bg/sqbnaomiapt04.jpg`: Background edited by squarebells, original by Uncle Mugen.
++ `bg/sqbnaomiapt04.jpg`: Background (to be) edited by squarebells, original by Uncle Mugen.
 + `fx/lewd`: Lewd sounds edited by squarebells, originally extracted from COM3D2.
