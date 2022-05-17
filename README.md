@@ -1,13 +1,13 @@
 # AwSW-Premonition
 A sequel to EvilChaosKnight's A Solitary Mind. 
  
-Requirements: 
+### Requirements: 
  + Magmalink by jakzie2 
  + A Solitary Mind and Chaos_Knight Core mod by EvilChaosKnight
  
-Optional requirement: 
+### Optional requirement: 
  + BangOk by 4onen
 
-### Resources:
+### Resources credits:
 + `bg/sqbnaomiapt04.jpg`: Background edited by squarebells, original by Uncle Mugen.
 + `fx/lewd`: Lewd sounds edited by squarebells, originally extracted from COM3D2.
