@@ -317,7 +317,7 @@ label sqb_naomi_apt_sexandeating:
     play sound "fx/kiss.wav"
     show naomi slsmile with dissolve
     m "With that, she kissed me on my right cheek."
-    play sound "fx/lewd/lickslowlouderlonger.ogg"
+    play sound "fx/lewd/lickslow.ogg"
     m "As she was pulling back from the kiss, she licked me with her long tongue, leaving some saliva behind."
     Nm smile "I love you."
     Nm "You're the best body pillow. We're going to have a great future together."
@@ -432,7 +432,7 @@ label sqb_naomi_apt_sexandeating:
     m "Naomi paused to think for a moment."
     Nm smile "Why would a normal human bodily function weird me out?"
     Nm slsmile "After all it just means that...{w} you know..."
-    play sound "fx/lewd/lickslowlouderlonger.ogg"
+    play sound "fx/lewd/lickslow.ogg"
     m "She licked my forehead with her long tongue."
     play music "mx/treetops.mp3"
     Nm smile "That you actually want to have sex with me?"
@@ -467,7 +467,7 @@ label sqb_naomi_apt_sexandeating:
     m "My resistance was indeed weak and pathetic."
     Nm smile "I know just how to cool your face and calm you down."
     show naomi slsmile with dissolve
-    play soundloop "fx/lewd/lickslowlouderlonger.ogg" fadein 1.0
+    play soundloop "fx/lewd/lickslow.ogg" fadein 1.0
     m "Suddenly Naomi started licking my entire face in circles with her long tongue, mostly focusing on my presumably red cheeks."
     m "(I don't think she is being genuine in trying to cool me down.)"
     m "(Not that I mind.)"
@@ -523,9 +523,9 @@ label sqb_naomi_apt_sexandeating:
     Nm slsmile "I'll try more thing to get you properly in the mood."
     m "Naomi freed one of her arms a little bit and used her claw to nudge my head upwards."     
     m "Then she moved her mouth to mine, kissing me..."
-    play sound "fx/lewd/altpenlouderlonger.ogg"
+    play sound "fx/lewd/altpen.ogg"
     m "...but also going through my lips with her long tongue."
-    play soundloop "fx/lewd/pussylouder.ogg"     
+    play soundloop "fx/lewd/pussy.ogg"     
     m "Then she started penetrating my mouth and tickling the inside of my upper jaw with the tip of her tongue."
     m "It was an intimate tickling sensation I'd never quite had before."
     m "The only thing I could do was to focus on breathing through my nose and to try to stay as still as possible."
@@ -548,9 +548,9 @@ label sqb_naomi_apt_sexandeating:
         m "I looked closely at Naomi's groin, seeing a single well-hidden horizontal slit."
         m "I managed to move my arm on her slit in order to feel what I was dealing with."
         show naomi smile with dissolve
-        play sound "fx/lewd/penfastlouder.ogg"
+        play sound "fx/lewd/penfast.ogg"
         m "As I did it, Naomi shuddered in arousal and some love juices escaped from her cloaca onto my hand."
-        play sound "fx/lewd/penslowlouder.ogg"
+        play sound "fx/lewd/penslow.ogg"
         m "Going a little bit deeper, I could feel two separate passages placed vertically from each other."
         
         if modinfo.has_mod("BangOk?") and  bangok_four_anna2.unplayed == False:
@@ -560,7 +560,7 @@ label sqb_naomi_apt_sexandeating:
         c "You want me to penetrate your upper passage, right?"
         Nm shy "Well yes..."
         show naomi smile with dissolve
-        play sound "fx/lewd/lickslowlouderlonger.ogg"
+        play sound "fx/lewd/lickslow.ogg"
         m "Suddenly, Naomi flicked my mouth with her long tongue. I barely managed to receive it without shuddering backwards."
         Nm "...because that's where my eggs come from."
         m "(What kind of fantasies is she having right now?)"
@@ -584,7 +584,7 @@ label sqb_naomi_apt_sexandeating:
     Nm smile "What a nice compliment. It's actually the best one you could give me right now."
      
     m "I placed my hands behind Naomi's lower back in order to get more leverage as I prepared to penetrate her."
-    play sound "fx/lewd/penslowlouder.ogg"
+    play sound "fx/lewd/penslow.ogg"
     m "As I penetrated her pussy, she locked me tightly in place with her powerful legs."
     m "I moaned as I bucked myself as far as I could go in a single thrust. The sensation of fully plunging yourself into someone much bigger than you was unreal."
     
@@ -601,7 +601,7 @@ label sqb_naomi_apt_sexandeating:
     c "Uhh... I was lost in thought."
     Nm stern "This really isn't the best time for that."
     c "Sorry!"
-    play soundloop "fx/lewd/penslowlouder.ogg"
+    play soundloop "fx/lewd/penslow.ogg"
     show naomi normal with dissolve
     m "With those words I started penetrating Naomi's pussy with long, slow thrusts."
     Nm smile "Good little human."
@@ -609,7 +609,7 @@ label sqb_naomi_apt_sexandeating:
     Nm slmile "I'll only let you go if you cum inside me."
     stop soundloop
 
-    play soundloop "fx/lewd/penfastlouder.ogg"
+    play soundloop "fx/lewd/penfast.ogg"
     m "A release was rapidly building up inside me. The long tease had exhausted my stamina."
     c "Naomi... I'm going to cum."
     Nm surprisedblush "So soon? Fine, but don't even think about pulling out."
@@ -624,13 +624,13 @@ label sqb_naomi_apt_sexandeating:
     c "I'll show you what humans can do!"
     
     stop soundloop fadeout 2.0 
-    play sound "fx/lewd/cumlouder.ogg"
-    queue sound "fx/lewd/penslowlouder.ogg"
+    play sound "fx/lewd/cum.ogg"
+    queue sound "fx/lewd/penslow.ogg"
     $ renpy.pause (1.0)
     m "I grunted loudly."
     c "Urgh!!!Ahh!!!{nw}" with vpunch
-    play sound "fx/lewd/penslowlouder.ogg"
-    queue sound "fx/lewd/cumlouder.ogg"
+    play sound "fx/lewd/pens.ogg"
+    queue sound "fx/lewd/cum.ogg"
     show naomi slsmile with dissolve
     m "As I bucked against Naomi for the last time and released my final rope of cum, she let out a content sigh."
     Nm smile "Well done, tiny pink human."
