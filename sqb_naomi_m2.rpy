@@ -476,9 +476,48 @@ label sqb_naomi_apt_sexandeating:
     c "Yes..."
     Nm normal "I saw earlier where your genitals are located. I don't think our anatomies are too different to make it inconvenient for us."
     
-    #References to BangOk if you had sex with Anna, Bryce or Sebastian
+    if modinfo.has_mod("BangOk?") and  bangok_four_anna2.unplayed == False:  
+        c "Actually, I already had sex with Anna. Our anatomies aren't too different."
+        Nm confused "What, really? How'd you manage to get her to like you enough for that?"
+        Nm smile "Hold on...{w} did she do it for science?"
+        c "Maybe, but she's also rather promiscuous. Not that I mind, of course."
+        c "So, how do you want to proceed from here?"
+        Nm "I have an experiment of my own in mind."
+     
+    elif modinfo.has_mod("BangOk?") and bangok_four_bryce1_unplayed == False:
+        c "Actually, I had sex with Bryce back when I went drinking with him. Our anatomies aren't too different."
+        Nm confused "What, really? I'm surprised you can still walk."
+        c "The alcohol helped a lot. And of course lots of lube."
+        c "So, how do you want to proceed from here?"
+        Nm slsmile "Let me think..."
     
-    Nm slsmile "Let me try out more thing to get you properly in the mood."
+    elif modinfo.has_mod("BangOk?") and bangok_four_xsebastian_unplayed == False:
+        c  "Actually, I already had sex with Sebastian. Our anatomies aren't too different."
+        Nm "Really?"
+        #More
+    
+    elif modinfo.has_mod("BangOk?") and bangok_four_bryce1_unplayed == False or bangok_four_anna2.unplayed == False:
+        c "I've already had sex with Anna and Bryce. Our anatomies aren't too different."
+        Nm confused "You've already fucked two people I know since you came here?"
+        Nm smile "Are you sure you're not a dragon-fucking sex tourist rather than an ambassador?"
+        #More
+    
+    elif modinfo.has_mod("BangOk?") and bangok_four_xsebastian_unplayed == False or bangok_four_anna2.unplayed == False:
+        c "I've already had sex with Anna and Sebastian. Our anatomies aren't too different."
+        Nm confused "You've already fucked two people I know since you came here?"
+        Nm smile "Are you sure you're not a dragon-fucking sex tourist rather than an ambassador?"
+        #More
+    
+    elif modinfo.has_mod("BangOk?") and bangok_four_bryce1_unplayed == False or bangok_four_xsebastian_unplayed == False:
+        c "I've already had sex with Bryce and Sebastian. Our anatomies aren't too different."
+        Nm confused "You've already fucked two people I know since you came here?"
+        Nm smile "Are you sure you're not a dragon-fucking sex tourist rather than an ambassador?"
+        #More
+    
+    else:
+        pass
+    
+    Nm slsmile "I'll try out more thing to get you properly in the mood."
     m "Naomi freed one of her arms a little bit and used her claw to nudge my head upwards."     
     m "Then she moved her mouth to mine, kissing me..."
     play sound "fx/lewd/altpenlouderlonger.ogg"
@@ -495,25 +534,75 @@ label sqb_naomi_apt_sexandeating:
     Nm "Is fucking me sideways in this position fine by you?"
     m "At first I was surprised she even asked for my opinion. I managed to mumble up a response."
     c "I would love to."
-    Nm "Good little human."
+    Nm "Good little obedient toy."
     m "Naomi released me from the prison of her legs and spread them a bit."
     Nm shy "Can you see the slit between my legs?"
-    m "I looked at"
-    m "It seemed that I needed to go down a little bit to reach her pussy and also to have some leverage to thrust inside."
+    
+    if modinfo.has_mod("BangOk?") and persistent.bangok_cloacas == False:
+        m "I looked down at Naomi's groin, seeing a single vertical slit and an asshole below it."
+        m "It seemed that I needed to go down a little bit to reach her pussy and also to have some leverage to thrust inside."        
+    else:
+        m "I looked closely at Naomi's groin, seeing a single well-hidden horizontal slit."
+        m "I managed to move my arm to part her slit in order to feel what I was dealing with."
+        show naomi smile with dissolve
+        m "As I did it, Naomi shuddered in arousal and some love juices escaped from her cloaca onto my hand."
+        m "Going a little bit deeper, I could feel two separate passages placed vertically from each other."
+        
+        if modinfo.has_mod("BangOk?") and  bangok_four_anna2.unplayed == False:
+            c "It's a bit different from Anna's."
+            
+        Nm slsmile "That feels so good. Are you ready to enter me soon?"
+        c "You want me to penetrate your upper passage, right?"
+        Nm shy "Well yes..."
+        show naomi smile with dissolve
+        play sound "fx/lewd/lickslowlouderlonger.ogg"
+        m "Suddenly, Naomi flicked my mouth with her long tongue. I barely managed to receive it without shuddering backwards."
+        Nm "...because that's where my eggs come from."
+        m "(What kind of fantasies is she having right now?)"
+        m "Looking down again after regaining my composure, it seemed that I needed to go down a little bit to reach her pussy and also to have some leverage to thrust inside."       
+ 
+    Nm normal "You know what to do?"
     c "Yes, but I can't penetrate you from this position. My testicles are in the way of bending my dick downwards properly."
-    Nm normal "Oh."
-    c "Could you loosen your grip on me so I can go down to get a better position?"
+    Nm shy "Oh."
+    c "Could you fully loosen your grip on me so I can go down to get a better position?"
     Nm smile "Anything for you."
+    c "Also, do you think we should be using a condom? I'll wear one if you want."
+    Nm confused "No, that won't be necessary."
+    Nm normal "I don't have any STDs and I trust don't have either, otherwise you wouldn't have agreed to have sex with me."
+    Nm shy "Besides, I want to feel your human cum inside my pussy."
+    m "(I guess now I know several of the kinks she has.)"
+    m "(Although I suppose due to it being too obvious she neglected to mention that she can't get pregnant either since we're different species.)"
+    m "(I suppose I'll just have to do my best to satisfy her kinks.)"
+    Nm confused "So, will you cum inside me?"
+    c "Whatever works for me. I just want to fuck you immediately."
+    Nm smile "What a nice compliment. It's actually the best one you could give me right now."
      
-    #More lines to complete the "puzzle"
+    m "I placed my hands behind Naomi's lower back in order to get more leverage as I prepared to penetrate her."
     play sound "fx/lewd/penslowlouder.ogg"
     m "As I penetrated her pussy, she locked me tightly in place with her powerful legs."
-    play soundloop "fx/lewd/penslowlouder.ogg"
-    m "After the surprise of the initial thrust I continued eagerly."
-    Nm smile "You belong to me now. The only way is forward."
-    Nm "I'll only let you go if you cum inside me."
+    m "I moaned as I bucked myself as far as I could go in a single thrust. The sensation of fully plunging yourself into someone much bigger than you was unreal."
     
+    if modinfo.has_mod("BangOk?") and  bangok_four_anna2.unplayed == False:    
+        m "(Naomi's a lot tighter than Anna. That's surprising since Naomi is so big.)"
+        m "(I suppose Anna really has had a lot of larger partners.)"
+        m "(I'm still fortunate to have an above average penis, or else I most likely couldn't get Naomi off at all.)"
+    else:
+        m "(Naomi's a lot tighter than I would expect from a large much bigger than me.)"
+        m "(I suppose she's only had partners smaller than her, like she said.)"
+        m "(I'm still fortunate to have an above average penis, or else I most likely couldn't get Naomi off at all.)"
+    
+    Nm confused "Was that it? Are you going to pump at all?"
+    c "Uhh... I was lost in thought."
+    Nm stern "This really isn't the best time for that."
+    c "Sorry!"
+    play soundloop "fx/lewd/penslowlouder.ogg"
+    show naomi normal with dissolve
+    m "With those words I started penetrating Naomi's pussy with long, slow thrusts."
+    Nm smile "Good little human."
+    Nm "You belong to me now. The only way is forward."
+    Nm slmile "I'll only let you go if you cum inside me."
     stop soundloop
+
     play soundloop "fx/lewd/penfastlouder.ogg"
     m "A release was rapidly building up inside me. The long tease had exhausted my stamina."
     c "Naomi... I'm going to cum."
