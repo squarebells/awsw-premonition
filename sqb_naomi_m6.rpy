@@ -273,7 +273,7 @@ label sqb_naomi_m6_discussion_reality:
     m "With those words, she finally tied my ankles with the narrow part of her tail. Even though I could barely move at all, I wasn't uncomfortable."
     Nm slsmile "You're mine now. Obeying me will do you some good because I only have your well-being in mind."
     m "She finished staking her claim on me by starting to lick the left side of my face."
-    play soundloop "fx/lewd/lickslowlouderlonger.ogg" fadein 1.0
+    play soundloop "fx/lewd/lickslow.ogg" fadein 1.0
     m "She gently licked up and down with her long tongue, always stopping at the bottom of my eyelid, just mere millimeters short of my eyeball."
     m "I was aroused but also terrified as the result of being dragonhandled like this. The licking went on until I interjected about the drinking glasses."
     c "Umm..."
