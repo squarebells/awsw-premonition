@@ -24,8 +24,8 @@ label sqb_naomi_apt_differences:
     Nm shy "I suppose you have a point."
     Nm smile "I bet if I caught a puny human like you, they'd never be able to escape my clutches."
     c "Actually that's what dragons sometimes do to humans in our fiction."
-    c "Although, usually the dragons who mingle with humans are assumed male, and most of the time they only catch humans of the opposite sex."
-    Nm confused "That sounds weird to me. Care to tell me why?"
+    c "Although usually the dragons who mingle with humans are assumed male, and most of the time they only catch humans of the opposite sex."
+    Nm confused "That sounds pretty weird. Why is that?"
     c "Well, I didn't really study literature or specialize in cultural history so I don't know."
     m "I had a sudden urge to say something funny."
     c "Actually that trope makes no sense to me because I wouldn't mind being caught by a female dragon."
@@ -66,6 +66,8 @@ label sqb_naomi_apt_balcony:
     Nm smile "You should also invite your friends. I would love to meet more humans. Like I said before, there's plenty of room for everyone."
     m "Naomi caught me off-guard again. I felt a sudden surge of emotions."
     m "Without warning, a tear slid down my cheek and had to sniff."
+    show naomi concern with dissolve
+    m "Naomi noticed it, and looked at me worriedly."
     c "Thank you, Naomi."
     c "I would love to take you up on your offer, if its possible."
     c "I really like this place, especially the view from this balcony."
@@ -124,7 +126,7 @@ label sqb_naomi_apt_movie:
     #Music from when PC tells everyone the story?
     c "Like I alluded to earlier, my world used to be pretty prosperous. Our quality of life and general happiness was dramatically higher than ever before due to advances in technology."
     c "Well, I suppose social advances such as decreasing inequality and getting rid of most of human exploitation played a huge part too."
-    c "But anyway, we used our technology automate most tedious and difficult jobs to have more time to do what we actually want to do, like hobbies or improving ourselves." 
+    c "But anyway, we used our technology automate most tedious and difficult jobs to have more time to do what we actually want to do, like hobbies or improving ourselves in general." 
     c "Our technology was far superior to yours. For example, we had computers everywhere, even on our wrists."
     show naomi blank with dissolve
     c "I suppose our technology is still superior, but manufacturing anything high-tech is quite hard these days."
@@ -174,7 +176,7 @@ label sqb_naomi_apt_movie:
     c "Uhh... sure."
     show naomi slsmile with dissolve
     m "With that, Naomi leaned in closer and I returned the gesture by wrapping my arms around her upper body."
-    m "She was cuddlier than I had expected and I could feel her strong breathing clearly while we were close."
+    m "She was cuddlier than I had expected and I could feel her strong breathing clearly after we got this close for the first time."
     Nm smile "Feeling better yet?"
     c "Yes, thank you." 
     c "Being hugged by a big dragon is really something else. I don't know what to say."
@@ -188,7 +190,7 @@ label sqb_naomi_apt_movie:
     c "A lot of tech, especially advanced medical equipment, was spared in our city. The problem is that soon we won't have enough power to run them properly." #Thanks for the lore, MBS
     c "I just hope my city-state is still standing when it's time to go back."
     show naomi blank with dissolve  
-    m "As I said that I was hit by the sudden realization that I might not be able to return here after my mission was completed."
+    m "As I said that I was hit by the sudden realization that I might not be able to return here after I had completed my mission."
     m "After all, given the precarious situation we were in, who would care about researching dragon society and culture?"
     m "Because of this realization, it was the first time when thinking about having to return made my stomach feel like an endless pit of suffering."
     m "A kind of panic was settling in me, so I decided to confide in Naomi."
@@ -219,7 +221,7 @@ label sqb_naomi_apt_movie:
     m "I was confused again by how direct she was. Before I could think of a response she pushed me down on the sofa."
     stop music fadeout 2.0
     play sound "fx/sheet.wav"
-    m "Naomi turned me around to position my back on her chest while shifting herself between me and the sofa's backrest."
+    m "Naomi turned me around to position my back on her chest while shifting us both to put her between me and the sofa's backrest."
     show naomi slsmile with dissolve    
     m "Then she locked her arms under my armpits to tie me in a tight embrace."
     m "I couldn't have escaped even if I had tried."
@@ -265,6 +267,7 @@ label sqb_naomi_apt_movie:
     play sound "fx/bed.ogg"
     Nm normal "You'd better get comfortable. I'll only let you go after the movie is over."
     m "(This is going to be great.)"
+    show naomi smile with dissolve
     m "With those words, Naomi extended her arm and picked up the sizeable remote from the table in front of us."
     m "She pressed a couple of buttons on it, and after a few moments of fiddling with the remote the movie started playing."
     
@@ -299,7 +302,7 @@ label sqb_naomi_apt_sexandeating:
     Nm smile"I suppose it's not a secret any more that I like you."
     Nm "I've had you in mind for some time."
     Nm "There, I finally admitted it officially."
-    Nm confused "You've been persistent in trying to get me to admit I like you. Why else would you obey my every whim and try to serve me whenever you can?"
+    Nm confused "You've been persistent in trying to get me to admit I like you. Why else would you obey my every whim and also try to serve me whenever you can?"
     Nm normal "The weird thing about us is that even though we met very recently I feel like we've known each other for a long time." 
     Nm "I think we complement each other nicely. Also you understand me really well and like me for what I am."
     c "What's not to like in a cute dragon such as yourself?"
@@ -343,7 +346,7 @@ label sqb_naomi_apt_sexandeating:
     stop music fadeout 1.0
     play sound "fx/undress.ogg"
     show naomi surprised with dissolve
-    m "aomi looked at me curiously as I removed my clothes piece by piece."
+    m "Naomi looked at me curiously as I removed my clothes piece by piece."
     show naomi surprisedblush with dissolve
     m "She was the most attentive when I started to remove my lower garments though."
     play sound "fx/undress.ogg"
@@ -361,7 +364,7 @@ label sqb_naomi_apt_sexandeating:
     scene sqbnaomiapt04 with dissolvemed
     hide naomi with dissolve   
     m "She seemed to be eyeing the area right of her fridge." 
-    m "I instantly presumed that the door over there would lead to her bedroom."
+    m "I presumed that the door over there would lead to her bedroom."
     m "As I realized what she was thinking about, series cold chills went down my spine."
     m "(I hope I can make it undamaged out of this.)"
     show naomi normal with dissolve
@@ -403,8 +406,9 @@ label sqb_naomi_apt_sexandeating:
     play sound "fx/sheet.wav"
     m "I sat down on the side, turned and began to lower myself on Naomi's wing, preparing to position myself to have my back against her like before."
     Nm smile "That won't do at all. I want to feel your squishy belly rub against mine."
+    play sound "fx/bed.ogg"
     m "With those words she turned me around and hugged me tightly before I could protest."
-    m "She had her arms around me and my head was lodged firmly under her chin like before."
+    m "Now she had her arms around me and my head was lodged firmly under her chin like before."
     show naomi slsmile with dissolve
     m "She finished the job by wrapping her wings around me."
     Nm shy "Don't hesitate to tell me if I hug you too tightly or make you feel uncomfortable in any way."
@@ -429,9 +433,10 @@ label sqb_naomi_apt_sexandeating:
     c "I'm sorry!" 
     c "I can't control it. It gets erect on its own whenever I am sexually stimulated."
     Nm surprisedblush "Oh..."
+    c "..."
     c "It doesn't weird you out?"
     m "Naomi paused to think for a moment."
-    Nm smile "Why would a bodily function weird me out?"
+    Nm smile "Why would you being aroused in a way normal to you weird me out?"
     Nm slsmile "After all it just means that...{w} you know..."
     play sound "fx/lewd/lickslow.ogg"
     m "She licked my forehead with her long tongue."
@@ -448,7 +453,7 @@ label sqb_naomi_apt_sexandeating:
     m "(I need to calm down.)"
     m "She interrupted my line of thought."
     Nm normal "Have you thought of what other humans would think if they found out that you wanted to have sex with a dragon?"
-    m "After a moment of silence, I gulped loudly, and she surely heard it."
+    m "After a moment of silence, I gulped loudly, which she surely heard."
     c "B-but t-there aren't-{nw}"
     Nm surprisedblush "Oh, you've fantasized about doing it with a dragon before?"
     m "I could feel Naomi starting to heat up."
@@ -476,46 +481,50 @@ label sqb_naomi_apt_sexandeating:
     stop soundloop fadeout 2.0
     c "I like it when you lick me like this."
     Nm smile "Same, because you're so delicious."
-    Nm shy "D-do you really want to go further with me?"
-    m "I felt like I had no choice but to fuck her immediately or my heart was going to burst."
+    Nm shy "Do you really want to go further with me?"
+    m "I felt like I had no choice but to fuck her immediately or I was going to die due to my heart bursting out of my chest."
     c "Yes..."
     Nm normal "I saw earlier where your genitals are located. I don't think our anatomies are too different to make it inconvenient for us."
     
     if modinfo.has_mod("BangOk?") and  bangok_four_anna2.unplayed == False:  
-        c "Actually, I already had sex with Anna. Our anatomies aren't too different."
+        c "Actually, our anatomies aren't too different. I already had sex with Anna."
         Nm confused "What, really? How'd you manage to get her to like you enough for that?"
         Nm smile "Hold on...{w} did she do it for science?"
         c "Maybe, but she's also rather promiscuous. Not that I mind, of course."
         c "So, how do you want to proceed from here?"
-        Nm "I have an experiment of my own in mind."
+        Nm normal "I have an experiment of my own in mind."
      
     elif modinfo.has_mod("BangOk?") and bangok_four_bryce1_unplayed == False:
-        c "Actually, I had sex with Bryce back when I went drinking with him. Our anatomies aren't too different."
+        c "Actually, Our anatomies aren't too different. I had sex with Bryce after I went drinking with him."
+        #More accurate references
         Nm confused "What, really? I'm surprised you can still walk."
         c "The alcohol helped a lot. And of course lots of lube."
         c "So, how do you want to proceed from here?"
-        Nm slsmile "Let me think..."
+        Nm smile "Let me think..."
     
     elif modinfo.has_mod("BangOk?") and bangok_four_xsebastian_unplayed == False:
         c  "Actually, I already had sex with Sebastian. Our anatomies aren't too different."
-        Nm "Really?"
+        Nm "Really? I'm not surprised, he's kinda cute."
         #More
     
     elif modinfo.has_mod("BangOk?") and bangok_four_bryce1_unplayed == False or bangok_four_anna2.unplayed == False:
         c "I've already had sex with Anna and Bryce. Our anatomies aren't too different."
-        Nm confused "You've already fucked two people I know since you came here?"
+        Nm surprised "You've already fucked two people I know since you came here?"
+        Nm confused "That can't be a coincidence."
         Nm smile "Are you sure you're not a dragon-fucking sex tourist rather than an ambassador?"
         #More
     
     elif modinfo.has_mod("BangOk?") and bangok_four_xsebastian_unplayed == False or bangok_four_anna2.unplayed == False:
         c "I've already had sex with Anna and Sebastian. Our anatomies aren't too different."
-        Nm confused "You've already fucked two people I know since you came here?"
+        Nm surprised "You've already fucked two people I know since you came here?"
+        Nm confused "That can't be a coincidence."
         Nm smile "Are you sure you're not a dragon-fucking sex tourist rather than an ambassador?"
         #More
     
     elif modinfo.has_mod("BangOk?") and bangok_four_bryce1_unplayed == False or bangok_four_xsebastian_unplayed == False:
         c "I've already had sex with Bryce and Sebastian. Our anatomies aren't too different."
-        Nm confused "You've already fucked two people I know since you came here?"
+        Nm surprised "You've already fucked two people I know since you came here?"
+        Nm confused "That can't be a coincidence."
         Nm smile "Are you sure you're not a dragon-fucking sex tourist rather than an ambassador?"
         #More
     
@@ -531,7 +540,7 @@ label sqb_naomi_apt_sexandeating:
     m "Then she started penetrating my mouth and tickling the inside of my upper jaw with the tip of her tongue."
     m "It was an intimate tickling sensation I'd never quite had before."
     m "The only thing I could do was to focus on breathing through my nose and to try to stay as still as possible."
-    m "I felt like my chest was going to burst."
+    m "Yet again, I felt like my chest was going to explode."
     m "(I'm going to die of a heart attack.)"
     stop soundloop fadeout 2.0
     Nm confused "You're completely powerless to do anything to resist my advances, aren't you?"
@@ -548,7 +557,7 @@ label sqb_naomi_apt_sexandeating:
         m "It seemed that I needed to go down a little bit to reach her pussy and also to have some leverage to thrust inside."        
     else:
         m "I looked closely at Naomi's groin, now seeing a well-hidden horizontal slit."
-        m "I managed to move my arm to spread her slit in order to feel what I was dealing with."
+        m "She freed her grip enough on me so I could move my arm around in order to spread her slit to feel what I was dealing with."
         show naomi smile with dissolve
         play sound "fx/lewd/penfast.ogg"
         m "As I did it, Naomi shuddered in arousal and some love juices escaped from her cloaca onto my hand."
@@ -588,6 +597,7 @@ label sqb_naomi_apt_sexandeating:
     m "I placed my hands behind Naomi's lower back in order to get more leverage as I prepared to penetrate her."
     play sound "fx/lewd/penslow.ogg"
     m "As I penetrated her pussy, she locked me tightly in place with her powerful legs."
+    play sound "fx/lewd/penfast.ogg"
     m "I moaned as I bucked myself as far as I could go in a single thrust. The sensation of fully plunging yourself into someone much bigger than you was unreal."
     
     if modinfo.has_mod("BangOk?") and  bangok_four_anna2.unplayed == False:    
@@ -595,8 +605,8 @@ label sqb_naomi_apt_sexandeating:
         m "(I suppose Anna really has had a lot of larger partners.)"
         m "(I'm still fortunate to have an above average penis, or else I most likely couldn't get Naomi off at all.)"
     else:
-        m "(Naomi's a lot tighter than I would expect from a dragon much bigger than me.)"
-        m "(I suppose she's only had partners smaller than her, like she told me.)"
+        m "(Naomi's a lot tighter than I would expect from a dragon much bigger than a human.)"
+        m "(I suppose she's only had partners smaller than her, like she implied before.)"
         m "(I'm still fortunate to have an above average penis, or else I most likely couldn't get Naomi off very easily.)"
     
     Nm confused "Was that it? Are you going to pump at all?"
@@ -608,6 +618,7 @@ label sqb_naomi_apt_sexandeating:
     m "With those words I started penetrating Naomi's pussy with long, thorough thrusts."
     Nm smile "Good little human."
     Nm "You belong to me now. The only way is forward."
+    m "Due to being locked in place by her strong legs, it was the only direction I could go."
     Nm slsmile "I'll only let you go if you cum inside me."
     stop soundloop
 
@@ -624,7 +635,6 @@ label sqb_naomi_apt_sexandeating:
     Nm smile "Pun intended, of course."
     Nm "Anyway, I doubt your output is enough to accomplish that." 
     Nm "You're welcome to try your best regardless."
-    c "I'll show you what horny humans can do!"
     
     stop soundloop fadeout 2.0 
     play sound "fx/lewd/cum.ogg"
@@ -638,7 +648,7 @@ label sqb_naomi_apt_sexandeating:
     m "As I bucked against Naomi for the last time and as I released my final rope of cum, she let out a content sigh."
     Nm smile "Well done, tiny pink human."
     Nm "I can feel your sticky seed inside me. You must have been pent up for a while."
-    Nm shy "Unfortunately you didn't manage to get me off. If you can't go again you can always finish me off with your mouth."
+    Nm shy "Unfortunately you didn't manage to get me off. If you can't go again you can finish me off with your mouth."
     c "I still have another round in me. Just give me a few moments to recover."
     Nm stern "Try to last longer this time."
     c "I-I'm sorry. I promise I'll do better."
@@ -662,6 +672,9 @@ label sqb_naomi_apt_sexandeating:
     m "(Looks like we forgot to eat.)"
     Nm normal "Oh, you're hungry?" 
     Nm "I've got some stuff we could cook together or we can order some food if you don't feel like doing that."
+    
+    c "First things first, after our session I really need drink a liter of water, or two."
+    Nm normal "Sure. I'll go clean myself up in the bathroom while you set up in the kitchen. If you need any help figuring out where everything is just give me a shout."
      
     #PC cooks a feast
      

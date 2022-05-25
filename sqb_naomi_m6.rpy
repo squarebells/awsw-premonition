@@ -6,10 +6,11 @@ label sqb_naomi_m6_discussion_reality:
 #These topics were mentioned in the base game and some mods (I can't remember which from the top of my head), or at least I was thinking about them while playing. Doesn't matter.
 #I did my best to try to figure out what the PC might be struggling with after accumulating these fragments of collective experience through different timelines from both mods and the base game.
 #The conclusion the PC and Naomi come to together is what I would tell them in this specific situation. Keep in mind that unlike in real life, there's actually nothing the PC and Naomi can do.
-#There's basically four options: 1. Platonic simulation (á la Matrix) 2. Baudrillardian simulation (maybe we're in this one right now? It's confusing). 
-#3. Everything is just lines of code/artificial intelligence (close to 2. from their perspective) 4. Previous 3 are completely wrong and everything is as it seems. In other words PC is insane.
-#It is up to you to decide which one you think is most likely. I like to leave things ambiguous and radically uncertain in questions like these, so don't ask me, because I haven't decided myself.
-
+#There's three possibilities (actually four but the last one is not relevant here). 
+#1. The PC is in a Platonic simulation (like in the Matrix).
+#2. The PC and everything in the game is just lines of code/artificial intelligence in a kind of meta sense. Obviously it's this to us, but what about the relation between our worlds?
+#4. Everything is as it seems. In other words the PC is insane.
+#It is up to you to decide which one you think is most likely. I leave things ambiguous and radically uncertain on purpose. I haven't decided on an answer myself.
     stop music fadeout 1.0
     
     scene black with dissolvemed
