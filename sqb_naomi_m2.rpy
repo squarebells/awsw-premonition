@@ -562,17 +562,17 @@ label sqb_naomi_apt_sexandeating:
         play sound "fx/lewd/penfast.ogg"
         m "As I did it, Naomi shuddered in arousal and some love juices escaped from her cloaca onto my hand."
         play sound "fx/lewd/penslow.ogg"
-        m "Going a little bit deeper, I could feel two separate passages placed vertically from each other."
+        m "Going a little bit deeper, I could feel two separate passages positioned vertically from each other."
         
         if modinfo.has_mod("BangOk?") and  bangok_four_anna2.unplayed == False:
             c "It's a bit different from Anna's."
             
-        Nm slsmile "That feels so good. Are you ready to enter me soon?"
+        Nm smile "Like what you see?"
         c "You want me to penetrate your upper passage, right?"
         Nm shy "Well yes..."
         show naomi smile with dissolve
         play sound "fx/lewd/lickslow.ogg"
-        m "Suddenly, Naomi flicked my mouth with her long tongue. I barely managed to receive it without shuddering uncontrollably."
+        m "Suddenly, Naomi flicked my nostrils with her long tongue. I barely managed to receive it without shuddering uncontrollably."
         Nm "...because that's where my eggs come from."
         m "(What kind of fantasies is she having right now?)"
         m "Looking down again after regaining my composure, it seemed that I needed to go down a little bit to reach her vaginal passage and also to have some leverage to thrust inside."       
@@ -582,60 +582,69 @@ label sqb_naomi_apt_sexandeating:
     Nm shy "Oh."
     c "Could you fully loosen your grip on me so I can go down to get a better position?"
     Nm smile "Anything for you."
-    c "Also, shouldn't we be using a condom? I'll happily wear one."
+    c "Also, shouldn't we be using a condom?"
     Nm confused "No, that won't be necessary."
     Nm normal "I don't have any STDs and I trust don't have either, otherwise you wouldn't have agreed to have sex with me."
-    Nm shy "Besides, I want to feel your human cum inside my pussy."
-    m "(She doesn't want to use a condom since she likes getting creampied?)"
+    Nm shy "Besides, I want to feel your human cum inside me."
     m "(I suppose another reason we don't need to use a condom is that I can't get her pregnant due to us being of different species.)"
     m "(Did she neglect to mention that because it's too obvious?)"
     m "(I suppose I'll just have to do my best to satisfy her kinks.)"
     Nm confused "So, will you cum inside me?"
     c "Whatever works for me. I just want to fuck you right now."
-    Nm smile "What a nice compliment. It's actually the best one you could give me right now."
-     
+    Nm shy "That's the nicest thing you've said to me so far."
+    m "I moved downwards on the bed, while my hands trailed behind Naomi's back."
+    m "I positioned myself between her strong legs. Due to our size difference, my face only reached up to her chest."
     m "I placed my hands behind Naomi's lower back in order to get more leverage as I prepared to penetrate her."
     play sound "fx/lewd/penslow.ogg"
-    m "As I penetrated her pussy, she locked me tightly in place with her powerful legs."
+    m "As I penetrated her opening, she locked me tightly in place with her legs."
+    Nm smile "Caught you!"
     play sound "fx/lewd/penfast.ogg"
-    m "I moaned as I bucked myself as far as I could go in a single thrust. The sensation of fully plunging yourself into someone much bigger than you was unreal."
+    m "After the initial penetration, I moaned as I bucked myself as far as I could go in a single thrust." 
+    m "The sensation of fully plunging yourself into someone much bigger than you was something I had never quite experienced before."
     
     if modinfo.has_mod("BangOk?") and  bangok_four_anna2.unplayed == False:    
         m "(Naomi's a lot tighter than Anna. That's surprising since Naomi is so big.)"
         m "(I suppose Anna really has had a lot of larger partners.)"
-        m "(I'm still fortunate to have an above average penis, or else I most likely couldn't get Naomi off at all.)"
+        m "(I'm still fortunate to have an above average penis, or else I most likely couldn't get Naomi off with it.)"
     else:
-        m "(Naomi's a lot tighter than I would expect from a dragon much bigger than a human.)"
-        m "(I suppose she's only had partners smaller than her, like she implied before.)"
-        m "(I'm still fortunate to have an above average penis, or else I most likely couldn't get Naomi off very easily.)"
+        m "(Naomi's a lot tighter than I would expect from someone much bigger than me.)"
+        m "(I suppose she's only had smaller partners, like she implied before.)"
+        m "(I'm still fortunate to have an above average penis, or else I most likely couldn't get Naomi off with it.)"
     
     Nm confused "Was that it? Are you going to pump at all?"
     c "Uhh... I was lost in thought."
-    Nm stern "This really isn't the best time for that."
+    Nm stern "This isn't the best time to get lost."
     c "Sorry!"
     play soundloop "fx/lewd/penslow.ogg"
     show naomi normal with dissolve
-    m "With those words I started penetrating Naomi's pussy with long, thorough thrusts."
+    m "After having to apologize yet again I started penetrating Naomi's pussy with long, thorough thrusts."
     Nm smile "Good little human."
-    Nm "You belong to me now. The only way is forward."
-    m "Due to being locked in place by her strong legs, it was the only direction I could go."
+    m "Naomi wrapped her wings around me like before. She was the only thing that existed for me in the world."
+    Nm "You belong to me now." 
+    nm "The only way to go is forward."
+    m "She was right, because due to being locked in place by her strong legs, thrusting was just about the only movement I could do."
     Nm slsmile "I'll only let you go if you cum inside me."
+    $ renpy.pause (5.0)
     stop soundloop
-
     play soundloop "fx/lewd/penfast.ogg"
-    m "A release was rapidly building up inside me. The long tease had exhausted my stamina."
+    m "As I got more used to the position, I started thrusting faster into Naomi."
+    m "I couldn't last long though. The long tease had exhausted my stamina."
+    m "Suddenly, a release started rapidly building up inside me. I hoped she would be satisfied with my performance or at least be understanding of my predicament."
     c "Naomi... I'm going to cum."
     Nm surprisedblush "So soon? Fine, but don't even think about pulling out."
     Nm smile "I thought humans would last longer than this."
     c "It's your fault for teasing me so much. I've been hard for hours."
     Nm surprisedblush "That's what someone with no stamina would say."
-     
+    stop soundloop
+    play soundloop "fx/lewd/altpen.ogg"
+    m "Since I got permission to finish, I started preparing to shoot my cum inside Naomi by thrusting deeper."
     c "I'm going to paint your insides white with human cum!"
     Nm confused "Did you come up with that line all on your own?"
     Nm smile "Pun intended, of course."
     Nm "Anyway, I doubt your output is enough to accomplish that." 
     Nm "You're welcome to try your best regardless."
-    
+    $ renpy.pause (2.0)
+    m "I couldn't hold out any longer."
     stop soundloop fadeout 2.0 
     play sound "fx/lewd/cum.ogg"
     queue sound "fx/lewd/penslow.ogg"
@@ -645,14 +654,25 @@ label sqb_naomi_apt_sexandeating:
     play sound "fx/lewd/penslow.ogg"
     queue sound "fx/lewd/cum.ogg"
     show naomi slsmile with dissolve
-    m "As I bucked against Naomi for the last time and as I released my final rope of cum, she let out a content sigh."
+    m "As I bucked against Naomi for the last time to release my final rope of cum, she let out a content sigh."
     Nm smile "Well done, tiny pink human."
-    Nm "I can feel your sticky seed inside me. You must have been pent up for a while."
-    Nm shy "Unfortunately you didn't manage to get me off. If you can't go again you can finish me off with your mouth."
+    Nm "I can feel a whole lot of your sticky seed inside me. You didn't lie about being pent up for a while."
+    Nm shy "Unfortunately you didn't manage to get me off." 
+    Nm normal "If you can't go again you can finish me off with your mouth."
+    #Choice between oral or another round of the same
+    
+    #Another round
     c "I still have another round in me. Just give me a few moments to recover."
     Nm stern "Try to last longer this time."
     c "I-I'm sorry. I promise I'll do better."
-     
+    
+    show naomi smile with dissolve
+    m "Some of my seed seeped out of Naomi's pussy as I fucked her, which aroused me even further since it reminded me of what I had just done a few moments earlier."   
+    if modinfo.has_mod("BangOk?") and bangok_four_bryce1_unplayed == False or bangok_four_xsebastian_unplayed == False or bangok_four_anna2.unplayed == False:
+         m "(I can't believe Naomi let me cum in her.)"
+    else:
+         m "(I can't believe I just came inside a dragon.)"
+    
     c "That was the best sex I've ever had. I think the hours-long tease had something to do with that."
     Nm normal "It was certainly fun to play with someone who is too weak to resist anything I do to them."
     Nm smile "I'm looking forward to many more sessions like this."
@@ -663,7 +683,7 @@ label sqb_naomi_apt_sexandeating:
     Nm surprised "Is that how it works in your world?"
     Nm confused "We've only had sex once so far. That doesn't mean we should get married."
     Nm normal "Marriage is a long-term commitment."
-    c "I'll prove myself worthy of you, just wait."
+    c "I'll prove myself worthy of you."
     
     stop music fadeout 2.0
     play sound "fx/rumble.ogg"
@@ -685,5 +705,7 @@ label sqb_naomi_apt_sexandeating:
     play music "mx/airborne.mp3"
     scene ecknaomiapt01 with dissolvemed
     show naomi normal with dissolve
+    
+    #Make it so that its very late when the PC leaves, since he and Naomi did a lot more stuff in this timeline
      
 jump sqb_naomi_apt_sexandeating_end
