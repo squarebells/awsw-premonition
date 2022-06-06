@@ -527,47 +527,72 @@ label sqb_naomi_apt_sexandeating:
     Nm smile "If you play it nice, we could even go further than earlier."
     Nm shy "I hope I'm not moving too quickly for you."
     m "(I guess she doesn't realize that from my perspective she's already asked to have sex with me.)"
-    c "No, not at all. I would love some more dragon action."
+    c "I would love some more dragon action."
     Nm smile "In that case...{w} follow me to my lair."
+    Nm "Who knows, maybe you will be the first one to survive intact?"
+    m "(That doesn't sound good.)"
     hide naomi with dissolve
-    m "Naomi turned her back to me and started walking towards the bedroom."
-    m "I wanted to have sex with her but I was also scared of what that would entail."
-    m "This was the last chance to run. If I entered her bedroom, there was no telling would to happen to me."
+    m "Naomi turned around and started walking towards her bedroom."
+    m "I wanted to have sex with her but suddenly I was also scared of what that would entail."
+    m "This was the last chance to run. If I entered her bedroom, there was no telling what would to happen to me."
     menu:
         "Follow Naomi to her bedroom.":
             m "I decided to resist the sudden, unexplained urge I had."
             pass
          
-        "Run away while you still can.":
-            #Did I make Naomi too emotional?
-            stop music fadeout 2.0        
-            m "As Naomi was walking up to her bedroom door, I quietly picked up my clothes and started walking towards the exit."
-            show naomi concern with dissolve
-            m "Halfway towards the exit Naomi heard me, turned around and walked up to me looking concerned."
-            Nm "Something wrong?"
-            c "I'm sorry Naomi. This is too much for me." 
+        "Escape while you still can.":
+            stop music fadeout 2.0
+            m "(I have to time this correctly.)"
+            scene ecknaomiapt02 with dissolvemed
+            play sound "fx/sheet.wav"            
+            m "As Naomi got closer to her bedroom door, I quietly picked up my clothes and started sneaking towards the exit."
+            m "Unfortunately, when I was halfway there Naomi heard me walking in the opposite direction."          
+            m "I felt her grab my hand and I was forced to turn around to face her."
+            scene ecknaomiapt01 with dissolvemed
+            show naomi concern with dissolve            
+            m "(Oh no.)"
+            Nm "Is something wrong?"
+            c "I-I'm sorry Naomi. This is too much for me." 
             c "I changed my mind."
             Nm sad "Oh well. Did I move too quickly for you?"
-            Nm "I thought you had a good time with me."
+            Nm "I thought we had a good time together."
             Nm concern "(This always happens to me.)"
-            c "Uhh...{w} you got it all wrong. This is on me, not you."
-            Nm stern "Are you being serious right now?"
-            Nm "That's what they always say."
-            c "I really mean it. I like you a lot."
-            c "This isn't your fault."
+            #music
+            m "(I need to try to salvage this somehow)"
+            c "Uhh...{w} you've got it all wrong."
+            Nm confused "What do you mean?"
+            c "You've been good to me so far, and I've enjoyed my time with you."
+            Nm concern "Go on."
+            c "It's all me, not you. We can meet again some other time."
+            c "Also, I just remembered that I have some urgent ambassador duties that need doing."
             $ renpy.pause (2.0)
+            Nm stern "Are you being serious right now?"
+            Nm "That's the kind of thing they always say. Couldn't you at least come up with a less cliché way of dumping me?"
+            c "Hey, I really mean what I said."
+            c "Anyway, I have to go. We can just meet again some other time."
+            $ renpy.pause (1.0)
             Nm "..."
             Nm annoyed "I hate it when you guys patronize me like this. Do you think I am a hatchling?"
-            Nm "After all this time, I thought you would at least be honest with me."
-            Nm stern "Go on, leave. See if I care."
-            c "Don't you think you're overreacting a bit?"
+            Nm sad "After how nice I was to you, I expected that you would at least be honest with me."
+            Nm stern "Did you seriously think I wouldn't notice you trying to sneak out?"
+            Nm "Go on, leave. See if I care."
+            c "Don't you think you're overreacting just a little bit?"
+            c "You have to calm down right now!"
             Nm annoyed "Shut up!"
-            c "I... uhh..."
+            c "..."
             Nm stern "Take your stupid covers and leave."
-            m "Speechless, I walked up to the door and began to grab the handle."
+            c "Huh, you're going to order me around just like that? This is really it for you then."
+            c "Or did you forget who I am?"
+            Nm "I hate your condescending flat-face so much."
+            show naomi annoyed with dissolve
+            m "Naomi looked like she was going to get violent."
+            Nm "Get out NOW!"
+            hide naomi with dissolve
+            scene ecknaomiapt02 with dissolvemed
+            m "Fearing for my life, quickly walked up to the door and grabbed the handle."
             show naomi cry with dissolve
             play sound "fx/door/handle.wav"
-            m "As I turned to look at Naomi for the last time, I could see she was crying."
+            m "As I turned to look at Naomi for one last time, I could see that she was crying."
             m "(Looks like I fucked up really badly.)"
             $ renpy.pause (0.5)
             hide naomi with dissolve
@@ -575,10 +600,13 @@ label sqb_naomi_apt_sexandeating:
             $ renpy.pause (0.5)
             play sound "fx/door/door_close.ogg"
             queue sound "fx/steps/slowstepsdown.ogg"
-            m "At this point had no choice but to leave her alone."           
-            m "Somehow I knew that due to being this rude to Naomi, she wouldn't want me to contact her ever again."
+            m "At this point of escalation had no choice but to just leave her alone."           
+            m "Somehow I knew that due to being this rude to Naomi, she wouldn't ever want to see me again."
             stop sound fadeout 1.0
-            m "Shocked at what had just happened, I slowly wandered back to my apartment and went straight to bed."
+            play sound "fx/steps/steps.ogg"
+            m "Shocked at what had just transpired, I slowly wandered back to my apartment and went straight to bed."
+            stop sound fadeout 1.0
+            m "My dreams were full of fire and suffering, and I woke up several times during the night in cold sweat."
     
             $ naomistatus = "bad"
             $ naomiavailable = False
@@ -927,7 +955,7 @@ label sqb_naomi_apt_sexandeating:
     c "Besides, I want to find out how similar your food products are to ours." 
     c "Personally, I came here to learn more about your people after all."
     Nm smile "Well, if you put it like that...{w} I won't turn down a delicious meal. I also would love to find out if human cooking is different from ours."
-    c "Don't worry, I'll cook a whole lot. We have plenty of time left after all."
+    c "Don't worry, I'll cook a a few dishes. We have plenty of time left after all."
     scene black with dissolvemed
     play sound "fx/door/door_open.wav"
     m "With those words, I walked up to the door and exited the room back to Naomi's living room. She followed behind me."
@@ -1033,8 +1061,8 @@ label sqb_naomi_apt_sexandeating:
     m "(Perfect, we have all the ingredients for batter plus some herb butter. The last one is really lucky for us, because obviously I wouldn't have had the time to make some myself.)"
     m "(I know what to do with the chicken fillets now.)"
     
-    m "(Twelve chicken breasts should be enough for both of us. She can always eat the rest tomorrow if there's any left over.)"
-    m "This was the most time-consuming part of my cookout, but it was over quickly because I knew it was well worth it."
+    m "(Eight chicken breasts should be enough for both of us. She can always eat the rest tomorrow if there's some left over.)"
+    m "This was the most time-consuming part of my cookout, but it was over quickly because I knew the effort would be well worth it."
     
     m "As I was mashing the potatoes, I poured in some milk."
     m "(That should be enough for now. It's better to be careful to not use too much milk at first because I can always put more later.)"
