@@ -127,5 +127,3 @@ def sqb2naomi(ml):
            .hook_to("sqb_naomi_apt_sexandeating", condition='sqbpremounlocked == True and naomi2mood > 8 and naomilewd > 4') \
            .search_say("I guess we should get going.") \
            .link_from("sqb_naomi_apt_sexandeating_end")
-
-

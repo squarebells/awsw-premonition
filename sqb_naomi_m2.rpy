@@ -306,12 +306,12 @@ label sqb_naomi_apt_sexandeating:
     show naomi surprisedblush with dissolve
     m "After a moment of hesitation, she finally looked me in the eyes."
     m "She stopped for a moment and sighed loudly."
-    Nm smile "I suppose it's not a secret any more that my feelings towards you are reciprocal."
-    Nm "I've been thinking about you for a while now."
+    Nm smile "I suppose it's not a secret any more that I like you as well."
+    Nm "I've been thinking about dating you ever since we met."
     Nm surprisedblush "There, I finally admitted it. Are you happy now?"
     c "You're-{nw}"
     m "She cut me off before I could say anything."
-    Nm confused "You've been persistent in trying to get me to admit I like you. Why else would you obey my every whim and also try to serve me whenever you can?"
+    Nm confused "You've been persistent in trying to get me to admit I like you. Why else would you obey my every whim by trying to serve me whenever you can?"
     Nm normal "The weird thing about us is that even though we met very recently I feel like we've known each other for a long time." 
     Nm "I think we complement each other nicely. Also, you understand me really well and like me for what I am."
     c "What's not to like in a cute dragon such as yourself?"
@@ -326,21 +326,21 @@ label sqb_naomi_apt_sexandeating:
     Nm shy "I just h-hope the feeling's mutual."
     c "Consider our session on the sofa a sign of approval."
     c "I don't mind if you tease me by objectifying me a little bit. I feel like I can trust you to have my best interests in mind."
-    c "I love you Naomi."
+    c "I really like you Naomi."
     play sound "fx/kiss.wav"
     show naomi slsmile with dissolve
     m "With that, she suddenly kissed me on my right cheek."
     play sound "fx/lewd/lickslow.ogg"
     m "As she was pulling back from the kiss, she licked me with her long tongue, leaving some saliva behind."
-    Nm smile "I love you too."
-    Nm "You're the best body pillow I've ever tried. We're going to have a great time together."
+    Nm smile "I really like you too."
+    Nm "You're the best body pillow I've ever had. We're going to have a great time together."
     c "Yes...{w} uhh..."
     c "That sounds wonderful."
     c "Dragon hugs are certainly something I've never experienced before."
     Nm normal "I'm so happy you like me even though we're not of the same species."
     Nm "I hope you understand that from my perspective, you humans are the cutest."    
     Nm smile "I've never before had such a pink and squishy boyfriend."
-    c "C-come on now...{w} you're making me blush."
+    c "You're going to make me blush."
     show naomi shy with dissolve
     m "Naomi looked to the side and then back at me. She seemed to be thinking about something."
     Nm confused "I just realized there is something that would improve our cuddling experience by a lot."
@@ -348,7 +348,147 @@ label sqb_naomi_apt_sexandeating:
     Nm blank "Why don't you take your covers off? Having fabric between you and your partner gets in the way of having a properly intimate cuddling experience."
     m "(This escalated faster than I ever could have anticipated.)" 
     m "(How should I respond?)"
-    #A choice for the sake of it?
+    menu:
+        "Undress in front of Naomi.":
+            pass
+            
+        "Decline.":
+            c "I'm sorry, I don't feel comfortable doing that."
+            Nm normal "Really? What's the big deal?"
+            c "Among humans, taking your clothes off in front of someone is considered an intimate act."
+            show naomi confused with dissolve
+            c "It's also pretty weird to do in a living room."
+            Nm "You don't...?"
+            Nm sad "Oh well. I get it."
+            Nm normal "Look at the time. Would you at least like to eat something before you go?"
+            c "Sounds like a plan. I know you said you don't like cooking, but how about I make something instead?"
+            Nm confused "You can? I was planning to order a delivery."
+            c "Let me see what supplies we have."
+            play sound "fx/undress.ogg"
+            $ renpy.pause (1.5)
+            scene ecknaomiapt02 with dissolvemed
+            m "I got off the sofa and headed towards the fridge."
+            m "A quick glance over the supplies revealed a rather sizeable selection of fish, chicken and meat snacks, some algae and a wide variety of vegetables."
+            c "(Quite decent for someone who doesn't cook at home. She doesn't seem to have oil or anything of sorts, but plenty of sauces to choose from.)"
+            m "With most of the food already pre-cooked, preparing something with it wouldn't take a lot of time."
+            m "An idea clicked in my mind."
+            $ ecknaomim2food = "None"
+            menu:
+                "Beef and vegetables.":
+                    $ renpy.pause (0.5)
+                    $ ecknaomim2food = "beef"
+                    play sound "fx/veggies.ogg"
+                    m "Deciding to go with a tried and tested recipe, I started with chopping up the vegetables I found into smaller pieces while the frying pan was heating up on the stove."
+                    m "Once I was done, I mixed up the cut pieces in a bowl with the meat snacks and put it all on the skillet."
+                    play sound "fx/fry.ogg" fadein 1.0
+            
+                "Fried fish with salad and algae.":
+                    $ renpy.pause (0.5)
+                    $ ecknaomim2food = "fish"
+                    $ naomi2mood += 1
+                    play sound "fx/veggies.ogg"
+                    m "Choosing fish as a base seemed like an obvious solution to preparing something a sea dragoness would enjoy. With the snacks already being breaded, they only needed some heating, a   sauce, and dressing to go with them."
+                    play sound "fx/fry.ogg" fadein 1.0
+                    m "Mixing up a decent salad proved easy thanks to the selection of vegetables. Unsure what to do with dried algae, I cut off a few pieces and kept them separately."
+            
+                "Chicken fillet with cheese and ham.":
+                    $ renpy.pause (0.5)
+                    $ ecknaomim2food = "chicken"
+                    $ naomi2mood += 1
+                    m "While meat snacks had to substitute actual ham or bacon, the rest of the ingredients were readily available. The chicken \"bits\" – as they were advertised on the package – were in fact full ready-to-eat fillets."
+                    m "Using raw counterparts would've been better for overall taste, but I had to make do with what I had. After cutting them open, I added the extra components, hoping for the molten cheese to seal everything together inside."
+                    m "Soon, I stuffed the tray with my improvised dish into the oven and set it to the right temperature."
+            
+                "A vegetarian salad with algae.":
+                    $ renpy.pause (0.5)
+                    $ naomi2mood -= 1
+                    $ ecknaomim2food = "salad"
+                    play sound "fx/veggies.ogg"
+                    m "After brief consideration, I went with an idea of a light vegetable salad with some algae on the side."
+                    m "It required no heating of any sort. However, cutting up all the components and properly mixing them up was about to take some time."
+        
+            m "From the corner of my eye, I noticed Naomi intently monitoring me from her resting position."
+    
+            if naomi2mood > 6 and not ecknaomim2food == "salad":
+                m "Her tail swished ever so slightly, and her wings remained relaxed – aside from a subtle wavy motion."
+            else:
+                pass
+    
+            $ renpy.pause (1.5)
+            show ecknaomicg1 at Pan ((250, 230), (620, 50), 15.0) with dissolvemed
+            $ renpy.pause (7.5)
+    
+            if naomi2mood > 6 and not ecknaomim2food == "salad":
+                m "When my eyes made contact with hers, she smiled, and the tip of her tail seemed to perk up in response."
+            else:
+                $ renpy.pause (1.5)
+            $ renpy.pause (1.5)
+    
+            scene black with dissolvemed
+            $ renpy.pause (1.0)
+            stop sound fadeout 1.0
+            scene ecknaomiapt02 with dissolvemed
+            m "Eventually, the cooking was finished, and I loaded the fruits of my labor into a single large bowl. Together with it, I grabbed a couple of plates, some bread and returned to Naomi's couch."
+            scene ecknaomiapt03 with dissolvemed
+            show naomi smile with dissolve
+            $ renpy.pause (1.0)
+            m "Only then I realized the complete lack of cutlery, save for a lone ladle."
+            if ecknaomim2food == "beef" or ecknaomim2food == "fish" or ecknaomim2food == "chicken":
+                Nm "Smells delicious, [player_name]."
+                c "Thanks. I tried my best."
+                m "The dragoness proceeded to merrily devour her portion with little concern about her surroundings. On the other hand, without forks, knives or spoons, I had to wait for my food to cool off."
+                c "Hey, no need to rush. We still have time."
+                Nm shy "Sorry. Your cooking is just too good."
+                Nm confused "Why aren't you eating?"
+                c "It's too hot for me – I'd burn my fingers if I grabbed it, and my mouth probably wouldn't fare much better, either."
+                Nm normal "Is your skin really that sensitive?"
+                c "I don't have scales like you do."
+                Nm smile "Alright. Don't worry, I'll make sure to leave you a fair share."
+                c "Did you honestly enjoy my cooking so much?"
+                Nm shy "I did."
+                Nm "It's the first time I got a chance to try out a home meal since my parents moved to the city."
+                menu:
+                    "I'm glad you liked it.":
+                        $ renpy.pause (0.5)
+                        Nm smile "I sure did. Thank you, [player_name]."
+                        m "Eventually, the food's temperature had dropped, and I was able to finish off my own serving as well. Naomi lazily glanced at the empty plates in front of us."
+                        jump sqb_naomi_apt_sexandeating_end
+                
+                    "You can have my portion.":
+                        $ renpy.pause (0.5)
+                        $ naomi2mood += 1
+                        Nm "Are you sure that's alright?"
+                        c "I can always make myself more when I get back to my apartment. It's fine, just take it."
+                        Nm smile "Thank you."
+                        show naomi normal with dissolve
+                        m "It didn't take long for Naomi to clear out most of the remaining food.{nw}"
+                        show naomi shy with dissolve
+                        m "It didn't take long for Naomi to clear out most of the remaining food.{fast} She still left a few bites – by then cool enough to handle - and shyly nudged them towards me."
+                        Nm "You need to eat something too, [player_name]. I don't feel right stuffing my face while you remain hungry."
+                        c "Oh. Don't worry about me. But you have a point – I could use a snack before heading out."
+                        Nm smile "Enjoy your meal."
+                        show naomi sleep with dissolve
+                        m "Once we were both finished, she leaned back and squinted her eyes for a few seconds before glancing back at me."
+                        jump sqb_naomi_apt_sexandeating_end
+                
+                    "Then learn to cook.":
+                        $ renpy.pause (0.5)
+                        $ naomi2mood -= 1
+                        Nm "I would, but I never had a talent for it or any desire to learn."
+                        c "It's never too late to start practicing."
+                        Nm smile "I think I'll stick to the cafe and home deliveries."
+                        m "Eventually, the food's temperature had dropped, and I was able to finish off my own serving. I noticed that Naomi left a fraction of hers untouched."
+                        jump sqb_naomi_apt_sexandeating_end
+                
+            else:
+                 m "The dragoness put the food on her plate and took a few hesitant bites, mostly concentrating on the algae slices."
+                 m "A few minutes later, she glanced at me merrily munching on the salad."
+                 Nm blank "Thanks, [player_name]. I think this is enough for me."
+                 c "You don't want more?"
+                 Nm confused "Oh, I'm fine. Don't worry."
+                 m "I finished the rest of my serving a few minutes later. Naomi barely touched hers."
+                 jump sqb_naomi_apt_sexandeating_end
+        
     m "A whisper buried deep in my mind told me to just do as she says."
     m "(I suppose because dragons don't wear clothes in the way we do, she doesn't understand the implications of asking me to remove them in front of her.)"
     m "(I'll just take them all off. If it doesn't bother her, it shouldn't bother me either. When in Rome...)"
@@ -389,13 +529,69 @@ label sqb_naomi_apt_sexandeating:
     m "(I guess she doesn't realize that from my perspective she's already asked to have sex with me.)"
     c "No, not at all. I would love some more dragon action."
     Nm normal "In that case...{w} follow me to my lair."
+    hide naomi with dissolve
+    m "Naomi turned her back to me and started walking towards the bedroom."
+    m "I wanted to have sex with her but I was also scared of what that would entail."
+    m "This was the last chance to run. After I went into her bedroom there was no telling what was going to happen to me."
+    menu:
+        "Follow Naomi to her bedroom.":
+            m "I decided to resist the sudden, unexplained urge I had."
+            pass
+         
+        "Run away while you still can.":            
+            m "As Naomi was walking up to her bedroom door, I quietly picked up my clothes and started walking towards the exit."
+            show naomi normal with dissolve
+            m "Halfway towards the exit Naomi heard me, turned around and walked up to me."
+            stop music fadeout 2.0
+            Nm concern "Something wrong?"
+            c "I'm sorry Naomi. This is too much for me." 
+            c "I changed my mind."
+            Nm sad "Oh well. Did I move too quickly for you?"
+            Nm "I thought you had a good time with me."
+            Nm "(This always happens to me.)"
+            c "Uhh...{w} you got it all wrong. This is on me, not you."
+            Nm stern "That's what they always say."
+            c "I mean it. I like you a lot."
+            c "This isn't your fault."
+            $ renpy.pause (2.0)
+            Nm "..."
+            Nm annoyed "I hate it when you guys patronize me like this. Do you think I am a hatchling?"
+            Nm "After all this time, I thought you would at least be honest with me."
+            Nm stern "Go on, leave. See if I care."
+            c "I... uhh..."
+            Nm "Take your stupid covers and leave."
+            m "Speechless, I walked up to the door and began to grab the handle."
+            show naomi cry with dissolve
+            play sound "fx/door/handle.wav"
+            m "As I looked at Naomi for one last time, I could see she was crying."
+            m "(I fucked up really badly.)"
+            $ renpy.pause (0.5)
+            hide naomi with dissolve
+            scene black with dissolveslow
+            $ renpy.pause (0.5)
+            play sound "fx/door/door_close.ogg"
+            m "At this point had no choice but to leave her alone."
+            play sound "fx/steps/slowstepsdown.ogg"            
+            m "Somehow I knew that due to being this rude to Naomi, she wouldn't want me to contact her ever again."
+            stop sound fadeout 1.0
+    
+            $ naomistatus = "bad"
+            $ naomiavailable = False
+            $ naomiscenesfinished = 2
+            if chapter4unplayed == False:
+                 jump chapter4chars
+            elif chapter3unplayed == False:
+                 jump chapter3chars
+            elif chapter2unplayed == False:
+                 jump chapter2chars
+            else:
+                 jump chapter1chars      
+     
     $ renpy.pause (1.0)
     scene black with dissolvemed
     hide naomi with dissolve
     play sound "fx/door/door_open.wav"
-    m "She walked up to the door and nudged it open with her snout."
-    m "I followed her, barely resisting the urge of grabbing my clothes and getting the hell out of here." 
-    m "Sure, I wanted to have sex with her but I was also scared of what that would entail."
+    m "I followed Naomi as she walked up to her bedroom door and nudged it open with her snout." 
     scene eckannabedroom4 with dissolvemed
     show naomi normal with dissolve
     Nm "Here we are."
@@ -735,12 +931,13 @@ label sqb_naomi_apt_sexandeating:
     show naomi normal with dissolve
     c "First things first, after our session I really need drink a liter of water, or two. Would you like something to drink as well?"
     Nm "Sure, put it on the table over there." 
-    Nm "I'll go clean myself up in the bathroom while you get set up. If you need any help figuring out where everything is just give me a holler."
+    Nm "I'll go clean myself up in the bathroom while you get set up. If you need any help figuring out where everything is just give me a shout."
     hide naomi with dissolve
     play sound "fx/door/door_open.wav"
     m "Naomi walked in to what I presumed to be the bathroom."
     m "(Let's see what kind of stuff she has in the fridge.)"
-    m "I opened the fridge. Weirdly, a lot of the packaging had familiar shapes and also somewhat similar labels to ours."
+    play sound "fx/crapfridge.mp3"
+    m "As I opened the fridge, I noticed that a lot of the packaging had familiar shapes and also somewhat similar labels to ours."
     m "(Oh right, she wanted to drink something.)"
     #Sound?
     m "I picked a carton of orange juice from the back of the fridge."
@@ -789,28 +986,57 @@ label sqb_naomi_apt_sexandeating:
     $ renpy.pause (1.0)
     scene ecknaomiapt02 with dissolvemed
     m "(Where was I?)"
-    m "(Oh right, what else I should pick as ingredients?)"
-    #More?
-    m "(Actually, let's first make sure she doesn't eat me.)"
+    m "(Oh right, what else I should pick to cook with? Let's see what we got.)"
+    m "(This white, mint-flavored mouflon and aurochs cheese looks remarkably similar to something we used to have. I'll cut it to pieces and cook it with the noodles.)"
+    m "Nice, we got soy sauce, wing sauce, brown sugar and ginger power to season the fried noodles. Let's start by heating up the pan first.)"
+    #Sound?
+    m "I put a pan on the cooktop and as I was going to turn on the stove I realized something.)"
+    m "(Wait a minute.)"
+    m "(Let's first make sure I don't get eaten by a hungry dragoness.)"
     c "Naomi, would you like some bread sticks as appetizers?"
-    Nm "Sounds great to me. I trust your culinary skills."
-    m "I quickly spotted all the required ingredients."
-    m "(Toast, olive oil, garlic, black pepper, salt and oregano here we go.)"
+    Nm "Sounds great to me. I was just going to come over there and eat you."
+    c "If you eat me, I won't be able to cook for you."
+    m "I focused back on the task at hand and quickly picked all the required ingredients for the appetizers."
+    m "(Toast, garlic, black pepper, salt and oregano here we go.)"
+    m "(Wait, where's the olive oil?)"
+    #Sound
+    m "I searched all her cabinets and found it hidden behind some boxes."
+    m "(There we go.)"
+    Nm "Need help finding something?"
+    c "I'm fine. I was just looking for some olive oil."
+    m "(Finally, we can get started.)"
     m "I turned on the oven and prepared two baking trays with baking paper."
-    m "(I suppose I'll have to cook a big pile, but slicing some toast won't take long if I do it efficiently.)" 
+    m "(I suppose I'll have to cook a big pile. Luckily, slicing the toast won't take too long if I do it efficiently.)"
     m "(The oven probably isn't ready after I am done with the cutting but I can always start preparing for something else.)"
     m "(Then, when the bread sticks are baking I can start planning for the main courses."
-    m "(Oh yeah, I have to also prepare the mix that flavors the bread sticks. Who knows if the oven will be ready when I've done that."
-    m "(Multitasking and planning is so much fun.)"
+    m "(Oh yeah, I have to also prepare the mix that is used to flavor the bread sticks. Who knows if the oven will be ready when I've done that."
+    m "(Multitasking and planning ahead is so much fun.)"
     m "I opened a bag of toast and put several slices on top of each other on the cutting board."
-    #Cutting sound
-    m "Then I cut the bread into neat little sticks, moved them to the side and cut another batch of toast."
-    m "After a couple of minutes, I managed to slice the entire bag of toast."
+    play sound "fx/crapcuttingboard.mp3"
+    m "Then I cut the bread into neat little sticks, moved them to the side and prepared cut another batch of toast."
+    m "After a couple of minutes, I managed to slice the entire bag of bread."
+    #Sound?
+    m "I peeled the garlic and crushed them into a bowl with a pestle and mixed in some olive oil, pepper and salt to create the flavoring mix."
+    m "I placed all the bread sticks on the two baking trays and used a spoon to apply the flavoring mix."
+    m "(Yep, looks like I have some time left since the oven isn't ready yet.)"
     
-    m "(Perfect, we have all the ingredients for batter plus some herb butter. The last one is really lucky for us, because I wouldn't have had time to make some myself)".
+    play sound "fx/fry.ogg"
+    m "(Let's put in some giant prawns as well. Luckily they are already prepared and seasoned.)"
+    m "After adding the prawns I put the lid on the pan and set another timer to 8 minutes."
+    m "(I'll have to remember to mix the noodles every once in a while. What should I do next?)"
+    
+    m "(Perfect, we have all the ingredients for batter plus some herb butter. The last one is really lucky for us, because obviously I wouldn't have had the time to make some myself.)"
     m "(I know what to do with the chicken fillets now.)"
     
-    Nm "I really like the crunchiness of your breaded chicken fillets."
+    m "(Twelve chicken breasts should be enough for both of us. She can always eat the rest tomorrow if there's any left over.)"
+    m "This was the most time-consuming part of my cookout, but it was over quickly because I knew it was well worth it."
+    
+    m "As I was mashing the potatoes, I poured in some milk."
+    m "(That should be enough for now. It's better to be careful to not use too much milk at first because I can always put more later.)"
+    
+    m "I stuck a dragon-sized fork for Naomi in the very large bowl of fried noodles."
+    
+    Nm "I really like the crunchiness of your chicken."
     c "I love the taste of batter too, so I breaded the chicken breasts twice."
     Nm smile "Interesting. Even more than that I love how the herb butter just bursts inside your mouth when you bite in."
     c "Thank you. They are indeed a lot juicier than your basic chicken breasts."
@@ -829,3 +1055,4 @@ label sqb_naomi_apt_sexandeating:
     #Make it so that its very late when the PC leaves, since he and Naomi did a lot more stuff in this timeline
      
 jump sqb_naomi_apt_sexandeating_end
+
