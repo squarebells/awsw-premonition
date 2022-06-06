@@ -1,9 +1,10 @@
 # AwSW-Premonition
-A sequel to EvilChaosKnight's A Solitary Mind. 
+A sequel to EvilChaosKnight's A Solitary Mind. Takes place in a timeline after ASM's ending A.
  
 ### Requirements: 
  + Magmalink by jakzie2 
  + A Solitary Mind and Chaos_Knight Core mod by EvilChaosKnight
+ + Community Resource and Assets Pack (CRAP) by Jakzie2, 4onen, Azrynfolf, Ryann and Volar Vie
  
 ### Optional requirement: 
  + BangOk by 4onen
