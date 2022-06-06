@@ -1,5 +1,5 @@
 # AwSW-Premonition
-A sequel to EvilChaosKnight's A Solitary Mind. 
+A sequel to EvilChaosKnight's A Solitary Mind. Takes place in a timeline after ASM's ending A.
  
 ### Requirements: 
  + Magmalink by jakzie2 
