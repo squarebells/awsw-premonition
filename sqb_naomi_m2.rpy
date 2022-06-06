@@ -742,10 +742,81 @@ label sqb_naomi_apt_sexandeating:
     m "(Let's see what kind of stuff she has in the fridge.)"
     m "I opened the fridge. Weirdly, a lot of the packaging had familiar shapes and also somewhat similar labels to ours."
     m "(Oh right, she wanted to drink something.)"
-    #Sound
+    #Sound?
     m "I picked a carton of orange juice from the back of the fridge."
     m "(She liked juice, right?)"
      
+    
+    m "(There's so much stuff in her kitchen you'd think she cooks at home.)"
+    m "(Did she buy all this stuff just to impress me? That's cute.)"
+    m "(Wait, how did she know I like cooking?)"
+    
+    #Sound?
+    m "With some effort, I piled all the foodstuffs and ingredients on Naomi's kitchen counter in an organized fashion."
+    m "(This is going to be a challenge.)"
+    m "(I think at first I should just move everything on the counter and separate what I definitely want to use.)"
+    m "(Second, I'll put back what I don't think I want to use.)"
+    m "(I can always take something back if I need it after all.)"
+    $ renpy.pause (2.0)
+    m "(I am definitely going to fry some noodles. I'll use chicken as well, although I am not yet sure how.)"
+    #Sound?
+    m "(I'll take a pack of egg noodles and some lightly salted chicken fillets.)" 
+    m "(I like the flexibility of these fillets because you can always cut them to pieces if you want, but also season them yourself.)"
+    m "While I was pondering, Naomi came to check on what I was doing."   
+    show naomi normal with dissolve
+    Nm "So, you found where everything was?"
+    c "Yes, thank you."
+    c "You have so much stuff in your kitchen that I'd have guessed you cook a lot if you already didn't tell me otherwise."
+    Nm shy "Well..."
+    Nm normal "I wanted to try something new since you were coming over. Going on a shopping spree just felt like the right thing to do."
+    Nm smile "Anyway, looks like my plan worked. I managed to bribe you into cooking for me."
+    c "Oh, you got me. This is going to be fun, I promise."
+    Nm "I'll hold you to that."
+    hide naomi with dissolve
+    m "With that, she walked up to the sofa and jumped on it in one, smooth motion."
+    m "I watched her as she flexed herself, not unlike a big cat."
+    
+    $ renpy.pause (1.5)
+    show ecknaomicg1 at Pan ((250, 230), (620, 50), 15.0) with dissolvemed
+    $ renpy.pause (7.5)
+    
+    Nm "Like what you see?"
+    c "You're very cute."
+    Nm "Hurry up with the cooking, or I'll have to eat you instead."
+    c "..."
+    
+    scene black with dissolvemed
+    $ renpy.pause (1.0)
+    scene ecknaomiapt02 with dissolvemed
+    m "(Where was I?)"
+    m "(Oh right, what else I should pick as ingredients?)"
+    #More?
+    m "(Actually, let's first make sure she doesn't eat me.)"
+    c "Naomi, would you like some bread sticks as appetizers?"
+    Nm "Sounds great to me. I trust your culinary skills."
+    m "I quickly spotted all the required ingredients."
+    m "(Toast, olive oil, garlic, black pepper, salt and oregano here we go.)"
+    m "I turned on the oven and prepared two baking trays with baking paper."
+    m "(I suppose I'll have to cook a big pile, but slicing some toast won't take long if I do it efficiently.)" 
+    m "(The oven probably isn't ready after I am done with the cutting but I can always start preparing for something else.)"
+    m "(Then, when the bread sticks are baking I can start planning for the main courses."
+    m "(Oh yeah, I have to also prepare the mix that flavors the bread sticks. Who knows if the oven will be ready when I've done that."
+    m "(Multitasking and planning is so much fun.)"
+    m "I opened a bag of toast and put several slices on top of each other on the cutting board."
+    #Cutting sound
+    m "Then I cut the bread into neat little sticks, moved them to the side and cut another batch of toast."
+    m "After a couple of minutes, I managed to slice the entire bag of toast."
+    
+    m "(Perfect, we have all the ingredients for batter plus some herb butter. The last one is really lucky for us, because I wouldn't have had time to make some myself)".
+    m "(I know what to do with the chicken fillets now.)"
+    
+    Nm "I really like the crunchiness of your breaded chicken fillets."
+    c "I love the taste of batter too, so I breaded the chicken breasts twice."
+    Nm smile "Interesting. Even more than that I love how the herb butter just bursts inside your mouth when you bite in."
+    c "Thank you. They are indeed a lot juicier than your basic chicken breasts."
+    
+    c "I call it simple but delicious. This cooking philosophy leaves more time for eating."
+    Nm smile "I love it. That's the most important part."
      
     stop music fadeout 1.0
     hide naomi with dissolve
