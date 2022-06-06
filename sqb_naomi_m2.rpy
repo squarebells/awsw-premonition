@@ -528,52 +528,57 @@ label sqb_naomi_apt_sexandeating:
     Nm shy "I hope I'm not moving too quickly for you."
     m "(I guess she doesn't realize that from my perspective she's already asked to have sex with me.)"
     c "No, not at all. I would love some more dragon action."
-    Nm normal "In that case...{w} follow me to my lair."
+    Nm smile "In that case...{w} follow me to my lair."
     hide naomi with dissolve
     m "Naomi turned her back to me and started walking towards the bedroom."
     m "I wanted to have sex with her but I was also scared of what that would entail."
-    m "This was the last chance to run. After I went into her bedroom there was no telling what was going to happen to me."
+    m "This was the last chance to run. If I entered her bedroom, there was no telling would to happen to me."
     menu:
         "Follow Naomi to her bedroom.":
             m "I decided to resist the sudden, unexplained urge I had."
             pass
          
-        "Run away while you still can.":            
+        "Run away while you still can.":
+            #Did I make Naomi too emotional?
+            stop music fadeout 2.0        
             m "As Naomi was walking up to her bedroom door, I quietly picked up my clothes and started walking towards the exit."
-            show naomi normal with dissolve
-            m "Halfway towards the exit Naomi heard me, turned around and walked up to me."
-            stop music fadeout 2.0
-            Nm concern "Something wrong?"
+            show naomi concern with dissolve
+            m "Halfway towards the exit Naomi heard me, turned around and walked up to me looking concerned."
+            Nm "Something wrong?"
             c "I'm sorry Naomi. This is too much for me." 
             c "I changed my mind."
             Nm sad "Oh well. Did I move too quickly for you?"
             Nm "I thought you had a good time with me."
-            Nm "(This always happens to me.)"
+            Nm concern "(This always happens to me.)"
             c "Uhh...{w} you got it all wrong. This is on me, not you."
-            Nm stern "That's what they always say."
-            c "I mean it. I like you a lot."
+            Nm stern "Are you being serious right now?"
+            Nm "That's what they always say."
+            c "I really mean it. I like you a lot."
             c "This isn't your fault."
             $ renpy.pause (2.0)
             Nm "..."
             Nm annoyed "I hate it when you guys patronize me like this. Do you think I am a hatchling?"
             Nm "After all this time, I thought you would at least be honest with me."
             Nm stern "Go on, leave. See if I care."
+            c "Don't you think you're overreacting a bit?"
+            Nm annoyed "Shut up!"
             c "I... uhh..."
-            Nm "Take your stupid covers and leave."
+            Nm stern "Take your stupid covers and leave."
             m "Speechless, I walked up to the door and began to grab the handle."
             show naomi cry with dissolve
             play sound "fx/door/handle.wav"
-            m "As I looked at Naomi for one last time, I could see she was crying."
-            m "(I fucked up really badly.)"
+            m "As I turned to look at Naomi for the last time, I could see she was crying."
+            m "(Looks like I fucked up really badly.)"
             $ renpy.pause (0.5)
             hide naomi with dissolve
             scene black with dissolveslow
             $ renpy.pause (0.5)
             play sound "fx/door/door_close.ogg"
-            m "At this point had no choice but to leave her alone."
-            play sound "fx/steps/slowstepsdown.ogg"            
+            queue sound "fx/steps/slowstepsdown.ogg"
+            m "At this point had no choice but to leave her alone."           
             m "Somehow I knew that due to being this rude to Naomi, she wouldn't want me to contact her ever again."
             stop sound fadeout 1.0
+            m "Shocked at what had just happened, I slowly wandered back to my apartment and went straight to bed."
     
             $ naomistatus = "bad"
             $ naomiavailable = False
@@ -867,7 +872,7 @@ label sqb_naomi_apt_sexandeating:
     queue sound "fx/lewd/penslow.ogg"
     $ renpy.pause (1.0)
     m "I grunted loudly as I came."
-    c "Urgh!!!Ahh!!!{nw}" with vpunch
+    c "Urgh!!!Ahh!!!{nw}" with hpunch
     play sound "fx/lewd/penslow.ogg"
     queue sound "fx/lewd/cum.ogg"
     show naomi slsmile with dissolve
