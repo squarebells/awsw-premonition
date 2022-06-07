@@ -227,7 +227,7 @@ label sqb_naomi_apt_movie:
     stop music fadeout 2.0
     play sound "fx/sheet.wav"
     m "Naomi turned me around to position my back on her chest while shifting us both to put her between me and the sofa's backrest."
-    show naomi slsmile with dissolve    
+    show naomi aroused with dissolve    
     m "Then she locked her arms under my armpits to tie me in a tight embrace."
     m "I couldn't have escaped even if I had tried."
     m "Finally, she placed her right wing over me as some kind of an impromptu dragon-blanket."
@@ -328,7 +328,7 @@ label sqb_naomi_apt_sexandeating:
     c "I don't mind if you tease me by objectifying me a little bit. I feel like I can trust you to have my best interests in mind."
     c "I really like you Naomi."
     play sound "fx/kiss.wav"
-    show naomi slsmile with dissolve
+    show naomi aroused with dissolve
     m "With that, she suddenly kissed me on my right cheek."
     play sound "fx/lewd/lickslow.ogg"
     m "As she was pulling back from the kiss, she licked me with her long tongue, leaving some saliva behind."
@@ -338,8 +338,8 @@ label sqb_naomi_apt_sexandeating:
     c "That sounds wonderful."
     c "Dragon hugs are certainly something I've never experienced before."
     Nm normal "I'm so happy you like me even though we're not of the same species."
-    Nm "I hope you understand that from my perspective, you humans are the cutest."    
-    Nm smile "I've never before had such a pink and squishy boyfriend."
+    Nm smile "I hope you understand that from my perspective, you humans are the cutest."    
+    Nm aroused "I've never before had such a pink and squishy boyfriend."
     c "You're going to make me blush."
     show naomi shy with dissolve
     m "Naomi looked to the side and then back at me. She seemed to be thinking about something."
@@ -523,8 +523,8 @@ label sqb_naomi_apt_sexandeating:
     show naomi normal with dissolve
     m "Before I had more time to ponder about my fate she walked in front of me."
     play music "mx/campfire.ogg"
-    Nm surprisedblush "This sofa is awfully small for cuddling. How about we have another session in the bedroom?"
-    Nm smile "If you play it nice, we could even go further than earlier."
+    Nm smile "This sofa is awfully small for cuddling. How about we have another session in the bedroom?"
+    Nm aroused "If you play it nice, we could even go further than earlier."
     Nm shy "I hope I'm not moving too quickly for you."
     m "(I guess she doesn't realize that from my perspective she's already asked to have sex with me.)"
     c "I would love some more dragon action."
@@ -547,7 +547,7 @@ label sqb_naomi_apt_sexandeating:
             play sound "fx/sheet.wav"            
             m "As Naomi got closer to her bedroom door, I quietly picked up my clothes and started sneaking towards the exit."
             m "Unfortunately, when I was halfway there Naomi heard me walking in the opposite direction."          
-            m "I felt her grab my hand and I was forced to turn around to face her."
+            m "I felt her grab my hand and I was forced to turn around to face her. I was startled, so I dropped some of my clothes on the floor."
             scene ecknaomiapt01 with dissolvemed
             show naomi concern with dissolve            
             m "(Oh no.)"
@@ -604,7 +604,8 @@ label sqb_naomi_apt_sexandeating:
             m "Somehow I knew that due to being this rude to Naomi, she wouldn't ever want to see me again."
             stop sound fadeout 1.0
             play sound "fx/steps/steps.ogg"
-            m "Shocked at what had just transpired, I slowly wandered back to my apartment and went straight to bed."
+            m "Shocked at what had just happened, I didn't even notice Sebastian napping outside Naomi's apartment."
+            m "Not even bothering to put my of my clothes on, I slowly wandered back to my apartment and went straight to bed."
             stop sound fadeout 1.0
             m "My dreams were full of fire and suffering, and I woke up several times during the night in cold sweat."
     
@@ -803,7 +804,7 @@ label sqb_naomi_apt_sexandeating:
     else:
         m "I looked closely at Naomi's groin, now seeing a previously well-hidden horizontal slit."
         m "She freed her grip enough on me so I could move my arm around in order to spread her slit to feel what I was dealing with."
-        show naomi smile with dissolve
+        show naomi aroused with dissolve
         play sound "fx/lewd/penfast.ogg"
         m "As I did it, Naomi shuddered in arousal and some love juices escaped from her cloaca onto my hand."
         play sound "fx/lewd/penslow.ogg"
@@ -818,7 +819,7 @@ label sqb_naomi_apt_sexandeating:
         show naomi smile with dissolve
         play sound "fx/lewd/lickslow.ogg"
         m "Suddenly, Naomi flicked my nostrils with her long tongue. I barely managed to receive it without shuddering uncontrollably."
-        Nm "...because that's where my eggs come from."
+        Nm aroused "...because that's where my eggs come from."
         m "(What kind of fantasies is she having right now?)"
         m "Looking down again after regaining my composure, it seemed that I needed to go down a little bit to reach her vaginal passage and also to have some leverage to thrust inside."       
  
@@ -868,7 +869,7 @@ label sqb_naomi_apt_sexandeating:
     Nm smile "Good little human."
     m "Naomi wrapped her wings around me like before." 
     m "In this moment, she was the only thing that existed for me in the world."
-    Nm "You belong to me now." 
+    Nm aroused "You belong to me now." 
     Nm "The only way to go is forward."
     m "She was right, because due to being locked in place by her strong legs, thrusting forward was just about the only movement I could do."
     Nm slsmile "I'll only let you go if you cum inside me."
