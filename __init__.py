@@ -82,12 +82,19 @@ def sqb1naomi(ml):
 
 def sqb2naomi(ml):
 
-       #Uncomment if you want a preview
-       #ml.find_label("eck_naomi_m2") \
-           #.search_say("Hi, Naomi. Likewise.") \
-           #.hook_to("sqb_naomi_m6_discussion_reality", condition='sqbpremounlocked == True') \
-           #.search_say("Welcome to my place.") \
-           #.link_from("sqb_naomi_m6_discussion_reality_end")
+       ml.find_label("sqb_naomi_apt_sexandeating") \
+           .search_say("I hope you understand that") \
+           .search_say("I trailed behind Naomi") \
+           .search_say("Her remark made me feel") \
+           .search_say("Could you fully loosen") \
+           .search_say("I bucked against Naomi") \
+           .search_say("Naomi walked in to") \
+           .search_say("I'll hold you to that") \
+           .search_say("I placed all the bread sticks") \
+           .search_say("I call my style of cooking") \
+           .hook_to("sqb_naomi_m6_discussion_reality", condition='sqbpremounlocked == True') \
+           .search_say("I love that philosophy.") \
+           .link_from("sqb_naomi_m6_discussion_reality_end")
 
        ml.find_label("eck_naomi_m2") \
            .search_menu("I can imagine.") \

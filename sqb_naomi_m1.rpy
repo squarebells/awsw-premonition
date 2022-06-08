@@ -72,18 +72,20 @@ jump sqb_naomi_cafe_discussion_end
 
 label sqb_naomi_cafe_eating:
 
-    c "You finished fast. Was the food really that tasty, or did you eat it quickly just because you were very hungry?"
-    Nm blank "Both, I guess. It was delicious as always, but like I said, I was starving because I didn't have a lunch break."
-    Nm concern "I am often simply too busy at work to have one."
+    c "You finished fast. Was the food really that tasty, or did you eat it quickly just because you're just a very hungry dragoness?"
+    Nm shy "Umm..."
+    Nm smile "Both, I guess. It was delicious as always, but like I said, I was starving because I didn't have a lunch break."
+    Nm concern "Often my work is simply too important to leave time for one."
     c "That's not good, especially if it happens regularly. Taking a lunch break makes you more efficient for the rest of the day." 
     c "You can't do cognitively demanding work as effectively if you're hungry." 
     c "For this reason in most workplaces where I come from, lunch breaks used to be mandatory."
     Nm confused "Interesting. I'll keep that in mind."
     c "Also, starving yourself makes you eat too much when you finally have the time, which can lead to gaining weight." 
-    c "Not that I think it would happen to you, as you're a big and athletic girl who I'm sure needs lots and lots of food to keep herself fed in the first place."
-    Nm shy "I'm not sure how to respond to that. Thank you, I guess?"
-    Nm surprisedblush "I do work out a lot."   
+    c "Not that I think it would happen to you, as you're a big and athletic dragoness who I'm sure needs lots and lots of food to keep herself fed in the first place."
+    Nm shy "Again, I'm not sure how to respond to that. Thank you, I guess?"
+    Nm surprisedblush "I suppose it's obvious that I work out a lot."   
     m "(Why did I even say that? I'm lucky she didn't take offense.)"
+    show naomi normal with dissolve
     m "(She might still be hungry because her portion was about the same size as mine.)" 
     m "(Since she probably needs to eat more than I do, should I ask her if she wants to order again?)"
     
@@ -101,7 +103,7 @@ label sqb_naomi_cafe_eating:
             jump sqb_naomi_cafe_eating_end
     
     Nm confused "Are you sure you're fine watching me eat?"
-    c "Not at all."
+    c "Of course."
     c "I don't mind staying with you a while longer. That way we could talk some more."
     Nm normal "In that case..."
     Nm "Adine, could you come over here?"
@@ -130,7 +132,7 @@ label sqb_naomi_cafe_eating:
     hide naomi with dissolve
     show naomi normal with dissolve
     
-    Nm blank "So, you said you wanted to talk some more. How about a story while we wait?"
+    Nm blank "So, you said you wanted to talk some more. How about a story while we wait for the food?"
     Nm confused "Did you say lunch breaks used to be mandatory in your world? I'm curious as to what changed that."
     c "It's a long one, so I'll just tell you the short version."
     c "Where to begin..."
@@ -139,8 +141,8 @@ label sqb_naomi_cafe_eating:
     show naomi surprised with dissolve
     c "Right now we pretty much live on a day to day basis, barely managing to get by."
     show naomi sad with dissolve
-    c "Uhh... anyway, I don't want to ruin the mood, so let's not talk about the negative stuff in any more detail."
-    Nm "I'm so sorry to hear what happened to your people. Thinking of humans suffering just breaks my heart."
+    c "Uhh... anyway, I don't want to ruin the mood, so let's not talk about negative stuff any more than we have to."
+    Nm "I'm so sorry to hear about something like that happening to your people. Thinking of humans suffering just breaks my heart."
     c "I appreciate that. In fact, I hope your people can help us."
     Nm confused "How exactly do you think we can help?"
     c "In short we need your production facilities. Right now it's practically impossible for us to build a production chain from scratch. It's very hard for us to make even basic electronic devices, let alone something like computers." 
@@ -183,7 +185,7 @@ label sqb_naomi_cafe_eating:
          c "This cocktail is really good. It brings me back to a time when things were less chaotic back in my home world."
          Nm normal "How do dragon cocktails compare to human ones?"
          c "It's not the type I normally drink, but it's great cocktail nonetheless."
-         c "On top of that, all of this is of course a nice experience to have."
+         c "On top of that, this evening is of course a nice experience to have after all that's happened."
          Nm smile "I'm happy to hear that."
          Nm normal "Care to tell me what your cocktail tastes like?"
          c "Hold on... let me think of how to best describe it."
@@ -221,7 +223,7 @@ label sqb_naomi_cafe_eating:
         #an alternate discussion here?
     
     
-    c "Anyway, care to tell me more about why you miss your lunch breaks often?"
+    c "Anyway, care to tell me more about why you miss your lunch breaks so often?"
     Nm normal "Not at all."
     
 jump sqb_naomi_cafe_eating_end
@@ -259,7 +261,7 @@ label sqb_naomi_cafe_money:
          c "I... um..."
          c "D-do you think it would work?"
          Nm smile "Of course it would! We like humans and and the benefits would be mutual."
-         c "That's...{w} a great idea! I've never even thought of anything like that being realistically possible."
+         c "That's...{w} a great idea! I've never even thought of anything like that being realistically achievable."
          c "I'll ask my superiors what they think next the time we're in contact."
          c "Thanks, Naomi."
          Nm "You're welcome."
@@ -279,7 +281,7 @@ label sqb_naomi_cafe_money:
     show naomi surprisedblush with dissolve
     m "Naomi paused to think for a moment."
     Nm shy "Um... are you sure you would be interested in forming a relationship outside your own species?"
-    m "(Fuck yes! Wait, who was that? What's going on?)"
+    m "(YES!!! Wait, who was that? What's going on?)"
     c "..."
     c "..."
     show naomi confused with dissolve
@@ -314,9 +316,9 @@ label sqb_naomi_cafe_money:
     
          Nm normal "I never thought of it like that."
          c "So, what do you think?"
-         Nm stern "..."
+         Nm concern "..."
          c "You do have interspecies dating here, right?"      
-         Nm annoyed "Let's change the topic."
+         Nm stern "Let's change the topic."
          c "Alright."
          c "How are your parents doing?"
          Nm normal "They recently moved their business to the big city, and I stayed back here on my own."
@@ -325,7 +327,7 @@ jump sqb_naomi_cafe_money_end
 
 label sqb_naomi_special_question:
 
-     Nm smile "You're asking that question again? You must be really interested to get to date me."
+     Nm smile "You're asking that question again? You must be really interested in dating me."
      Nm blank "Like I already implied, I don't. I just haven't found the right person yet."
      Nm "For example, the guys at the department are nice, but we finish at different hours, and they have their own hobbies and routines. Bryce goes drinking, Seb is more of an indoor person, and Mav is just... Mav."
 

@@ -10,6 +10,6 @@ A sequel to EvilChaosKnight's A Solitary Mind. Takes place in a timeline after A
  + BangOk by 4onen
 
 ### Resources credits:
-+ `bg/sqbnaomiapt04.jpg`: Background (not finished) edited by squarebells, original by Uncle Mugen.
++ `bg/sqbnaomiapt04.jpg`: Background edited (not finished) by squarebells, original by Uncle Mugen.
 + `fx/lewd/`: Sounds edited by squarebells, originally extracted from COM3D2.
 + `cr/naomi_*.png`: Put together from ECK Core's assets by squarebells.

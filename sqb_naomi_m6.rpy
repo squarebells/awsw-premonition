@@ -16,7 +16,7 @@ label sqb_naomi_m6_discussion_reality:
     scene black with dissolvemed
     
     play sound "fx/system3.wav"
-    c "Do you want to preview a scene from chapter 6?"
+    c "Now when that's out of the way, would you like to preview a scene from chapter 6?"
     menu:
         "Yes":
             m "Alright."
@@ -25,7 +25,7 @@ label sqb_naomi_m6_discussion_reality:
         "No":
             m "Alright."
             $ renpy.pause (1.0)
-            scene ecknaomiapt01 with dissolvemed
+            scene ecknaomiapt03 with dissolvemed
             play music "mx/airborne.mp3"
             show naomi smile with dissolve
             jump sqb_naomi_m6_discussion_reality_end
