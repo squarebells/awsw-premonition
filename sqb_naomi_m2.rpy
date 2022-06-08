@@ -563,13 +563,13 @@ label sqb_naomi_apt_sexandeating:
             Nm sad "Oh well. Did I move too quickly for you?"
             Nm "I thought we had a good time together."
             Nm concern "(This always happens to me.)"
-            m "(I need to try to salvage this somehow)"
+            m "(How do I salvage this without upsetting her?)"
             c "Uhh...{w} you've got it all wrong."
             Nm confused "What do you mean?"
             c "You've been good to me so far, and I've enjoyed my time with you."
             Nm concern "Go on."
             c "It's all me, not you. We can meet again some other time."
-            c "Also, I just remembered that I have some urgent ambassador duties that need doing."
+            c "I'm just leaving because I remembered that I have some urgent ambassador duties that need doing."
             $ renpy.pause (2.0)
             play music "mx/partingsong.ogg"
             Nm stern "Are you being serious right now?"
@@ -614,7 +614,8 @@ label sqb_naomi_apt_sexandeating:
             play sound "fx/steps/steps.ogg"
             m "Not even bothering to put my of my clothes on, I slowly wandered back to my apartment and went straight to bed."
             stop sound fadeout 1.0
-            m "My dreams were full of fire and suffering, and I woke up several times during the night in cold sweat."
+            m "My dreams were full of fire and suffering."
+            m "I woke up several times during the night in cold sweat."
     
             $ naomistatus = "bad"
             $ naomiavailable = False
@@ -997,7 +998,9 @@ label sqb_naomi_apt_sexandeating:
     #Sound?
     m "I picked a carton of orange juice from the back of the fridge."
     m "(She liked juice, right?)"
-     
+    #2 sounds
+    m "I took a glass and poured some orange juice in it."
+    m "(I guess I can give it to her when she comes back.)"
     
     m "(There's so much stuff in her kitchen you'd think she cooks at home.)"
     m "(Did she buy all this stuff just to impress me? That's cute.)"
@@ -1024,22 +1027,26 @@ label sqb_naomi_apt_sexandeating:
     Nm smile "Anyway, looks like my plan worked. I managed to bribe you into cooking for me."
     c "Oh, you got me. This is going to be fun, I promise."
     Nm "I'll hold you to that."
+    c "By the way, here's something to drink."
+    Nm "Thanks, I'll leave you to it. I don't think I would be of much help."
+    c "Sure, no problem. Just let me handle it."
     hide naomi with dissolve
-    m "With that, she walked up to the sofa and jumped on it in one, smooth motion."
-    m "I watched her as she flexed herself, not unlike a big cat."
+    m "With that, Naomi walked up to the sofa and placed the glass of juice on the table."
+    m "After that she jumped on the sofa in one smooth motion."
+    m "I kept watching her as she flexed, not unlike a big scaly cat."
     $ renpy.pause (1.5)
-    m "After a series of flexes, she noticed I was admiring her instead of preparing to cook."    
+    m "After finishing series of flexes and settling on the sofa, she noticed I was admiring her instead of preparing to cook."
+    
     show ecknaomicg1 at Pan ((250, 230), (620, 50), 15.0) with dissolvemed
-    $ renpy.pause (7.5)
-    
+    $ renpy.pause (7.5)    
     Nm "Like what you see?"
-    c "I think I saw plenty in the bedroom. Although...{w} I have to admit you look very cute on the sofa from over here."
+    c "I think I saw plenty in the bedroom. Although...{w} I have to admit that from over here you look very cute lying on the sofa."
     Nm "Hurry up with the cooking, or I'll have to eat you instead."
-    c "..."
-    
+    c "..."    
     scene black with dissolvemed
     $ renpy.pause (1.0)
     scene ecknaomiapt02 with dissolvemed
+    
     m "(Where was I?)"
     m "(Oh right, what else I should pick to cook? Let's see what we got.)"
     m "(This white, mint-flavored mouflon and aurochs cheese looks remarkably similar to something we used to have. I'll cut it to pieces and cook it with the noodles.)"
@@ -1105,7 +1112,8 @@ label sqb_naomi_apt_sexandeating:
     scene ecknaomiapt03 with dissolvemed
     show naomi normal with dissolve
     c "Please use the the fork at least for the fried noodles. Otherwise grease and sauces from the frying will be everywhere."
-    Nm smile "Fine, fine. I trust your judgment in these matters."
+    c "Oh yeah, and the scoop for the mashed potatoes."
+    Nm smile "Fine, fine. After all, I should trust your judgment in these matters."
     
     #Sound?
     Nm "I really like the crunchiness of your chicken."
