@@ -751,7 +751,8 @@ label sqb_naomi_apt_sexandeating:
         c "Maybe, but she's also rather promiscuous. Not that I mind, of course."
         c "So, how do you want to proceed from here?"
         Nm normal "I have an experiment of my own in mind."
-     
+    
+    #Naomi thinks having multiple partners is fine as long as you like her the most    
     elif modinfo.has_mod("BangOk?") and bangok_four_bryce1_unplayed == False:
         c "Actually, Our anatomies aren't too different. I had sex with Bryce after I went drinking with him."
         #More accurate references
@@ -960,25 +961,26 @@ label sqb_naomi_apt_sexandeating:
     Nm confused "We've only had sex once so far. That doesn't mean we should get married."
     Nm normal "Marriage is a long-term commitment."
     c "I'll prove myself worthy of you."
-    c "What should we do next?"
+    m "(What should we do next?)"
     c "Wanna take a shower together?"
-    Nm smile "Sure. I need to get cleaned up and I bet you do too."
+    Nm smile "Sure, we should get cleaned up."
     c "Alright."    
     stop music fadeout 2.0
     play sound "fx/rumble.ogg"
     $ renpy.pause (5.0)
     show naomi concern with dissolve
     m "(Looks like we forgot to eat.)"
-    Nm normal "Oh, you're hungry?" 
-    Nm "I've got some stuff we could cook together or we can order some food if you don't feel like doing that."
-    c "Let me handle it. I would love to cook for you."
+    Nm confused "Oh, you're hungry?" 
+    Nm normal "We could order some food if you wanted. Also, I stocked up my kitchen recently so cooking ourselves would be a good option as well."
+    c "I would love to cook for you."
     c "I want to pay back all the hospitality I've gotten here so far."
-    Nm shy "Oh, you don't have to. I enjoyed myself too."
-    c "I insist. I love cooking."
+    Nm shy "You really don't have to. I enjoyed myself too."
+    Nm normal "Wouldn't it be easier if we just ordered food and showered together while it arrives?"
+    c "Shower can wait. I really want to cook right now."
     c "Besides, I want to find out how similar your food products are to ours." 
-    c "Personally, I came here to learn more about your people after all."
-    Nm smile "Well, if you put it like that...{w} I won't turn down a delicious meal. I also would love to find out if human cooking is different from ours."
-    c "Don't worry, I'll cook a couple of dishes for you to try. We have plenty of time left after all."
+    c "One of my more personal reasons for coming here was to learn more about you."
+    Nm smile "Well, if you put it like that...{w} I suppose I will have to let you sate your curiosity. Also, I won't turn down a delicious home-cooked meal. Let's find out how different human cooking is from ours."
+    c "Then I'll cook a couple of dishes for you to try. I think we have enough time left for that."
     scene black with dissolvemed
     play sound "fx/door/door_open.wav"
     m "With those words, I walked up to the door and exited the bedroom back to Naomi's living room. She followed behind me."
@@ -986,7 +988,7 @@ label sqb_naomi_apt_sexandeating:
     play music "mx/airborne.mp3"
     show naomi normal with dissolve
     c "First things first, after our session I really need drink a liter of water, or two. Would you like something to drink as well?"
-    Nm "Sure, put it on the table over there." 
+    Nm "Sure, the glasses are in the cabinets over there." 
     Nm "I'll go clean myself up in the bathroom while you get set up. If you need any help figuring out where everything is just give me a shout."
     hide naomi with dissolve
     play sound "fx/door/door_open.wav"
@@ -994,6 +996,7 @@ label sqb_naomi_apt_sexandeating:
     m "(Let's see what kind of stuff she has in the fridge.)"
     play sound "fx/crapfridge.mp3"
     m "As I opened the fridge, I noticed that a lot of the packaging had familiar shapes and also somewhat similar labels to ours."
+    m "(That's familiar, but also very strange at the same time.)"
     m "(Oh right, she wanted to drink something.)"
     #Sound?
     m "I picked a carton of orange juice from the back of the fridge."
@@ -1008,16 +1011,22 @@ label sqb_naomi_apt_sexandeating:
     
     #Sound?
     m "(I think at first I should just move everything on the counter and separate what I definitely want to use.)"
-    m "With some effort, I piled all the foodstuffs and ingredients on Naomi's kitchen counter in an organized fashion."
-    m "(This is going to be a challenge.)"
-    m "(Second, I'll put back what I don't think I want to use.)"
+    m "With some effort, I moved all the foodstuffs and ingredients on Naomi's kitchen counter and then sorted them in an organized fashion."
+    m "(This is going to be fun.)"
+    m "(Now as the second order of business, I'll put back what I won't use.)"
     m "(I can always take something back if I need it after all.)"
+    #Placing sound
+    m "(I'm not going to take my chances with the fish. Maybe later, when I am more familiar with the types of fish here.)"
+    m "(I have no idea what's in these cans. Better play it safe.)"
+    #Placing sound
+    m "(Off you go!)"
+    
     $ renpy.pause (2.0)
-    m "(I am definitely going to fry some noodles. I'll use chicken as well, although I am not yet sure how.)"
+    m "(I definitely feel like frying some noodles. I'll use chicken as well, although I am not yet sure how.)"
     #Sound?
     m "(I'll take a pack of egg noodles and some lightly salted chicken fillets.)" 
-    m "(I like the flexibility of these fillets because you can always cut them to pieces if you want, but also season them yourself.)"
-    m "While I was pondering, Naomi came to check on what I was doing."   
+    m "(I like the flexibility of these fillets because you can always cut them to pieces if you want, and also season them how you like.)"
+    m "While I was pondering, Naomi came back to check on what I was doing."   
     show naomi normal with dissolve
     Nm "So, you found where everything was?"
     c "Yes, thank you."
@@ -1026,21 +1035,25 @@ label sqb_naomi_apt_sexandeating:
     Nm normal "I wanted to try something new since you were coming over. Going on a shopping spree just felt like the right thing to do."
     Nm smile "Anyway, looks like my plan worked. I managed to bribe you into cooking for me."
     c "Oh, you got me. This is going to be fun, I promise."
-    Nm "I'll hold you to that."
+    Nm blank "I'll hold you to that."
     c "By the way, here's something to drink."
-    Nm "Thanks, I'll leave you to it. I don't think I would be of much help."
+    Nm concern "Thanks, I'll leave you to it. I don't think I would be of much help with my clumsy hands."
+    c "I hope they're not too clumsy for eating, or I'll have to feed you."
+    Nm smile "Is that an offer? I would love to have my very own cute little human servant who cooks for me and feeds me."
+    c "Uhh..."
+    Nm normal "Anyway, are you sure you're fine with doing all this by yourself?"
     c "Sure, no problem. Just let me handle it."
     hide naomi with dissolve
     m "With that, Naomi walked up to the sofa and placed the glass of juice on the table."
     m "After that she jumped on the sofa in one smooth motion."
-    m "I kept watching her as she flexed, not unlike a big scaly cat."
+    m "I kept watching her as she flexed, not unlike a big scaly cat with cute frills."
     $ renpy.pause (1.5)
-    m "After finishing series of flexes and settling on the sofa, she noticed I was admiring her instead of preparing to cook."
+    m "After finishing her series of flexes and settling on the sofa, she noticed I was admiring her instead of preparing to cook."
     
     show ecknaomicg1 at Pan ((250, 230), (620, 50), 15.0) with dissolvemed
     $ renpy.pause (7.5)    
     Nm "Like what you see?"
-    c "I think I saw plenty in the bedroom. Although...{w} I have to admit that from over here you look very cute lying on the sofa."
+    c "I think I already saw plenty in the bedroom. Although...{w} I have to admit that you look very cute lying on the sofa."
     Nm "Hurry up with the cooking, or I'll have to eat you instead."
     c "..."    
     scene black with dissolvemed
@@ -1048,9 +1061,11 @@ label sqb_naomi_apt_sexandeating:
     scene ecknaomiapt02 with dissolvemed
     
     m "(Where was I?)"
-    m "(Oh right, what else I should pick to cook? Let's see what we got.)"
-    m "(This white, mint-flavored mouflon and aurochs cheese looks remarkably similar to something we used to have. I'll cut it to pieces and cook it with the noodles.)"
-    m "Nice, we got soy sauce, wing sauce, brown sugar and ginger power to season the fried noodles. Let's start by heating up the pan first.)"
+    m "(Oh right, what else I should pick? Let's see what we've got.)"
+    m "(This white, basil-flavored mouflon and aurochs cheese looks remarkably similar to something we used to have."
+    m "I cut open the packaging with a knife and then sliced off a piece for a taste test."
+    m "(Perfect, I'll cut this cheese to pieces and add it to the fried noodles.)"
+    m "(Also, we got soy sauce, wing sauce, brown sugar and ginger powder to season the whole thing. Let's start by heating up the pan first.)"
     #Sound?
     m "I put a pan on the cooktop and as I was going to turn on the stove I realized something."
     m "(Wait a minute.)"
@@ -1062,14 +1077,14 @@ label sqb_naomi_apt_sexandeating:
     m "(Toast, garlic, black pepper, salt and oregano here we go.)"
     m "(Wait, where's the olive oil?)"
     #Sound
-    m "I looked through all of her cabinets and found it hidden behind some boxes."
+    m "After looking through most of Naomi's kitchen cabinets and found it hidden behind some boxes."
     m "(There we go.)"
     Nm "Need help finding something?"
     c "I'm fine. I was just looking for some olive oil."
     m "(Finally, we can get started.)"
     #Sound?
     m "I turned on the oven and prepared two baking trays with baking paper."
-    m "(I suppose I'll have to cook a big pile. Luckily, slicing the toast won't take too long if I do it efficiently.)"
+    m "(I suppose I can cook a big pile. Slicing the toast won't take too long if I do it efficiently.)"
     m "(The oven probably isn't ready after I am done with the cutting but I can always start preparing for something else.)"
     m "(Then, when the bread sticks are baking I can start planning for the main courses."
     m "(Oh yeah, I have to also prepare the mix that is used to flavor the bread sticks. Who knows if the oven will be ready when I've done that."
@@ -1082,22 +1097,68 @@ label sqb_naomi_apt_sexandeating:
     m "I peeled the garlic and crushed them into a bowl with a pestle and mixed in some olive oil, pepper and salt to create the flavoring mix."
     m "I placed all the bread sticks on the two baking trays and used a spoon to apply the flavoring mix."
     m "(Yep, looks like I have some time left since the oven isn't ready yet.)"
+    m "(I should probably figure out what to do with the chicken next. Let's check again what ingredients we got.)"
+    m "(Looks like we have all the ingredients for batter plus some herb butter.)"
+    m "(Let's fill the chicken fillets with the butter and bread and fry them. I've never met anyone who doesn't like that.)"
+    m "I set another pan to heat up on the stove."
+    m "(Let's see... {w} eight chicken fillet should be enough for both of us. She can always eat the rest tomorrow if there's some left over.)"
+    m "I created a pocket inside each fillet by first cutting horizontally through the middle and then carefully expanding, making sure I don't create any additional holes."
+    m "Then I sliced all of the herb butter and stuffed it inside the fillets. After that I closed the hole in the fillet with a dragon toothpick."
+    m "This was the most tedious part of my cookout, but it was over quickly because I knew the effort would be well worth it."
+    m "(Finally.)"
+    m "(Looks like the oven is ready.)"
+    #Sound
+    m "I put the baking trays in the oven and set a timer for the bread sticks."
+    m "(Our hunger's going to be alleviated soon)"
+    m "(Next, I think we need a side dish for the breaded chicken fillets.)"
+    m "(Looks like we have some higher-starch potatoes that are perfect for mashing. Mashed potatoes would go really well with the breaded chicken fillets.)"
+    #Sound
+    m "I took a pot, filled it with water and set it to heat up on the cooktop."
+    m "(I wish I had realized this earlier, because boiling enough water for this many potatoes takes a while.)"
+    m "(Moving on to the potatoes. I think if I peel them really fast I'll be on time.)"
+    #Sound
+    m "I emptied all the potatoes into the sink and rinsed them thoroughly."
+    m "After peeling the potatoes at a lightning speed, I had a large bowl of potatoes ready to be cooked."
+    m "(Okay, another step done in my quest to cook for Naomi.)"
+    play sound "fx/dishes.ogg"
+    m "To continue preparing the chicken fillets I took three deep plates and filled them with flour, egg with a touch of water and breadcrumbs."
+    play sound "fx/egg.ogg"
+    m "(I need at least one more egg to start off with.)"
+    m "I dipped a fillet in first flour, then egg, followed by breadcrumbs and finally egg and breadcrumbs again and placed it on the ready-plate."
+    m "I repeated this process for the rest of the fillets."
+    m "(I think I'll time everything correctly if I cook four fillets at a time.)"
+    play sound "fx/fry.ogg"
+    m "I poured some olive oil onto the pan and carefully placed four fillets in."
+    m "(The proper way is to cook both sides with higher heat at first so I'll have to remember to turn them and lower the heat after. This should leave me time to focus on other stuff.)"
+    m "I set another timer for the chicken breasts."
+    m "(That was quick. Looks like the water is boiling already.)"
+    m "Carefully, so I wouldn't splash any hot water on myself, I poured the potatoes into the pot and set a new timer.)"
+    m "(Looks like the bread sticks are almost done. It doesn't really matter if I take them out a minute early so I might as well do it now to stay on schedule.)"
+    m "I took the bread stick trays out and used the baking paper to slide them onto a large plate."
+    
+    c "Naomi, please use a napkin after you've finished eating the bread sticks. Also, you don't have to leave any for me because I already ate a few."
+    Nm normal "Sure."
+    
+    if naomi1drink == "cocktail":
+    
+        Nm blank "By the way, [player_name], could you fix up a human cocktail for me?"
+        
+    
+    else:
+        pass
+    
+    scene ecknaomiapt02 with dissolvemed
+    m "(Let's focus on frying the noodles now.)"
     
     play sound "fx/fry.ogg"
     m "(Let's put in some giant prawns as well. Luckily they're already prepared and seasoned. I love the crunch.)"
-    m "After adding the prawns I put the lid on the pan and set another timer to 8 minutes."
+    m "After adding the prawns I put the lid on the pan and set yet another timer."
     m "(I'll have to remember to mix the noodles every once in a while. What should I do next?)"
-    
-    m "(Perfect, we have all the ingredients for batter plus some herb butter. The last one is really lucky for us, because obviously I wouldn't have had the time to make some myself.)"
-    m "(I know what to do with the chicken fillets now.)"
-    
-    m "(Eight chicken breasts should be enough for both of us. She can always eat the rest tomorrow if there's some left over.)"
-    m "This was the most time-consuming part of my cookout, but it was over quickly because I knew the effort would be well worth it."
     
     m "As I was mashing the potatoes, I poured in some milk."
     m "(That should be enough for now. It's better to be careful to not use too much milk at first because I can always put more later.)"
     
-    m "(Now I'll just have to cook rest of the breaded chicken breasts. Although I can can only do two at a time.)"
+    m "(Now I'll just have to cook rest of the breaded chicken breasts.)"
     m "(Could I make another dish in the mean time? What's simple but delicious?)"
     m "(How about a bacon omelet? I could also put some other ingredients like paprika for texture and flavor. Sounds great to me.)"
     #Sound?
@@ -1123,6 +1184,18 @@ label sqb_naomi_apt_sexandeating:
     
     c "I call my style of cooking simple but delicious. This philosophy leaves more time for eating."
     Nm smile "I love that philosophy. Eating is of course the most important part."
+    
+    Nm normal "I almost forgot to ask. How did our foodstuffs compare to human ones?"
+    c "Well..."
+    c "How should I put this...{w} It's really weird that everything is almost exactly the same even down to labeling, with only minor differences."
+    c "Some things taste a little different though. If I was being conspiratorial I would say that you were trying to imitate our food products with what's available to you at this time."
+    Nm confused "Wait, really? Did you figure out why that is?"
+    c "I honestly don't know for sure. If I had to guess, the human that allegedly visited your world a long time ago had a bigger impact on your development than you think."
+    Nm normal "Oh yes, that thing from the history class. I had completely forgotten about it until you mentioned it now."
+    c "Also, similar sentient species usually developing along the same lines probably has something to do with it."
+    Nm shy "I'd say despite physical differences our species are pretty similar because we're able to have a romantic relationship with each other."
+    c "You make a good point as usual, Naomi. I think we make a great team because of differences but more importantly due to similarities."
+    Nm smile "Likewise."
      
     stop music fadeout 1.0
     hide naomi with dissolve
@@ -1134,6 +1207,7 @@ label sqb_naomi_apt_sexandeating:
     
     #Make it so that its very late when the PC leaves, since he and Naomi did a lot more stuff in this timeline
     #Copy a bunch of text from the original and edit it
+    #Naomi kisses PC instead of flicking with her tongue and Sebastian comments on it after he and PC leave
      
 jump sqb_naomi_apt_sexandeating_end
 
