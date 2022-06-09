@@ -1,5 +1,7 @@
 # AwSW-Premonition
 A sequel to EvilChaosKnight's A Solitary Mind. Takes place in a timeline after ASM's ending A.
+
+You need to have acquired A Solitary Mind's best ending to unlock this. The mod assumes the PC is male, for now.
  
 ### Requirements: 
  + Magmalink by jakzie2 
@@ -8,6 +10,7 @@ A sequel to EvilChaosKnight's A Solitary Mind. Takes place in a timeline after A
  
 ### Optional requirement: 
  + BangOk by 4onen
+ + Savior by EvilChaosKnight (eventually)
  
 ### Recommended:
  + Side Images by 4onen
