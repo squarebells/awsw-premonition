@@ -90,7 +90,9 @@ def sqb2naomi(ml):
            .search_say("I bucked against Naomi") \
            .search_say("Naomi walked in to") \
            .search_say("I'll hold you to that") \
+           .search_say("I opened a bag of toast") \
            .search_say("I placed all the bread sticks") \
+           .search_say("I'll go back to the kitchen now") \
            .search_say("I call my style of cooking") \
            .hook_to("sqb_naomi_m6_discussion_reality", condition='sqbpremounlocked == True') \
            .search_say("I love that philosophy.") \

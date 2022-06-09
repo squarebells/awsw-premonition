@@ -971,7 +971,7 @@ label sqb_naomi_apt_sexandeating:
     show naomi concern with dissolve
     m "(Looks like we forgot to eat.)"
     Nm confused "Oh, you're hungry?" 
-    Nm normal "We could order some food if you wanted. Cooking ourselves works as well if that's you want us to."
+    Nm normal "We could order some food if you wanted. Cooking ourselves works as well if that's you want to do."
     c "I would love to cook for you."
     c "I want to pay back all the hospitality I've gotten here so far."
     Nm shy "You really don't have to. I enjoyed myself too."
@@ -1191,13 +1191,13 @@ label sqb_naomi_apt_sexandeating:
     m "I held the vegetables in a neat pile on the cutting board while my knife work turned them into pieces of various sizes."
     m "After finishing with the vegetables I also cut the cheese I had selected previously."
     m "The noodles were ready now, so I took a lid and used it to carefully pour all the hot water out into the sink and then poured some cold water back in to stop the cooking process."
-    play sound loop "fx/fry.ogg"
+    play soundloop "fx/fry.ogg"
     m "I poured in some oil on the large frying pan and used my hands to add the cold noodles for cooking."
     m "After that I added in all the spices and sauces I had selected earlier: soy sauce, wing sauce, brown sugar and ginger powder."
     m "Then finally after mixing a bit, I added in the cut vegetables and cheese." 
     m "(Let's put in some giant prawns as well, because I love the crunch. Luckily they're already prepared and seasoned.)"
     m "After adding the prawns I mixed again, put the lid on the pan and set yet another timer."
-    stop sound loop fadeout 1.0
+    stop soundloop fadeout 1.0
     m "(I'll have to remember to mix the noodles every once in a while. What should I do next?)"
     
     m "As I was mashing the potatoes, I poured in some milk."
