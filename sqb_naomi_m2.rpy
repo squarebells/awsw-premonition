@@ -987,7 +987,7 @@ label sqb_naomi_apt_sexandeating:
     scene ecknaomiapt02 with dissolvemed
     play music "mx/airborne.mp3"
     show naomi normal with dissolve
-    c "First things first, after our session I really need drink a liter of water, or two. Would you like something to drink as well?"
+    c "I really need drink a liter of water, or two. Would you like something to drink as well?"
     Nm "Sure, the glasses are in the cabinets over there." 
     Nm "I'll go clean myself up in the bathroom while you get set up. If you need any help figuring out where everything is just give me a shout."
     hide naomi with dissolve
@@ -999,11 +999,14 @@ label sqb_naomi_apt_sexandeating:
     m "(That's familiar, but also very strange at the same time.)"
     m "(Oh right, she wanted to drink something.)"
     #Sound?
-    m "I picked a carton of orange juice from the back of the fridge."
+    m "I picked a carton of juice from the back of the fridge."
     m "(She liked juice, right?)"
     #2 sounds
-    m "I took a glass and poured some orange juice in it."
+    m "I took a glass and poured some juice in it."
     m "(I guess I can give it to her when she comes back.)"
+    #Pouring and drinking sound queue
+    m "I took another glass, poured juice in it and drank it in one go."
+    m "(That felt good. It tastes a bit like orange juice.)"
     
     m "(There's so much stuff in her kitchen you'd think she cooks at home.)"
     m "(Did she buy all this stuff just to impress me? That's cute.)"
@@ -1135,18 +1138,38 @@ label sqb_naomi_apt_sexandeating:
     m "Carefully, so I wouldn't splash any hot water on myself, I poured the potatoes into the pot and set a new timer.)"
     m "(Looks like the bread sticks are almost done. It doesn't really matter if I take them out a minute early so I might as well do it now to stay on schedule.)"
     m "I took the bread stick trays out and used the baking paper to slide them onto a large plate."
-    
-    c "Naomi, please use a napkin after you've finished eating the bread sticks. Also, you don't have to leave any for me because I already ate a few."
-    Nm normal "Sure."
+    #Crunch sound
+    m "I ate a few to offset my worst hunger. They were crunchy, oily and garlicky, like I had expected."
+    m "(Delicious. I'm sure Naomi will like these.)"
+    m "(I'll have to sure Naomi doesn't make a huge mess while eating these. She'll probably ask me to clean it up if she does.)"
+    m "I picked up the bread stick plate along with some rather large napkins and went to the living room where Naomi was."
+    scene ecknaomiapt03 with dissolvemed
+    show naomi normal with dissolve
+    c "Here's the first course. I hope you aren't too hungry already."
+    Nm "I was just joking. Actually, I can go a long time without eating if I need to. I just need to eat a lot to keep myself fit for duty."
+    Nm smile "Thank you, [player_name]."
+    c "You're welcome, Naomi."    
+    c "Please use the napkins after you've finished eating the bread sticks. Also, avoid touching any of the furniture while you're doing that."
+    Nm confused "Good point."
+    Nm blank "You're really thinking of everything, aren't you?"
+    #Crunch sound loop
+    m "Naomi picked up a handful of bread sticks and stuffed them in her mouth, crunching them loudly."
+    Nm smile "Delicious!"
+    Nm normal "Why aren't you eating any? There's enough for both of us."
+    c "I already ate a couple for my hunger. You should remember that I can't eat as much as you so I'll have to leave some room for the other dishes."
+    Nm "Sounds good. That means more for me then."   
     
     if naomi1drink == "cocktail":
     
-        Nm blank "By the way, [player_name], could you fix up a human cocktail for me?"
-        
+        Nm blank "By the way, could you fix up a human cocktail for me? I need something to drink with these bread sticks."
+        c "Sure, I'll look at what ingredients you got and make a good cocktail."
+        Nm smile "Thanks a lot. I knew I could count on you on that front."
     
     else:
         pass
     
+    c "I'll go finish the rest of the dishes."
+    Nm smile "Thank you so much."   
     scene ecknaomiapt02 with dissolvemed
     m "(Let's focus on frying the noodles now.)"
     
@@ -1174,13 +1197,18 @@ label sqb_naomi_apt_sexandeating:
     show naomi normal with dissolve
     c "Please use the the fork at least for the fried noodles. Otherwise grease and sauces from the frying will be everywhere."
     c "Oh yeah, and the scoop for the mashed potatoes."
-    Nm smile "Fine, fine. After all, I should trust your judgment in these matters."
+    Nm smile "Fine, fine. There's no need to be so fussy with me."
     
-    #Sound?
-    Nm "I really like the crunchiness of your chicken."
-    c "I love the taste of batter, so I breaded the chicken twice."
-    Nm smile "Interesting. Even more than that I love how the herb butter just bursts inside your mouth when you bite in."
+    #Crunch sound
+    m "Naomi picked up one of the breaded chicken breasts with her hand and ate it whole."
+    Nm smile "This chicken is so delicious."
+    Nm normal "I really like the crunchiness."
+    c "Same. I love the taste and texture of batter, so I breaded it twice."
+    Nm blank "Interesting. Even more than that I love how the herb butter just bursts inside your mouth when you bite in."
     c "Thank you. They are indeed a lot juicier than your basic chicken breasts."
+    c "It must also be a different experience for you because you can eat it whole but I can't."
+    Nm smile "That's an interesting point. You're starting to sound an expert on how to cook for big, hungry dragons."
+    c "Well, I am certainly planning to hone that skill even further."
     
     c "I call my style of cooking simple but delicious. This philosophy leaves more time for eating."
     Nm smile "I love that philosophy. Eating is of course the most important part."
