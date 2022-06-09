@@ -10,11 +10,11 @@ You need to have acquired A Solitary Mind's best ending to unlock this. The mod 
  
 ### Optional requirement: 
  + BangOk by 4onen
- + Savior by EvilChaosKnight (eventually)
  
 ### Recommended:
  + Side Images by 4onen
-
+ + Savior by EvilChaosKnight (eventually)
+ 
 ### Resources credits:
 + `bg/sqbnaomiapt04.jpg`: Background edited (not finished yet) by squarebells, original by Uncle Mugen.
 + `fx/lewd/`: Sounds edited by squarebells, originally extracted from COM3D2.
