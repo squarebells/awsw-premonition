@@ -544,6 +544,7 @@ label sqb_naomi_apt_sexandeating:
     menu:
         "Follow Naomi to her bedroom.":
             m "I decided to resist the sudden, unexplained urge I had."
+            $ naomistatus = "girlfriend"
             pass
          
         "Escape while you still can.":
@@ -636,15 +637,15 @@ label sqb_naomi_apt_sexandeating:
     m "I trailed behind Naomi as she walked up to her bedroom door and nudged it open with her snout." 
     scene eckannabedroom4 with dissolvemed
     show naomi normal with dissolve
-    Nm "Here we are. I hope you feel welcome."
-    Nm smile "When we first met I didn't think I would invite you to my bedroom on our second date." 
+    Nm "Here we are. Welcome to my bedroom."
+    Nm smile "When we first met I didn't expect to invite you here on our second date." 
     Nm "Like I said before, there might be something special between us."
     Nm shy "I guess we'll find out about that soon enough."
-    c "Interesting. Did you finally come around to admitting that our get-togethers were actually dates?"
+    c "Interesting. Did you finally come around to admitting that our meetups were actually dates from the get-go?"
     Nm stern "Don't ruin the mood by being a smart ass."
     c "Sorry."
     show naomi smile with dissolve
-    m "After my apology Naomi walked to up to the side of the bed."
+    m "After silently accepting my apology Naomi walked to up to the side of her bed."
     show naomi aroused with dissolve
     m "She looked back at me and gave me an inviting look."
     play sound "fx/bed.ogg"
@@ -1227,20 +1228,27 @@ label sqb_naomi_apt_sexandeating:
     c "Without further ado, bon appétit!"
     Nm confused "What?"
     c "We can start eating."
-    #Crunch sound
+    #Crunch/eating sound
     m "Naomi took one of the breaded chicken breasts with her hand and ate it whole."
     Nm smile "This chicken is so delicious."
     Nm normal "I really like the crunchiness."
     c "Same. I love the taste and texture of batter, so I breaded it twice."
-    Nm blank "Interesting. Actually, even more than that I love how the herb butter just bursts inside your mouth when you chew in."
-    c "Thank you. They are indeed a lot juicier than your basic chicken breasts."
+    Nm blank "Interesting. Actually, even more than that I love how the herb butter just bursts inside your mouth when you bite in."
+    c "They are indeed a lot juicier than your basic chicken breasts."
     c "It must also be a different experience for you because you can eat it whole but I can't."
     Nm smile "That's an interesting point. You're starting to sound an expert on how to cook for big, hungry dragons."
     c "Well, I am certainly planning to hone that skill even further."
-    Nm aroused "I'm really looking forward to that, [player_name]."
-    
-    c "I call my style of cooking simple but delicious. This philosophy leaves more time for eating."
+    Nm aroused "I'm really looking forward to that, [player_name]."   
+    c "I think I will call my style of cooking simple but delicious. This philosophy leaves more time for eating."
     Nm smile "I love that philosophy. Eating is of course the most important part."
+    c "Anyway, you should try the chicken with some sauce."
+    show naomi normal with dissolve
+    m "I took the saucière and poured some of the tasty, citric sauce on one of the breaded chicken breasts."
+    c "There you go."
+    #Eating sound
+    m "Without saying anything, Naomi picked up the chicken with the tips of her fingers and tossed it in her maw."
+    Nm smile "This is amazing! I'm starting to really love human cuisine. It's so familiar but yet a little bit different."
+    c "The sauce also works well with mashed potatoes, so you should definitely add it there too."
     
     Nm normal "I almost forgot to ask. How did our foodstuffs compare to human ones?"
     c "Well..."
@@ -1265,6 +1273,16 @@ label sqb_naomi_apt_sexandeating:
     #Make it so that its very late when the PC leaves, since he and Naomi did a lot more stuff in this timeline
     #Copy a bunch of text from the original and edit it
     #Naomi kisses PC instead of flicking with her tongue and Sebastian comments on it after he and PC leave
+    
+    #$ naomiscenesfinished = 2
+    #if chapter4unplayed == False:
+        #jump chapter4chars
+    #elif chapter3unplayed == False:
+        #jump chapter3chars
+    #elif chapter2unplayed == False:
+        #jump chapter2chars
+    #else:
+        #jump chapter1chars  
      
 jump sqb_naomi_apt_sexandeating_end
 

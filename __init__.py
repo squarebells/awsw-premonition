@@ -1,6 +1,8 @@
 from modloader import modast, modinfo
 from modloader.modclass import Mod, loadable_mod
 import jz_magmalink as ml
+import renpy.ast as ast
+import renpy.parser as parser
 
 @loadable_mod
 class Premonition(Mod):
@@ -12,6 +14,7 @@ class Premonition(Mod):
     
     @classmethod
     def mod_load(cls):
+         naomistatusboxes(ml)
          sqbintronaomi(ml)
          sqb1naomi(ml)
          sqb2naomi(ml)
@@ -19,7 +22,28 @@ class Premonition(Mod):
     @staticmethod
     def mod_complete():
         pass
-         
+
+def naomistatusboxes(ml): #Copied straight out of ASM, couldn't get magmalink's implementation to work
+
+       tocompile = """
+       screen dummy:
+             vbox:
+                 xalign 0.2096 yalign 0.655
+                
+                 if persistent.naomimet:
+            
+                     if naomistatus == "girlfriend":
+            
+                         add "image/ui/status/naomigirlfriend.png" xalign 0.5 at popup_offcenter
+                         text _("Status: {b}Girlfriend{/b}\\nScenes played: {b}[naomiscenesfinished]{/b}") style "status_text" at popup_offcenter
+                         
+       """
+       compiled = parser.parse("FNDummy", tocompile)
+       for node in compiled:
+           if isinstance(node, ast.Init):
+               for child in node.block[0].screen.children:
+                   modast.get_slscreen('status').children.append(child)
+
 def sqbintronaomi(ml):
     
       ml.find_label("eck_naomi_introduction") \
@@ -93,7 +117,7 @@ def sqb2naomi(ml):
            .search_say("I opened a bag of toast") \
            .search_say("I placed all the bread sticks") \
            .search_say("I'll go back to the kitchen now") \
-           .search_say("I call my style of cooking") \
+           .search_say("I think I will call my style of cooking") \
            .hook_to("sqb_naomi_m6_discussion_reality", condition='sqbpremounlocked == True') \
            .search_say("I love that philosophy.") \
            .link_from("sqb_naomi_m6_discussion_reality_end")
