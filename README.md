@@ -18,4 +18,5 @@ You need to have acquired A Solitary Mind's best ending to unlock this. The mod 
 ### Resources credits:
 + `bg/sqbnaomiapt04.jpg`: Background edited (not finished yet) by squarebells, original by Uncle Mugen.
 + `fx/lewd/`: Sounds edited by squarebells, originally extracted from COM3D2.
++ `fx/sliceslow.ogg`: Edited from base game sound assets by squarebells.
 + `cr/naomi_*.png`: Put together from ECK Core's assets by squarebells.
