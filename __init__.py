@@ -115,7 +115,7 @@ def sqb2naomi(ml):
            .search_say("Naomi walked in to") \
            .search_say("I'll hold you to that") \
            .search_say("I opened a bag of toast") \
-           .search_say("I placed all the bread sticks") \
+           .search_say("After that I placed all") \
            .search_say("I'll go back to the kitchen now") \
            .search_say("I think I will call my style of cooking") \
            .search_say("You make a good point as usual") \

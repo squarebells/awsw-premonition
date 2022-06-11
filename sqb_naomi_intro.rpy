@@ -8,7 +8,7 @@
   
 label sqb_naomi_endingcheck:
 
-    m "While I was focusing too much on what was happening outside..."
+    c "While I was focusing too much on what was happening outside..."
     
     menu:
         "I was suddenly interrupted.":

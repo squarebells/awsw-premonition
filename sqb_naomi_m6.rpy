@@ -16,14 +16,14 @@ label sqb_naomi_m6_discussion_reality:
     scene black with dissolvemed
     
     play sound "fx/system3.wav"
-    c "Now when that's out of the way, would you like to preview a scene from chapter 6?"
+    s "Now when that's out of the way, would you like to preview a scene from chapter 6?"
     menu:
         "Yes":
-            m "Alright."
+            s "Alright."
             pass
         
         "No":
-            m "Alright."
+            s "Alright."
             $ renpy.pause (1.0)
             scene ecknaomiapt03 with dissolvemed
             play music "mx/airborne.mp3"
@@ -42,8 +42,8 @@ label sqb_naomi_m6_discussion_reality:
     play sound "fx/door/doorclose3.wav"
     $ renpy.pause (1.0)
     
-    m "(Another great day at work. Regardless, I hope I can soon do something other than just catalog information from the PDAs.)"
-    m "I had asked Naomi to come over after her shift to try out some of the new dishes I had come up with."
+    m "(Another great day at work. Regardless of that, I hope I can soon start doing something other than just cataloging information from the PDAs.)"
+    m "I had asked Naomi to come over after her shift to try out some of the new dishes I had come up with during my time here."
     m "(Time to take a shower.)"
     play sound "fx/door/door_open.wav"
     scene bath with dissolve
