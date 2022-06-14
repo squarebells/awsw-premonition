@@ -1,4 +1,26 @@
-label sqb_naomi_apt_chairs:
+label sqb_naomi_m2_foodskip:
+    
+    stop music fadeout 1.0
+    play sound "fx/system3.wav"
+    s "Would you like to skip the cooking and eating?"
+    menu:
+        "Yes":
+            s "Alright."
+            scene black with dissolvemed
+            $ renpy.pause (1.0)
+            scene ecknaomiapt03 with dissolvemed
+            play music "mx/airborne.mp3"
+            show naomi normal with dissolve
+            jump sqb_naomi_m2_ending
+        
+        "No":
+            s "Alright."
+            play music "mx/airborne.mp3"
+            pass
+
+jump sqb_naomi_m2_foodskip_end
+
+label sqb_naomi_m2_chairs:
 
     $ renpy.pause (0.5)
     $ naomi2mood += 2
@@ -13,9 +35,9 @@ label sqb_naomi_apt_chairs:
     Nm "Enough about my chairs. Let's go rest on the sofa."
     scene ecknaomiapt03 with dissolvemed
 
-jump sqb_naomi_apt_chairs_end
+jump sqb_naomi_m2_chairs_end
 
-label sqb_naomi_apt_differences:
+label sqb_naomi_m2_differences:
 
     c "For example, have you ever considered how big you are compared to a human?"
     c "If you hugged someone like me, you'd make them feel better in no time."
@@ -46,9 +68,9 @@ label sqb_naomi_apt_differences:
     show naomi shy with dissolve
     c "How long does flying across the town even take you?"
 
-jump sqb_naomi_apt_differences_end
+jump sqb_naomi_m2_differences_end
 
-label sqb_naomi_apt_balcony:
+label sqb_naomi_m2_balcony:
 
     c "Coming on the balcony was a great idea. I really love feeling the sea air again." 
     c "It's been a long time since I've been able to visit a seaside beach because our city-state is in middle of a desert."
@@ -76,9 +98,9 @@ label sqb_naomi_apt_balcony:
     Nm "I'm glad to hear that."
     c "Anyway, in addition to the fresh sea air I really like the view as well."
 
-jump sqb_naomi_apt_balcony_end
+jump sqb_naomi_m2_balcony_end
 
-label sqb_naomi_apt_movie:
+label sqb_naomi_m2_movie:
 
     #A better transition?
     c "I couldn't agree more."
@@ -124,7 +146,7 @@ label sqb_naomi_apt_movie:
             scene ecknaomiapt03 with dissolvemed
             play music "mx/airborne.mp3"
             
-            jump sqb_naomi_apt_movie_end
+            jump sqb_naomi_m2_movie_end
     
     #Storytime music?
     c "Where to begin..."
@@ -308,9 +330,9 @@ label sqb_naomi_apt_movie:
     scene ecknaomiapt03 with dissolvemed
     play music "mx/airborne.mp3"
 
-jump sqb_naomi_apt_movie_end
+jump sqb_naomi_m2_movie_end
 
-label sqb_naomi_apt_sexandeating:
+label sqb_naomi_m2_sexandeating:
 
     $ naomi2mood += 4
     $ naomiromance += 10
@@ -952,12 +974,12 @@ label sqb_naomi_apt_sexandeating:
     Nm smile "Pun intended, of course."
     Nm shy "Anyway, I doubt your output is enough to accomplish that. You're welcome to try your best anyway." 
     $ renpy.pause (2.0)
-    m "I couldn't hold out any longer."
+    m "I couldn't hold it any longer."
     stop soundloop fadeout 2.0 
     play sound "fx/lewd/cum.ogg"
     queue sound "fx/lewd/penslow.ogg"
     $ renpy.pause (1.0)
-    m "I grunted loudly as I came."
+    m "I grunted as I came."
     c "Urgh!!!Ahh!!!{nw}" with hpunch
     play sound "fx/lewd/penslow.ogg"
     queue sound "fx/lewd/cum.ogg"
@@ -1005,21 +1027,21 @@ label sqb_naomi_apt_sexandeating:
     m "(What should we do next?)"
     c "Wanna take a shower together?"
     Nm smile "Sure, we should get cleaned up."
-    c "Alright."    
+    c "Let's go."    
     play sound "fx/rumble.ogg"
-    $ renpy.pause (5.0)
+    $ renpy.pause (4.0)
     show naomi concern with dissolve
-    m "(Looks like we forgot to eat.)"
-    Nm confused "Oh, you're hungry?" 
-    Nm normal "We could order some food if you wanted. Cooking ourselves works as well if that's what you'd want to do."
-    c "Having a fun time in the kitchen sounds great to me. I want to pay back all the hospitality I've gotten here so far by pampering you back."
+    m "(It seems that we forgot to eat.)"
+    Nm confused "Oh, you're hungry?"        
+    Nm normal "We could order some food if you wanted. Cooking ourselves works as well if that's something you'd want to do."
+    c "A fun time in the kitchen sounds great to me. I want to reciprocate all the hospitality I've gotten here so far by pampering you back."
     Nm shy "You really don't have to. I enjoyed myself too."
     Nm normal "Wouldn't it be easier if we just placed an order and showered together while waiting for the food to arrive?"
     c "Shower can wait. I really feel like cooking right now."
     c "Besides, I also want to find out how similar your food products are to ours. One of my personal reasons for coming here was to learn more about your society and customs."
     c "For now I'll have to say that food's been pretty similar to ours. Still, I'd be very interested in delving deeper into this by getting some first-hand experience."
     Nm smile "Well, if you put it like that...{w} I suppose I will have to let you sate your curiosity. Furthermore, I would never turn down a delicious home-cooked meal." 
-    Nm normal "I'd also be very interested in finding how different human cooking is from ours."
+    Nm normal "Like you, I'd also be very interested in finding out how different human cooking is compared to ours."
     c "Looks like that's settled then. I'll cook a couple of dishes for you to try out."
     Nm smile "I can't wait."
     c "Me neither."
@@ -1031,7 +1053,7 @@ label sqb_naomi_apt_sexandeating:
     c "First, I really need drink a liter of water, or two. Would you like something to drink as well?"
     Nm "Sure. The glasses are in the kitchen cabinets." 
     Nm "I'll go wash myself while you get set up. If you need any help figuring out where everything is just give me a shout."
-    hide naomi with dissolve
+    hide naomi with easeoutleft
     play sound "fx/door/door_open.wav"
     queue sound "fx/door/doorclose.ogg"
     m "Naomi hurried off to what I presumed to be the bathroom."
@@ -1077,32 +1099,32 @@ label sqb_naomi_apt_sexandeating:
     play sound "fx/faucet1.ogg"
     queue sound "fx/button_press.ogg"
     m "(I poured in water from the kitchen faucet into an electric teapot and turned it on to heat water for the noodles.)"
-    m "(It's a lot less effort to heat the water like this. Also, the water stays hot longer inside the teapot."
+    m "(It's a lot less effort to heat the water like this. Also, the water stays hot longer inside the teapot.)"
     play sound "fx/door/door_open.wav"
     queue sound "fx/door/doorclose.ogg"
     m "As I was pondering on how to proceed, Naomi came back to check on what I was doing."   
-    show naomi normal with dissolve
+    show naomi normal flip with easeinleft
     Nm "Did you manage to find out where everything is?"
     c "Yes, thank you. I noticed that you have so much stuff in your kitchen that I'd have guessed you cooked a lot if you already didn't tell me otherwise."
-    Nm shy "Well..."
-    Nm normal "I wanted to try out something new since you were coming over. Going on a shopping spree just felt like the right thing to do after work."
-    Nm smile "Anyway, looks like my plan worked. I managed to bribe you into cooking for me."
+    Nm shy flip "Well..."
+    Nm normal flip "I wanted to try out something new since you were coming over. Going on a shopping spree just felt like the right thing to do after work."
+    Nm smile flip "Anyway, looks like my plan worked. I managed to bribe you into cooking for me."
     c "Oh, you got me. This is going to be fun, I promise."
     Nm "I'll hold you to that."
     c "By the way, here's something to drink."
-    Nm normal "Thanks a lot. I'll leave you to it." 
-    Nm concern "I don't think I would be of much help with my clumsy hands."
+    Nm normal flip "Thanks a lot. I'll leave you to it." 
+    Nm concern flip "I don't think I would be of much help with my clumsy hands anyway."
     c "I hope they're not too clumsy for eating, or else I'll have to feed you."
-    Nm smile "Is that an offer? I would love to have my very own cute little human servant who cooks for me and feeds me every time I am hungry."
+    Nm smile flip "Is that an offer? I would love to have my very own cute little human servant who feeds me every time I am hungry."
     c "Uhh..."
     Nm "You're so cute when flustered."
-    Nm normal "Are you sure you're fine doing all this by yourself?"
+    Nm normal flip "Are you sure you're fine doing all this by yourself?"
     c "Sure, it's no problem. Just let me handle everything."
-    hide naomi with dissolve
-    m "With my assurance Naomi walked up to the sofa, placed the glass of juice on the table and slurped some through the straw."
+    hide naomi flip with easeoutright
+    play sound "fx/coffee.wav"
+    m "With my assurance, Naomi walked past me to the living room, placed the glass of juice on the table and loudly slurped some through the straw."
     m "After that she jumped on the sofa in one smooth motion and started flexing."
-    m "I kept watching her as she flexed. She looked like a big scaly cat with wings and cute webbing."
-    $ renpy.pause (2.0)
+    m "I kept watching Naomi as she did it. She looked like a big scaly cat with wings and cute webbing."
     m "After finishing her exercise and settling on the sofa, she noticed I was admiring her instead of preparing to cook."
     
     show ecknaomicg1 at Pan ((250, 230), (620, 50), 15.0) with dissolvemed
@@ -1270,7 +1292,7 @@ label sqb_naomi_apt_sexandeating:
     m "The noodles were ready now, so I took a pot lid and used it together with the pot to carefully pour all the hot water into the sink. Then I poured in some cold water stop the cooking process."
     m "Unfortunately, I didn't have a cooktop ready so frying the noodles would have to wait."
     
-    if naomi1drink == "cocktail":#Cocktail shaking and juicer sounds would be nice.
+    if naomi1drink == "cocktail":
     
         stop sound fadeout 1.0
         m "(I suppose I have time to make a cocktail in the meantime. I'll be able to stay on schedule because it won't take that long.)"
@@ -1295,25 +1317,27 @@ label sqb_naomi_apt_sexandeating:
         #Juicer sound?
         m "Next I took some limes, cut them in half and juiced them into some delicious, fresh lime juice for the cocktail."
         play sound "fx/cabinet.ogg"
-        queue sound "fx/pour.ogg"
-        m "I quickly found a dragon-sized cocktail shaker inside one of the cabinets, measured three portions of fresh lime juice and poured it in. 
-        
-        m "(I suppose since Naomi seems to be skittish of alcohol, I should also be careful with the alcohol content.)"
+        queue sound "fx/pouringwineshort.ogg"     
+        m "To chill the cocktail, I quickly found a dragon-sized cocktail shaker from inside one of the cabinets. I measured three portions of fresh lime juice and poured it in the shaker trough a sieve."       
+        m "(Since Naomi seemed to be skittish of alcohol, I should be careful with the alcohol content. Better to play it safe, as always.)"
         m "I inspected one of the same types of glasses I had served her juice in."
-        m "(She's like two to three times as big as I am, so two portions of alcohol in around a half a liter cocktail should only give her a slight buzz, even if she drank it all in one go.)"
+        m "(She's like two to three times as big as I am, so two portions of alcohol in around around a half a liter glass should only give her a slight buzz, even if she drank it all in one go.)"
+        queue sound "fx/pour.ogg"
+        m "I measured two portions of liquor and six portions of simple syrup and added them to the cocktail shaker."
+        play sound "fx/crapfridge.mp3"
+        m "Next I opened Naomi's freezer and took some ice, and added some to the shaker."
+        #Shaking sound?
+        m "Then I shook the ingredients for a short time and after that poured the result into the rather large cocktail glass, again through a sieve."
         
-        #0,8dl rum, 1,2dl lime juice, 2,4dl simple syrup
-        
-        m " to finish off Naomi's rather large cocktail."
-    
+
     else:
         m "(I have to wait a little bit for the chicken, so I should probably bring Naomi her juice now.)"
         play sound "fx/pour.ogg"
-        m "Again, I took one of the very large glasses and poured juice in it. This time I added two straws for ease of drinking and grabbed the glass with both hands to bring it to Naomi."
+        m "I took another of the large glasses and poured some juice in it. This time I added two straws for ease of drinking."
         scene ecknaomiapt03 with dissolvemed
         show naomi normal with dissolve
         play sound "fx/glassdown.wav"
-        c "Here's your juice, as ordered. I added two straws so you can drink it faster."
+        c "Here's your juice, as ordered. I added two straws this time so you can drink it faster."
         Nm smile "Thank you." #Expand
 
         scene ecknaomiapt02 with dissolvemed
@@ -1395,39 +1419,37 @@ label sqb_naomi_apt_sexandeating:
     Nm surprisedblush "This combination is truly amazing! I'm starting to really love human cuisine. It's so familiar but yet a little bit different."
     c "The sauce also works well with mashed potatoes, so you should definitely add it there too."
     
+jump sqb_naomi_m2_ending
+ 
+label sqb_naomi_m2_ending:
+ 
     Nm normal "I almost forgot to ask. How did our foodstuffs compare to human ones?"
     c "Well..."
     c "How should I put this...{w} It's really weird that everything is almost exactly the same even down to labeling, with only minor differences."
+    show naomi confused with dissolve
     c "Some things taste a little different though. If I was being conspiratorial I would say that you were trying to imitate our food products with what's available to you."
-    Nm confused "Wait, really?"
+    Nm surprised "Wait, really?"
     c "As for a reason, if I had to guess, the human that allegedly visited your world a long time ago had a bigger impact on your development than you think."
     Nm normal "Oh yes, that thing from the history class. I had completely forgotten about it until you mentioned it now."
     c "Also, similar sentient species usually developing along the same lines probably has something to do with it."
     Nm shy "I'd say despite physical differences our species are pretty similar because we're able to have a romantic relationship with each other."
-    c "You make a good point as usual. I think we make a great team because of differences but more importantly due to similarities."
-    Nm smile "Likewise."
+    c "You make a good point as usual. Also, I think we will make a great team due to our of differences combined with important similarities."
+    Nm smile "Likewise." #Expand
      
     stop music fadeout 1.0
     hide naomi with dissolve
     scene black with dissolvemed
-    $ renpy.pause (1.0)
-    play music "mx/airborne.mp3"
-    scene ecknaomiapt01 with dissolvemed
-    show naomi normal with dissolve
     
     #Make it so that its very late when the PC leaves, since he and Naomi did a lot more stuff in this timeline
     #Copy a bunch of text from the original and edit it
     #Naomi kisses PC instead of flicking with her tongue and Sebastian comments on it after he and PC leave
     
-    #$ naomiscenesfinished = 2
-    #if chapter4unplayed == False:
-        #jump chapter4chars
-    #elif chapter3unplayed == False:
-        #jump chapter3chars
-    #elif chapter2unplayed == False:
-        #jump chapter2chars
-    #else:
-        #jump chapter1chars  
-     
-jump sqb_naomi_apt_sexandeating_end
-
+    $ naomiscenesfinished = 2
+    if chapter4unplayed == False:
+        jump chapter4chars
+    elif chapter3unplayed == False:
+        jump chapter3chars
+    elif chapter2unplayed == False:
+        jump chapter2chars
+    else:
+        jump chapter1chars

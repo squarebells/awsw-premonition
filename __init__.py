@@ -106,50 +106,51 @@ def sqb1naomi(ml):
 
 def sqb2naomi(ml):
 
-       ml.find_label("sqb_naomi_apt_sexandeating") \
+       ml.find_label("sqb_naomi_m2_sexandeating") \
            .search_say("I hope you understand that") \
            .search_say("I picked up my clothes") \
            .search_say("Her remark made me feel") \
            .search_say("So, could you fully") \
-           .search_say("I grunted loudly") \
-           .search_say("Naomi walked in to") \
-           .search_say("I'll hold you to that") \
-           .search_say("I opened a bag of toast") \
-           .search_say("After that I placed all") \
-           .search_say("I'll go back to the kitchen now") \
-           .search_say("I think I will call my style of cooking") \
-           .search_say("You make a good point as usual") \
+           .search_say("Finish if you have to") \
+           .search_say("It was certainly fun to") \
+           .search_say("Sure, we should get cleaned up") \
+           .hook_to("sqb_naomi_m2_foodskip", condition='sqbpremounlocked == True') \
+           .search_say("Let's go") \
+           .link_from("sqb_naomi_m2_foodskip_end")
+
+       ml.find_label("sqb_naomi_m2_ending") \
+           .search_say("You make a good point") \
            .hook_to("sqb_naomi_m6_discussion_reality", condition='sqbpremounlocked == True') \
            .search_say("Likewise") \
            .link_from("sqb_naomi_m6_discussion_reality_end")
 
        ml.find_label("eck_naomi_m2") \
            .search_menu("I can imagine.") \
-           .add_choice(text="I could move them for you.", condition='sqbpremounlocked == True', jump="sqb_naomi_apt_chairs") \
+           .add_choice(text="I could move them for you.", condition='sqbpremounlocked == True', jump="sqb_naomi_m2_chairs") \
            .search_say("She led me") \
-           .link_behind_from("sqb_naomi_apt_chairs_end")
+           .link_behind_from("sqb_naomi_m2_chairs_end")
        
        ml.find_label("eck_naomi_m2") \
            .search_say("We all have drawbacks") \
-           .hook_to("sqb_naomi_apt_differences", condition='sqbpremounlocked == True') \
+           .hook_to("sqb_naomi_m2_differences", condition='sqbpremounlocked == True') \
            .search_say("Naomi eyed my legs") \
-           .link_from("sqb_naomi_apt_differences_end")
+           .link_from("sqb_naomi_m2_differences_end")
            
        ml.find_label("eck_naomi_m2") \
            .search_say("We all have drawbacks") \
            .search_say("I was met by a light gust") \
-           .hook_to("sqb_naomi_apt_balcony", condition='sqbpremounlocked == True') \
+           .hook_to("sqb_naomi_m2_balcony", condition='sqbpremounlocked == True') \
            .search_say("Beautiful, isn't it?") \
-           .link_from("sqb_naomi_apt_balcony_end")
+           .link_from("sqb_naomi_m2_balcony_end")
         
        ml.find_label("eck_naomi_m2") \
            .search_say("We all have drawbacks") \
            .search_say("I was met by a light gust") \
            .search_say("Of course, he meant no harm") \
            .search_say("Sounds uncomfortable.") \
-           .hook_to("sqb_naomi_apt_movie", condition='sqbpremounlocked == True') \
+           .hook_to("sqb_naomi_m2_movie", condition='sqbpremounlocked == True') \
            .search_say("A couple of hours later") \
-           .link_from("sqb_naomi_apt_movie_end")
+           .link_from("sqb_naomi_m2_movie_end")
            
        ml.find_label("eck_naomi_m2") \
            .search_say("We all have drawbacks") \
@@ -158,6 +159,6 @@ def sqb2naomi(ml):
            .search_say("Sounds uncomfortable.") \
            .search_say("A couple of hours later") \
            .search_say("Do you have anyone in mind") \
-           .hook_to("sqb_naomi_apt_sexandeating", condition='sqbpremounlocked == True and naomi2mood > 8 and naomilewd > 4') \
-           .search_say("I guess we should get going.") \
-           .link_from("sqb_naomi_apt_sexandeating_end")
+           .hook_to("sqb_naomi_m2_sexandeating", condition='sqbpremounlocked == True and naomi2mood > 8 and naomilewd > 4') \
+           #.search_say("I guess we should get going.") \
+           #.link_from("sqb_naomi_m2_sexandeating_end")
