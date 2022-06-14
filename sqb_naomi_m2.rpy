@@ -997,8 +997,7 @@ label sqb_naomi_apt_sexandeating:
     c "M-me too."
     
     play music "mx/airborne.mp3"
-    c "Naomi, I can't think of a word to describe how much I love you."
-    c "Do you want to get married?"
+    c "Naomi, I can't think of a word to describe how much I love you. Do you want to get married?"
     Nm surprised "Is that how it works in your world?"
     Nm confused "We've only had sex once so far. That doesn't mean we should get married."
     Nm normal "Marriage is a long-term commitment."
@@ -1007,28 +1006,27 @@ label sqb_naomi_apt_sexandeating:
     c "Wanna take a shower together?"
     Nm smile "Sure, we should get cleaned up."
     c "Alright."    
-    stop music fadeout 2.0
     play sound "fx/rumble.ogg"
     $ renpy.pause (5.0)
     show naomi concern with dissolve
     m "(Looks like we forgot to eat.)"
     Nm confused "Oh, you're hungry?" 
     Nm normal "We could order some food if you wanted. Cooking ourselves works as well if that's what you'd want to do."
-    c "Cooking ourselves sounds great to me. I want to pay back all the hospitality I've gotten here so far."
+    c "Having a fun time in the kitchen sounds great to me. I want to pay back all the hospitality I've gotten here so far by pampering you back."
     Nm shy "You really don't have to. I enjoyed myself too."
-    Nm normal "Wouldn't it be easier if we just ordered food and showered together while waiting for it to arrive?"
-    c "Shower can wait. I just really feel like cooking right now."
-    c "Besides, I want to find out how similar your food products are to ours. One of my personal reasons for coming here was to learn more about your society and customs."
+    Nm normal "Wouldn't it be easier if we just placed an order and showered together while waiting for the food to arrive?"
+    c "Shower can wait. I really feel like cooking right now."
+    c "Besides, I also want to find out how similar your food products are to ours. One of my personal reasons for coming here was to learn more about your society and customs."
     c "For now I'll have to say that food's been pretty similar to ours. Still, I'd be very interested in delving deeper into this by getting some first-hand experience."
     Nm smile "Well, if you put it like that...{w} I suppose I will have to let you sate your curiosity. Furthermore, I would never turn down a delicious home-cooked meal." 
     Nm normal "I'd also be very interested in finding how different human cooking is from ours."
-    c "Looks like that's settled then. I'll cook a couple of dishes for you to try. I think we have enough time left for cooking a feast."
+    c "Looks like that's settled then. I'll cook a couple of dishes for you to try out."
     Nm smile "I can't wait."
+    c "Me neither."
     scene black with dissolvemed
     play sound "fx/door/door_open.wav"
-    m "In agreement, we exited Naomi's bedroom and went to the kitchen. This time she was trailing behind me instead of it being the other way around."
+    m "As I nodded in agreement, we exited Naomi's bedroom and went back to the living room. For some reason, this time she was trailing behind me instead of it being the other way around."
     scene ecknaomiapt02 with dissolvemed
-    play music "mx/airborne.mp3"
     show naomi normal with dissolve
     c "First, I really need drink a liter of water, or two. Would you like something to drink as well?"
     Nm "Sure. The glasses are in the kitchen cabinets." 
@@ -1036,43 +1034,41 @@ label sqb_naomi_apt_sexandeating:
     hide naomi with dissolve
     play sound "fx/door/door_open.wav"
     queue sound "fx/door/doorclose.ogg"
-    m "Naomi walked in to what I presumed to be the bathroom."
+    m "Naomi hurried off to what I presumed to be the bathroom."
     m "(Let's see what kind of stuff she has in the fridge.)"
     play sound "fx/crapfridge.mp3"
-    m "As I started looking inside the fridge, I noticed that a lot of the packaging had familiar shapes but also somewhat similar labels to ours."
+    m "As I started looking inside the fridge, I immediately noticed that a lot of the packaging had familiar shapes but also somewhat similar labels to ours."
     m "(That's familiar, but also very strange at the same time.)"
     m "(Oh right, she wanted to drink something.)"
-    #Sound?
-    m "I picked a carton of juice from the back of the fridge."
+    m "I took a carton of juice from the back of the fridge."
     m "(She liked juice, right?)"
     play sound "fx/pour.ogg"
-    queue sound "fx/glasses.wav"
-    m "I took a very large glass, poured juice in it and put it on the kitchen counter."
+    queue sound "fx/glassdown.wav"
+    m "I took a very large glass, poured juice in it, added a straw and placed it on the kitchen counter."
     m "(I guess I can give it to her when she comes back.)"
     play sound "fx/pour.ogg"
     queue sound "fx/chug.wav"
-    queue sound "fx/glasses.wav"
+    queue sound "fx/glassdown.wav"
     m "I took a smaller glass, poured some juice for myself and drank it in one go."
-    m "(I really needed that. It tastes a bit like orange juice.)"
-    m "I continued figuring out what all the stuff in Naomi's kitchen was."
+    m "(I really needed that. It tastes a bit like orange and mango juice.)"
+    m "Now I was fully prepared to continue figuring out what all the stuff in Naomi's kitchen was."
     play sound "fx/cabinet.ogg"
     m "(It's the same thing with the produce in her cabinets as well. Also, there's so much stuff you'd think she cooks at home.)"
     m "(Wait, did she buy all this stuff just to impress me? That's very cute.)"
     m "(But how did she know I like cooking? I suppose I should ask her when she comes back.)"
-    m "(Back to the task at hand.)"
-    m "(I think at first I should just move everything on the counter and sort them by type.)"
+    m "(Back to the main task at hand.)"
+    m "(I think at first I should move everything on the kitchen counter and sort by type.)"
     play sound "fx/rummage.ogg"
     m "With some effort, I moved most of the foodstuffs and ingredients onto Naomi's kitchen counter and then organized them."
-    m "(This is going to be fun. Although having only two cooktops will likely pose a challenge.)"
-    m "(Anyway, as the second order of business, I'll put back what I won't use.)"
-    m "(I can always take something back if I need it a.)"
+    m "(This is going to be fun. Although having only two cooktops will likely pose a challenge. They're pretty old-fashioned as well.)"
+    m "(Anyway, as the second order of business, I'll put back what I won't use. I can always take something back if I need it later)"
     #Placing sound?
-    m "(I'm not going to take my chances with the fish. Maybe I'll do that in the future, when I am more familiar with the types of fish here.)"
+    m "(I'm not going to take my chances with the fish. Maybe I'll try some in the future, when I am more familiar with the types of fish here.)"
     #Placing sound?
-    m "(Also, I have no idea what's in these cans even after reading the labels. I should play it safe, so they'll have to go.)"
+    m "(Also, I can't be certain what's in these cans even after reading the labels. I should play it safe, so they'll have to go.)"
     $ renpy.pause (2.0)
     #Placing sound?
-    m "(These vegetables don't look familiar at all to me. I'll only use ones that look vaguely similar."
+    m "(Some of these vegetables don't look familiar at all to me. I'll only use ones that look vaguely similar to what I've used before."
     m "(Alright, this looks better. Let's figure out what we actually want to use.)"    
     $ renpy.pause (2.0)
     m "I looked at the pack of egg noodles and a large pack of lightly salted chicken fillets on the kitchen counter."
@@ -1097,16 +1093,17 @@ label sqb_naomi_apt_sexandeating:
     Nm normal "Thanks a lot. I'll leave you to it." 
     Nm concern "I don't think I would be of much help with my clumsy hands."
     c "I hope they're not too clumsy for eating, or else I'll have to feed you."
-    Nm smile "Is that an offer? I would love to have my very own cute little human servant who cooks for me and feeds me all day every day."
+    Nm smile "Is that an offer? I would love to have my very own cute little human servant who cooks for me and feeds me every time I am hungry."
     c "Uhh..."
-    Nm normal "You're so cute when flustered. Are you sure you're fine with doing all this by yourself?"
+    Nm "You're so cute when flustered."
+    Nm normal "Are you sure you're fine doing all this by yourself?"
     c "Sure, it's no problem. Just let me handle everything."
     hide naomi with dissolve
-    m "With that, Naomi walked up to the sofa and placed the glass of juice on the table."
-    m "After that she jumped on the sofa in one smooth motion."
-    m "I kept watching her as she flexed, not unlike a big scaly cat with wings and cute webbing."
-    $ renpy.pause (1.5)
-    m "After finishing her series of flexes and settling on the sofa, she noticed I was admiring her instead of preparing to cook."
+    m "With my assurance Naomi walked up to the sofa, placed the glass of juice on the table and slurped some through the straw."
+    m "After that she jumped on the sofa in one smooth motion and started flexing."
+    m "I kept watching her as she flexed. She looked like a big scaly cat with wings and cute webbing."
+    $ renpy.pause (2.0)
+    m "After finishing her exercise and settling on the sofa, she noticed I was admiring her instead of preparing to cook."
     
     show ecknaomicg1 at Pan ((250, 230), (620, 50), 15.0) with dissolvemed
     $ renpy.pause (7.5)    
@@ -1120,19 +1117,19 @@ label sqb_naomi_apt_sexandeating:
     
     m "(Where was I?)"
     m "(Oh right, let's see what else we've got.)"
+    $ renpy.pause (2.0)
     m "(This white, basil-flavored mouflon and aurochs cheese looks remarkably similar to something we used to have.)"
     #Sound?
-    m "I cut open the packaging with a knife and then sliced off some cheese for a taste test."
+    m "I cut open the packaging with a knife and then sliced off some cheese into my mouth for a taste test."
     m "(Perfect, I'll cut this to pieces and add it to the fried noodles.)"
-    m "(On top of that some of these vegetables will add a nice texture and hopefully good flavor as well.)"
-    m "(Also, we got soy sauce, wing sauce, brown sugar and ginger powder to season the whole thing.)" 
+    m "(On top of that some of these vegetables will add a nice texture and hopefully good flavor as well. Also, we got soy sauce, wing sauce, brown sugar and ginger powder to season the whole thing.)" 
     m "(Let's start off by heating up a pan first.)"
     play sound "fx/metalbox.ogg"
     m "I began by putting a pan on the cooktop but as I turned on the heat I realized something."
     m "(Wait a minute.)"
     m "(Let's first make sure I don't get eaten by a hungry dragoness.)"
     c "Naomi, would you like some bread sticks as appetizers?"
-    Nm "Sounds great to me. In fact I was just going to come over there and eat your ingredients."
+    Nm "Sounds great to me. In fact, I was just going to come over there and eat your ingredients."
     c "If you eat them, I won't be able to prepare them into dishes."
     m "I focused back on the task at hand and quickly picked all the required ingredients for the appetizers."
     m "(Toast, garlic, black pepper, salt and herb mix here we go.)"
@@ -1147,130 +1144,194 @@ label sqb_naomi_apt_sexandeating:
     play sound "fx/button_unpress.ogg"
     queue sound "fx/paper2.ogg"
     m "I turned on the oven and prepared two baking trays with baking paper."
-    m "(I suppose I can cook a big pile. Slicing the toast won't take too long if I do it efficiently.)"
-    m "(The oven probably isn't ready after I am done with the cutting but I can always start preparing for something else.)"
-    m "(Then, when the bread sticks are baking I can start planning for the main courses."
-    m "(Oh yeah, I have to also prepare the mix that is used to flavor the bread sticks. Who knows if the oven will be ready after I've done that."
+    m "(I suppose I can bake a big pile. Slicing the toast won't take too long if I do it efficiently.)"
+    m "(The oven probably isn't ready after I am done with the cutting but I can always start preparing for something else. Then, when the bread sticks are baking I can start planning further for the main courses.)"
+    m "(Oh yeah, I also have to prepare the mix to flavor the bread sticks. Who knows if the oven will be ready after I've done that.)"
     m "(Multitasking and planning ahead is so much fun.)"
     m "I opened a bag of toast and put several slices on top of each other on the cutting board."
     play sound "fx/crapcuttingboard.mp3" #Not perfect but it just works
-    m "Then I cut the bread into neat little sticks, moved them off to the side and prepared cut another batch of toast."
+    m "Then I cut the bread into neat but wide sticks, moved them off to the side and prepared cut another batch of toast."
     m "After a couple of minutes, I managed to slice the entire bag of bread."
     #Sound?
-    m "I peeled the garlic and crushed it into a bowl with the pestle and mixed in some olive oil, pepper and salt to create the flavoring mix."
-    m "After that I placed all the bread sticks on the two baking trays and used a spoon to apply the flavoring mix."
-    m "(Yep, looks like I have some time left since the oven isn't ready yet.)"
+    m "To create the flavoring mix, I peeled all of the garlic, crushed it into a bowl with a pestle and mixed in some olive oil, pepper and salt."
+    m "After that I placed all the bread sticks on the two baking trays and used a spoon to apply it."
+    m "(Looks like I have some time left since the oven isn't ready yet.)"
     m "(I should probably figure out what to do with the chicken next. Let's check again what ingredients we've got.)"
     $ renpy.pause (2.0)
-    m "(Looks like we have all the ingredients for batter plus some herb butter.)"
+    m "(We have all the ingredients for batter plus some herb butter.)"
     m "(Let's stuff the chicken fillets with some herb butter and bread and fry them. I've never met anyone who doesn't like that dish.)"
     play sound "fx/metalbox.ogg"
-    m "I set another pan to heat up on the cooktop."
-    m "I took the large pack of chicken fillets and cut it open for use."
-    m "(Let's see... {w}eight chicken fillets should be enough for both of us. She can always eat the rest tomorrow if there's some left over.)"
+    m "I set another pan to heat up on the cooktop and cut open the large pack of chicken fillets."
+    m "(Let's see... {w}the eight chicken fillets in this package should be enough for me and Naomi. She can always eat the rest tomorrow if there's any left over.)"
     play sound "fx/sliceshort.ogg"
-    m "In order to create a pocket for the herb butter I cut a fillet horizontally through the middle and then expanded carefully, to make sure I don't create any additional holes."
+    m "In order to create a pocket for the herb butter I cut a fillet horizontally through the middle and then expanded carefully, to make sure I don't create any additional holes that need plugging."
     play sound "fx/sliceshort.ogg"
-    m "I repeated this process for the seven remaining fillets."
+    m "I repeated this arduous process for the seven remaining fillets."
     play sound "fx/crapcuttingboard.mp3"
     m "Next I sliced all of the herb butter into pieces and stuffed it inside the pockets I had just cut. After that I closed the hole in each fillet with a large toothpick."
-    m "This was the most tedious part of my cookout, but it was over quickly because I knew the effort would be well worth it."
-    m "To finish off, I sprinkled some black pepper on the stuffed fillets."
-    m "(Finally.)"
-    m "(Looks like the oven is ready.)"
+    m "This was the most tedious part of my cookout, but time went quickly because I knew the effort would be well worth it."
+    play sound "fx/salt.ogg"
+    m "To finish everything off, I sprinkled some black pepper on the stuffed fillets."
+    m "(Finally done. Also, looks like the oven is ready just in time.)"
     play sound "fx/door/hallwaydoor.ogg"
     m "I put the baking trays in the oven and set a timer for the bread sticks."
-    m "(Our hunger's going to be alleviated soon.)"
-    m "(Next we need a side dish for the breaded chicken fillets.)"
+    m "(Our hunger's going to be alleviated soon. Next we need a side dish for the breaded chicken fillets.)"
     $ renpy.pause (2.0)
-    m "(Looks like we have some higher-starch potatoes that are perfect for mashing. Mashed potatoes would go really well as a side.)"
+    m "(Looks like we have some higher-starch potatoes that are perfect for mashing. Mashed potatoes would go really well as a side. Luckily, I have some hot water already.)"
     play sound "fx/faucet2.ogg"
     queue sound "fx/metalbox.ogg"
-    m "I took a large pot, filled it with water and set it to heat up on the cooktop."
-    m "(I wish I had realized this earlier, because boiling enough water for this many potatoes takes a while.)"
+    queue sound "fx/faucet1.ogg"
+    queue sound "fx/button_press.ogg"
+    m "I took a large pot, filled it with water first from the teapot and the rest from the kitchen faucet. Then I set the pot to heat up on the cooktop. Since I still wanted to save time on the noodles, I filled the teapot again and turned it on."
+    m "(Still, I wish I had realized this earlier, because cooking the potatoes will still take some time.)"
     m "(Moving on to the potatoes proper. I think if I peel them really fast I'll be on time.)"
-    #Sound
-    m "I emptied all the potatoes into the sink and rinsed them thoroughly."
+    play sound "fx/faucet2.ogg"
+    queue sound "fx/rub1.ogg"
+    m "I emptied all the potatoes into the sink, then rinsed and rubbed to get all the dirt off."
     #Sound?
     m "After peeling the potatoes at lightning speed, I had a large bowl of potatoes ready to be cooked."
-    m "(Okay, another step done in my quest to cook for Naomi.)"
+    m "(Another tedious step done in my quest to cook for Naomi.)"
     play sound "fx/dishes.wav"
-    m "To continue preparing the chicken fillets I took three deep plates and one normal one. I filled the deep plates with flour, egg with a touch of water and finally breadcrumbs."
-    play sound "fx/egg.ogg"
-    m "(I need at least one more egg to start off with.)"
-    m "I dipped a fillet in first flour, then egg, followed by breadcrumbs and finally egg and breadcrumbs again and placed it on the ready-plate."
-    m "I repeated this process for the rest of the fillets."
-    m "Finally, I sprinkled some breadcrumbs on all of the fillets to make sure they were breaded everywhere."
+    m "To continue preparing the chicken fillets I took three deep plates and a normal one. I filled the deep plates with flour, egg with a touch of water and finally breadcrumbs. I placed them horizontally on the counter with the normal plate at the end of the production line towards the stove."
+    m "I dipped a fillet in first flour, then egg, followed by breadcrumbs and finally egg and breadcrumbs again and placed it on the ready-plate. I repeated this messy process for the rest of the fillets."
+    m "Lastly, I sprinkled some breadcrumbs on all of the fillets on the ready-plate to make sure they were properly breaded everywhere."
     m "(The crunch is very important.)"
-    m "(I think I'll time everything correctly if I cook four fillets at a time.)"
+    m "(I think I'll time everything correctly if I cook four fillets at a time. The pan is more than big enough for that.)"
     play sound "fx/fry.ogg"
-    m "I poured some olive oil onto the hot pan and carefully placed four fillets in."
-    m "(The proper way is to cook both sides with higher heat at first so I'll have to remember to turn them and lower the heat after. This should leave me time to focus on other stuff.)"
-    m "I set another timer for the chicken breasts."
+    m "I poured some olive oil into the hot pan, carefully placed four fillets in and put the lid on."
+    stop sound fadeout 1.0
+    m "(The proper way is to cook both sides with higher heat at first. That means I'll have to remember to turn them and lower the heat after both sides have been cooked to crunch. Cooking them more slowly should also leave me time to focus on other stuff.)" #Rethink
+    m "I set another timer for the chicken fillets."
     $ renpy.pause (2.0)
-    m "(Looks like the water is boiling already.)"
+    m "(Looks like the water for the potatoes is boiling already.)"
     play sound "fx/water1.ogg"
-    m "Carefully, so I wouldn't splash any hot water on myself, I poured the potatoes into the pot and set a new timer.)"
-    m "(I don't think I need to add any salt.)"
+    m "So I wouldn't splash any hot water on myself, I took extreme care when dropping the potatoes into the pot, added some salt and set a new timer."
+    $ renpy.pause (1.0)
     m "(Looks like the bread sticks are almost done. It doesn't really matter if I take them out a minute early so I might as well do it now to stay on schedule.)"
     play sound "fx/door/hallwaydoor.ogg"
-    m "I took the bread stick trays out and used the baking paper to slide them onto a very large plate. I finished off the breads sticks by sprinkling some herb mix on them."
-    m "Not forgetting about the chicken breasts, I turned them."
+    queue sound "fx/salt.ogg"
+    m "I took the bread stick trays out and used the baking paper to slide them onto a very large plate. I finished off the bread sticks by sprinkling some herb mix on them."
+    m "Not forgetting about the chicken fillets, I looked at the timer turned them for the first time."
     play sound "fx/pizzabite.ogg"
-    m "Then I ate a few of the bread sticks offset my worst hunger. They were crunchy, oily, garlicky and tasty, like I had expected them to be."
-    m "(Delicious. I'm sure Naomi will like these.)"
-    m "My hands got messy from eating with them so I instinctively wiped off the grease on the kitchen towel."
+    m "Then I ate a few of the bread sticks offset my worst hunger. They were crunchy, oily, garlicky but most importantly tasty, like I had expected them to be."
+    m "(I'm sure Naomi will love these.)"
+    m "My hands got messy from using them to eat so I instinctively wiped off the grease on the kitchen towel."
     m "(Oh yeah, I'll have to make sure Naomi doesn't make a mess eating these. She'll probably ask me to clean it up afterwards if she ends up doing that.)"
-    m "I picked up the bread stick plate along with some rather large napkins and went off to the living room where Naomi was. She had turned on what I presumed to be one of those long series she told me about earlier."
+    m "I picked up the bread stick plate along with some rather large napkins and went off to the living room where Naomi was. She was watching attentively what I presumed to be one of those long series she had told me earlier about."
     scene ecknaomiapt03 with dissolvemed
     show naomi normal with dissolve
-    Nm "That was a lot faster than ordering a food delivery. Seems that we made the correct choice."
-    c "So, here's something to start off with. Did I make enough so that you won't have to eat me?"
-    Nm surprised "I hope you understood I was just joking. In fact, I can go a long time without eating if I really need to. I just need to eat a lot to keep in shape for some of my more physical duties."
+    Nm "That was certainly a lot faster than waiting for a food delivery. It seems that we made the correct choice."
+    show naomi surprised with dissolve
+    m "I presented the appetizer plate to Naomi and it immediately perked up her attention."
+    c "So, here's something to start off with. Do you think I made enough so that you won't have to eat me?"
+    Nm shy "I hope you understood that I was just joking. In fact, I can go a long time without eating if I really need to. I just need to eat a lot to keep in shape for some of my more physical police duties."
     Nm smile "Thanks a lot, [player_name]. These bread sticks smell delicious."
     c "You're welcome, Naomi. Please use the napkins after you've finished eating them. Also, avoid touching any of the furniture before you've wiped your hands clean."
     Nm shy "You're really thinking of everything for me, aren't you?"
-    show normal smile with dissolve
-    m "Naomi had been eyeing the bread sticks hungrily ever I since I came from the kitchen, so it didn't come off as a surprise when she suddenly stuffed a big handful of them into her maw."
+    show naomi normal with dissolve
+    m "Naomi had been eyeing the bread sticks hungrily ever I since I presented them to her, so it didn't come off as a surprise when right after I placed them on the table she stuffed a big handful of them right into her maw."
     play sound "fx/pizzabite.ogg"
     queue sound "fx/pizzabite.ogg"
     queue sound "fx/pizzabite.ogg"
     Nm smile "Delicious!"
     Nm normal "Why aren't you eating any? Surely there's enough for both of us."
     c "I already ate a couple in the kitchen, and that was enough for me. You should remember that I can't eat as much as you can so I have to leave room for the other dishes."
-    Nm "I suppose that just means more for me then."   
+    Nm smile "I suppose that just means more for me then."   
     
     if naomi1drink == "cocktail":
     
         Nm confused "By the way, could you fix up a human cocktail for me? I want something to drink with these delicious bread sticks."
-        c "Sure, I'll look at what ingredients you got and make the best cocktail I can."
-        Nm smile "Thanks a lot. I knew I could count on you on that front."          
+        c "I'd love to." 
+        c "Did you buy any liquor on your shopping spree? I didn't see any in the fridge or the cabinets."
+        Nm normal "Yeah, I bought a bottle of something at the store that was recommended by the clerk. It's hidden in the fridge's door compartment."
+        c "Alright. I'll look at what other cocktail ingredients you have and make the best one I can come up with."
+        Nm smile "Thanks a lot. I knew I could count on you on that front."
+    
+    else:
+        Nm "Could I get some more juice with these delicious bread sticks?"    
     
     c "I'll go back to the kitchen now."
-    Nm smile "I'm looking forward to what else you can come up with."   
+    Nm normal "I'm really looking forward to what else you can come up with."   
     scene ecknaomiapt02 with dissolvemed
-    m "After getting back, I turned the chicken breasts again and lowered the heat."
-    
-    if naomi1drink == "cocktail":
-        "Let's make a cocktail for her then." #Rethink
-    
-        #Uncork and wine pouring sounds at least. A cocktail shaking sound would be nice as well.
-     
-    m "(Let's focus on frying the noodles now.)"
-    m "(Luckily, the water inside the teapot was still hot enough for cooking the noodles.)"
+    play sound "fx/fry.ogg"
+    m "After getting back, I turned the chicken breasts again and lowered the heat."    
+    stop sound fadeout 1.0
+    m "(Let's now focus on getting the noodles ready.)"
+    m "(Luckily, the water inside the teapot was still hot enough for the noodles.)"
     play sound "fx/water1.ogg"
-    m "I emptied the entire pack of noodles into a bowl and then poured in some hot water from the teapot."
-    m "(There's no need to use a timer for this.)"
-    m "(I should have enough time to finish the rest of the ingredients while the noodles cook.)"
+    m "I emptied the entire pack of noodles into a pot and then poured in some hot water from the teapot."
+    m "(There's no need to use a timer for this. Also, I should have enough time to finish the rest of the ingredients while the noodles cook.)"
     play sound "fx/faucet2.ogg"
     queue sound "fx/veggies.ogg"
-    m "I washed some of the vegetables and held them in a neat pile on the cutting board, using my knife-work to turn them into vegetable pieces of various sizes."
+    m "I washed some of the more familiar-looking vegetables and held them in a neat pile on the cutting board, then using my knife-work to turn them into pieces of various sizes."
     play sound "fx/crapcuttingboard.mp3"
-    m "After finishing up, I also cut the cheese I had selected previously."
+    m "After finishing up, I meticulously cut the cheese I had selected previously."
     play sound "fx/faucet1.ogg"
-    m "The noodles were ready now, so I took a pot lid and used it together with the pot to carefully pour all the hot water into the sin. Then I poured in some cold water stop the cooking process."
+    m "The noodles were ready now, so I took a pot lid and used it together with the pot to carefully pour all the hot water into the sink. Then I poured in some cold water stop the cooking process."
+    m "Unfortunately, I didn't have a cooktop ready so frying the noodles would have to wait."
+    
+    if naomi1drink == "cocktail":#Cocktail shaking and juicer sounds would be nice.
+    
+        stop sound fadeout 1.0
+        m "(I suppose I have time to make a cocktail in the meantime. I'll be able to stay on schedule because it won't take that long.)"
+        play sound "fx/crapfridge.mp3"
+        m "I took the liquor bottle from the fridge's door compartment and inspected what I had to work with. The bottle's sunny and cheerful-looking label read 'sugar cane liquor'"
+        m "(I have an idea what this might compare to. Still, I should probably taste it first.)"
+        play sound "fx/uncork.ogg"
+        queue sound "fx/pouringwineshort.ogg"
+        $ renpy.pause (1.0)
+        queue sound "fx/coffee.wav"
+        m "I poured some in a small glass and took a large sip."
+        play sound "fx/glassdown.wav"
+        m "(Tastes like rum. To be safe I'll make something that doesn't taste too different from what I had at Adine's."
+        m "As I checked for additional ingredients, I quickly figured out what cocktail to make as I spotted some limes."
+        m "(Making simple syrup with the brown sugar doesn't take very long, and I also have some hot water to speed up the process. There's only two cooktops but in order to free up some space I can just take the chicken off for a few moments.)"
+        m "To make the simple syrup, measured two parts of brown sugar and one part of hot water and poured both into a third pan. Then I took a potholder, put it on the kitchen counter and placed the chicken fillet pan on it." 
+        play sound "fx/metalbox.ogg"
+        m "Lastly, I quickly grabbed the simple syrup pan and put it on. After not too many seconds and some mixing, the simple syrup was done."
+        play sound "fx/crapfridge.mp3"
+        queue sound "fx/metalbox.ogg"        
+        m "I poured the simple syrup it into a separate container. When that was done, I turned the chicken and the pan back on the cooktop."
+        #Juicer sound?
+        m "Next I took some limes, cut them in half and juiced them into some delicious, fresh lime juice for the cocktail."
+        play sound "fx/cabinet.ogg"
+        queue sound "fx/pour.ogg"
+        m "I quickly found a dragon-sized cocktail shaker inside one of the cabinets, measured three portions of fresh lime juice and poured it in. 
+        
+        m "(I suppose since Naomi seems to be skittish of alcohol, I should also be careful with the alcohol content.)"
+        m "I inspected one of the same types of glasses I had served her juice in."
+        m "(She's like two to three times as big as I am, so two portions of alcohol in around a half a liter cocktail should only give her a slight buzz, even if she drank it all in one go.)"
+        
+        #0,8dl rum, 1,2dl lime juice, 2,4dl simple syrup
+        
+        m " to finish off Naomi's rather large cocktail."
+    
+    else:
+        m "(I have to wait a little bit for the chicken, so I should probably bring Naomi her juice now.)"
+        play sound "fx/pour.ogg"
+        m "Again, I took one of the very large glasses and poured juice in it. This time I added two straws for ease of drinking and grabbed the glass with both hands to bring it to Naomi."
+        scene ecknaomiapt03 with dissolvemed
+        show naomi normal with dissolve
+        play sound "fx/glassdown.wav"
+        c "Here's your juice, as ordered. I added two straws so you can drink it faster."
+        Nm smile "Thank you." #Expand
+
+        scene ecknaomiapt02 with dissolvemed
+        
+        play sound "fx/pour.ogg"
+        queue sound "fx/chug.wav"
+        queue sound "fx/glassdown.wav"
+        m "Feeling thirsty from the heat of the kitchen, I emptied the carton of juice into a glass and drank it. Then I waited a few moments for the chicken timer to beep."
+        
+    m "The first batch of chicken breasts were ready, so I took them off the pan onto serving plate, added the rest of them in and set the heat higher again. After that was done, another timer beeped and I noticed that the potatoes were also ready."
+    
+    #Sound?
+    m "I took a larger lid and used it together with the pot to pour all the hot water out into the sink."
+    m "As I continued mashing the potatoes, I poured in some milk."
+    m "(That should be enough for now. It's better to be careful to not use too much milk at first because I can always put more later.)"
+    
     play soundloop "fx/fry.ogg"
-    m "I poured in some oil on the large frying pan and used my hands to add the cold noodles from the pot. After that I added in all the spices and sauces I had selected earlier."
+    m "I added some oil into the already very hot frying pan and used my hands to add in the cold noodles. After that I seasoned the noodles with the spices and sauces I had selected earlier."
     m "Then finally after mixing the noodles a bit, I added in the cut vegetables and cheese."
     m "(That looks pretty good.)"
     $ renpy.pause (2.0)    
@@ -1278,11 +1339,6 @@ label sqb_naomi_apt_sexandeating:
     m "After adding the prawns I mixed the noodles again, put on the lid and set yet another timer."
     stop soundloop fadeout 1.0
     m "(Now I'll just have to remember to mix the noodles every once in a while.)"
-    
-    m "(The first batch of chicken breasts were ready so I took them off the pan, added new ones in and set the heat higher again."
-    
-    m "As I was mashing the potatoes, I poured in some milk."
-    m "(That should be enough for now. It's better to be careful to not use too much milk at first because I can always put more later.)"
     
     m "(Could I make another dish in the mean time? What's simple but delicious?)"
     m "(How about a bacon omelet? I could also put some other ingredients like paprika for texture and flavor." 
