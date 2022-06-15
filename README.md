@@ -1,10 +1,12 @@
 # AwSW-Premonition
-A sequel to EvilChaosKnight's A Solitary Mind. Takes place in a timeline after ASM's ending A.
+I really liked how Naomi's and PC's relationship started developing in the two last scenes of A Solitary Mind's (ASM) ending A. As I was left wanting for more, I wrote an expansion.
 
-You need to have acquired A Solitary Mind's best ending to unlock this. The mod assumes the PC is male, for now.
+You need to have acquired ASM ending A to unlock this, because this mod takes place in a timeline after that. After this expansion to the five base chapters has been finished, I will write a chapter six.
+
+To play this future timeline, select the new prompts whenever possible and of course be as nice as possible to Naomi. Also, contains lewd scenes. The mod assumes the PC is male, for now.
  
 ### Requirements: 
- + Magmalink by jakzie2 
+ + Magmalink by Jakzie2 
  + A Solitary Mind and Chaos_Knight Core mod (ECK Core) by EvilChaosKnight
  + Community Resource and Assets Pack (CRAP) by Jakzie2, 4onen, Azrynfolf, Ryann and Volar Vie
  
