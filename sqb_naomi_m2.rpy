@@ -1321,21 +1321,28 @@ label sqb_naomi_m2_sexandeating:
         queue sound "fx/pour.ogg"
         m "I measured two portions of liquor and six portions of simple syrup and poured them into the cocktail shaker."
         play sound "fx/crapfridge.mp3"
-        m "Next I opened Naomi's freezer, took some ice and also added them."
+        m "Next I opened Naomi's freezer, took some ice and added them in."
         #Shaking sound?
-        m "To chill and mix the cocktail I shook the ingredients for a short time and after that poured the result into the rather large cocktail glass, again through a sieve."
+        m "I shook the shaker for a short time and poured the cocktail into the rather large glass, again through a sieve."
         m "Finally, I added two straws and used a spoon to do a taste test."
-        c "(That's pretty sweet but just the way I like it. You can barely taste the alcohol. I hope Naomi likes it as well.)"
+        c "(That's a pretty sweet version of this cocktail. Just the way I like it, and you can barely even taste the alcohol. I bet Naomi likes it as well.)"
         scene ecknaomiapt03 with dissolvemed
         show naomi normal with dissolve
         play sound "fx/glassdown.wav"
-        m "Naomi was focused on watching the series so she only noticed me when I placed the cocktail on the table."
-        #Expand
+        m "Naomi was intently focused on watching the series so she only noticed me after I placed the cocktail on the table in front of her."
+        #Expand the conversation below
         Nm confused "Oh, hey."
-        m "Here's the cocktail you ordered. I hope you will like it."
+        c "Here's the cocktail you ordered. Enjoy."
         Nm normal "Thanks."
+        queue sound "fx/coffee.wav"
+        m "Naomi craned her head towards the glass and tried the cocktail."
+        Nm "It's pretty good! Good job, [player_name]."
+        c "I'm happy to hear it. If you'll excuse me, I have to go back to the kitchen. We can talk more after I have brought the food."
+        m "Naomi had resumed focusing on the series, so I just grabbed the empty appetizer plate from the table and went back to the kitchen to continue cooking."
+        scene ecknaomiapt02 with dissolvemed
 
     else:
+    
         m "(I have to wait a little bit for the chicken, so I should probably bring Naomi her juice now.)"
         play sound "fx/pour.ogg"
         m "I took another of the large glasses and poured some juice in it. This time I added two straws for ease of drinking."
@@ -1344,7 +1351,8 @@ label sqb_naomi_m2_sexandeating:
         play sound "fx/glassdown.wav"
         c "Here's your juice, as ordered. I added two straws this time so you can drink it faster."
         Nm smile "Thank you." #Expand
-
+        c "If you'll excuse me, I have to go back to the kitchen."
+        m "Naomi had resumed focusing on the series, so I just grabbed the empty appetizer plate from the table and went back to the kitchen to continue cooking."
         scene ecknaomiapt02 with dissolvemed
         
         play sound "fx/pour.ogg"
@@ -1404,13 +1412,11 @@ label sqb_naomi_m2_sexandeating:
     c "We can start eating."
     play sound "fx/pizzabite.ogg"
     queue sound "fx/eating.wav"
-    m "Naomi took one of the breaded chicken breasts with her hand and ate it whole."
-    Nm smile "This chicken is so delicious."
-    Nm normal "I really like the crunchiness."
+    m "I began by taking a little bit of everything. Naomi dove straight in by tossing one of the breaded chicken breasts in her mouth to eat it whole."
+    Nm normal "This chicken is so delicious. I especially like the crunchiness."
     c "Same. I love the taste and texture of batter, so I breaded it twice."
-    Nm smile "Actually, even more than that I love how the herb butter just bursts inside your mouth when you bite in."
-    c "They are indeed a lot juicier than your basic chicken breasts."
-    c "It must also be a different experience for you because you can eat it whole but I can't."
+    Nm smile "Actually, even more than the crunchiness I love how the herb butter just bursts inside your mouth when you bite in."
+    c "They are indeed a lot juicier than your basic chicken breasts. It must also be a different experience for you because you can eat it whole like that but I can't."
     Nm surprisedblush "That's an interesting point. You're already starting to sound like an expert on how to cook for hungry dragons."
     c "Well, I am certainly planning to hone that skill even further for your sake."
     Nm smile "I'm really looking forward to that, [player_name]."   
@@ -1418,10 +1424,10 @@ label sqb_naomi_m2_sexandeating:
     Nm "I love that philosophy. Eating is of course the most important part."
     c "Anyway, you should try the chicken with this sauce I made."
     show naomi normal with dissolve
-    m "I took the saucière and poured some of the tasty, citric sauce on one of the breaded chicken breasts."
+    m "I took the saucière and poured some of the tasty, citric sauce on one of the breaded chicken fillet."
     c "There you go."
     play sound "fx/pizzabite.ogg"
-    m "Without saying anything, Naomi picked up the chicken with the tips of her claws and tossed it in her maw."
+    m "After hungrily eyeing the chicken fillet for the entire time, Naomi picked it up with the tips of her claws and proceeded to toss it in her maw."
     Nm surprisedblush "This combination is truly amazing! I'm starting to really love human cuisine. It's so familiar but yet a little bit different."
     c "The sauce also works well with mashed potatoes, so you should definitely add it there too."
     
