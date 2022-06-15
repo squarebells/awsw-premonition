@@ -1285,12 +1285,12 @@ label sqb_naomi_m2_sexandeating:
     m "After finishing up, I meticulously cut the cheese I had selected previously."
     play sound "fx/faucet1.ogg"
     m "The noodles were ready now, so I took a pot lid and used it together with the pot to carefully pour all the hot water into the sink. Then I poured in some cold water stop the cooking process."
-    m "Unfortunately, I didn't have a cooktop ready so frying the noodles would have to wait."
+    m "Unfortunately, I didn't have a free cooktop so frying the noodles would have to wait."
     
     if naomi1drink == "cocktail":
     
         stop sound fadeout 1.0
-        m "(I suppose I have time to make a cocktail in the meantime. I'll be able to stay on schedule because it won't take that long.)"
+        m "(There's enough time to make a cocktail in the meantime.)"
         play sound "fx/crapfridge.mp3"
         m "I took the liquor bottle from the fridge's door compartment and inspected what I had to work with. The bottle's sunny and cheerful-looking label read 'sugar cane liquor'"
         m "(I have an idea what this might compare to. Still, I should probably taste it first.)"
@@ -1300,30 +1300,40 @@ label sqb_naomi_m2_sexandeating:
         queue sound "fx/coffee.wav"
         m "I poured some in a small glass and took a large sip."
         play sound "fx/glassdown.wav"
-        m "(Tastes like rum. To be safe I'll make something that doesn't taste too different from what I had at Adine's."
-        m "As I checked for additional ingredients, I quickly figured out what cocktail to make as I spotted some limes."
-        m "(Making simple syrup with the brown sugar doesn't take very long, and I also have some hot water to speed up the process. There's only two cooktops but in order to free up some space I can just take the chicken off for a few moments.)"
-        m "To make the simple syrup, measured two parts of brown sugar and one part of hot water and poured both into a third pan. Then I took a potholder, put it on the kitchen counter and placed the chicken fillet pan on it." 
+        m "(Tastes like rum. To be safe, I'll make something that doesn't taste too different from what I had at Adine's."
+        m "When looking for additional ingredients, I quickly figured out what cocktail to make as I spotted some limes."
+        m "(Making simple syrup for the cocktail with the brown sugar doesn't take very long, and I also have some hot water to speed up the process. Unfortunately, there's only two cooktops but I canfree up some space by taking the chicken off for a few moments.)"
+        m "To dissolve the brown sugar, I measured two parts of it and one part of hot water and poured both into a third pan. Then I took a potholder, put it on the kitchen counter and placed the chicken fillet pan on it." 
         play sound "fx/metalbox.ogg"
-        m "Lastly, I quickly grabbed the simple syrup pan and put it on. After not too many seconds and some mixing, the simple syrup was done."
+        Mmixing sound?
+        m "Lastly, I quickly grabbed the simple syrup pan and put it on the heat. After not too many seconds and some mixing, the simple syrup was ready."
         play sound "fx/crapfridge.mp3"
         queue sound "fx/metalbox.ogg"        
-        m "I poured the simple syrup it into a separate container. When that was done, I turned the chicken and the pan back on the cooktop."
+        m "I poured the contents of the pan it into a large heat-resistant glass. Then I turned the chicken and put the pan back on the cooktop."
         #Juicer sound?
-        m "Next I took some limes, cut them in half and juiced them into some delicious, fresh lime juice for the cocktail."
+        m "Next I cut some limes in half and juiced them into some delicious, fresh lime juice for the cocktail."
         play sound "fx/cabinet.ogg"
         queue sound "fx/pouringwineshort.ogg"     
-        m "To chill the cocktail, I quickly found a dragon-sized cocktail shaker from inside one of the cabinets. I measured three portions of fresh lime juice and poured it in the shaker trough a sieve."       
+        m "To chill the cocktail, I quickly found a dragon-sized cocktail shaker in one of the cabinets. I measured three portions of fresh lime juice and poured it in through a sieve."       
         m "(Since Naomi seemed to be skittish of alcohol, I should be careful with the alcohol content. Better to play it safe, as always.)"
         m "I inspected one of the same types of glasses I had served her juice in."
         m "(She's like two to three times as big as I am, so two portions of alcohol in around around a half a liter glass should only give her a slight buzz, even if she drank it all in one go.)"
         queue sound "fx/pour.ogg"
-        m "I measured two portions of liquor and six portions of simple syrup and added them to the cocktail shaker."
+        m "I measured two portions of liquor and six portions of simple syrup and poured them into the cocktail shaker."
         play sound "fx/crapfridge.mp3"
-        m "Next I opened Naomi's freezer and took some ice, and added some to the shaker."
+        m "Next I opened Naomi's freezer, took some ice and also added them."
         #Shaking sound?
-        m "Then I shook the ingredients for a short time and after that poured the result into the rather large cocktail glass, again through a sieve."
-        
+        m "To chill and mix the cocktail I shook the ingredients for a short time and after that poured the result into the rather large cocktail glass, again through a sieve."
+        m "Finally, I added two straws and used a spoon to do a taste test."
+        c "(That's pretty sweet but just the way I like it. You can barely taste the alcohol. I hope Naomi likes it as well.)"
+        scene ecknaomiapt03 with dissolvemed
+        show naomi normal with dissolve
+        play sound "fx/glassdown.wav"
+        m "Naomi was focused on watching the series so she only noticed me when I placed the cocktail on the table."
+        #Expand
+        Nm confused "Oh, hey."
+        m "Here's the cocktail you ordered. I hope you will like it."
+        Nm normal "Thanks."
 
     else:
         m "(I have to wait a little bit for the chicken, so I should probably bring Naomi her juice now.)"
@@ -1340,7 +1350,7 @@ label sqb_naomi_m2_sexandeating:
         play sound "fx/pour.ogg"
         queue sound "fx/chug.wav"
         queue sound "fx/glassdown.wav"
-        m "Feeling thirsty from the heat of the kitchen, I emptied the carton of juice into a glass and drank it. Then I waited a few moments for the chicken timer to beep."
+        m "Feeling thirsty from the heat of the kitchen, I emptied the carton of juice into a glass and drank it. There was nothing to do for now, so I waited a few minutes for the chicken timer to beep."
         
     m "The first batch of chicken breasts were ready, so I took them off the pan onto serving plate, added the rest of them in and set the heat higher again. After that was done, another timer beeped and I noticed that the potatoes were also ready."
     
@@ -1360,7 +1370,7 @@ label sqb_naomi_m2_sexandeating:
     m "(Now I'll just have to remember to mix the noodles every once in a while.)"
     
     m "(Could I make another dish in the mean time? What's simple but delicious?)"
-    m "(How about a bacon omelet? I could also put some other ingredients like paprika for texture and flavor." 
+    m "(How about a potato and bacon omelet? I could also put some other ingredients like paprika for texture and flavor." 
     m "(Sounds great to me.)"
     play sound "fx/metalbox.ogg"
     m "I grabbed another pan, put it on the cooktop and turned the heat back on."
