@@ -113,9 +113,9 @@ def sqb2naomi(ml):
            .search_say("So, could you fully") \
            .search_say("Finish if you have to") \
            .search_say("It was certainly fun to") \
-           .search_say("Sure, we should get cleaned up") \
+           .search_say("Oh, you're hungry") \
            .hook_to("sqb_naomi_m2_foodskip", condition='sqbpremounlocked == True') \
-           .search_say("Let's go") \
+           .search_say("We could order some food") \
            .link_from("sqb_naomi_m2_foodskip_end")
 
        ml.find_label("sqb_naomi_m2_ending") \
