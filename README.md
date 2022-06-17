@@ -3,7 +3,7 @@ I really liked how Naomi's and PC's relationship started developing in the two l
 
 You need to have acquired ASM ending A to unlock this, because this mod takes place in a timeline after that. After this expansion to the five base chapters has been finished, I will write a chapter six.
 
-To play this future timeline, select the new prompts whenever possible and of course be as nice as possible to Naomi. Also, contains lewd scenes. The mod assumes the PC is male, for now.
+To get the this mod's scenes, select the new options whenever possible and of course be as nice as possible to Naomi. Also, contains lewd scenes. The mod assumes the PC is male, for now.
  
 ### Requirements: 
  + Magmalink by Jakzie2 
@@ -20,5 +20,5 @@ To play this future timeline, select the new prompts whenever possible and of co
 ### Resources credits:
 + `bg/sqbnaomiapt04.jpg`: Background edited (not finished yet) by squarebells, original by Uncle Mugen.
 + `fx/lewd/`: Sounds edited by squarebells, originally extracted from COM3D2.
-+ `fx/sliceslow.ogg`: Edited from base game sound assets by squarebells.
++ `fx/*.ogg`: Edited from base game sound assets by squarebells.
 + `cr/naomi_*.png`: Put together from ECK Core's assets by squarebells.

@@ -38,7 +38,7 @@ label sqb_naomi_premostart:
     c "..."
     c "..."
     show naomi concern b with dissolve
-    m "The large blue dragon started staring back at me with a worried look while still holding her hand out to me."
+    m "The large blue dragon looked back at me worriedly while still holding her hand out to me."
     m "My head felt weird, as if my brain was trying very hard to remember something."
     c "A large blue dragon?"
     show naomi confused b with dissolve
@@ -58,7 +58,7 @@ label sqb_naomi_premostart:
     Nm sad b "Again, I'm so sorry. I hope you're not hurt."
     Nm shy b "It took you a while to get up, so you should get yourself checked. You might have a concussion."
     c "I'm fine."
-    Nm concern b "You might feel fine now, but you never know with concussions. I would be in big trouble if I ended up hospitalizing you."
+    Nm concern b "You might feel fine now, but you never know with concussions. I would be in big trouble if I ended up causing you serious harm."
     c "Don't worry about it. I should have paid more attention to where I was going."
     c "Since I already know your name, it would be fair to let you know mine. I'm [player_name]."
     Nm smile b "Nice to meet you, [player_name]."

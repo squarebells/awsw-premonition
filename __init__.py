@@ -7,14 +7,14 @@ import renpy.parser as parser
 @loadable_mod
 class Premonition(Mod):
     name = "Premonition"
-    version = "0.1"
+    version = "1.0"
     author = "squarebells"
-    dependencies = ["MagmaLink", "A Solitary Mind", "Chaos_Knight core mod.", "?BangOk?"]
+    dependencies = ["MagmaLink", "A Solitary Mind", "Chaos_Knight core mod.", "CRAP", "?BangOk?"]
     nsfw = True
     
     @classmethod
     def mod_load(cls):
-         naomistatusboxes(ml)
+         sqbnaomistatus(ml)
          sqbintronaomi(ml)
          sqb1naomi(ml)
          sqb2naomi(ml)
@@ -23,27 +23,12 @@ class Premonition(Mod):
     def mod_complete():
         pass
 
-def naomistatusboxes(ml): #Copied straight out of ASM, couldn't get magmalink's implementation to work
+def sqbnaomistatus(ml):
 
-       tocompile = """
-       screen dummy:
-             vbox:
-                 xalign 0.2096 yalign 0.655
-                
-                 if persistent.naomimet:
-            
-                     if naomistatus == "girlfriend":
-            
-                         add "image/ui/status/naomigirlfriend.png" xalign 0.5 at popup_offcenter
-                         text _("Status: {b}Girlfriend{/b}\\nScenes played: {b}[naomiscenesfinished]{/b}") style "status_text" at popup_offcenter
-                         
-       """
-       compiled = parser.parse("FNDummy", tocompile)
-       for node in compiled:
-           if isinstance(node, ast.Init):
-               for child in node.block[0].screen.children:
-                   modast.get_slscreen('status').children.append(child)
-
+      ml.StatusBox("naomiscenesfinished", condition="persistent.naomimet") \
+          .add_status("image/ui/status/naomigf.png", "Girlfriend", "naomistatus == \"girlfriend\"") \
+          .build()
+          
 def sqbintronaomi(ml):
     
       ml.find_label("eck_naomi_introduction") \
@@ -160,5 +145,5 @@ def sqb2naomi(ml):
            .search_say("A couple of hours later") \
            .search_say("Do you have anyone in mind") \
            .hook_to("sqb_naomi_m2_sexandeating", condition='sqbpremounlocked == True and naomi2mood > 8 and naomilewd > 4') \
-           #.search_say("I guess we should get going.") \
-           #.link_from("sqb_naomi_m2_sexandeating_end")
+           .search_say("I guess we should get going.") \
+           .link_from("sqb_naomi_m2_sexandeating_end")
