@@ -1443,9 +1443,9 @@ label sqb_naomi_m2_sexandeating:
     m "After that I placed my self-made bain-marie on the cooktop, and poured the egg yolks in the bowl. The yolks started heating up almost immediately after had broken them by whisking , so I started adding the flavor broth and whisked furiously."
     
     m "I was so proud of myself. Eight breaded chicken fillets filled with herb butter, a pot full of mashed potatoes, a lot of fried noodles, a delicious sauce and a bacon potato omelet, although it was still cooking."
-    m "I kept whisking rapidly until the sauce was even, and then I started adding butter bit by bit. When that was done, I finished off the sauce with tarragon, white pepper, sugar and salt."
-    m "(Finally, my arm is pretty tired. Worth it, because I really love this sauce.)"
-    m "I poured the sauce from the bowl into the saucière and placed it with the rest of the food."
+    m "I kept whisking rapidly until the sauce was even, and then I started adding butter bit by bit. When that was done, I finished off the sauce with tarragon, white pepper, sugar and salt. FInally, I had to let it sit for it to thicken, so I took a small break."
+    m "(My arm is tired from the whisking. Worth it though, because I really like this sauce.)"
+    m "I poured the sauce from the bowl into the saucière and placed it on the kitchen counter with the rest of the food."
     m "(I can turn the omelet after I have carried all the food to Naomi. Other than that, looks like we're about done here.)"
     
     #Order of carrying
