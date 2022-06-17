@@ -191,13 +191,13 @@ label sqb_naomi_m2_movie:
     Nm confused "Just make sure you have good friends..." 
     Nm smile "...or something more to help you out."
     play sound "fx/sheet.wav"
-    m "Naomi moved closer towards me on the sofa."
+    m "Naomi moved a bit closer towards me on the sofa."
     c "Thank you again, Naomi. I really mean it."
-    m "She leaned yet a little bit closer towards me."
+    m "She leaned yet a little bit closer. Since she was a lot bigger than me, I started feeling a little intimidated but also intrigued."
     Nm shy "Would you like a hug? I don't want to see a cute little human like you sad like this ever again."
     m "(She's right, I really need a hug right now.)"
-    m "(Also, I like her a lot already and turning down her offer would be rude right now.)"
-    c "Uhh... sure."
+    m "Also, I already liked her a lot and turning down her offer would have been rude."
+    c "Uhh...{w} sure."
     stop music fadeout 1.0
     show naomi slsmile with dissolve
     play sound "fx/sheet.wav"
@@ -1103,18 +1103,17 @@ label sqb_naomi_m2_sexandeating:
     m "With my assurance, Naomi walked past me to the living room and placed the glass of juice on the table."
     m "After that she jumped on the sofa in one smooth motion and started flexing."
     m "I kept watching Naomi as she flexed. She looked like a big scaly cat with wings and cute webbing."
-    m "After finishing her exercise and settling on the sofa, she noticed I was admiring her instead of preparing to cook."
-    
+    m "After finishing her exercise and settling on the sofa, she noticed I was admiring her instead of preparing to cook."    
     show ecknaomicg1 at Pan ((250, 230), (620, 50), 15.0) with dissolvemed
-    $ renpy.pause (7.5)    
-    Nm "Like what you saw?"
+    $ renpy.pause (7.5)
+    m "She is so massive...{w} especially her thighs and tail."    
+    Nm "Your mouth is gaping. Like what you see?"
     c "I think I already saw plenty in the bedroom. Although...{w} I have to admit that you look very cute lying on the sofa like that."
     Nm "Get back to the cooking, or I'll have to eat you instead."
     c "..."    
     scene black with dissolvemed
     $ renpy.pause (1.0)
-    scene ecknaomiapt02 with dissolvemed
-    
+    scene ecknaomiapt02 with dissolvemed    
     m "(Where was I?)"
     m "(Oh right, let's see what else we've got.)"
     $ renpy.pause (2.0)
@@ -1435,10 +1434,20 @@ label sqb_naomi_m2_sexandeating:
     queue sound "fx/crapfridge.mp3"
     m "To prepare for our meal, I took the bowl, saucière, some plates, utensils, glasses, napkins and another carton of juice and placed them in a neat order on the kitchen counter."
     m "(Almost there. The noodles should be fried enough now.)"
-    m "I used pasta tongs to move the fried noodles from the pan into the bowl and stuck two dragon-sized forks on it for me and Naomi."
-    #Sauce
+    m "I used pasta tongs to move the fried noodles from the pan into the bowl and stuck two dragon-sized forks on it for me and Naomi.  Then I quickly rinsed and wiped the pan and put it back on the cooktop."
+    play sound "fx/faucet1.ogg"
+    queue sound "fx/wipe.ogg"
+    m "To continue making the sauce, I poured my water-vinegar mix on the pan and added the onions."
+    m "(Damn, I just realized that reducing the water, vinegar and onions into a flavor broth is going to take a minute. I guess I will have to wash the dishes after all. Oh well."
+    
+    m "After that I placed my self-made bain-marie on the cooktop, and poured the egg yolks in the bowl. The yolks started heating up almost immediately after had broken them by whisking , so I started adding the flavor broth and whisked furiously."
     
     m "I was so proud of myself. Eight breaded chicken fillets filled with herb butter, a pot full of mashed potatoes, a lot of fried noodles, a delicious sauce and a bacon potato omelet, although it was still cooking."
+    m "I kept whisking rapidly until the sauce was even, and then I started adding butter bit by bit. When that was done, I finished off the sauce with tarragon, white pepper, sugar and salt."
+    m "(Finally, my arm is pretty tired. Worth it, because I really love this sauce.)"
+    m "I poured the sauce from the bowl into the saucière and placed it with the rest of the food."
+    m "(I can turn the omelet after I have carried all the food to Naomi. Other than that, looks like we're about done here.)"
+    
     #Order of carrying
     
     #Naomi's parents tried to encourage her to cook by buying equipment, didn't go well and she hates cooking herself now
