@@ -1541,16 +1541,30 @@ label sqb_naomi_m2_cooking:
     Nm surprisedblush "Just wow. Why didn't I try this sooner?" 
     Nm smile "I'm starting to really love human cuisine. It's so familiar but yet a little bit different."
     c "The sauce also works well with mashed potatoes, so you should definitely add it there too."
+    play sound "fx/chug.wav"
+    m "Naomi happened to be running out, so I scooped some mashed potatoes on her plate and poured some sauce on top."
+    c "Enjoy."
+    Nm "Thank you, [player_name]."
+    m "This was a good break as any, so I decided to go get the potato and bacon omelet. It had surely been ready for some time now."
+    scene black with dissolvemed
+    play sound "fx/metalbox.ogg"
+    m "I turned the heat off, slided the delicious omelet onto a serving tray and brought it back to the living room along with a cake knife."
+    scene ecknaomiapt03 with dissolvemed
+    show naomi surprised with dissolve
+    c "We're having this for dessert."
+    Nm shy "You've made so much food, [player_name]. I don't know what to say."
+    c "I made some extra so you can pack some to eat at work. We can't have you doing important work while hungry. Our lives may depend on it."
+    Nm smile "Thank you so much for looking after me."
+    m "I cut a quarter of the potato omelet with the cake knife I had taken earlier and placed it on Naomi's plate. Feeling a bit full already, I only cut one eight for myself."
+    m "The potato and bacon omelet exceeded my expectations: it was moist and salty, but also slightly sweet due to the dragon paprikas I had added."
     
-    #Mentions of both the fried noodles and potato omelet
+    #PC asks what Naomi thought of the fried noodles
     
-    m "We continued eating like this until we were both full. I had to pace my eating to be a lot slower than Naomi's since she could eat a lot more than me."
+    m "We continued eating like this until we were both completely full. I had to pace my eating to be a lot slower than Naomi's since she could eat a lot more than me."
     
     show naomi normal with dissolve
     c "I think I will call my style of cooking simple but delicious. This philosophy leaves more time for eating."
     Nm "I love that idea. Eating is of course the most important part."
-    
-    #PC tells Naomi they should take the leftover food to work so they don't have to skip lunch
     
     $ persistent.sqbnaomi2cook = True
     
@@ -1570,22 +1584,21 @@ label sqb_naomi_m2_ending:
     Nm shy "That's a very good point. In fact I'd say that despite physical differences our species are very similar since we're able to have a romantic relationship with each other."
     c "Hey, don't forget our differences. I think we will make a great team due to them. All in all, interacting with other sentient species is very exciting."
     Nm smile "Likewise." 
-    #Expand
     
     m "After we had rested from the eating, it was already very late. In fact, much more late than I had initially planned for."
     Nm normal "Thank you for the wonderful evening, [player_name]. It's getting very late, so let's just get going."
     Nm smile "Unless you want to sleep over here at my place?"
     c "I can't, sorry. There's some material I have to go over at my apartment tomorrow morning. I have a feeling if I stay here I won't have any time for that."#Rethink
     c "Let's just call it a day. We can continue this some other time."
-    Nm normal "That works for me. We got lots of time to be together, right?"
-    Nm confused "Oh, I just remembered something. I was initially going to buy some supplies after escorting you home, but all the shops have already closed."
+    Nm normal "That works for me. We got lots of more time to be together, right?"
+    Nm confused "Oh, I just remembered something. I was initially going to buy some supplies after escorting you home, but all the shops have already been closed."
     c "That's very unfortunate. You can always do that tomorrow though."
-    Nm blank "Yeah, it's not a big deal."
-    Nm smile "I have to say again that we had an excellent time. I'm not very used to having people come over, but this evening was a resounding success."
+    Nm blank "Yeah, it's not a big deal. I'll escort you home regardless."
+    Nm smile "I have to say again that we had an excellent time. I'm not very used to having people come over, but this evening was a resounding success without equal."
     Nm normal "Thank you so much, [player_name]."
     c "I had a great time as well. Actually, didn't you say you had a vacation coming up? Want to meet again then?"
-    Nm smile "Thank you for remembering. I would love that so much."
-    Nm "And I might have just the idea on how to make it more interesting."
+    Nm smile "Thank you for remembering. I would love to do that so much. Also, I might have just the idea on how to make it more interesting."
+    Nm normal "Let's go, I'm getting kind of tired."
     hide naomi with dissolve
     play sound "fx/sheet.wav"
     scene ecknaomiapt01 with dissolvemed
@@ -1639,10 +1652,9 @@ label sqb_naomi_m2_ending:
     c "Thanks, Sebastian."
     
     if modinfo.has_mod("BangOk?") and bangok_four_xsebastian_unplayed == False:
-        #Rewrite?
         Sb shy b "You know...{w} umm..."
-        Sb "Since we've already been intimate, is there any chance I could join you two? The more the merrier."
-        c "It's up to her. She did call you cute and she said she likes smaller partners, so there's a chance she might be fine with it."
+        Sb "Since we've already had sex, is there any chance I could join with you and Naomi? You know what they say: the more the merrier."
+        c "I wouldn't mind that, so it's up to her. She did call you cute and she also said she likes smaller partners, so there's a chance she might agree to it."
         Sb smile b "That's wonderful news."
         Sb drop b "I'll ask her when I have mustered up the courage."
         c "Cool."
