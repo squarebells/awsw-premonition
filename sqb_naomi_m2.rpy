@@ -1556,7 +1556,7 @@ label sqb_naomi_m2_cooking:
     c "I made some extra so you can pack some to eat at work. We can't have you doing important work while hungry. Our lives may depend on it."
     Nm smile "Thank you so much for looking after me."
     m "I cut a quarter of the potato omelet with the cake knife I had taken earlier and placed it on Naomi's plate. Feeling a bit full already, I only cut one eight for myself."
-    m "The potato and bacon omelet exceeded my expectations: it was moist and salty, but also slightly sweet due to the dragon paprikas I had added."
+    m "The potato and bacon omelet exceeded my expectations: it was moist but at the same time crisp in some places. On top of that the saltiness wasn't overpowering, and it was also slightly sweet due to the dragon paprikas I had decided to add."
     
     #PC asks what Naomi thought of the fried noodles
     
