@@ -181,7 +181,7 @@ label sqb_naomi_m6_discussion_reality:
     c "Anyway, if we're in the type of simulation I think we might be in, we won't ever be able to break out of it. Even trying would probably have us lose our sanity."
     show naomi confused flip with dissolve
     m "Naomi was getting visibly bored with my antics."    
-    c "Uhh...{w} in the end it doesn't seem like I'm getting anywhere with this line of thought."
+    c "I suppose in the end it doesn't seem like I'm getting anywhere with this line of thought."
     c "Because of this I guess I have to come to the conclusion that I should stop theorizing before I lose my mind." 
     c "Let's just focus on what we experience, especially on experiences that make both of us happy."
     Nm normal flip "That I can agree with." 

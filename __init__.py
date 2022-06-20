@@ -91,7 +91,7 @@ def sqb1naomi(ml):
 
 def sqb2naomi(ml):
 
-       ml.find_label("sqb_naomi_m2_sexandeating") \
+       ml.find_label("sqb_naomi_m2_bedroomfun") \
            .search_say("I hope you understand that") \
            .search_say("I picked up my clothes") \
            .search_say("Her remark made me feel") \
@@ -100,14 +100,13 @@ def sqb2naomi(ml):
            .search_say("It was certainly fun to") \
            .search_say("Oh, you're hungry") \
            .hook_to("sqb_naomi_m2_foodskip", condition='sqbpremounlocked == True') \
-           .search_say("We could order some food") \
-           .link_from("sqb_naomi_m2_foodskip_end")
 
-       ml.find_label("sqb_naomi_m2_ending") \
-           .search_say("You make a good point") \
-           .hook_to("sqb_naomi_m6_discussion_reality", condition='sqbpremounlocked == True') \
-           .search_say("Likewise") \
-           .link_from("sqb_naomi_m6_discussion_reality_end")
+       #ml.find_label("sqb_naomi_m2_ending") \
+           #.search_say("You make a good point") \
+           #.search_say("I dropped on my bed") \
+           #.hook_to("sqb_naomi_m6_discussion_reality", condition='sqbpremounlocked == True') \
+           #.search_say("When I woke up") \
+           #.link_from("sqb_naomi_m6_discussion_reality_end")
 
        ml.find_label("eck_naomi_m2") \
            .search_menu("I can imagine.") \
@@ -144,6 +143,6 @@ def sqb2naomi(ml):
            .search_say("Sounds uncomfortable.") \
            .search_say("A couple of hours later") \
            .search_say("Do you have anyone in mind") \
-           .hook_to("sqb_naomi_m2_sexandeating", condition='sqbpremounlocked == True and naomi2mood > 8 and naomilewd > 4') \
+           .hook_to("sqb_naomi_m2_bedroomfun", condition='sqbpremounlocked == True and naomi2mood > 8 and naomilewd > 4') \
            .search_say("I guess we should get going.") \
-           .link_from("sqb_naomi_m2_sexandeating_end")
+           .link_from("sqb_naomi_m2_bedroomfun_end")
