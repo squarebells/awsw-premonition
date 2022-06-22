@@ -1053,6 +1053,7 @@ label sqb_naomi_m2_cooking:
     Nm normal "I can't wait to do some taste testing. What delicious human dishes are you going to cook?"
     c "I don't know yet. I'll have to see what's in the kitchen."
     c "Let's go."
+    hide naomi with dissolve
     scene black with dissolvemed
     play sound "fx/door/door_open.wav"
     m "We exited Naomi's bedroom back into the main part of her apartment. For some reason, this time she was trailing behind me instead leading me like before."
@@ -1090,8 +1091,8 @@ label sqb_naomi_m2_cooking:
     m "(But how did she know I like cooking? I suppose I should ask her when she comes back.)"
     m "(Back to the main task at hand. I think at first I should move a bunch of stuff on the kitchen counter and sort everything by type.)"
     play sound "fx/rummage.ogg"
-    m "With some effort, I moved most of the foodstuffs and ingredients onto Naomi's kitchen counter and then organized them."
-    m "(This is going to be fun. Although, having only two cooktops will might pose a challenge. They're pretty old-fashioned as well.)"
+    m "With some effort, I moved most of the foodstuffs and ingredients onto Naomi's kitchen counter and organized them."
+    m "(This is going to be fun. Still, having only two cooktops might pose a challenge. They're pretty old-fashioned as well.)"
     m "(Anyway, as the second order of business, I'll put back what I won't use. I can always take something back if I need it later)"
     $ renpy.pause (1.0)
     #Placing sound?
@@ -1102,6 +1103,7 @@ label sqb_naomi_m2_cooking:
     m "(Some of these vegetables don't look familiar at all to me. I'll only use ones that look vaguely similar to what I've used before."
     $ renpy.pause (2.0)
     play sound "fx/crapfridge.mp3"
+    queue sound "fx/cabinet.ogg"
     m "(Alright, this looks better. Let's figure out what we actually want to use.)"    
     $ renpy.pause (2.0)
     m "I noticed a pack of egg noodles and a large pack of lightly salted chicken fillets."
@@ -1109,8 +1111,8 @@ label sqb_naomi_m2_cooking:
     m "(For example, I like the flexibility of these types fillets because you can always cut them to pieces if you want, but also season them how you like. Noodles are great too, because almost everyone likes them.)"
     play sound "fx/faucet1.ogg"
     queue sound "fx/button_press.ogg"
-    m "(To start, poured in water from the kitchen faucet into an electric teapot and turned it on to heat water for the noodles.)"
-    m "(I need hot water for the noodles, and it's a lot less effort to heat water like this. Also, it stays hot longer inside the teapot.)"
+    m "(To start off, I poured water from the kitchen faucet into an electric teapot and turned it on to heat some water for the noodles.)"
+    m "(It's a lot less effort to heat the water with an electric teapot. Also, the water stays hot longer inside it.)"
     play sound "fx/door/door_open.wav"
     queue sound "fx/door/doorclose.ogg" 
     m "As I was pondering on how to proceed, Naomi came out of the bathroom to check on how I was doing."   
@@ -1140,9 +1142,9 @@ label sqb_naomi_m2_cooking:
     m "After finishing her exercise and settling back on the sofa, she noticed I was admiring her instead of preparing to cook."    
     show ecknaomicg1 at Pan ((250, 230), (620, 50), 15.0) with dissolvemed
     $ renpy.pause (7.5)
-    m "She is so big and muscular...{w} especially her thighs and tail."    
+    m "She is so big and muscular...{w} especially her thighs and chest."    
     Nm "Your mouth is gaping. Like what you see?"
-    c "I think I already saw plenty in the bedroom. Although...{w} I have to admit that you look very cute lying on the sofa admiring me back."
+    c "I think I already saw plenty in the bedroom. Although...{w} I have to admit that you look very cute lying on the sofa admiring me."
     Nm "Hurry up with the cooking, or I'll have to eat you instead."
     c "..."    
     scene black with dissolvemed
@@ -1189,7 +1191,7 @@ label sqb_naomi_m2_cooking:
     play sound "fx/crapcuttingboard.mp3"
     m "After a couple of minutes of knife-work, I managed to slice the entire bag of bread."
     #Sound?
-    m "To create the flavoring mix, I combined a ton of garlic paste and some olive oil, pepper and salt. After that I arranged all the unbaked bread sticks on the two baking trays and used a spoon to apply the flavor mix."
+    m "To create the flavor mix, I combined a ton of garlic paste and some olive oil, pepper and salt. After that I arranged all the unbaked bread sticks on the two baking trays and used a spoon to apply the flavor mix."
     m "(Looks like I have some time left after all since the oven isn't ready yet.)"
     m "(I should probably figure out what to do with the chicken next. Let's check again what ingredients we've got.)"
     play sound "fx/rummage.ogg"
@@ -1214,7 +1216,7 @@ label sqb_naomi_m2_cooking:
     play sound "fx/door/hallwaydoor.ogg"
     m "I put the baking trays with the bread sticks in the oven and set a timer."
     m "(Our hunger's going to be alleviated soon.)" 
-    c "(I think I should figure out a side dish for the breaded chicken fillets before I do anything else.)"
+    m "(I think I should figure out a side dish for the breaded chicken fillets before I do anything else.)"
     $ renpy.pause (2.0)
     m "(Looks like we have some higher-starch potatoes for mashing that would go really well as a side. Luckily, I have some hot water already.)"
     play sound "fx/faucet2.ogg"
@@ -1257,22 +1259,23 @@ label sqb_naomi_m2_cooking:
     queue sound "fx/salt.ogg"
     queue sound "fx/unwrap.ogg"
     m "I took the trays out of the oven and sprinkled some herb mix on the baked bread sticks. Then I used the baking paper to slide them onto a very large plate."
+    play sound "fx/fry.ogg"
     m "Not forgetting about the chicken fillets, I turned them for the first time."
+    stop sound fadeout 1.0
     play sound "fx/pizzabite.ogg"
     m "Then I ate a few of the bread sticks sate some of my worst hunger. They were crunchy, spicy and garlicky but also most importantly tasty, like I had expected them to be."
     m "(I'm sure Naomi will love these.)"
-    m "My hands got messy from eating with them so I instinctively wiped off the grease on the kitchen towel."
-    m "(I just got an idea.)"
-    m "(I'll have to make sure Naomi doesn't make a mess eating the break sticks. She'll probably ask me to clean up afterwards if that ends up happening.)"
+    m "My hands got messy from eating with them so I instinctively wiped off the grease on a kitchen towel and realized something."
+    m "(I'll have to make sure Naomi doesn't make a mess eating the bread sticks. She'll probably ask me to clean up afterwards if that ends up happening.)"
     scene ecknaomiapt03 with dissolvemed
-    m "I picked up the bread stick plate along with some rather large napkins and went off to the living room where Naomi was. She was attentively watching what I presumed to be one of those long series she had told me earlier about."
+    m "I picked up the bread stick plate along with some rather large napkins and went off to the living room where Naomi was. She was attentively watching what I presumed to be one of those long series she had earlier told me about."
     show naomi normal with dissolve
     Nm "That was certainly a lot faster than waiting for a food delivery. It seems that we made the correct choice."
     show naomi surprised with dissolve
     m "I presented the appetizer plate to Naomi and it immediately perked up her attention."
     c "So, here's something to start off with. Do you think I made enough so that you won't have to eat me?"
     Nm shy "I hope you understood that I was just joking. In fact, I can go a long time without eating if I really need to. I just need to eat a lot to keep in shape for some of my more physical activities, like long-distance flying or swimming."
-    c "I was just playing along."
+    c "I know. I was just playing along with your antics."
     Nm blank "Oh, you got me."
     Nm smile "Thanks a lot, [player_name]. These bread sticks smell delicious."
     c "You're welcome, Naomi. Please remember to use the napkins after you've finished eating them. Also, avoid touching any of the furniture before you've wiped your hands clean."
@@ -1299,7 +1302,8 @@ label sqb_naomi_m2_cooking:
         Nm "Could I get some more juice with these delicious bread sticks?"    
     
     c "I'll go back to the kitchen now."
-    Nm normal "I'm really looking forward to what else you can come up with."   
+    Nm normal "I'm really looking forward to what else you can come up with."
+    hide naomi with dissolve    
     scene ecknaomiapt02 with dissolvemed
     play sound "fx/fry.ogg"
     m "After getting back, I turned the chicken breasts again and lowered the heat."    
@@ -1313,7 +1317,7 @@ label sqb_naomi_m2_cooking:
     queue sound "fx/veggies.ogg"
     m "I washed some of the more familiar-looking vegetables and held them in a neat pile on the cutting board, and then used my knife-work to turn them into pieces of various sizes."
     play sound "fx/crapcuttingboard.mp3"
-    m "After finishing up, I meticulously cut the cheese I had selected previously."
+    m "After finishing up, I meticulously cut the cheese I had selected previously into same-size bits."
     play sound "fx/faucet1.ogg"
     queue sound "fx/faucet2.ogg"
     m "The noodles were ready now, so I took a pot lid and used it together with the pot to carefully pour all the hot water into the sink. Then I poured in some cold water stop the cooking process."
@@ -1322,7 +1326,7 @@ label sqb_naomi_m2_cooking:
     if naomi1drink == "cocktail":
     
         stop sound fadeout 1.0
-        m "(There's enough time to make a cocktail in the meantime.)"
+        m "(There's enough time to make the cocktail in the meantime.)"
         play sound "fx/crapfridge.mp3"
         m "I took the liquor bottle from the fridge's door compartment and inspected what I had to work with. The bottle's sunny and cheerful-looking label read 'sugar cane liquor'"
         m "(I have an idea what this might compare to. Still, I should probably taste it first.)"
@@ -1350,14 +1354,15 @@ label sqb_naomi_m2_cooking:
         m "To follow up on the cocktail, I cut some limes in half and juiced them into some delicious, fresh lime juice."
         play sound "fx/cabinet.ogg"
         queue sound "fx/pouringwineshort.ogg"     
-        m "Next to chill the cocktail, I luckily found a dragon-sized cocktail shaker in the first cabinet I opened to search for one. I poured roughly three portions of fresh lime into the shaker through a sieve."
+        m "Next to chill the cocktail, I luckily found a dragon-sized cocktail shaker in the first cabinet I opened. I poured roughly three portions of fresh lime into the shaker through a sieve."
         m "(Since Naomi seems to be skittish of alcohol, I should be careful with the alcohol content. Better to play it safe, as always.)"
+        play sound "fx/cabinet.ogg"
         m "I inspected one of the same types of glasses I had served her juice in."
         m "(She's like two to three times as big as I am, so two portions of alcohol in around a half a liter cocktail should only give her a slight buzz, even if she drank it all in one go.)"
         queue sound "fx/pour.ogg"
         m "I measured two portions of liquor and six portions of simple syrup and poured them into the cocktail shaker."
         play sound "fx/crapfridge.mp3"
-        m "Next I opened Naomi's freezer, took some ice and added them in too."
+        m "Next I opened Naomi's freezer, took some ice and added some in."
         #Shaking sound also?
         play sound "fx/stir.ogg"
         m "I shook the shaker for a short time and poured the cocktail into the large glass, again through a sieve. Finally, I added two straws and used a spoon to do a taste test."
@@ -1377,6 +1382,7 @@ label sqb_naomi_m2_cooking:
         show naomi normal with dissolve
         play sound "fx/dishes.wav"
         m "Naomi had resumed focusing on the series, so I just grabbed the empty appetizer plate from the table and went back to the kitchen to continue cooking."
+        hide naomi with dissolve
         scene ecknaomiapt02 with dissolvemed
 
     else:
@@ -1402,7 +1408,7 @@ label sqb_naomi_m2_cooking:
     $ renpy.pause (2.0)
     play sound "fx/beeps2.ogg"
     queue sound "fx/beeps2.ogg"
-    m "After dropping off the appetizer plate at the sink, the timer signaled that the first batch of chicken breasts were ready. I took them off the pan onto a serving plate, added the unfried ones  in and set the heat higher again. After that was done, another timer beeped to tell me that the potatoes were ready."
+    m "After dropping off the appetizer plate at the sink, the timer signaled that the first batch of chicken breasts were ready. I took them off the pan onto a serving plate, added in the unfried ones and set the heat higher again. After that was done, another timer beeped to tell me that the potatoes were ready."
     m "(Somehow, I've timed this almost to perfection.)"
     play sound "fx/metalbox.ogg" 
     m "To continue making the mashed potatoes, I lifted the boiling pot off the cooktop onto a potholder and added the noodle pan in."    
@@ -1412,8 +1418,8 @@ label sqb_naomi_m2_cooking:
     m "After I had mashed for a short time, I poured in some milk."
     m "(That should be enough for now. It's better to be careful to not use too much milk at first because you can always add more later. If you add too much the mashed potatoes will become soggy, like a thick soup.)"
     play sound "fx/crapcuttingboard.mp3"
-    m "Then, when I had mashed for a bit longer I opened one of the packages of butter on the counter, cut some pieces from it and added them to the almost ready mashed potatoes."
-    m "To finish off, I mashed a little bit more and finally mixed the entire thing with a scoop and left it in the pot ready for a serving."
+    m "Then, when I had mashed for a bit longer I opened one of the packages of butter on the counter, cut a lot of large chunks from it and added them to the almost ready mashed potatoes."
+    m "To finish off, I mashed a little bit more and finally mixed the entire thing with a scoop and left it in the pot ready for serving."
     play sound "fx/fry.ogg"
     queue sound "fx/salt.ogg"
     m "After that, it was time to turn the chicken. When that was done, I tasted the mashed potatoes, decided to add some salt and tasted it again."
@@ -1421,7 +1427,7 @@ label sqb_naomi_m2_cooking:
     m "I added a lid to the pot of fresh mashed potatoes to preserve some heat and moved on to fry the noodles."
     m "(Oh well. I suppose olive oil will have to do, because I don't feel like searching for anything.)"    
     play soundloop "fx/fry.ogg"
-    m "To start off, I poured some oil into the already hot enough frying pan and used my hands to add in the cold noodles."
+    m "To start off, I poured some olive oil into the already hot enough frying pan and used my hands to add in the cold noodles."
     play sound "fx/salt.ogg"
     m "Then finally after mixing the noodles a bit, I added in the cut vegetables, cheese and the spices and sauces I had selected earlier."
     m "(That looks pretty good already.)"
@@ -1434,7 +1440,8 @@ label sqb_naomi_m2_cooking:
     $ renpy.pause (2.0)
     m "(How about a potato and bacon omelet? I could also use some other ingredients like these paprika-resembling vegetables for the texture and flavor.)"
     play sound "fx/metalbox.ogg"
-    m "I grabbed another pan and put it off to the side because both cooktops were occupied right now. Then I turned the chicken for the final time and lowered the heat, already anxious to be done with it."
+    queue sound "fx/fry.ogg"
+    m "I grabbed another pan and set it off to the side because both cooktops were occupied right now. Then I turned the chicken for the final time and lowered the heat, already anxious to be done with it."
     m "(I should probably get all the ingredients ready for the omelet while the chicken is frying.)"
     play sound "fx/sliceshort.ogg"
     queue sound "fx/crapcuttingboard.mp3"
@@ -1471,8 +1478,7 @@ label sqb_naomi_m2_cooking:
     queue sound "fx/wipe.ogg"
     m "I finished my tidying-up operation by spraying some cleaning liquid on the kitchen counters and wiping them clean."
     play sound "fx/fry.ogg"
-    m "(That didn't take long.)"
-    m "By now the bacon and potatoes were ready enough, so I added in the rest of the ingredients. Wanting to do a good job, I also mixed the noodles again."
+    m "Then I noticed that by now the bacon and potatoes were ready enough, so I added in the omelet mix and paprikas. Wanting to do a good job, I also mixed the noodles again."
     stop sound fadeout 1.0
     m "(The omelet might take a while, but we can just eat it for dessert because it's not going to burn on low heat.)"
     m "I started looking for some tableware for serving the food."
@@ -1493,7 +1499,7 @@ label sqb_naomi_m2_cooking:
     queue sound "fx/dishes.wav"
     queue sound "fx/rub1.ogg"
     queue sound "fx/wipe.ogg"
-    m "I begrudgingly washed all the dishes I could at the time. Sadly, we obviously would have to wash some more after we had eaten."
+    m "I begrudgingly washed all the dishes I could at the time. Sadly, we would have to wash some more after eating."
     m "After I had finished washing the dishes, the flavor broth was ready because the ingredients in the pan had reduced to half their volume. I poured it into a heat-resistant glass through a sieve."
     m "Then I took my self-made bain-marie and put it on the cooktop. The water in it started boiling after a few moments, so I added the egg yolks into the bowl and whisked to break them up. The broken yolks started heating up almost immediately, so I started slowly pouring in the flavor broth and whisked even more furiously."   
     m "I kept whisking rapidly until the sauce was even, and then started adding butter bit by bit. When that was done, I seasoned the sauce with tarragon, white pepper, sugar and salt. Finally, I had to let it sit for it to thicken, so I took a small break."
@@ -1509,12 +1515,12 @@ label sqb_naomi_m2_cooking:
     m "It took me three trips in all to bring all the food and required tableware into the living room, where we would eat."
     scene ecknaomiapt03 with dissolvemed
     show naomi surprised with dissolve
-    m "After I was done, I sat down next to Naomi, and I noticed that she had turned the series off and was instead eyeing all the food with a curious and hungry look."
+    m "After I was done, I sat down next to Naomi, and I noticed that she had turned the series off and was instead eyeing all the food I had brought with a curious and hungry look."
     c "Please use the the fork at least for the fried noodles. Otherwise the grease and sauces from the frying will be everywhere."
     Nm blank "If I make a mess you can just clean up for me later, right?"
     c "I would like to avoid any unnecessary work. In fact, if you have any questions or need help plating I'll be happy to accommodate you in that front as well."
     show naomi normal with dissolve
-    c "Also use the scoop for the mashed potatoes. Even though we have already swapped bodily fluids, I don't want your saliva in my food."
+    c "Also use the scoop for the mashed potatoes. Even though we have swapped bodily fluids, I don't want your saliva in my food."
     Nm smile "Fine, fine. It's very cute how fussy you are being with me."
     c "I appreciate it. I'm just trying to teach you how to eat less messily."
     play sound "fx/dishes.wav"
@@ -1524,10 +1530,10 @@ label sqb_naomi_m2_cooking:
     c "We can finally start eating."
     play sound "fx/pizzabite.ogg"
     show naomi normal with dissolve    
-    m "Naomi dove straight in by tossing one of the breaded chicken fillets in her mouth, to eat it whole."
+    m "Naomi dove straight in by tossing one of the breaded chicken fillets into her mouth, to eat it whole."
     show naomi smile with dissolve
     play sound "fx/eating.wav"
-    m "I began by taking a huge chunk of the fried noodles with my fork and stuffing some of it into my mouth."
+    m "I began by taking a huge chunk of the fried noodles with my fork and stuffing some into my mouth."
     Nm "This chicken is so delicious! I especially like the crunchiness."
     c "Same. I love the taste and texture of batter, so I breaded it twice."
     Nm surprisedblush "Actually, even more than the crunchiness I love how the herb butter just bursts inside your mouth when you bite in."
@@ -1535,12 +1541,13 @@ label sqb_naomi_m2_cooking:
     Nm normal "You're already starting to sound like an expert on how to plan meals for hungry dragons."
     c "Well, I am certainly planning to hone that skill even further, for both of our sake."
     Nm smile "You have no idea how much I am looking forward to that, [player_name]."
-    c "You and me both. I have to go turn the omelet that's still cooking, I'll be right back."
+    c "You and me both. By the way, I have to go turn the omelet that's still cooking in the kitchen."
     Nm surprised "You're making even more food?"
     c "Well, I didn't want to sit around doing nothing so I used my time as efficiently as possible. I'll be back in a minute."
     scene black with dissolvemed
+    hide naomi with dissolve
     play sound "fx/metalbox.ogg"
-    m "I went back to the kitchen and used a plate and a potholder to turn the omelet. It was a bit difficult because the equipment, especially the pan was so big, but I managed to do it without causing a mess."
+    m "I went back to the kitchen and used a plate and a potholder to turn the omelet. It was a bit difficult because the equipment, especially the pan was big, but I managed to do it without causing a mess."
     scene ecknaomiapt03 with dissolvemed
     show naomi normal with dissolve
     play sound "fx/eating.wav"
@@ -1560,12 +1567,11 @@ label sqb_naomi_m2_cooking:
     show naomi normal with dissolve
     $ renpy.pause (4.0)
     m "After eating enough fried noodles I scooped some mashed potatoes onto my plate, placed a fried chicken fillet in the middle and poured some sauce on it. Then I cut through the fillet, releasing the delicious herb butter into the mix."
-    m "I cut the fillet into several smaller pieces. I spread some sauce, herb butter and mashed potatoes on a piece and ate it. It was superbly delicious, with a nice texture and juiciness to boot."
+    m "I cut the fillet into several smaller pieces. I spread some sauce, herb butter and mashed potatoes on a piece and ate it. It was superbly delicious, with a nice crunchy texture and juiciness to boot."
     c "You should try the chicken with the sauce I made. Let me pour some for you."
-    show naomi normal with dissolve
+    show naomi surprised with dissolve
     play sound "fx/chug.wav"
     m "I took the saucière and poured some of the thick, buttery and slightly bitter sauce on one of the breaded chicken fillets."
-    show naomi surprised with dissolve
     c "There you go."
     m "After eyeing the chicken hungrily the entire time I had been pouring the sauce, Naomi picked it up with the tips of her claws and proceeded to toss it in her maw. Surprisingly, she didn't make a mess, even though the chicken was coated in sauce."
     play sound "fx/pizzabite.ogg"
@@ -1573,7 +1579,7 @@ label sqb_naomi_m2_cooking:
     Nm smile "I'm starting to really love human cuisine. It's so familiar but yet a little bit different."
     c "The sauce also works well with mashed potatoes, so you should definitely add it there too."
     play sound "fx/chug.wav"
-    m "Naomi happened to be running out, so I scooped some mashed potatoes on her plate and poured some sauce on top."
+    m "Naomi happened to be running out, so I scooped some mashed potatoes on her plate and poured some of the sauce on top."
     c "Enjoy."
     Nm "Thank you, [player_name]."
     show naomi normal with dissolve
@@ -1586,14 +1592,14 @@ label sqb_naomi_m2_cooking:
     show naomi surprised with dissolve
     c "We're having this for dessert."
     Nm shy "You've made so much food, [player_name]. I don't know what to say."
-    Nm smile "Thank you so much for this evening."
+    Nm smile "Thank you so much for this wonderful evening."
     show naomi normal with dissolve
     m "I cut a quarter of the potato omelet with the cake knife and lifted it on Naomi's plate. Feeling a bit full already, I only cut one eight for myself."
     m "The potato and bacon omelet exceeded my expectations: it was moist but at the same time crisp in some places. On top of that the saltiness wasn't overpowering, and it was also slightly sweet due to the dragon paprikas I had decided to add."
     Nm "This omelet is great too. I think I might be warming up to keeping you around a bit longer."
     c "Thanks, Naomi. I'm really happy to hear that."
     Nm shy "But seriously, how did you become such a master chef? I don't think I would ever be able to create a meal like this."
-    c "Actually I would call myself pretty much an amateur, because the best food isn't usually overly complicated to make. In my opinion it's better to just focus on using good-quality ingredients and learning recipes that most people like to eat." 
+    c "Actually I would call myself pretty much an amateur, because the best food isn't usually overly complicated to make. In my opinion it's better to just focus on using good-quality ingredients and learning recipes for food that most people like to eat." 
     Nm normal "I see. I guess none of these dishes are that complicated when I think about it."
     c "That's why I call my style of cooking simple but delicious. This philosophy leaves more time for eating."
     Nm smile "I love that idea. Eating is of course the most important part."
@@ -1607,21 +1613,22 @@ label sqb_naomi_m2_cooking:
     play sound "fx/chug.wav"
     show naomi smile with dissolve    
     m "I poured some sauce for Naomi and since it seemed that we had run out of interesting topics to talk about we continued eating silently until we were both completely full."
-    m "I had to pace my eating to be a lot slower than Naomi's since she could eat a lot more than me. After we had stopped eating, there was still a good ammount of food left over."    
+    m "I had to pace my eating to be a lot slower than Naomi's since she could eat a lot more than me. After we had stopped eating, there was still a good amount of food left over."    
     show naomi normal with dissolve
     c "What a meal, even if I say so myself."
     Nm smile "Yeah, it was great. I hope you're not getting bored of me constantly complimenting you."
     c "I would never get bored of that. Just remember that there's ways for you to pay me back."
     Nm shy "If you're hinting at what I think you are, do you realize I've stuck a far better bargain than you have since I enjoy having you in bed as well?"
-    c "This goes both ways. I enjoy cooking for you as well."
+    c "Our feelings go both ways, I enjoy cooking for you."
     Nm blank "Oh well. You got me there."
     Nm normal "By the way, looks like you cooked too much because we couldn't eat everything."
-    c "That's fine, because you can take some of the food to work so you don't have to work while hungry. I'm sure a lunch break won't take too long if you don't have to go to a café to eat it."
+    c "That's fine, because you can take some of the food to work so you don't have to work while hungry. I'm sure a lunch break won't take too long if you don't have to go to a café to eat."
     Nm smile "Do you think that you cooking food for me to eat at work might become a regular occurrence?"
     c "Sure, if you decide to keep me around."    
     c "Actually, I'll go put the leftovers in the fridge right now. Do you think you can wash the dishes later though? I really hate doing that because it makes my hands go dry."
     Nm normal "Sure, I can manage that."
     scene black with dissolvemed
+    hide naomi with dissolve
     play sound "fx/crapfridge.mp3"
     m "In two trips, I placed what was left over into Naomi's fridge so she could eat them tomorrow."
     scene ecknaomiapt03 with dissolvemed
@@ -1649,8 +1656,8 @@ label sqb_naomi_m2_ending:
     c "Well if I had to guess, the human that allegedly visited your world a long time ago had a bigger impact on your development than you think."
     Nm normal "Oh yes, that thing from the history class. I had completely forgotten about it."
     c "Also, similar sentient species usually developing along the same lines probably has something to do with it."
-    Nm shy "Now that's a point I agree with. I'd like to add that despite physical differences our species are very similar since we're able to have a romantic relationship with each other."
-    c "Hey, don't forget our differences. I think we will make a great team due to them. All in all, interacting with other sentient species is a very exciting time."
+    Nm shy "Now that's a point I agree with. I'd like to add that our species are very similar since we're able to have a romantic relationship with each other."
+    c "Hey, don't forget about our differences. I think we will make a great team due to them. All in all, interacting with other sentient species is a very exciting time."
     Nm normal "Likewise." 
     c "Anyway, I think I ate way too much. Do you mind if I take a short nap for about half an hour?"
     Nm smile "Not at all. I will keep you safe."
@@ -1668,26 +1675,26 @@ label sqb_naomi_m2_ending:
     Nm smile "Time to wake up."
     play sound "fx/sheet.wav"
     show naomi normal with dissolve
-    m "After I had gotten up from the sofa, I noticed it was already very late. I'd stayed for much longer than I'd initially planned for."   
+    m "After I had gotten up from the sofa, I noticed it was already very late. I'd stayed for much longer than I'd initially planned for. It seemed as if Naomi had read my thoughts."   
     Nm normal "Thank you for the wonderful evening. It's getting very late, so maybe you should get going. Even though my vacation is coming up, I shouldn't stay up too late."
     Nm smile "Unless you want to sleep over here at my place?"
-    c "I can't, sorry. There's some material I have to go over at my apartment tomorrow morning. I have a feeling if I stay the night I won't have time for that in the morning."
+    c "I can't, sorry. There's some material I have to go over at my apartment tomorrow morning. I have a feeling if I stay the night I won't have time for that."
     c "Let's just call it a day. We can continue some other time."
-    Nm normal "That works for me. We got lots of more time to be together, right?"
+    Nm normal "That works for me. We got lots of time to be together, right?"
     Nm confused "Oh, I just remembered something. I was initially going to buy some supplies after escorting you home, but all the shops have already closed."
     c "That's very unfortunate. You can always do that tomorrow though."
     Nm blank "Yeah, it's not a big deal. I'll escort you home regardless."
     Nm smile "I have to say again that we had an excellent time. I'm not very used to having people come over, but this evening was a resounding success without equal."
     Nm normal "Thank you so much for your company, [player_name]."
     c "I had a great time as well. Actually, didn't you say you had a vacation coming up? Want to meet again then?"
-    Nm smile "How considerate of you to suggest that. I might have just the idea on how to make our time together more interesting. I can't tell you what it is now though, because it's a secret."
+    Nm smile "How considerate of you to suggest that. I might have just the idea on how to make our time together more interesting. I can't tell you right now what it is though, because it's a secret."
     Nm normal "Let's get going already, I'm pretty tired."
     hide naomi with dissolve
     scene ecknaomiapt01 with dissolvemed
     $ renpy.pause (0.5)
     m "We walked up to the main door and stopped for a moment while Naomi was fiddling with the lock."
     show naomi blank with dissolve
-    Nm "Still can't get used to the cursed thing."       
+    Nm "I still can't get used to the cursed thing."       
     play sound "fx/door/lock.ogg"
     $ renpy.pause (0.5)
     play sound "fx/door/handle.wav"
@@ -1702,8 +1709,7 @@ label sqb_naomi_m2_ending:
     Nm normal flip "Why didn't you let me know that you're here? There's enough room for all three of us."
     Sb "I'm still on the clock, so I decided to patrol the area. I only sat down here to take a breather while guarding your outer door."
     Nm blank flip "How nice of you. Still, you should have at least let us know you were there."
-    Nm normal flip "I was just about to escort [player_name] back to their apartment. Care to join us, Sebastian?"
-    m "Sebastian interjected Naomi and moved his gaze onto her."
+    Nm normal flip "I was just about to escort [player_name] back to their apartment. Care to join us?"
     show naomi blank flip with dissolve
     Sb disapproval b "Naomi, your shift is over, so go get some sleep. I'll escort [player_name] instead since I am still on the clock."
     c "Sure. Thanks, Sebastian."
@@ -1726,14 +1732,14 @@ label sqb_naomi_m2_ending:
     hide naomi with dissolve
     hide sebastian with dissolve
     scene black with dissolveslow
-    m "I exited outside through the dark hallway with Sebastian. He didn't comment at all at Naomi's sudden show of affection towards me."
+    m "We exited outside through the dark hallway with Sebastian. He didn't comment at all at Naomi's sudden show of affection towards me."
     stop sound fadeout 2.0
     scene eckdarkpathway with dissolveslow
     play soundloop "fx/steps/steps.ogg"
     $ renpy.pause (0.5)
     show sebastian smile b with dissolve
     m "After we had walked for a bit, he finally decided to bring it up."
-    Sb smile "So, you two did it?"
+    Sb smile b "So, you two did it?"
     c "Yes, we had a great time together."
     Sb "I'm so happy for Naomi, and for you too of course. She deserves a good boyfriend who will do right by her."
     c "Thanks, Sebastian. I really appreciate that."
@@ -1759,7 +1765,7 @@ label sqb_naomi_m2_ending:
     scene o3 with dissolveslow
     $ renpy.pause (2.0)
     scene black with dissolveslow
-    m "I dropped on my bed with my clothes still on, and fell asleep almost immediately. This had probably been the best day of my entire life."
+    m "I dropped on my bed with my clothes still on, and fell asleep almost immediately. This had without a doubt been the best day of my entire life."
     m "When I woke up, I couldn't remember the last time I had slept this well."
     
     $ renpy.pause (0.5)
