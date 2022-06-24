@@ -21,8 +21,8 @@ jump sqb_naomi_m3_tail_end
 
 label sqb_naomi_m3_undressing:
 
-    Nm shy "What's the big deal? You already undressed in front me at my apartment."
-    c "Yes, but it would feel kind of weird if you stared at me while I put the scuba gear on. We're outside and not about to have sex."
+    Nm shy "What's the big deal? I've already seen you without your clothes and you undressed in front me at my apartment."
+    c "Yes, but it would feel kind of weird if you stared at me while I put the scuba gear on. Also, we're outside and not about to have sex."
     Nm surprisedblush "Hold on." 
     Nm "I thought that back at my apartment you were the one who seduced me."
     Nm smile "When I asked you to take your clothes off in front of me, did you take that as a sign of me wanting to have sex with you?"
@@ -44,7 +44,7 @@ label sqb_naomi_m3_undressing:
     m "Done undressing, I hid my clothes in a nearby thick shrub and switched my attention towards the scuba gear, when I noticed Naomi peeking at me from under her wing."
     c "Naomi!"
     show naomi smile with dissolve
-    Nm "Sorry, [player_name]. I couldn't help but try out how you would react." 
+    Nm "Sorry. I couldn't help but find out how you would react." 
     Nm normal "I honestly don't understand what's so different about undressing outside."
     m "(This is starting to be really irritating, and and I want to get going already.)"
     c "It's whatever. You can watch if you want."
@@ -55,7 +55,7 @@ label sqb_naomi_m3_undressing:
     Nm normal "What's the whole idea behind clothes in the human society, anyway? You always have a lot of things on, only leaving a small part of the body in the open."
     c "We don't have anything to protect our skin or keep us warm, so clothes were the solution in the prehistoric times."
     c "Eventually, after many centuries of civilization development, covering oneself up became more than simple necessity, but rather a norm or a tradition to follow as well. Especially when it came to hiding certain – more private – parts of our bodies."
-    Nm smile "I see. Is that why you were so flustered back at my apartment when I started at you after you took your clothes off? Were you afraid that I would see your private parts?"
+    Nm smile "I see. Is that why you were so flustered back at my apartment when I stared at you after you took your clothes off? Were you afraid that I would see your private parts?"
     c "..."
     c "Are you sure you've never met a human before? You know just the correct ways to make me feel as embarrassed as possible to be a human."
     Nm shy "N-no... it's just intuition, I guess?"
@@ -70,13 +70,13 @@ label sqb_naomi_m3_undressing:
     c "Well, I guess that kind of just happened. In my defense, your genitalia is a lot more hidden than ours."
     Nm normal "Yeah, I saw that."
     m "I had almost finished putting the scuba gear on."
-    Nm smile "Anyway, this has been a pretty interesting talk. I'm happy to know that I arouse you simply by the virtue of existing. Care to tell me which exposed part of me excites you the most?"
+    Nm smile "Anyway, this has been a pretty interesting talk. I'm happy to know that I arouse you simply by the virtue of being around you. Care to tell me which exposed part of me excites you the most?"
     c "Naomi... please. Can we just go diving?"
     Nm blank "Fine, but this conversation isn't over. I'm going to find all of your buttons and press them as I please. Rest assured, it's only going to get worse from here on out."
     m "(Did I make a mistake by choosing to stay with Naomi? Oh well, it's probably too late to regret that decision.)"
-    m "(Just kidding, I love her because she teases me sometimes.)"
+    m "(Just kidding, I love her precisely for this reason.)"
     show naomi surprised with dissolve
-    m "For the rest of the time of me putting on the gear, Naomi stared at me with intent, but she was at least quiet. After a couple of minutes, I finally managed to put the gear on."
+    m "For the rest of the time of me putting on the gear, Naomi stared at me with intent, but at least she was quiet, save for a few giggles. After a couple of long minutes, I finally managed to put the gear on."
 
 jump sqb_naomi_m3_undressing_end
 
@@ -155,8 +155,8 @@ label sqb_naomi_m3_biolabalert:
     play sound2 "fx/beep.wav"
     s "Error. Hostile environment detected in the transit chamber. Cause: outer door malfunction. Pumps: online. Please wait."
     c "Damn! No way out."
-    Nm stern "Quick, think of something. You're much better with technology than I am."
-    c "I'm at a loss."
+    Nm stern "Quick, think of something. You're much better with mechanical things than I am."
+    c "I have to admit that I'm at a loss."
     Nm "What if we prevent the generator from exploding by shutting it down?"
     c "Do you think that might work?"
     Nm normal "We have to try. We don't know where the generator is though, so use that console and try to shut it down remotely."
@@ -175,8 +175,9 @@ label sqb_naomi_m3_panicmenureset:
     $ ecknaomim3genhatch = False
     $ ecknaomim3genhatchfound = False
     $ ecknaomim3genhatchopen = False
+    $ sqbnaomim3genhatchtold = False
     $ ecknaomim3naomifound = True
-    $ ecknaomim3naomifound2 = True
+    $ ecknaomim3naomifound2 = False
     $ ecknaomim3naomijoin = True
     $ ecknaomim3dooropen = False
     $ ecknaomim3doorbutheld = False
@@ -219,37 +220,50 @@ label sqb_naomi_m3_panicmenureset:
 
 jump eck_naomi_m3_panicterminal
 
+label sqb_naomi_m3_panicterminal:
+
+    c "Naomi, I found out how to shut down the generator. There's a maintenance hatch somewhere. Please stick with me so we can find it."
+    
+    if sqbnaomim3genhatchtold == True:
+        Nm stern "I know, you already told me that. Can we please get going?"
+        show naomi blank with dissolve
+    else:
+        $ sqbnaomim3genhatchtold = True
+        Nm "Alright."       
+
+jump eck_naomi_m3_panicterminalman
+
 label sqb_naomi_m3_labrest:
 
-     hide naomi with dissolve
-     m "She sat down in a relatively clean corner of the room and beckoned me to come over. I eagerly made my way to her."
-     $ naomiromance += 1
-     $ naomi3mood += 3
-     m "I sat down nearby and leaned onto her side."
-     play sound "fx/undress.ogg"
-     m "Her large wing slowly unfolded and relaxed, covering me akin to a large warm cloak. I felt her warm up and heard her let out a content sigh. When I looked up at her, she flicked my face with her long tongue."
-     m "I twitched a little bit, but decided to not comment."
-     $ renpy.pause (2.0)
-     show naomi shy with dissolve
-     Nm "Hey, [player_name]...{w} I'm feeling hot."
-     Nm smile "Up for some fun while we're both still excited?"
-     c "Naomi...{w} just no. We almost died a few minutes ago."
-     show naomi blank with dissolve     
-     c "Also, we have no idea what might happen if we stay here any longer than absolutely necessary. What if we end up disturbing something while we have sex and this entire place collapses on top of us?"
-     Nm normal "What's the big deal? You said it yourself, this place has probably been here a thousand years. I think it'll survive a bit longer."
-     c "Absolutely not. We also need to conserve as much energy as possible because the swim back to the beach is rather long."
-     Nm blank "Fine, have it your way. There's no need to be so fussy about it."     
-     hide naomi with dissolve
-     $ renpy.pause (1.5)
-     play sound "fx/bed.ogg"
-     m "For the rest of the time, we just stayed close together. Occasionally, Naomi patted my head or rubbed my neck, while letting out satisfied hums."
-     $ ecknaomim3afboomrest = False
-     m "Eventually I felt that I had calmed down enough."
-     show naomi normal with dissolve
-     c "I think we should get going."
-     Nm "Yeah. I suppose you're right that we should already start making our way back to the shore, because that's going to take a while."
-     $ ecknaomim3afboomrest = False
-     play sound "fx/undress.ogg"
+    hide naomi with dissolve
+    m "She sat down in a relatively clean corner of the room and beckoned me to come over. I eagerly made my way to her."
+    $ naomiromance += 1
+    $ naomi3mood += 3
+    m "I sat down nearby and leaned onto her side."
+    play sound "fx/undress.ogg"
+    m "Her large wing slowly unfolded and relaxed, covering me akin to a large warm cloak. I felt her warm up and heard her let out a content sigh. When I looked up at her, she flicked my face with her long tongue."
+    m "I twitched a little bit, but decided not to comment."
+    $ renpy.pause (2.0)
+    show naomi shy with dissolve
+    Nm "Hey, [player_name]...{w} I'm feeling hot."
+    Nm smile "Up for some fun while we're both still excited?"
+    c "Naomi...{w} just no. We almost died a few minutes ago."
+    show naomi blank with dissolve     
+    c "Also, we have no idea what might happen if we stay here any longer than absolutely necessary. What if we end up disturbing something while we have sex and this entire place collapses on us?"
+    Nm normal "What's the big deal? You said it yourself, this place has probably been here a thousand years. I think it'll survive a bit longer."
+    c "Absolutely not. We also need to conserve as much energy as possible because the swim back to the beach is rather long."
+    Nm blank "Fine, have it your way. There's no need to be so fussy about it."     
+    hide naomi with dissolve
+    $ renpy.pause (1.5)
+    play sound "fx/bed.ogg"
+    m "For the rest of the time, we just stayed close together. Occasionally, Naomi patted my head or rubbed my neck, while letting out satisfied hums."
+    $ ecknaomim3afboomrest = False
+    m "Eventually I felt that I had calmed down enough."
+    show naomi normal with dissolve
+    c "I think we should get going."
+    Nm "Yeah. I suppose you're right that we should already start making our way back to the shore, because that's going to take a while."
+    $ ecknaomim3afboomrest = False
+    play sound "fx/undress.ogg"
 
 jump eck_naomi_m3_panicmenu 
 
@@ -291,6 +305,36 @@ label sqb_naomi_m3_ending:
     Nm smile "Don't worry, I'll carry you on my back."
     c "I would love that. I can't believe you still have any energy left after our adventure."
     Nm blank "Well, I have to admit that I'm in no state to fly you back. Still, keep in mind that you can barely even walk."
+    c "Hey, no need to gloat your physical prowess so much. Can we just get going already?"
+    Nm normal "Fine. Hop on my back when you're ready to go."
+    hide naomi with dissolve
+    play sound "fx/sheet.wav"
+    m "As Naomi got down to rest on her belly to prepare to take me on as a passenger, I went to put both the scuba gear and my clothes in the same bag I had brought the scuba gear in."
+    m "Then, without saying anything I walked over to Naomi and positioned myself on her back, fastening my three available limbs on her sides to be able to hold onto her, while carrying the equipment and clothing bag in one hand."
+    scene black with dissolvemed
+    play soundloop "fx/steps/steps.ogg"
+    m "When I was secure enough, she got off from the ground and started carrying me to her apartment slowly but steadily."
+    Nm blank "I realize that now when I am carrying you, that you're much fatter than you look at first glance."
+    c "Naomi...{w} please not now. I'm going to die from any more exertion."
+    Nm normal "Fine. I can't help but tease you."
+    m "She was quiet for the rest of the trip, but I knew I would get an earful when we got to her apartment."
+    scene ecknaomiaptoutside with dissolvemed
+    $ renpy.pause (2.0)
+    stop soundloop fadeout 1.0
+    scene black with dissolvemed
+    play sound "fx/door/handle.wav"
+    $ renpy.pause (2.0)
+    play sound "fx/door/doorclose3.wav"
+    scene ecknaomiapt01 with dissolvemed
+    $ renpy.pause (2.0)
+    play sound "fx/door/door_open.wav"
+    scene eckannabedroom4 with dissolvemed
+    $ renpy.pause (2.0)
+    m "When we had gotten to her bedroom, Naomi moved over to the side of her bed and slowly lowered me on it on my back. I had finally made it back to absolute safety."
+    show naomi blank with dissolve
+    Nm "What an evening."
+    Nm concern "Are you okay, [player_name]?"
+    c "No."
     
     stop music fadeout 1.0
 

@@ -188,6 +188,11 @@ def sqb3naomi(ml):
        .search_menu("Get some rest.").branch() \
        .search_say("Sure thing") \
        .hook_to("sqb_naomi_m3_labrest", condition='sqbpremounlocked ==  True') \
+       
+       ml.find_label("eck_naomi_m3_panicterminalman") \
+       .search_menu("Maintenance.").branch() \
+       .search_say("There were several more pages") \
+       .hook_to("sqb_naomi_m3_panicterminal", condition='sqbpremounlocked == True') \
 
 #def sqb5naomi(ml):      
 
