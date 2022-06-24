@@ -116,6 +116,7 @@ label sqb_naomi_m2_movie:
             m "Naomi sighed and looked at me with concern."
             
         "Don't ruin the mood.":
+            $ sqbpremounlocked = False
             c "I'm sorry to disappoint you, but I don't want to ruin the mood. The story of how I ended up here is not a happy one."
             Nm sad "Oh well. I'm sorry if that question was too personal."
             Nm normal "Speaking of moods, would you like to shift your focus from the harsh realities of life by watching a fine movie with me? I've got quite a collection."
@@ -195,6 +196,7 @@ label sqb_naomi_m2_movie:
     m "Suddenly I started to feel another surge of emotions. My throat started feeling dry and I wanted to cry."
     show naomi surprisedblush with dissolve
     c "Your unconditional kindness towards us is somewhat unexpected, because I don't know what we did to deserve it. Being as dependent on technology as we were wasn't good, so the mess we're in is kind of our own making."
+    #A check if Naomi likes PC enough
     Nm stern "Don't say that. Everyone needs help sometimes."
     Nm confused "Just make sure you have good friends..." 
     Nm smile "...or something more to help you out."
@@ -204,6 +206,7 @@ label sqb_naomi_m2_movie:
     play sound "fx/bed.ogg"
     m "With my accidental encouragement, she shifted yet a little bit closer towards me. From up close I finally fully realized how much bigger than me she was, so I started feeling a little intimidated but also intrigued by her different physique."
     Nm shy "Would you like a hug? I don't want to see a cute little human like you sad like this ever again."
+    #A choice to turn her down, PC refuses politely
     m "I already liked her a lot and turning down her offer of comfort would have been rude."
     c "I-I really need a hug right now..."
     stop music fadeout 1.0
@@ -382,6 +385,7 @@ label sqb_naomi_m2_bedroomfun:
             pass
             
         "Keep your clothes on.":
+            $ sqbpremounlocked = False
             c "I'm sorry, I don't feel comfortable doing that."
             Nm concern "Really? What's the big deal?"
             c "Among humans, taking your clothes off in front of someone is considered an intimate act."
@@ -532,7 +536,7 @@ label sqb_naomi_m2_bedroomfun:
     m "Naomi looked at me curiously as I removed my clothes piece by piece."
     show naomi surprisedblush with dissolve
     play sound "fx/undress.ogg"
-    m "She was the most attentive when I started to remove my lower garments though. Her eyes fixated on my groin after I had taken my underpants off."
+    m "She was the most attentive when I started to remove my lower garments though. Her eyes fixated on my groin after I had taken my underpants off. A chill entered my spine and I shuddered."
     Nm normal "In addition to your head, have fur even on your chest and between your legs? That must be weird." #Male version
     c "I can shave everything off if it bothers you."
     Nm smile "No, it's kind of cute and different. I was just wondering how it will feel when we cuddle with the covers off."
@@ -752,7 +756,7 @@ label sqb_naomi_m2_bedroomfun:
     show naomi aroused with dissolve
     c "Yes. You are a sexy and wonderful dragoness."
     Nm smile "I'm happy to hear that, you cute human." 
-    Nm normal "When you removed your covers, I saw where your genitals are located. I don't think our anatomies are too different to make this inconvenient for us."
+    Nm normal "When you removed your clothes, I saw where your genitals are located. I don't think our anatomies are too different to make this inconvenient for us."
     
     #Naomi thinks having multiple partners is fine as long as you like her the most
     if modinfo.has_mod("BangOk?") and  bangok_four_anna2.unplayed == False:  
@@ -890,7 +894,6 @@ label sqb_naomi_m2_bedroomfun:
         play sound "fx/lewd/pussy.ogg"
         m "Then I used my fingers to spread her cloaca and lined the tip of my penis with her vaginal passage."
     
-    #PC comes almost immediately? Move some of the stuff into optional round two?
     c "Are you ready?"
     Nm slsmile "I've been ready for a while."
     play sound "fx/lewd/penslow.ogg"
@@ -960,11 +963,10 @@ label sqb_naomi_m2_bedroomfun:
     queue sound "fx/lewd/lickslow.ogg"
     queue sound "fx/lewd/lickslow.ogg"
     show naomi slsmile with dissolve
-    m "I bucked against Naomi for another time to release my second rope of cum. She let out a content sigh and started gently rubbing the back of my neck and licking my face."
-    Nm smile "Well done, tiny human."
+    m "I bucked against Naomi for another time to release my second rope of cum. She let out a content sigh and started gently rubbing the back of my neck and licking my face. After she was done petting me, she turned on her back, taking me with her."
     Nm aroused "I can feel a whole lot of your sticky seed inside me. You weren't joking about being pent up."
     Nm shy "Unfortunately, you didn't manage to get me off." 
-    Nm normal "If you can't go again you can finish me off with your mouth."
+    Nm smile "If you can't go again you can finish me off with your mouth."
     menu:
         "Use dick.":
             c "I still have another round in me. Just give me a few moments to recover."
@@ -1003,7 +1005,7 @@ label sqb_naomi_m2_bedroomfun:
         
         "Use mouth.":
             c "I'm spent, I'll just use my mouth."
-            Nm "Works for me. Your mouth looks different from what I've seen."
+            Nm "Works for me."
     
     #PC puts clothes back on
     
@@ -1039,7 +1041,7 @@ jump sqb_naomi_m2_cooking
 
 label sqb_naomi_m2_cooking:
 
-    #Inspired by the original ASM's and Adine's shopping spree mod's cooking scenes
+    #Inspired by the original ASM's, Adine's shopping spree mod's and Lorem mod's cooking scenes
     
     Nm normal "We could order some food if you wanted. Cooking ourselves works as well if that's something you'd want to do."
     c "Actually, a fun time in the kitchen sounds great right now. I want to return all the hospitality I've gotten here so far by pampering you back."
@@ -1407,8 +1409,9 @@ label sqb_naomi_m2_cooking:
     
     $ renpy.pause (2.0)
     play sound "fx/beeps2.ogg"
-    queue sound "fx/beeps2.ogg"
-    m "After dropping off the appetizer plate at the sink, the timer signaled that the first batch of chicken breasts were ready. I took them off the pan onto a serving plate, added in the unfried ones and set the heat higher again. After that was done, another timer beeped to tell me that the potatoes were ready."
+    m "After dropping off the appetizer plate at the sink, the timer signaled that the first batch of chicken breasts were ready. I moved them from the pan onto a serving plate, added in the unfried chicken and set the heat higher again."
+    play sound "fx/beeps2.ogg"    
+    m "After that was done, another timer beeped to tell me that the potatoes were ready."
     m "(Somehow, I've timed this almost to perfection.)"
     play sound "fx/metalbox.ogg" 
     m "To continue making the mashed potatoes, I lifted the boiling pot off the cooktop onto a potholder and added the noodle pan in."    
@@ -1560,7 +1563,7 @@ label sqb_naomi_m2_cooking:
     Nm concern "After getting a bunch of of kitchen equipment, looking through some cookbooks and watching some cooking and traveling shows, I thought I was ready to learn how to cook."
     Nm sad "Needless to say, if you've paid any attention to what I've told you, you probably already guessed it didn't go well. I broke some of the equipment and made such a mess, that I had to pay the cleaning services to come and clean up my kitchen for me."
     c "I suppose it just wasn't your thing. You don't have to be great at everything, so don't worry about it."
-    c "Always remember that you're already very good at a lot of things. Besides, now you have me to cook for you."
+    c "Always remember that you're already very good at a lot of things, for example analytics, swimming and flying. Besides, now you have me to cook for you."
     Nm smile "You're right. Thank you so much for comforting me, [player_name]."
     play sound "fx/eating.wav"
     m "I nodded, since my mouth was full of fried noodles, and Naomi resumed eating as well."
@@ -1669,22 +1672,22 @@ label sqb_naomi_m2_ending:
     m "I felt satisfied and at peace with Naomi at my side. This had been a very good day."
     scene ecknaomiapt03 with dissolvemed
     play sound "fx/lewd/lickslow.ogg"
-    m "Just as I had closed my eyes, I woke up to someone nudging my head with their snout and gently kissing me."
+    m "Just as I had closed my eyes, I woke up to someone nudging the side of my head with their snout and gently kissing my cheek."
     play music "mx/airborne.mp3" #Different music?
     show naomi smile with dissolve
-    Nm smile "Time to wake up."
+    Nm "Time to wake up."
     play sound "fx/sheet.wav"
     show naomi normal with dissolve
-    m "After I had gotten up from the sofa, I noticed it was already very late. I'd stayed for much longer than I'd initially planned for. It seemed as if Naomi had read my thoughts."   
-    Nm normal "Thank you for the wonderful evening. It's getting very late, so maybe you should get going. Even though my vacation is coming up, I shouldn't stay up too late."
-    Nm smile "Unless you want to sleep over here at my place?"
+    m "After I had gotten up from the sofa, I noticed it was already very late. I'd stayed for much longer than I'd initially planned for. Weirdly, It seemed as if Naomi had read my thoughts."   
+    Nm normal "It's getting very late, so maybe you should get going. Even though my vacation is coming up, I shouldn't stay up too late."
+    Nm smile "Unless you want to sleep together with me?"
     c "I can't, sorry. There's some material I have to go over at my apartment tomorrow morning. I have a feeling if I stay the night I won't have time for that."
     c "Let's just call it a day. We can continue some other time."
     Nm normal "That works for me. We got lots of time to be together, right?"
-    Nm confused "Oh, I just remembered something. I was initially going to buy some supplies after escorting you home, but all the shops have already closed."
+    Nm confused "Oh, I knew I had forgotten something. I was initially going to buy some supplies after escorting you home, but all the shops have already closed."
     c "That's very unfortunate. You can always do that tomorrow though."
     Nm blank "Yeah, it's not a big deal. I'll escort you home regardless."
-    Nm smile "I have to say again that we had an excellent time. I'm not very used to having people come over, but this evening was a resounding success without equal."
+    Nm smile "I have to say that we had an excellent time. I'm not very used to having people come over, but this evening was a resounding success."
     Nm normal "Thank you so much for your company, [player_name]."
     c "I had a great time as well. Actually, didn't you say you had a vacation coming up? Want to meet again then?"
     Nm smile "How considerate of you to suggest that. I might have just the idea on how to make our time together more interesting. I can't tell you right now what it is though, because it's a secret."

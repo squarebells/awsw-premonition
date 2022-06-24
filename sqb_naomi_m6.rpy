@@ -5,7 +5,7 @@ label sqb_naomi_m6_discussion_reality:
     scene black with dissolvemed
     
     play sound "fx/system3.wav"
-    s "Now when that's out of the way, would you like to preview a scene from chapter 6?"
+    s "Now when that's out of the way, would you like to preview an unfinished scene from chapter 6?"
     menu:
         "Yes":
             s "Alright."
