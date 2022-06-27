@@ -62,7 +62,7 @@ label sqb_naomi_cafe_discussion:
          c "Same here. He drinks way too much."
          c "Anyway, we shouldn't talk ill of someone who's not present."
          Nm blank "I suppose you're right."
-         c "To change the subject, can you tell me what sort of work you do at the police station more specifically?"
+         c "To change the subject, could you tell me more specifically what sort of work you do at the police station?"
          Nm normal "Sure."
     
     else: 
@@ -86,7 +86,7 @@ label sqb_naomi_cafe_eating:
     Nm surprisedblush "I suppose it's obvious looking at my physique that I work out a lot."   
     m "(Why did I even say that? I'm lucky she didn't take offense.)"
     show naomi normal with dissolve
-    m "(I just got an idea from that weird exchange. She might still be hungry because her portion was about the same size as mine.)" 
+    m "(I just realized something. She might still be hungry because her portion was about the same size as mine.)" 
     m "(Since she needs to eat more than I do, should I ask her if she wants to order again?)"
     
     menu:
@@ -301,7 +301,7 @@ label sqb_naomi_cafe_money:
          Nm normal "Since I met you I've felt like there might be something more to you than what meets the eye." 
          Nm shy "I-I want to find out what it is."
          c "I'll do my best to make the time."
-         c "After all, if I manage to get you to date me, we're on track to solve what your parents were worried about. Hooray!"
+         c "After all, if I manage to get you to date me, we're on track to solve what your parents were so worried about."
          Nm stern "..."
          c "Uhh... speaking of your parents, how are they doing?"
          Nm blank "Oh, nothing much."

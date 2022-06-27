@@ -222,16 +222,22 @@ jump eck_naomi_m3_panicterminal
 
 label sqb_naomi_m3_panicterminal:
 
-    c "Naomi, I found out how to shut down the generator. There's a maintenance hatch somewhere. Please stick with me so we can find it."
+    c "Naomi, I found out how to shut down the generator. There's a maintenance hatch somewhere around here, and I need your help to find it."
     
     if sqbnaomim3genhatchtold == True:
-        Nm stern "I know, you already told me that. Can we please get going?"
+        Nm stern "I know, you already told me that. Can we please start looking for it?"
         show naomi blank with dissolve
     else:
         $ sqbnaomim3genhatchtold = True
         Nm "Alright."       
 
 jump eck_naomi_m3_panicterminalman
+
+label sqb_naomi_m3_panicdoor:
+
+    m "(We can't leave, because we haven't disabled the generator yet.)"
+
+jump eck_naomi_m3_panicmenu
 
 label sqb_naomi_m3_labrest:
 
@@ -252,16 +258,18 @@ label sqb_naomi_m3_labrest:
     c "Also, we have no idea what might happen if we stay here any longer than absolutely necessary. What if we end up disturbing something while we have sex and this entire place collapses on us?"
     Nm normal "What's the big deal? You said it yourself, this place has probably been here a thousand years. I think it'll survive a bit longer."
     c "Absolutely not. We also need to conserve as much energy as possible because the swim back to the beach is rather long."
-    Nm blank "Fine, have it your way. There's no need to be so fussy about it."     
+    Nm blank "Fine, have it your way. There's no need to be so fussy about it."
+    Nm smile "But let's just say that you owe me one."
+    c "Fine, whatever."    
     hide naomi with dissolve
     $ renpy.pause (1.5)
     play sound "fx/bed.ogg"
     m "For the rest of the time, we just stayed close together. Occasionally, Naomi patted my head or rubbed my neck, while letting out satisfied hums."
     $ ecknaomim3afboomrest = False
-    m "Eventually I felt that I had calmed down enough."
+    m "Eventually Naomi felt that I had calmed down enough."
     show naomi normal with dissolve
     c "I think we should get going."
-    Nm "Yeah. I suppose you're right that we should already start making our way back to the shore, because that's going to take a while."
+    Nm "Yeah, I suppose you are right. We should conserve our energy to make our way back to the shore in a timely manner, before it gets too late."
     $ ecknaomim3afboomrest = False
     play sound "fx/undress.ogg"
 
@@ -269,7 +277,7 @@ jump eck_naomi_m3_panicmenu
 
 label sqb_naomi_m3_ending:
 
-    #Had to copy more of ECK's script because otherwise dissolveslow wouldn't work properly
+    #Had to copy more of ECK's script than necessary because otherwise dissolveslow wouldn't work properly
 
     c "Mind hauling me? I don't think I can make it otherwise."
     if naomi3mood > 6:
@@ -335,6 +343,8 @@ label sqb_naomi_m3_ending:
     Nm "What an evening."
     Nm concern "Are you okay, [player_name]?"
     c "No."
+    
+    #PC wakes up, his limbs hurt
     
     stop music fadeout 1.0
 

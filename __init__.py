@@ -92,6 +92,17 @@ def sqb1naomi(ml):
 
 def sqb2naomi(ml):
 
+       ml.find_label("_call_skiptut_eckn21") \
+            .search_menu("Yes. I want to skip ahead.").branch() \
+            .hook_to("sqb_naomi_m2_sexskip", condition='sqbpremounlocked ==  True and persistent.sqbnaomi2sex == True') \
+            
+       ml.find_label("sqb_naomi_m2_bedroomfun") \
+            .search_say("I hope you understand that") \
+            .search_say("I picked up my clothes") \
+            .search_say("Her remark made me feel") \
+            .search_say("You're completely powerless") \
+            .link_behind_from("sqb_naomi_m2_sexskip2_end")
+
        ml.find_label("sqb_naomi_m2_bedroomfun") \
            .search_say("I hope you understand that") \
            .search_say("I picked up my clothes") \
@@ -144,55 +155,59 @@ def sqb2naomi(ml):
 def sqb3naomi(ml):
        
        ml.find_label("eck_naomi_m3_startchoice") \
-       .search_menu("Not interested.").branch() \
-       .search_say("I never liked water") \
-       .search_say("Just have fun without me") \
-       .hook_to("sqb_naomi_m3_norefusal", condition='sqbpremounlocked ==  True') \
+            .search_menu("Not interested.").branch() \
+            .search_say("I never liked water") \
+            .search_say("Just have fun without me") \
+            .hook_to("sqb_naomi_m3_norefusal", condition='sqbpremounlocked ==  True') \
        
        ml.find_label("eck_naomi_m3_start") \
-       .search_say("Uh, probably a minute") \
-       .hook_to("sqb_naomi_m3_tail", condition='sqbpremounlocked ==  True') \
-       .search_say("I know a good shop") \
-       .link_from("sqb_naomi_m3_tail_end")
+            .search_say("Uh, probably a minute") \
+            .hook_to("sqb_naomi_m3_tail", condition='sqbpremounlocked ==  True') \
+            .search_say("I know a good shop") \
+            .link_from("sqb_naomi_m3_tail_end")
        
        ml.find_label("eck_naomi_m3_start") \
-       .search_say("Um... do you mind") \
-       .hook_to("sqb_naomi_m3_undressing", condition='sqbpremounlocked ==  True') \
-       .search_say("So, how are your preparations") \
-       .link_from("sqb_naomi_m3_undressing_end")
+            .search_say("Um... do you mind") \
+            .hook_to("sqb_naomi_m3_undressing", condition='sqbpremounlocked ==  True') \
+            .search_say("So, how are your preparations") \
+            .link_from("sqb_naomi_m3_undressing_end")
        
        ml.find_label("eck_naomi_m3_start") \
-       .search_say("Um... do you mind") \
-       .search_say("The way you swim") \
-       .search_say("A large metal doorframe") \
-       .search_say("I'm responsible for your security") \
-       .hook_to("sqb_naomi_m3_explorationforce", condition='sqbpremounlocked ==  True') \
+            .search_say("Um... do you mind") \
+            .search_say("The way you swim") \
+            .search_say("A large metal doorframe") \
+            .search_say("I'm responsible for your security") \
+            .hook_to("sqb_naomi_m3_explorationforce", condition='sqbpremounlocked ==  True') \
 
        ml.find_label("_call_skiptut_eckn32") \
-       .search_menu("Yes. I want to skip ahead.").branch() \
-       .hook_to("sqb_naomi_m3_templabskip", condition='sqbpremounlocked ==  True') \
-       
-       ml.find_label("eck_naomi_m3_escape") \
-       .search_say("I'd say we swim") \
-       .hook_to("sqb_naomi_m3_ending", condition='sqbpremounlocked ==  True') \
+            .search_menu("Yes. I want to skip ahead.").branch() \
+            .hook_to("sqb_naomi_m3_templabskip", condition='sqbpremounlocked ==  True') \
        
        ml.find_label("eck_naomi_m3_early_leave") \
-       .search_scene("beach") \
-       .hook_to("sqb_naomi_m3_labteleport", condition='sqbpremounlocked ==  True') \
+            .search_scene("beach") \
+            .hook_to("sqb_naomi_m3_labteleport", condition='sqbpremounlocked ==  True') \
        
        ml.find_label("eck_naomi_m3_biolabalert") \
-       .search_say("Be advised, prolonged") \
-       .hook_to("sqb_naomi_m3_biolabalert", condition='sqbpremounlocked ==  True') \
-       
+            .search_say("Be advised, prolonged") \
+            .hook_to("sqb_naomi_m3_biolabalert", condition='sqbpremounlocked ==  True') \
+
        ml.find_label("eck_naomi_m3_panicmenu") \
-       .search_menu("Get some rest.").branch() \
-       .search_say("Sure thing") \
-       .hook_to("sqb_naomi_m3_labrest", condition='sqbpremounlocked ==  True') \
+            .search_menu("Get some rest.").branch() \
+            .search_say("Sure thing") \
+            .hook_to("sqb_naomi_m3_labrest", condition='sqbpremounlocked == True') \
        
        ml.find_label("eck_naomi_m3_panicterminalman") \
-       .search_menu("Maintenance.").branch() \
-       .search_say("There were several more pages") \
-       .hook_to("sqb_naomi_m3_panicterminal", condition='sqbpremounlocked == True') \
+            .search_menu("Maintenance.").branch() \
+            .search_say("There were several more pages") \
+            .hook_to("sqb_naomi_m3_panicterminal", condition='sqbpremounlocked == True') \
+       
+       ml.find_label("eck_naomi_m3_escape") \
+            .search_say("I'd say we swim") \
+            .hook_to("sqb_naomi_m3_ending", condition='sqbpremounlocked ==  True') \
+       
+       ml.find_label("eck_naomi_m3_panicmenu") \
+            .search_menu("Check on the entrance.").branch() \
+            .hook_to("sqb_naomi_m3_panicdoor", condition='sqbpremounlocked ==  True and ecknaomim3boomstop == False') \
 
 #def sqb5naomi(ml):      
 

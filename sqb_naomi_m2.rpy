@@ -1,3 +1,40 @@
+label sqb_naomi_m2_sexskip:
+    
+    stop music fadeout 1.0
+    play sound "fx/system3.wav"
+    
+    s "Would you like to skip straight to the ending, or only to the sex?"
+        
+    menu:
+        "Sex":
+            jump sqb_naomi_m2_sexskip2
+        
+        "Ending":
+            s "Alright."
+            scene black with dissolvemed
+            $ renpy.pause (1.0)
+            $ naomi2mood = 10
+            $ naomiromance += 100
+            $ naomilewd = 4
+            scene ecknaomiapt03 with dissolvemed
+            play music "mx/airborne.mp3"
+            show naomi normal with dissolve
+            jump sqb_naomi_m2_ending
+            
+label sqb_naomi_m2_sexskip2:
+
+    s "Alright."
+    scene black with dissolvemed
+    $ renpy.pause (1.0)
+    $ naomi2mood = 10
+    $ naomiromance += 100
+    $ naomilewd = 4
+    scene eckannabedroom4 with dissolvemed
+    play music "mx/treetops.mp3"
+    show naomi smile with dissolve
+
+jump sqb_naomi_m2_sexskip2_end
+            
 label sqb_naomi_m2_foodskip:
     
     stop music fadeout 1.0
@@ -13,9 +50,9 @@ label sqb_naomi_m2_foodskip:
             s "Alright."
             scene black with dissolvemed
             $ renpy.pause (1.0)
-            scene ecknaomiapt03 with dissolvemed
-            play music "mx/airborne.mp3"
-            show naomi normal with dissolve
+            scene eckannabedroom4 with dissolvemed
+            play music "mx/treetops.mp3"
+            show naomi shy with dissolve
             jump sqb_naomi_m2_ending
         
         "No":
@@ -267,7 +304,7 @@ label sqb_naomi_m2_movie:
     m "Finally, she placed her right wing over me as some kind of an impromptu dragon-blanket."
     play music "mx/enigma.mp3"
     Nm smile "If you ever try to go back to your horrible world I will capture you before you make it to the portal and hug you until you change your mind."
-    m "(Oh well, looks like she solved my problem for me. Sadly, I won't ever be able to go back to that post-apocalyptic hellhole.)"
+    m "(Oh well, looks like she already solved my problem for me. Sadly, I won't ever be able to go back to that post-apocalyptic hellhole.)"
     Nm stern "I'll also protect you if they try to take you back by force. I'm a lot of dragon with a few tricks they won't be expecting."
     Nm normal "You will be safe here with me for the rest of your life."
     show naomi smile with dissolve
@@ -330,7 +367,7 @@ jump sqb_naomi_m2_movie_end
 label sqb_naomi_m2_bedroomfun:
 
     $ naomi2mood += 4
-    $ naomiromance += 10
+    $ naomiromance += 100
      
     Nm concern "Umm..."
     c "Come on, I like you as well."
@@ -346,7 +383,7 @@ label sqb_naomi_m2_bedroomfun:
     m "She cut me off before I could say anything."
     Nm confused "You've been persistent in trying to get me to admit I like you. Why else would you obey my every whim?"
     Nm normal "The weird thing about us is that even though we met very recently I feel like we've known each other for a long time." 
-    Nm "In addition to that we complement each other nicely. Also, you understand me really well and like me for who I am."
+    Nm "In addition to that we complement each other nicely. Furthermore, you understand me really well and like me for who I am."
     c "What's not to like in a cute dragon such as yourself?"
     Nm shy "Oh, stop it. You're much cuter than I am."
     Nm smile "Did you know that I've always wanted a partner smaller than myself? That's because I want to be able to easily put them in their place if they misbehave."
@@ -378,8 +415,7 @@ label sqb_naomi_m2_bedroomfun:
     Nm confused "I just realized there is something that would improve our cuddling experience by a lot."
     Nm normal "I honestly don't understand why you humans cover up your bodies so much."
     Nm blank "Why don't you take your covers off? Having fabric between you and your partner gets in the way of having a properly intimate cuddling experience."
-    m "(This escalated faster than I ever could have anticipated.)" 
-    m "(How should I respond?)"
+    m "(This escalated faster than I ever could have anticipated. What should I do?)"
     menu:
         "Undress in front of Naomi.":
             pass
@@ -393,7 +429,7 @@ label sqb_naomi_m2_bedroomfun:
             c "It's also pretty weird to do in a living room."
             Nm "After all that you still don't...?"
             Nm sad "Oh well. I get it."
-            Nm normal "Look at the time. Would you at least like to eat something before you go?"
+            Nm normal "Look at the time. Would you at least like to eat something before you leave?"
             c "Sounds like a plan. I know you said you don't like cooking, but how about I make something instead?"
             Nm confused "You can? I was planning to order a delivery."
             c "Let me see what supplies we have."
@@ -755,7 +791,7 @@ label sqb_naomi_m2_bedroomfun:
     m "I felt like I had no choice but to fuck her immediately or I was going to die due to my heart bursting out of my chest."
     show naomi aroused with dissolve
     c "Yes. You are a sexy and wonderful dragoness."
-    Nm smile "I'm happy to hear that, you cute human." 
+    Nm smile "I'm happy to hear that, [player_name]." 
     Nm normal "When you removed your clothes, I saw where your genitals are located. I don't think our anatomies are too different to make this inconvenient for us."
     
     #Naomi thinks having multiple partners is fine as long as you like her the most
@@ -814,10 +850,12 @@ label sqb_naomi_m2_bedroomfun:
     play soundloop "fx/lewd/pussy.ogg"     
     m "Then she started tickling the inside of my upper jaw with the tip of her tongue. It was a weird tickling sensation I'd never experienced before."
     show naomi aroused with dissolve
-    m "When I leaned toward her to reciprocate the dragon tongue kiss, Naomi opened her eyes to look back at me. She looked at me like I was what she treasured the most in the entire world."
-    m "The only things I could do on top of staring back into her beautiful eyes was to focus breathing through my nose and staying as still as possible."
+    m "When I leaned toward her to reciprocate the dragon tongue kiss, Naomi opened her eyes to look back at me directly. She looked at me like I was what she treasured the most in the entire world."
+    Nm shy "(I love you so much.)"
+    show naomi aroused with dissolve
+    m "The only things I could do on top of staring back into her beautiful emerald eyes was to focus breathing through my nose and staying as still as possible."
     m "Again, I felt like my chest was going to explode."
-    m "(I'm going to die of a heart attack by dragon. What the hell are they even going to write on my tombstone?)"
+    m "(I'm going to die of a heart attack by dragoness. What the hell are they even going to write on my tombstone?)"
     stop soundloop fadeout 2.0
     Nm confused "You're completely powerless to do anything to resist my advances, aren't you?"
     Nm smile "Alright, we've had enough foreplay."
@@ -942,18 +980,14 @@ label sqb_naomi_m2_bedroomfun:
     Nm "Finish if you have to. Don't think I'm done with you yet though."
     stop soundloop
     play soundloop "fx/lewd/altpen.ogg"
-    m "Since I had gotten the permission to finish, I started preparing to shoot my cum deep inside Naomi by thrusting deeper."
-    c "I'm going to paint your insides white with human cum!"
-    Nm surprisedblush "Did you come up with that line all on your own?"
-    Nm smile "Anyway, I doubt your output is enough to accomplish that. You're welcome to try your best anyway." 
-    $ renpy.pause (2.0)
-    m "I couldn't hold it any longer."
+    m "Since I had gotten the permission to finish, I started preparing to shoot my cum in Naomi by thrusting deeper."
+    Nm smile "I feel you're getting ready to release. I won't settle for anything less than a big fat load of your human cum in my deepest place." 
+    m "Naomi's comment excited me so much that I came immediately. She sensed that, and used her leg lock to press me even more tightly on her groin."
     stop soundloop fadeout 2.0 
     play sound "fx/lewd/cum.ogg"
     queue sound "fx/lewd/penslow.ogg"
     $ renpy.pause (1.0)
     show naomi aroused with dissolve
-    m "I grunted as I came."
     c "Urgh!!!Ahh!!!{nw}" with hpunch
     play sound "fx/lewd/penslow.ogg"
     queue sound "fx/lewd/cum.ogg"
@@ -973,29 +1007,29 @@ label sqb_naomi_m2_bedroomfun:
             Nm stern "Try to last longer this time."
             c "I promise I'll do better."
             show naomi normal with dissolve
-            m "My almost limp dick still rested inside Naomi. After a few moments she released me from the prison of her legs so I pulled out and jerked my dick a couple of times. I breathed deeply a few times as I was working to get myself erect again."
+            m "My almost limp dick still rested inside Naomi. After a few moments she released me from the prison of her legs so I pulled out and jerked my dick a couple of times. I breathed in deeply as I was working to get myself erect again."
             #Sound?
             $ renpy.pause (4.0)
             c "Okay, I'm ready for round two."
-            Nm smile "Give it your best shot. I know you can get me off."
+            Nm smile "Give it your best shot. I know you can get me off this time."
             show naomi surprisedblush with dissolve
-            m "I leveraged myself on Naomi's spread-out legs and squeezed her enormous thighs. Based on her expression, she liked that a lot."
+            m "I leveraged myself on Naomi's spread-out legs and squeezed her enormous thighs. Based on her expression, she liked it when someone played with her thighs."
             play sound "fx/lewd/penslow.ogg"
-            m "With my increased leverage, I lined the tip of my dick with her cloaca and immediately pushed myself fully inside her vaginal passage."
+            m "With my now increased leverage, I lined the tip of my dick with her cloaca and immediately pushed myself fully inside her vaginal passage."
             Nm aroused "Ohh. This time, I forbid you to cum before me."
             play soundloop "fx/lewd/penslow.ogg"
             m "After her tacit approval, I started penetrating Naomi with slow and deep thrusts."
             c "How about a kiss? You'll have to use your tongue though, because I can't reach that far."
             show naomi smile with dissolve
             play sound "fx/lewd/lickslow.ogg"
-            m "As I held my tongue out, she flicked it and my nose with her long draconic tongue."
+            m "As I held my own tongue out, she flicked it and my nose with her long, draconic tongue."
             Nm "I'm going to punish you from afar with tongue lashes if you don't fuck me well enough."
             c "That's so hot. You know just how to press my buttons."
             m "As I kept fucking Naomi, some of my seed seeped out of her pussy. This made me even harder than before since it reminded me of what I had just done a few moments earlier, what I would be doing again soon and hopefully many more times in the future."   
             if modinfo.has_mod("BangOk?") and bangok_four_bryce1_unplayed == False or bangok_four_xsebastian_unplayed == False or bangok_four_anna2.unplayed == False:
                 m "(I can't believe Naomi wants me to cum inside her so badly.)"
             else:
-                m "(I can't believe I just came inside a dragon. I just broke a pretty important barrier for the sake of advancing humanity.)"
+                m "(I can't believe I just came inside an actual, living dragon. I think I just broke a pretty important barrier for the sake of advancing humanity.)"
             
             Nm aroused "[player_name]...{w} I'm approaching my limit. Let's see if you're skillful enough to make us both cum at the same time."
             c "I'll try my best." #PC fails
@@ -1008,6 +1042,8 @@ label sqb_naomi_m2_bedroomfun:
             Nm "Works for me."
     
     #PC puts clothes back on
+    
+    $ persistent.sqbnaomi2sex = True
     
     c "That was the best sex I've ever had. I think the hours-long tease had something to do with it."
     Nm normal "It was certainly fun to play with someone who is too weak to resist anything I do to them."
@@ -1644,11 +1680,12 @@ jump sqb_naomi_m2_ending
 label sqb_naomi_m2_ending:
     
     c "Such a good meal calls for a rest. Can I come lie next to you?"
-    Nm smile "I would love that a lot. Also, I think you deserve a reward for the great job you did in the kitchen."
+    Nm smile "I would love that a lot. I think you deserve a reward for the hard work you did in the kitchen for me."
     play sound "fx/sheet.wav"
-    m "I got up on the sofa, laid down sideways next to Naomi and she put her arm around me."
+    m "I got up on the sofa, laid down sideways next to Naomi. When I had settled in place, she put her arm around me."
     Nm shy "You are so cute, [player_name]."
     c "Mmh..."
+    $ renpy.pause (2.0)
     m "I had eaten way too much, so I started quickly falling asleep. Unfortunately, Naomi interrupted me with a question."
     Nm normal "I almost forgot to ask. How did our foodstuffs compare to human ones?"
     c "Well..."
