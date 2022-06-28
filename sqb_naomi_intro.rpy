@@ -14,6 +14,7 @@ label sqb_naomi_endingcheck:
              m "I felt a strange and somewhat unsettling feeling in the back of my head."
              play sound "fx/impact3.ogg"
              $ sqbpremounlocked = True
+             $ sqbnaomim3nogiveup == False
     
 jump sqb_naomi_endingcheck_end
 

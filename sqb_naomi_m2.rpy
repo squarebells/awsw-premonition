@@ -3,11 +3,22 @@ label sqb_naomi_m2_sexskip:
     stop music fadeout 1.0
     play sound "fx/system3.wav"
     
-    s "Would you like to skip straight to the ending, or only to the sex?"
+    s "Would you like to skip to the cooking, or straight to the ending? If you have NSFW mode enabled, you can also choose to skip to the sex."
         
     menu:
-        "Sex":
+        "Sex" if persistent.nsfwtoggle == True:
             jump sqb_naomi_m2_sexskip2
+            
+        "Cooking":
+            scene black with dissolvemed
+            $ renpy.pause (1.0)
+            $ naomi2mood = 10
+            $ naomiromance += 100
+            $ naomilewd = 4
+            scene eckannabedroom4 with dissolvemed
+            play music "mx/airborne.mp3"
+            show naomi normal with dissolve
+            jump sqb_naomi_m2_cooking
         
         "Ending":
             s "Alright."
@@ -34,6 +45,10 @@ label sqb_naomi_m2_sexskip2:
     show naomi smile with dissolve
 
 jump sqb_naomi_m2_sexskip2_end
+
+label sqb_naomi_m2_sfwskip: 
+
+jump sqb_naomi_m2_sfwskip_end
             
 label sqb_naomi_m2_foodskip:
     
@@ -467,14 +482,14 @@ label sqb_naomi_m2_bedroomfun:
                     m "While meat snacks had to substitute actual ham or bacon, the rest of the ingredients were readily available. The chicken \"bits\" – as they were advertised on the package – were in fact full ready-to-eat fillets."
                     m "Using raw counterparts would've been better for overall taste, but I had to make do with what I had. After cutting them open, I added the extra components, hoping for the molten cheese to seal everything together inside."
                     m "Soon, I stuffed the tray with my improvised dish into the oven and set it to the right temperature."
-            
-                "A vegetarian salad with algae.":
+                    
+                "Chicken fillet with cheese and ham.":
                     $ renpy.pause (0.5)
-                    $ naomi2mood -= 1
-                    $ ecknaomim2food = "salad"
-                    play sound "fx/veggies.ogg"
-                    m "After brief consideration, I went with an idea of a light vegetable salad with some algae on the side."
-                    m "It required no heating of any sort. However, cutting up all the components and properly mixing them up was about to take some time."
+                    $ ecknaomim2food = "chicken"
+                    $ naomi2mood += 1
+                    m "While meat snacks had to substitute actual ham or bacon, the rest of the ingredients were readily available. The chicken \"bits\" – as they were advertised on the package – were in fact full ready-to-eat fillets."
+                    m "Using raw counterparts would've been better for overall taste, but I had to make do with what I had. After cutting them open, I added the extra components, hoping for the molten cheese to seal everything together inside."
+                    m "Soon, I stuffed the tray with my improvised dish into the oven and set it to the right temperature."
         
             m "From the corner of my eye, I noticed Naomi intently monitoring me from her resting position."
     
@@ -788,6 +803,19 @@ label sqb_naomi_m2_bedroomfun:
     c "I like it when you lick me with your long tongue."
     Nm smile "Same, because you're so delicious."
     Nm shy "Do you really want to go further with me?"
+    
+    if persistent.nsfwtoggle == True:
+        pass
+        
+    else:   
+        stop music fadeout 1.0
+        play sound "fx/system3.wav"
+        show naomi stern with dissolve
+        s "Skipping the sex scene since it looks like you have the NSFW mode turned off."
+        show naomi normal with dissolve
+        play music "mx/airborne.mp3"
+        jump sqb_naomi_m2_sfwskip       
+    
     m "I felt like I had no choice but to fuck her immediately or I was going to die due to my heart bursting out of my chest."
     show naomi aroused with dissolve
     c "Yes. You are a sexy and wonderful dragoness."
@@ -858,7 +886,7 @@ label sqb_naomi_m2_bedroomfun:
     m "(I'm going to die of a heart attack by dragoness. What the hell are they even going to write on my tombstone?)"
     stop soundloop fadeout 2.0
     Nm confused "You're completely powerless to do anything to resist my advances, aren't you?"
-    Nm smile "Alright, we've had enough foreplay."
+    Nm smile "Alright, we've had enough foreplay."   
     Nm "Is fucking me sideways in this position fine by you?"
     m "I was surprised she even asked for my opinion. I managed to mumble up a response."
     c "A-any position with you is going to be amazing."
@@ -1045,13 +1073,13 @@ label sqb_naomi_m2_bedroomfun:
     
     $ persistent.sqbnaomi2sex = True
     
+    play music "mx/airborne.mp3"
     c "That was the best sex I've ever had. I think the hours-long tease had something to do with it."
     Nm normal "It was certainly fun to play with someone who is too weak to resist anything I do to them."
     Nm smile "I'm looking forward to many more sessions like this."
     m "(I'm doomed.{w} Wait no, I'm in heaven.)"
     c "Me too."
     
-    play music "mx/airborne.mp3"
     c "Naomi, I can't think of a word to describe how much I love you. Do you want to get married?"
     Nm surprised "Is that how it works in your world?"
     Nm confused "We've only had sex once so far. That doesn't mean we should get married yet."
