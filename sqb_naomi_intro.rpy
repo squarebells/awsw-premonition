@@ -15,6 +15,7 @@ label sqb_naomi_endingcheck:
              play sound "fx/impact3.ogg"
              $ sqbpremounlocked = True
              $ sqbnaomim3nogiveup == False
+             $ sqbnaomim3protect == False
     
 jump sqb_naomi_endingcheck_end
 

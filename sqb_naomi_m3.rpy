@@ -407,22 +407,25 @@ label sqb_naomi_m3_ending:
         Nm crysmile "I hope you know that I went in with the full intention of protecting you with my life."
         Nm "I knew you would do the same thing for me."
 
-    c "We saved each other. There isn't anything I wouldn't do for you."
+    c "There isn't anything I wouldn't do for you."
     hide naomi with dissolve
     play sound "fx/sheet.wav"
     m "Naomi leaned her off to my left and wiped her eyes on one of the pillows."
     show naomi smile with dissolve
-    Nm "Thank you, [player_name]. You have no idea how much I like being with you, in more ways than just one."
+    Nm "Thank you, [player_name]. You have no idea how much I like being with you." 
+    Nm shy "In more ways than just one..."
+    $ renpy.pause (2.0)
     Nm aroused "I can't believe my luck. A human that came to our world took a liking to me and and they're also nicer than the nicest human or dragon that I have ever met."
     Nm smile "I suppose that after living a life without a purpose for such a long time and then being stressed and overworked I deserved to get my share of happiness as well."
     c "Hey, I consider myself luckier than you. A few weeks ago I couldn't have even imagined that another sentient species as interesting as dragons were actually real. On top of that, I got to be the second person to come visit you. Also, I survived a near-apocalyptical solar flare even though I realistically shouldn't have."
     Nm concern "I agree about the solar flare, but do remember that what you said regarding dragon-human relations used to be the exact same case for us as well."
     c "Well...{w} yes. Good point. I still consider myself luckier than you."
-    Nm "Yes, you're lucky to be cute and caring enough to deserve me."
+    Nm smile "Yes, you're lucky to be cute and caring enough to deserve me."
     $ renpy.pause (2.0)
-    c "Anyway, I'm very impressed how you figure out so quickly what to do when the alarms went off. Honestly, I was completely stumped."
-    c "To me it felt like you knew almost exactly what we should try to do. I'm pretty impressed, how'd you manage to figure that out?"    
-    Nm shy "I don't know. How I felt at that moment is hard to explain."
+    c "Anyway, I'm very impressed by how you figured out so quickly what to do when the alarms went off. Honestly, I was completely stumped myself."
+    show naomi shy with dissolve
+    c "To me it felt like you knew almost exactly what we should do. I'm pretty impressed, how'd you manage to figure everything out?"    
+    Nm "I don't know. How I felt at that moment is hard to explain."
     Nm smile "The best I could explain it is that I've never felt that determined to find a solution in my entire life."
     Nm "I think you being in mortal danger made me brave."    
     c "I feel assured to be able to count on you like that. Let's still agree to not go on an adventure like that ever again, right?"
@@ -432,6 +435,7 @@ label sqb_naomi_m3_ending:
     Nm smile "Of course not."
     hide naomi with dissolve
     scene black with dissolvemed
+    play sound "fx/bed.ogg"
     m "We lay together in bed enjoying each other's company and after some time I fell asleep due to the exertion I had been through. When I woke up it was getting late."
     scene eckannabedroom3 with dissolvemed
     show naomi sleep with dissolve
@@ -443,12 +447,16 @@ label sqb_naomi_m3_ending:
     $ renpy.pause (2.0)
     Nm smile "Nonsense. You're staying here with me."
     c "Won't Bryce and Sebastian get worried if I don't go back to my apartment before dark?"
-    Nm blank "No, it's fine. I asked them to give you permission to stay over at my place since we're, you know, intimate. I'm more than strong enough to protect you from Reza, and I have a security system so I doubt he's going to be able to break into my apartment without us noticing."
+    Nm blank "No, it's fine. I asked them to give you permission to stay over at my place since we're, you know, intimate."
+    Nm stern "Also, I'm more than strong enough to protect you from Reza. I have a security system so I doubt he's even going to be able to break in here without us noticing."
     c "But I don't want to put you at risk."
+    show naomi surprised with dissolve
+    c "I'll just get going."
+    $ renpy.pause (2.0)
     play sound "fx/bed.ogg"
     m "I slowly disentangled myself myself from Naomi and tried to stand up next to the bed."
-    m "(Ouch!") with vpunch
     show naomi concern with dissolve
+    m "(Ouch!)" with vpunch
     m "My thighs, and especially calves hurt quite a bit. Suddenly, I didn't feel like going back to my apartment."
     c "You're right. My legs are so sore that I would probably hurt myself even more if I tried going back to my apartment. I'll stay with you."
     Nm smile "Trust me, I know what's best for you."
@@ -458,44 +466,94 @@ label sqb_naomi_m3_ending:
     c "Could you please hug me to sleep?"
     Nm shy "Actually... umm...{w} I don't feel that tired anymore. I would like to ease off my mind from what happened today by continuing on the series I was watching earlier."
     Nm smile "I will come to sleep next to you the first moment I start feeling tired though. I promise you will have the sweetest dreams when I get back."
-    Nm "If you need some more comforting you could always come watch the series with me."
+    Nm shy "If you need some more comforting you could always come watch the series with me."
     c "It's fine, go ahead. I seriously can't focus on any entertainment right now." 
-    c "Could you bring me a tall glass of ice cold water before you go?"
+    c "Could you bring me a tall glass of ice cold water before you start binging your series?"
     Nm normal "Sure."
-    hide naomi with dissolve    
+    show naomi normal flip with dissolve
+    hide naomi flip with easeoutright
+    play sound "fx/door/door_open.wav"
+    m "Naomi pushed her bedroom door open with her snout and walked out."
+    $ renpy.pause (2.0)
+    c "While waiting for Naomi to come back, I rest my head on one of the pillows and shut my eyes."
+    scene black with dissolvemed
     
+    $ renpy.pause (2.0)
+    
+    scene eckannabedroom3 with dissolvemed
+    show naomi smile with dissolve
     m "Naomi licked the sides of her mouth with her long, draconic tongue."
-    Nm smile "Would you like a little bit of something else before I go?"
+    Nm "Would you like a little bit of something else before I go?"
     stop music fadeout 1.0
     play sound "fx/system3.wav"
     s "Optional oral sex scene not written yet, come back later."
     
+    hide naomi with dissolve
+    scene black with dissolvemed
+    $ renpy.pause (2.0)
+    scene eckannabedroom4 with dissolvemed
     play music "mx/sail.ogg"
-    
-    m "I got off the bed and slowly wandered to Naomi's living room."
-    scene annabedroom4 with dissolve
+    m "I woke up a lot later than I usually did. I must have actually slept for over twelve hours, like I had wanted to."
+    m "My body was still sore all over, but at least I wasn't dead tired anymore. I got off the bed and slowly wandered to Naomi's living room."
+    play sound "fx/bed.ogg"
+    queue sound "fx/door/door_open.wav"
+    $ renpy.pause (4.0)
+    scene black with dissolvemed
     $ renpy.pause (2.0)
     scene ecknaomiapt03 with dissolve
     show naomi normal with dissolve
-    Nm "Good morning, [player_name]. I made some scrambled eggs and bacon for breakfast since you need to get your strength back up. Also, please help yourself to the juice. It has a lot of healthy vitamins."
+    Nm "Good morning, [player_name]. I made some scrambled eggs and bacon for breakfast. Also, please help yourself to the juice. You need to get your strength up, and it has a lot of beneficial vitamins for you."
     c "Woah, you're able to cook?"
-    Nm stern "Come on. Even someone with as clumsy hands as mine can make scrambled eggs and bacon."
+    Nm stern "Come on. Even someone with as clumsy hands as mine can make something like scrambled eggs and bacon."
     c "I appreciate you seeing the effort. Thanks a lot, Naomi."
     Nm smile "You're welcome."
-    Nm blank "I don't really have any time to chat, because I have to go to work." 
-    Nm normal "Actually, you woke up just in time to see me off. I have a much safer date planned for us, so give me a call once you're available from your important ambassador duties."
-    c "Sure."
-    Nm "Alright. Bye!"
+    Nm blank "I don't really have any time to chat, because I have to go to work. Actually, you woke up just in time to see me off." 
+    Nm normal "I have a much safer date planned for later, so give me a call once you're available. I promise you will love it."
+    c "Sure. Despite yesterday's disaster, I can't wait to go on a date with you again."
+    Nm concern "Very funny."
+    $ renpy.pause (1.0)
+    Nm normal "Oh, I really have to go now. Bye!"
     hide naomi with dissolvemed
     play sound "fx/door/lock.ogg"
     $ renpy.pause (0.5)
     play sound "fx/door/handle.wav"
+    $ renpy.pause (2.0)
+    play sound "fx/door/doorclose3.wav"
     m "(She was in a hurry. I guess she loves her job.)"
-    m "Next I put all my attention to eat the scrambled eggs Naomi had dutifully cooked for me. The portion was rather large, dragon-sized in fact, but I ate it all since I needed the nutrition to get back on my feet. I washed my breakfast down with a full carton of cold juice."
-    m "Now, I was ready to face whatever misadventures would come. I left my dishes in Naomi's sink, and left to walk to my own apartment."
-    
-    #PC thinking about stuff
-
+    $ renpy.pause (2.0)
+    m "(I'm starving.)"
+    play sound "fx/eating.wav"
+    m "I put all my attention into eating the scrambled eggs Naomi had lovingly cooked for me. The portion was rather large, dragon-sized in fact, but I ate it all since I needed the nutrition to get back on my feet."
+    play sound "fx/pour.ogg"
+    queue sound "fx/gulp4.wav"
+    queue sound "fx/glassdown.wav"    
+    m "I washed my breakfast down with a full carton of cold juice."
+    stop sound fadeout 1.0
+    m "With this hearty breakfast, I was ready to face whatever misadventures would come at me today. I dropped off my dishes at Naomi's sink, and exited to walk to my apartment."
     stop music fadeout 1.0
+    play sound "fx/door/lock.ogg"
+    scene black with dissolvemed
+    $ renpy.pause (0.5)
+    play sound "fx/door/handle.wav"
+    queue sound "fx/steps/slowstepsdown.ogg"
+    $ renpy.pause (4.0)
+    stop sound fadeout 1.0
+    play soundloop "fx/steps/steps.ogg"
+    scene ecknaomiaptoutside with dissolvemed
+    $ renpy.pause (2.0)    
+    scene town6 with dissolvemed
+    stop soundloop fadeout 1.0
+    m "When I reached the park, I sat down for a break."
+    
+    play soundloop "fx/steps/steps.ogg"
+    scene town1 with dissolvemed
+    $ renpy.pause (2.0)
+    scene eckplayeraptextra1 with dissolvemed
+    $ renpy.pause (2.0)
+    stop soundloop fadeout 1.0
+    scene black with dissolvemed
+    play sound "fx/door/handle.wav"
+    $ renpy.pause (2.0)
+    play sound "fx/door/doorclose3.wav"
 
 jump ml_date_end  
