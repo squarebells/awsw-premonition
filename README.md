@@ -12,7 +12,7 @@ To get the this mod's scenes, select the new options whenever possible and of co
  + [Community Resource and Assets Pack](https://gitlab.com/jakzie2/awsw-crap) by Jakzie2, Eval, 4onen, Azrynfolf and Ryann
  
  ### Optional Requirement
- + BangOk by 4onen
+ + [BangOk](https://github.com/4onenm/AwSW-Bangok] by 4onen (very NSFW)
  
 ### Recommended:
  + Side Images by 4onen
