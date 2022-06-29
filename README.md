@@ -9,7 +9,7 @@ To get the this mod's scenes, select the new options whenever possible and of co
  + Modtools by Blue
  + Magmalink by Jakzie2 
  + A Solitary Mind and Chaos_Knight Core mod (ECK Core) by EvilChaosKnight
- + [Community Resource and Assets Pack] (https://gitlab.com/jakzie2/awsw-crap) by Jakzie2, Eval, 4onen, Azrynfolf and Ryann
+ + [Community Resource and Assets Pack](https://gitlab.com/jakzie2/awsw-crap) by Jakzie2, Eval, 4onen, Azrynfolf and Ryann
  
  ### Optional Requirement
  + BangOk by 4onen
