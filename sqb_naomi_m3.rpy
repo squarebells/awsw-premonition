@@ -393,6 +393,7 @@ label sqb_naomi_m3_ending:
     Nm smile "Good to know."
     show naomi normal with dissolve
     $ renpy.pause (2.0)
+    show naomi slsleep with dissolve
     m "We laid down in this position for a while. Naomi shifted herself occasionally to rub me and take comfort in me."
     $ renpy.pause (4.0)
     show naomi hurt with dissolve

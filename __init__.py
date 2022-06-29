@@ -19,6 +19,9 @@ class Premonition(Mod):
          sqb1naomi(ml)
          sqb2naomi(ml)
          sqb3naomi(ml)
+         sqb4naomi(ml)
+         #sqb5naomi(ml)
+         #sqb6naomi(ml)
          
     @staticmethod
     def mod_complete():
@@ -229,12 +232,19 @@ def sqb3naomi(ml):
             .search_say("I'd say we swim") \
             .hook_to("sqb_naomi_m3_ending", condition='sqbpremounlocked ==  True') \
 
-#def sqb5naomi(ml):      
+def sqb4naomi(ml):
+
+    ml.find_label("eck_naomi_m4") \
+    .search_say("Oh well. I don't need") \
+    .hook_to("sqb_naomi_m4_clothes", condition='sqbpremounlocked ==  True') \
+    .search_say("She swam a few quick laps") \
+    .link_from("sqb_naomi_m4_clothes_end") 
+
+#def sqb6naomi(ml):      
 
         #ml.find_label("") \
         #.search_say("") \
         #.search_say("") \
         #.hook_to("sqb_naomi_m6_discussion_reality", condition='sqbpremounlocked == True') \
         #.search_say("") \
-        #.link_from("sqb_naomi_m6_discussion_reality_end")
-        
+        #.link_from("sqb_naomi_m6_discussion_reality_end")      
