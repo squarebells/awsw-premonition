@@ -10,6 +10,8 @@ To get the this mod's scenes, select the new options whenever possible and of co
  + Magmalink by Jakzie2 
  + A Solitary Mind and Chaos_Knight Core mod (ECK Core) by EvilChaosKnight
  + Community Resource and Assets Pack (CRAP) by Jakzie2, 4onen, Azrynfolf, Ryann and Volar Vie
+ 
+ ### Optional Requirement
  + BangOk by 4onen
  
 ### Recommended:
