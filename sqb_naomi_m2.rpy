@@ -1743,10 +1743,10 @@ label sqb_naomi_m2_ending:
     Nm "Time to wake up."
     play sound "fx/sheet.wav"
     show naomi normal with dissolve
-    m "After I had gotten up from the sofa, I noticed it was already very late. I'd stayed for much longer than I'd initially planned for. Weirdly, It seemed as if Naomi had read my thoughts."   
+    m "After I had gotten up from the sofa, I noticed it was already very late. I'd stayed for much longer than I'd initially planned for."   
     Nm normal "It's getting very late, so maybe you should get going. Even though my vacation is coming up, I shouldn't stay up too late."
     Nm smile "Unless you want to sleep together with me?"
-    c "I can't, sorry. There's some material I have to go over at my apartment tomorrow morning. I have a feeling if I stay the night I won't have time for that."
+    c "I can't, sorry. There's some material I have to go over at my apartment tomorrow morning. I have a feeling if I stay the night I won't have any time for that."
     c "Let's just call it a day. We can continue some other time."
     Nm normal "That works for me. We got lots of time to be together, right?"
     Nm confused "Oh, I knew I had forgotten something. I was initially going to buy some supplies after escorting you home, but all the shops have already closed."
@@ -1754,9 +1754,9 @@ label sqb_naomi_m2_ending:
     Nm blank "Yeah, it's not a big deal. I'll escort you home regardless."
     Nm smile "I have to say that we had an excellent time. I'm not very used to having people come over, but this evening was a resounding success."
     Nm normal "Thank you so much for your company, [player_name]."
-    c "I had a great time as well. Actually, didn't you say you had a vacation coming up? Want to meet again then?"
+    c "I had a great time as well. Actually, didn't you just say you had a vacation coming up? Want to meet again then?"
     Nm smile "How considerate of you to suggest that. I might have just the idea on how to make our time together more interesting. I can't tell you right now what it is though, because it's a secret."
-    Nm normal "Let's get going already, I'm pretty tired."
+    Nm normal "Let's get going already, I'm starting to get pretty tired."
     hide naomi with dissolve
     scene ecknaomiapt01 with dissolvemed
     $ renpy.pause (0.5)
@@ -1779,7 +1779,7 @@ label sqb_naomi_m2_ending:
     Nm blank flip "How nice of you. Still, you should have at least let us know you were there."
     Nm normal flip "I was just about to escort [player_name] back to their apartment. Care to join us?"
     show naomi blank flip with dissolve
-    Sb disapproval b "Naomi, your shift is over, so go get some sleep. I'll escort [player_name] instead since I am still on the clock."
+    Sb disapproval b "Naomi, your shift is over, so go get some rest. I'll escort [player_name] instead since I am still working."
     c "Sure. Thanks, Sebastian."
     Nm smile flip "I suppose this is it for today, then. I'm so looking forward to your next visit, [player_name]."
     c "Me too. Bye, Naomi."
@@ -1810,7 +1810,7 @@ label sqb_naomi_m2_ending:
     Sb smile b "So, you two did it?"
     c "Yes, we had a great time together."
     Sb "I'm so happy for Naomi, and for you too of course. She deserves a good boyfriend who will do right by her."
-    c "Thanks, Sebastian. I really appreciate that."
+    c "Thanks, Sebastian. I really appreciate it."
     
     if modinfo.has_mod("BangOk?") and bangok_four_xsebastian_unplayed == False:
         Sb shy b "You know...{w} umm..."
@@ -1825,7 +1825,7 @@ label sqb_naomi_m2_ending:
     show sebastian normal b with dissolve
     stop soundloop fadeout 2.0
     m "After some time, we finally made it to my apartment. I was dead tired."
-    c "Thanks for escorting me Sebastian. You are as dutiful as ever."
+    c "Thanks for escorting me Sebastian. You're as dutiful as ever."
     Sb smile b "See you, [player_name]."
     hide sebastian with dissolve
     play sound "fx/door/handle.wav"
