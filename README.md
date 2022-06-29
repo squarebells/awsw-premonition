@@ -1,4 +1,4 @@
-# AwSW-Premonition
+# Premonition
 I really liked how Naomi's and PC's relationship started developing in the two last scenes of A Solitary Mind's (ASM) ending A. As I was left wanting for more, I wrote an expansion.
 
 You need to have acquired ASM ending A to unlock this, because this mod takes place in a timeline after that. After this expansion to the five base chapters has been finished, I will write a chapter six.
