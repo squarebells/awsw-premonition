@@ -75,9 +75,9 @@ label sqb_naomi_cafe_eating:
     c "You finished fast. Was the food really that tasty, or did you eat it quickly just because you're just a very hungry dragoness?"
     Nm shy "Umm..."
     Nm smile "Both, I guess. It was delicious as always, but like I said, I was starving because I didn't have a lunch break."
-    Nm concern "Unfortunately my work is often simply too important to have one."
+    Nm concern "Like I said, often my work is simply too important to set aside some time for one."
     m "Since this was the second time she explicitly mentioned being overworked, I felt like I should finally push further on the issue."
-    c "That's not good, especially if it happens regularly. Taking a lunch break makes you more efficient for the rest of the day. You can't do cognitively demanding work as effectively if you're hungry." 
+    c "Naomi, that's not good at all, especially if it happens regularly. Taking a lunch break makes you more efficient for the rest of the day. You can't do cognitively demanding work as effectively if you're hungry." 
     c "For this reason in most workplaces where I come from, lunch breaks used to be mandatory."
     Nm confused "Interesting. I'll keep that in mind."
     c "Also, starving yourself makes you eat too much when you finally have the time, which can lead to gaining weight." 
@@ -86,7 +86,8 @@ label sqb_naomi_cafe_eating:
     Nm surprisedblush "I suppose it's obvious looking at my physique that I work out a lot."   
     m "(Why did I even say that? I'm lucky she didn't take offense.)"
     show naomi normal with dissolve
-    m "(I just realized something. She might still be hungry because her portion was about the same size as mine.)" 
+    $ renpy.pause (2.0) 
+    m "(I just realized something. She might still be hungry because her portion was about the same size as mine.)"
     m "(Since she needs to eat more than I do, should I ask her if she wants to order again?)"
     
     menu:
@@ -103,9 +104,8 @@ label sqb_naomi_cafe_eating:
             jump sqb_naomi_cafe_eating_end
     
     Nm confused "Are you sure you're fine watching me eat?"
-    c "Of course. I don't mind staying with you a while longer, because then way we could talk some more."
-    Nm normal "In that case..."
-    Nm "Adine, could you come over here?"
+    c "Of course. I don't mind staying with you a while longer, because then we could talk some more."
+    Nm normal "In that case... {w}Adine, could you come over here?"
     $ renpy.pause (1.0)
     show naomi normal at right with ease
     show adine normal b flip at left with easeinleft
@@ -136,7 +136,8 @@ label sqb_naomi_cafe_eating:
     c "It's a long one, so I'll just tell you the short version."
     c "Where to begin..."
     show naomi normal with dissolve
-    c "The living standards got significantly worse because our civilization was messed up really badly by a solar flare." 
+    c "Our living standards got significantly worse because we got messed up really badly by a solar flare."
+    show naomi concern with dissolve    
     c "Nowadays we don't really think about our long-term welfare like we used to."
     show naomi surprised with dissolve
     c "Right now we pretty much live on a day to day basis, barely managing to get by."
@@ -158,7 +159,7 @@ label sqb_naomi_cafe_eating:
          Nm normal "Sure."
     
     show naomi normal with dissolve
-    m "After that, it didn't take long for Adine to bring us our second serving for the evening."
+    m "After that, it didn't take long for Adine to bring us our second serving of the evening."
     
     show naomi normal at right with ease
     show adine normal b flip at left with easeinleft
@@ -181,10 +182,10 @@ label sqb_naomi_cafe_eating:
     
     if naomi1drink == "cocktail":
          #The cocktail glass as a character?
-         c "This cocktail is really good. It brings me back to a time when things were less chaotic in my home world."
+         c "This cocktail is really good. It brings me back to a time when things were less chaotic back in my home world."
          Nm normal "How do dragon cocktails compare to human ones?"
          c "It's not the type I normally drink, but it's great cocktail nonetheless."
-         c "On top of that, this evening is of course a nice experience to have after all that's happened."
+         c "On top of that, this evening is of course a nice experience to have after all that's happened to me."
          Nm smile "I'm happy to hear that."
          Nm normal "Care to tell me what your cocktail tastes like?"
          c "Hold on... let me think of how to best describe it."
@@ -206,9 +207,9 @@ label sqb_naomi_cafe_eating:
          c "I like this beer quite a lot. You can't get good quality stuff like this any more in my world."
          Nm normal "That brand is popular around here. How does it compare to human beer?"
          c "It doesn't taste anything like the mass-produced ones we used to have. I'd say it's probably a local high-quality brand."
-         c "An important thing to note though is that your beer is quite a bit stronger than what we humans normally drink."
-         c "If I had to guess this particular beer is probably about nine to ten percent alcohol, so about twice as strong as regular beer in our world."
-         c "Of course we also have beer as strong as this, but people don't drink that stuff as often."
+         c "An important thing to note though is that your beer is quite a bit stronger than what we humans normally drink. If I had to guess this particular beer is probably about nine to ten percent alcohol, so about twice as strong as regular beer in our world."
+         show naomi blank with dissolve
+         c "Of course we also have beer as strong as this, but people don't drink that stuff very often."
          c "This all does make sense though. You dragons are a lot bigger than humans so you need a lot more alcohol to get drunk."
 
          if bryce1played == True:
@@ -233,33 +234,33 @@ label sqb_naomi_cafe_money:
     Nm surprised "Really? How does a system like that even work?"
     c "Empirically speaking it seems to work fine for the time being. There even used to be political movements in our world that wanted to abolish the concept money, among other things."
     Nm confused "That's weird."
-    c "Well, for us it's more of a necessity dictated by our circumstances instead of a calculated choice."
+    c "Well, for us it's more of a necessity dictated by our circumstances rather than a calculated choice."
     c "Money needs to be backed by some kind of party with enough authority to be worth anything. I'm sure it works like that here too."
-    c "Some time after the flare hit entire countries fell because of the destruction it had caused, so physical money became pretty much worthless without a reliable backer." 
+    c "Some time after the flare hit entire countries fell because of the destruction that it had caused, so physical money became pretty much worthless without a reliable backer." 
     c "On top of that most of the rest of our money was stored electronically as a number on some computer. You can guess what happened to that system when the flare hit. Not that it would have mattered long-term anyway."
     show naomi blank with dissolve
-    c "Now there's no authority legitimate enough to keep track of how much of it people have."
-    c "In the end because we can't print our own money in my city-state, we decided have our markets operate based on need rather than wealth."
-    c "Well, even if we could print our own money, that wouldn't really work that well because there are almost no commodities anyone can buy due to what I told you earlier."
-    c "Now we kind of just use labor as a currency, and a strict regime allocates resources based on how much you work."
-    c "Still, I don't understand why our city-state has to be so authoritarian. Unfortunately dissenting voices are not allowed."
+    c "Now there's no authority legitimate enough to keep track of how much of it people have. In the end because we can't print our own money in my city-state, we decided have our markets operate based on need rather than wealth."
+    c "Well, even if we could print our own money, that wouldn't really work because there are almost no commodities anyone can buy due to what I told you earlier. Also, housing is pretty much free due to a lot of empty space and only absolutely necessary utilities work, so we don't charge for them."
+    c "Now we kind of just use labor as a currency, and a strict regime allocates important resources like food and water based on how much you work."
+    c "Still, I don't understand why our city-state has to be so authoritarian. Unfortunately, dissenting voices are not allowed."
     show naomi sad with dissolve
     c "People just kind of accept the bad situation they're in and believe they are so powerless that they can't do anything to change it."
     c "In general life there is pretty terrible compared to how it used to be, but at least our scarce resources are allocated somewhat efficiently."
     c "Not that it's any better anywhere in our general vicinity at least. In fact, the belief that life is better inside the walls rather than outside is what keeps us going through the hardship."
     Nm "That sounds awful, [player_name]. I wouldn't want to live in a place like that."
+    c "Yeah, I wouldn't either."
+    $ renpy.pause (2.0)
     
     if naomi1mood > 6:
+         show naomi shy with dissolve
          m "Naomi seemed to be thinking about something."
-         Nm shy "I just got an idea." 
-         Nm "Why don't we invite your people to live here with us? There's plenty of space for everyone."
+         Nm "I just got an idea." 
+         Nm surprisedblush "Why don't we invite your people to live here with us? There's plenty of room for everyone, and the living conditions are significantly better."
          m "Her idea caught me off guard."
-         c "I... um..."
-         c "D-do you think it would work?"
-         Nm smile "Of course it would! We like humans and and the benefits would be mutual."
-         c "That's...{w} a great idea! I've never even thought of anything like that being realistically achievable."
-         c "I'll ask my superiors what they think next the time we're in contact."
-         c "Thanks, Naomi."
+         c "I... um...{w} D-do you think it could work?"
+         Nm smile "Of course it could! We like humans and and the benefits would be mutual."
+         c "That's...{w} a great idea! I haven't even thought of anything like that being realistically possible."
+         c "I'll ask my superiors what they think next the time we're in contact. Thanks, Naomi."
          Nm "You're welcome."
          $ naomilewd +=1
          show naomi normal with dissolve
@@ -270,22 +271,23 @@ label sqb_naomi_cafe_money:
          c "Sorry."
     
     c "Where were we..."
-    c "So, have you had any luck finding a boyfriend? Somehow I find that hard to believe."
+    c "So, you've had trouble finding a suitable boyfriend? I find that hard to believe."
     m "(Fuck, I did it again.)"
     Nm stern "What do you mean?"
     c "I was just wondering if you would consider me a suitable candidate?"
     show naomi surprisedblush with dissolve
+    $ renpy.pause (2.0)
     m "Naomi paused to think for a moment."
-    Nm shy "Um... are you sure you would be interested in forming a relationship outside your own species?"
+    Nm shy "Um...{w} are you sure you would be interested in forming a relationship outside your own species?"
     m "(YES!!! Wait, who was that? What's going on?)"
     c "..."
     c "..."
     show naomi confused with dissolve
     m "Naomi started looking at me curiously, waiting for an answer."
-    Nm "Did you space out again? My question wasn't rhetorical."
+    Nm concern "Did you space out? My question wasn't rhetorical."
     c "Oh, right."
     #Choice here?
-    c "I wouldn't mind that. Both our species are sentient and we can communicate well so there shouldn't be any problem with that."
+    c "I wouldn't mind that. Both our species are sentient and we can communicate well with each other so there shouldn't be any problems having a relationship."
     
     if naomi1mood > 2:
          
@@ -295,16 +297,16 @@ label sqb_naomi_cafe_money:
          Nm surprisedblush "You wouldn't mind either?" 
          Nm smile "I'm so relieved to hear that. After all, now that I have met you in the flesh, I think humans are cute."
          Nm shy "On top of that I like your personality, but still I think we should get to know each other a little better before we get into anything more serious."
-         c "I was just speaking hypothetically."
+         c "Of course, I was just speaking hypothetically for now."
          Nm blank "Yes, of course."
          Nm shy "Even though we are being hypothetical right now, I wouldn't mind having another get-together with you." 
          Nm normal "Since I met you I've felt like there might be something more to you than what meets the eye." 
-         Nm shy "I-I want to find out what it is."
-         c "I'll do my best to make the time."
-         c "After all, if I manage to get you to date me, we're on track to solve what your parents were so worried about."
+         Nm shy "I want to find out what it is."
+         c "I'll do my best to make the time." 
+         c "After all, to be on track to solve the problem that your parents were so worried about, I should get you to date me as soon as possible."
          Nm stern "..."
-         c "Uhh... speaking of your parents, how are they doing?"
-         Nm blank "Oh, nothing much."
+         c "Uhh...{w} speaking of your parents, what are up to these days?"
+         Nm blank "Oh, not much."
          Nm normal "They recently moved their business to the big city, and I stayed back here on my own."
     
     else:
@@ -315,7 +317,8 @@ label sqb_naomi_cafe_money:
          c "You do have interspecies dating here, right?"      
          Nm stern "Let's change the topic."
          c "Alright."
-         c "How are your parents doing?"
+         c "What are your parents doing these days?"
+         Nm blank "Oh, not much."
          Nm normal "They recently moved their business to the big city, and I stayed back here on my own."
  
 jump sqb_naomi_cafe_money_end

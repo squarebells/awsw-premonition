@@ -60,7 +60,7 @@ label sqb_naomi_m3_undressing:
     c "This became especially true in regards to hiding certain – more private – parts of our bodies."
     Nm smile "I see. Is that why you became visibly flustered when I stared at you after you had taken your clothes off? Were you afraid that I would see your private parts?"
     c "..."
-    c "Are you sure you've never interacted with a human before? You know just the correct ways to make me feel as embarrassed as possible to be a human."
+    c "Are you sure you've never interacted with a human before? You know just the correct ways to make me feel as embarrassed as possible to be one."
     Nm shy "N-no...{w} it's just intuition, I guess?"
     Nm normal "Anyway to contrast your people with ours, I'll tell you openly that we don't have a problem walking around as we are, really." 
     Nm "Of course, we have specialized outfits for jobs which require them – but for the most part, it comes down to accessories with extra functionality, like bags, insignias and other minor elements that are mostly decorative."
@@ -76,12 +76,12 @@ label sqb_naomi_m3_undressing:
     Nm normal "Yeah, I saw that."
     m "I had almost finished putting the scuba gear on."
     Nm smile "Anyway, this has been a pretty interesting talk. I'm happy to know that I arouse you simply by the virtue of being around you. Care to tell me which exposed part of me excites you the most?"
-    c "Naomi... please. Can we just go diving?"
+    c "Naomi...{w} please no more. Can we just go diving already?"
     Nm blank "Fine, but this conversation isn't over. I'm going to find all of your buttons and press them as I please. Rest assured, it's only going to get worse from here on out."
     m "(Did I make a mistake by choosing to stay with Naomi? Oh well, it's probably too late to regret that decision.)"
     m "(Just kidding, I love her precisely for interactions like these.)"
     show naomi surprised with dissolve
-    m "For the rest of the time of me putting on the gear, Naomi stared at me with intent, but at least she was quiet, save for a few giggles and flicks of her tongue in the air. After a couple of long minutes, I finally managed to put the gear on."
+    m "For the rest of the time of me putting on the gear, Naomi stared at me with intent, but at least she was quiet, save for a few giggles and flicks of her tongue in the air. After a couple of long minutes of being under her gaze, I finally managed to put the gear on."
 
 jump sqb_naomi_m3_undressing_end
 
@@ -164,10 +164,11 @@ label sqb_naomi_m3_biolabalert:
     Nm stern "Quick, think of something. You're much more knowledgeable about mechanical things and computers than I am."
     c "I have to admit that I'm at a loss."
     $ renpy.pause (2.0)
-    Nm blank "What if we prevent the backup generator from exploding by shutting it down, and then removing it?"
+    Nm blank "What if we prevent the backup generator from exploding by shutting it down, and then placing it somewhere safer?"
     c "Do you think that we might be able to do that?"
-    Nm normal "We have to try something. We don't know where the generator room is though, so finding out where it is should be the first priority. Could we try to look at the schematics on the console we saw earlier?"
+    Nm normal "We have to try something. We don't know where the generator room is though, so finding out where it is should be our first priority. Could we try to look at the schematics of this complex on the console we saw earlier?"
     c "Alright, let's try that."
+    hide naomi with dissolve
     $ renpy.pause (2.0)
     $ naomi3moodtmp = naomi3mood
 
@@ -211,10 +212,11 @@ label sqb_naomi_m3_panicmenureset:
     m "The airlock pumps were functioning reasonably well for their age, but same couldn't be said about the drainage system. In fact, it was gone completely, so seawater was dumped straight into the nearest unoccupied area, which in turn was connected with the generator room below."
     m "The program estimated that I had about half an hour before generator rupture. I set the timer up on my PDA as well."
     c "Naomi..."
-    Nm surprised "Did you find out where the backup generator is?"
+    show naomi surprised with dissolve
+    Nm "Did you find out where the backup generator is?"
     c "Yes, it's below us, but I have no idea how to reach it."
-    c "The real bad news is that this console also told me that we have only half an hour before the generator explodes. I honestly thought we would have a lot longer but the drainage system is completely destroyed."
-    Nm stern "Well, hurry up then. I can't operate the computer as fast as you can. See if you can remotely shut down the generator or even extract it."
+    c "The real bad news is that this console also told me that we have only half an hour before it explodes. I honestly thought we would have a lot longer but the drainage system is completely destroyed."
+    Nm stern "Well, hurry up then. I can't operate the computer as fast as you can. See if you can remotely shut down the generator or even to extract it."
     show naomi blank with dissolve
     c "Yes, Naomi."
     m "Looking around, I noticed another console nearby. I decided to try my luck with it."
@@ -271,6 +273,7 @@ label sqb_naomi_m3_labrest:
     hide naomi with dissolve
     m "Naomi sat down in a relatively clean corner of the room and beckoned me to come over. I eagerly made my way to her, sat down next to her and leaned onto her side."
     play sound "fx/undress.ogg"
+    queue sound "fx/lewd/lickslow.ogg"
     m "Her large wing slowly unfolded and relaxed, covering me akin to a large warm cloak. I felt her warm up and heard her let out a content sigh. When I looked up at her, she flicked my face with her long tongue."
     m "I twitched a little bit, but decided not to comment."
     $ renpy.pause (2.0)
@@ -281,7 +284,7 @@ label sqb_naomi_m3_labrest:
     show naomi blank with dissolve     
     c "Also, we have no idea what might happen if we stay here any longer than absolutely necessary. What if we end up disturbing something while we have sex and this entire place collapses on us?"
     Nm normal "What's the big deal? You said it yourself, this place has probably been here a thousand years. I think it'll survive a bit longer."
-    c "Don't forget that the lights might stop working any minute since we removed the generator. Also, need to conserve as much energy as possible because the swim back to the beach is rather long."
+    c "Don't forget that the lights might stop working any minute since we removed the backup generator. Also, need to conserve as much energy as possible because the swim back to the beach is rather long."
     Nm blank "Fine, have it your way. There's no need to be so fussy about it."
     Nm smile "But let's just say that you owe me one."
     c "Fine, whatever."    
@@ -293,7 +296,7 @@ label sqb_naomi_m3_labrest:
     m "Eventually I felt that we both had calmed down enough."
     show naomi normal with dissolve
     c "I think we should get going."
-    Nm "Yeah, I suppose you are right. We should conserve our energy to make our way back to the shore in a timely manner, before it gets too late."
+    Nm "Yeah, I suppose you are right."
     $ ecknaomim3afboomrest = False
     play sound "fx/undress.ogg"
 
@@ -349,7 +352,7 @@ label sqb_naomi_m3_ending:
     Nm normal "Now when I am carrying you, I realize that you're much fatter than you look or feel in bed."
     c "Naomi...{w} please not now. I'm going to die from any more exertion."
     Nm smile "Fine. I can't help but tease you."
-    m "She was quiet for the rest of the trip, but I knew she wasn't done with me yet. I would be surprised though, because she would react differently than I would expect her to based on this day's events so far."
+    m "She was quiet for the rest of the trip, but I knew she wasn't done with me yet. I would be surprised though, because she would react differently than how I would expect her to based on this day's events so far."
     scene ecknaomiaptoutside with dissolvemed
     $ renpy.pause (2.0)
     stop soundloop fadeout 1.0
@@ -366,11 +369,10 @@ label sqb_naomi_m3_ending:
     show naomi blank with dissolve
     Nm "What an evening."
     Nm concern "Are you okay, [player_name]?"
-    c "No. That was a terrible date. Never again please."
-    $ renpy.pause (1.0)
-    show naomi sad with dissolve
-    $ renpy.pause (1.0)
-    Nm "I'm so sorry for ruining what was supposed to be a fun evening for just the two of us."
+    c "No." 
+    c "That was a terrible date. Never again please."
+    $ renpy.pause (2.0)
+    Nm sad "I'm so sorry for ruining what was supposed to be a fun evening for just the two of us."
     c "Naomi, I was just joking. It was my stupid idea to insist on exploring such an unknown and dangerous place."
     Nm concern "But I could have stopped you."
     c "No, it's mostly my fault, not yours."
@@ -402,15 +404,15 @@ label sqb_naomi_m3_ending:
     $ renpy.pause (2.0)
     Nm "You're the best thing that has ever happened to me."
     c "I feel the same way. Please always be there for me."
-    Nm "I-I don't know what I would have done if you had...{w}had died."    
+    Nm "I-I don't know what I would have done if you had...{w} had died."    
     c "There's no need to speculate about something like that. You saved my life, and we will both be happy forever that you did."
     
     if sqbnaomim3protect == True:
         Nm crysmile "I promised I would protect you with my life, didn't I?"
         Nm "You did the same thing for me, like I always knew you would."
     else:
-        Nm crysmile "I hope you know that I went in with the full intention of protecting you with my life."
-        Nm "I knew you would do the same thing for me."
+        Nm crysmile "I hope you knew that I went in with the full intention of protecting you with my life."
+        Nm "You would do the same thing for me."
 
     c "There isn't anything I wouldn't do for you."
     hide naomi with dissolve
@@ -421,8 +423,9 @@ label sqb_naomi_m3_ending:
     Nm shy "In more ways than just one..."
     $ renpy.pause (2.0)
     Nm aroused "I can't believe my luck. A human that came to our world took a liking to me and and they're also nicer than the nicest human or dragon that I have ever met or heard about."
-    Nm smile "I suppose that after living a life without a purpose for such a long time and then being stressed and overworked I deserved to get my fair share of happiness as well."
-    c "Hey, I consider myself luckier than you. A few weeks ago I couldn't have even imagined that another sentient species as interesting as dragons were actually real. On top of that, I got to be the second person to come visit you. Also, I survived a near-apocalyptical solar flare even though I realistically shouldn't have."
+    Nm smile "I suppose that after living a life without a meaningful purpose for such a long time and then being stressed and overworked I deserved to get my fair share of happiness as well."
+    c "Hey, I consider myself luckier than you. A few weeks ago I couldn't have even imagined that another sentient species as interesting as dragons were actually real. On top of that, I got to be the second person to come visit you." 
+    c "Also, I survived a near-apocalyptical solar flare and its aftermath even though I realistically shouldn't have."
     Nm concern "I agree about the solar flare, but do remember that the thing regarding dragon-human relations used to be the exact same case for us as well."
     c "Well...{w} yes. Good point. I still consider myself luckier than you."
     Nm smile "Yes, you're lucky to be cute and caring enough to deserve me."
@@ -431,13 +434,12 @@ label sqb_naomi_m3_ending:
     show naomi shy with dissolve
     c "To me it felt like you knew almost exactly what we should do. How'd you manage to figure everything out so quickly?"    
     Nm "I don't know. How I felt at that moment is hard to explain."
-    Nm smile "The best I could explain it is that I've never felt that determined to find a solution in my entire life."
-    Nm "I think you being in mortal danger made me brave."    
+    Nm smile "The best I could explain it is that I've never felt that determined to find a solution in my entire life. I think you being in mortal danger made me brave."    
     c "I feel assured to be able to count on you like that. Let's still agree to not go on an adventure like that ever again, right?"
     Nm normal "Deal."
     $ renpy.pause (2.0)
-    c "But yeah, I'm pretty exhausted. Do you mind staying in bed with me for a while longer?"
-    Nm smile "Of course."
+    c "But yeah, I'm pretty exhausted. Could you stay in bed with me for a while longer?"
+    Nm smile "I would love that so much."
     hide naomi with dissolve
     scene black with dissolvemed
     play sound "fx/bed.ogg"
@@ -453,7 +455,7 @@ label sqb_naomi_m3_ending:
     Nm smile "Nonsense. You're staying here with me."
     c "Won't Bryce and Sebastian get worried if I don't go back to my apartment before dark?"
     Nm blank "No, it's fine. I asked them to give you permission to stay over at my place since we're, you know, intimate."
-    Nm stern "Also, I'm more than strong enough to protect you from Reza. I have a security system so I doubt he's even going to be able to break in here without us noticing."
+    Nm stern "Also, I'm more than strong enough to protect you from Reza. Furthermore, I have a security system so I doubt he's even going to be able to break in here without us noticing."
     c "But I don't want to put you at risk."
     show naomi surprised with dissolve
     c "I'll just get going."
@@ -489,8 +491,7 @@ label sqb_naomi_m3_ending:
     play sound "fx/door/door_open.wav"
     scene eckannabedroom3 with dissolvemed
     show naomi normal with easeinright
-    m "After a few moments, Naomi came back with my glass of water."
-    m "She had also put some ice in it for me, to make the it even colder."
+    m "After a few moments, Naomi came back with my glass of water. She had also put some ice in it for me, to make the it even colder."
     play sound "fx/glassdown.wav"
     Nm "Here's your water."
     c "Thank you."
@@ -521,7 +522,7 @@ label sqb_naomi_m3_ending:
     play music "mx/sail.ogg"
     m "I woke up a lot later than I usually did. I must have actually slept for over twelve hours, like I had planned to."
     play sound "fx/sheet.wav"
-    m "My body was still sore all over, but at least I wasn't dead tired anymore. I got off the bed and wandered slowly and painfully to Naomi's living room."
+    m "My body was still sore all over, but at least I wasn't dead tired anymore. I got off the bed and wandered slowly and painfully into Naomi's living room."
     play sound "fx/bed.ogg"
     queue sound "fx/door/door_open.wav"
     $ renpy.pause (4.0)
@@ -536,7 +537,7 @@ label sqb_naomi_m3_ending:
     Nm smile "You're welcome."
     Nm blank "I don't really have any time to chat, because I have to go to work. Actually, you woke up just in time to see me off." 
     Nm normal "I have a much safer date planned for later, so give me a call once you're available. I promise you will love it."
-    c "Sure. Despite yesterday's disaster, I can't wait to go on a date with you again."
+    c "Sure. Somehow, despite yesterday's disaster, I can't wait to go on a date with you again."
     Nm concern "Very funny."
     $ renpy.pause (1.0)
     Nm normal "Oh, I really have to go now. Bye!"
@@ -573,23 +574,29 @@ label sqb_naomi_m3_ending:
     stop soundloop fadeout 1.0
     #Inspired by Freefall
     m "When I had reached the park, I sat down on a bench for a break." 
-    m "I relaxed myself on the backrest and closed my eyes to think for a moment."
+    m "Then I relaxed myself on the backrest and rest my eyes to think for a moment."
     $ renpy.pause (2.0)
     scene black with dissolve
     $ renpy.pause (4.0)
     scene eckoldbiolabsep with flash
     show naomi cry sep with dissolve
     $ renpy.pause (2.0)
-    play sound "fx/explosion.ogg"
-    scene black with dissolve
+    play sound "fx/snarl.ogg"
+    $ renpy.pause (0.5)
+    play sound2 "fx/explosion.ogg"
+    show naomi scared sep with dissolve
+    $ renpy.pause (1.0)  
+    scene black with dissolvemed
     $ renpy.pause (2.0)
-    m "I felt incredible pain as my body was engulfed and eaten by a shockwave of fire."
+    m "I felt incredible pain as my body first engulfed and then disintegrated by a shockwave of fire."
     c "NAOMI!!! NO!!!"
-    $ renpy.pause (2.0)
+    $ renpy.pause (4.0)
+    stop sound fadeout 1.0
     scene ecknaomiapt01sep with flash
     show naomi hurt sep with dissolve
     $ renpy.pause (1.0)
     play sound "fx/rev.ogg"
+    m "I woke up to pointing a gun upwards inside Naomi's mouth."
     scene black with dissolveslow
     c "{cps=15}It's okay, Naomi. It wasn't your-{/cps}{nw}"
     $ renpy.pause (0.1)
@@ -601,26 +608,28 @@ label sqb_naomi_m3_ending:
     queue sound2 "fx/silence.ogg"
     queue sound2 "fx/impact3.ogg"
     $ renpy.pause (2.0)
-    m "(WHAT HAVE I DONE?!)" with vpunch
+    m "({b}WHAT HAVE I DONE?!{/b})" with vpunch
     $ renpy.pause (2.0)
-    m "(I don't want to live anymore.)"
+    m "(I can't live after doing this. I don't want to live anymore.)"
+    $ renpy.pause (2.0)
     play sound "fx/rev.ogg"
     $ renpy.pause (4.0)
     play sound "fx/gunshot2.wav"
-    $ renpy.pause (2.0)
+    $ renpy.pause (1.0)
     play sound "fx/impact.ogg"
+    m "My entire body went limp and I fell on the cold, hard floor."
     $ renpy.pause (8.0)
-    m "When I had finally snapped out of it, I had fallen on the ground and my entire upper body had sweated profusely."
+    m "When I had finally snapped out of it, I found myself lying on the ground next to the bench I had sat on. My hair and shirt were wet, because my entire upper body had sweated profusely."
     scene town6 with dissolvemed
     m "A group of dragons had gathered around me to see if I was okay."
     m "(What the hell was that!? It felt...{w} so real.)"
     $ renpy.pause (2.0)
     m "(Was it real?)"
     $ renpy.pause (2.0)
-    m "Bewildered by this horrifying experience, I got up from the ground without saying anything and continued making my way back to my apartment."
+    m "Bewildered by this horrifying experience, I got up from the ground without saying anything and continued making my way to my apartment."
     play soundloop "fx/steps/steps.ogg"
     scene town7 with dissolve
-    m "Since nothing like this obviously had happened to me before, and because dreams could sometimes show you your worst fears, I decided to shrug off what I had just seen. I had more important things to worry about right now."    
+    m "Since nothing like this obviously had happened to me before, and because dreams could sometimes show your worst fears, I decided to shrug off what I had just seen. I had more important things to worry about right now."    
     scene town1 with dissolvemed 
     $ renpy.pause (2.0)
     scene eckplayeraptextra1 with dissolvemed

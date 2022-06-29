@@ -14,8 +14,8 @@ label sqb_naomi_endingcheck:
              m "I felt a strange and somewhat unsettling feeling in the back of my head."
              play sound "fx/impact3.ogg"
              $ sqbpremounlocked = True
-             $ sqbnaomim3nogiveup == False
-             $ sqbnaomim3protect == False
+             $ sqbnaomim3nogiveup = False
+             $ sqbnaomim3protect = False
     
 jump sqb_naomi_endingcheck_end
 
@@ -27,10 +27,10 @@ label sqb_naomi_premostart:
     c "Y-you're big!"
     show naomi confused b with dissolve
     "???" "Thanks?"
-    m "I was very confused. I had no idea what had just happened. I could only stare back at the dragon looming over me."
+    m "I was very confused. I had no idea what had just happened. I could only stare back at the dragoness looming over me."
     c "..."
     show naomi concern b with dissolve
-    m "The large blue dragon looked back at me worriedly while still holding her hand out to me."
+    m "The large blue dragoness looked back at me worriedly while still holding her hand out to me."
     m "My head felt weird, as if my brain was trying very hard to remember something."
     c "A large blue dragon?"
     show naomi confused b with dissolve
