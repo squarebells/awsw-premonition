@@ -5,12 +5,11 @@ You need to have acquired ASM ending A to unlock this, because this mod takes pl
 
 To get the this mod's scenes, select the new options whenever possible and of course be as nice as possible to mod Naomi. Also, contains lewd scenes. This mod assumes the PC is male, for now.
  
-### Requirements: 
+### Requirements:
+ + Modtools by Blue
  + Magmalink by Jakzie2 
  + A Solitary Mind and Chaos_Knight Core mod (ECK Core) by EvilChaosKnight
  + Community Resource and Assets Pack (CRAP) by Jakzie2, 4onen, Azrynfolf, Ryann and Volar Vie
- 
-### Optional requirement: 
  + BangOk by 4onen
  
 ### Recommended:
