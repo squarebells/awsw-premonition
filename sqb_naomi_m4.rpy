@@ -90,7 +90,7 @@ label sqb_naomi_m4_meetinghumans:
     
 jump sqb_naomi_m4_meetinghumans_end
 
-label sqb_naomi_m4_funparts:
+label sqb_naomi_m4_returndiscussion:
 
     #I've been waiting for so long to write this
     $ renpy.pause (2.0)    
@@ -109,236 +109,55 @@ label sqb_naomi_m4_funparts:
     c "It's unfortunate that innocent people will have to suffer, but at the same time it's unfair to saddle some random guy with two college degrees with the responsibility of fixing everything."
     c "All this said, after we stop Reza I'm just going to chill out in your world and not give a fuck anymore. There is only so much hardship one can take."
     Nm "That's a very harsh decision to make. Are you sure you want to abandon your people like that?"
-    c "I've been through a lot, so I just don't care anymore. They can fix their own problems if they want."
-    Nm smile "Well, like you know, we'll be very happy to have you, especially me. There's still a possibility for my dream of humans migrating here coming true."
-    c "Sure. That's a goal I could work towards. Let's focus on stopping Reza for now though."   
-    Nm normal "You staying is good because I realized that if Reza succeeds in his mission, your rulers wouldn't want to have an uncomfortable witness. If we apprehend and convict him, they wouldn't take kindly to someone who played a crucial role in foiling their plans."   
+    c "I've been through a lot, so I just don't care anymore. They can fix their own problems if they want, since it feels like they're just trying to hinder me every step of the way."
+    Nm smile "Like you already know, we'll be very happy to have you, especially me. There's still a possibility for my dream of humans migrating here coming true."
+    c "Sure. That's a goal I could work towards."   
+    Nm normal "Also, I realized that if Reza succeeds in his mission, your rulers wouldn't want to leave an uncomfortable witness. If we apprehend and convict Reza, they wouldn't take kindly to someone who played a crucial role in foiling their plans."   
     c "Good point."
-    Nm stern "Yeah, they need the generators, like you have said on many occasions. They don't need you in person."    
+    Nm stern "Yeah, they need the generators, like you have said on many occasions. They don't need you."    
     Nm shy "Sorry, if I sounded too harsh."
-    c "It's fine, because you're right. The only way to stay on good terms with my city-state's leadership would be to help Reza complete his plan and that's never going to happen. I'm in pretty big danger in my world no matter what reasonable course of action I take."
-    Nm stern "Yeah, I bet they'd just drop a stone on your head and call it an accident. These kinds of people people will step over as many dead bodies as necessary to reach their goals."
+    c "It's fine, because you're right. The only way to stay on good terms with my city-state's leadership would be to help Reza complete his plan and that's never going to happen. I'm in danger in my world no matter what reasonable course of action I choose to take."
+    Nm stern "Yeah, I bet they'd just drop a stone on your head and call it an accident. These kinds of people will step over as many dead bodies as necessary to reach their goals."
     c "That's another good point. I would like to avoid getting assassinated, thank you very much."
-    c "Enough about this. Let's just focus on stopping Reza first."
+    $ renpy.pause (2.0)
+    c "Enough about this. Let's just agree for now that our first focus is stopping Reza."
     Nm smile "Sounds like a plan."
-    Nm normal "I can't wait to see what his eventual interrogation will reveal."
+
+jump sqb_naomi_m4_returndiscussion_end
+
+label sqb_naomi_m4_interspecies:
     
-    Nm "Speaking of recent events, the generator we recovered turned out to be a huge boon for the engineering department."
-    c "I hope they'll be able to put it to a good use."
-    Nm "They didn't provide me with a lot of details, but they said that the possibilities for technological discoveries are very promising."
-    Nm smile "There's a little formality we'd need to settle, though."
-    c "What sort of?"
-    Nm normal "You're the one who recovered it, and since the original owners and developers are lost to history, it belongs to you. There's a form they'd need you to fill to file your claim."
-    Nm "Needless to say, the council is very excited about our discovery, and they want to know whom to reward for it."
-    c "How are we going to explain where we got it from, though? If we tell the truth, you might get fired."
-    Nm shy "I thought about it but couldn't come up with anything. I was hoping you had an idea."
-    c "Not a single one."
-    show naomi normal with dissolve
-    c "Also, I'm not acting as an independent individual, but as an ambassador of humankind – or, rather, a very specific city-state. So it would belong to them, technically."
-    m confused "That's going to complicate things even further, isn't it?"
-    c "Right."
-    c "Maybe you should make the claim. Bryce would still be worried about you exploring something dangerous and ancient, but at least they wouldn't blame you for endangering foreign diplomats."
-    Nm stern "And rob you of all the credit?"
-    Nm concern "..."
-    Nm "No, I can't do that to you. I owe you too much already."
-    m "I reached out my hand and gently stroked her behind her frills."
-    $ renpy.pause (0.3)
-    show naomi sleep with dissolve
-    c "It's alright. You and I know the truth, and that's good enough. I don't want you to get in trouble."
-    Nm normal "Fine."
-    Nm smile "But any money or trophies I'm given are yours."
-    c "Sounds like a deal."  
-    stop music fadeout 2.0
-    Nm smile "Now, let's try and enjoy our evening."
-    play music "mx/treetops.mp3"
-    c "I forgot to ask. What did you bring?"
-    Nm normal "A bottle of fruit wine, seafood and other assorted snacks."
-    c "Where did you find this?"
-    Nm "There's a bar just down the road."
-    Nm shy "Learned about it while processing some papers for a minor theft incident three weeks ago."
-    c "Now that's a new way of keeping track of local establishments."
-    Nm smile "Stress aside, police work has a few unexpected perks."
-    c "We don't have any cups, though."
-    Nm "Check one of the paper bags."
-    $ renpy.pause (1.5)
-    play sound "fx/paper2.ogg"
-    $ renpy.pause (1.5)
-    c "Here they are."
-    Nm normal "I went with plastic. I apologize if they look cheap, but I didn't want to drop one and leave glass shards around a swimming pool."
-    c "I'm surprised they let you take the bottle here."
-    Nm shy "Um... Our receptionist is sleeping, so he didn't protest."
-    c "Got it."
-    c "Do we have a corkscrew?"
-    Nm normal "The bartender was kind enough to open the wine for us."
-    c "How nice of them."
-    
-    play sound "fx/pouringwine.ogg"
-    
-    m "Naomi grabbed a large bowl while I stuck to a smaller, average-sized cup. Unsurprisingly, our vessels combined were enough to empty out the bottle."
-    c "I thought you were wary of drinking."
-    Nm "I am."
-    c "But that's a lot of wine."
-    if naomiromance > 8:
-        Nm smile "I'm also a lot of dragon."
-        c "Oh my."
-        
-    else:
-        Nm smile "I'm also four to five times your size."
-        c "Point taken."
-        
-    c "What should we drink to?"
-    Nm shy "Maybe you should choose."
-    c "You're the host, so you get to go first."
-    Nm "Alright."
-    m "She took a short pause."
-    Nm normal "To our meeting, then."
-    c "To our meeting."
-    
-    play sound "fx/gulping.wav"
-    m "True to its name, the drink had a light fruity taste with a very minor alcohol flavor. Both of us emptied roughly half of our respective vessels."
-    Nm "A decent taste."
-    c "Almost like juice."
-    Nm smile "We wouldn't want to get too tipsy. I have work tomorrow, and you're probably going to be quite busy as well."
-    c "But hangover at work is so much fun."
-    Nm normal "Not with my duties."
-    Nm smile "And most certainly not with something as important as yours."
-    c "It's not like it would endanger the political relations between our two worlds or something... Right?"
-    Nm normal "Of course not."
-    m "The snacks weren't anything huge, but they had a fine taste and helped quell the peckish sensation in my stomach."
-    m "After some time, I picked up my cup again."
-    c "My turn now, I guess."
-    Nm smile "Go ahead."
-    menu:
-        "To our friendship." if naomiromance < 9:
-            $ renpy.pause (0.5)
-            c "And let it last for years and years to come. Through sunny and rainy days."
-            Nm "Maybe even for a lifetime..."
-            c "I wouldn't mind that at all."
-            Nm "Neither would I."
-            
-        "To the wonderful thing we share." if naomiromance > 8:
-            $ renpy.pause (0.5)
-            $ naomiromance += 1
-            c "And let it stay strong for years to come."
-            Nm "No matter what challenges future holds, I'm happy to have you by my side today, [player_name]."
-            c "And I'm happy to be here, with you."
-            
-        "To good luck and success.":
-            $ renpy.pause (0.5)
-            c "And to all of our future victories."
-            Nm "Sounds good."
-            Nm normal "I hope all the recent craziness and chaos will be resolved soon."
-            c "So do I."
-            
-        "To happiness.":
-            $ renpy.pause (0.5)
-            c "So we could look into the future with hope and back into the past without regrets."
-            Nm normal "Poetic, if a little naive."
-            if naomiromance > 7:
-                Nm smile "But, perhaps today I got one step closer to reaching it."
-            else:
-                pass
-            
-        "To you.":
-            $ renpy.pause (0.5)
-            $ naomiromance += 1
-            Nm "How sweet."
-            c "It would only be fair to commend you, Naomi."
-            
-        "To our good health.":
-            $ renpy.pause (0.5)
-            Nm "Consuming alcohol to such a toast. Ironic, isn't it?"
-            c "You could say that. But on the other hand, I'm on a completely different planet, but none of the local viruses or bacteria made me terribly sick yet."
-            Nm normal "Huh. It didn't even cross my mind before."
-            c "From a biology standpoint, it's a miracle, no less."
-            Nm smile "To miracles in our everyday lives, then."
-        
-    
-    play sound "fx/gulping.wav"
-    
+    $ renpy.pause (0.5)
+    c "To exciting interspecies relationships, and hopefully many more in the future!"
+    Nm smile "I'm with you on that. If we manage to start a migration plan there will be a lot of dragons interested in forming relationships with humans."
+    c "From what I know, there aren't that many of us compared to you, so I hope there will be enough humans to go around."
+    Nm aroused "{cps=20}There's a solution for that...{/cps}"
+    m "I shuddered at the thought of what she was implying."
+    show naomi smile with dissolve
+    c "Oh."
+    $ renpy.pause (2.0)
+    c "Let's drink."
+    play sound "fx/gulping.wav"   
     m "I took another long sip of my drink, mindful to keep enough of it at least for one final round."
-    Nm normal "Our cups are almost dry. Maybe we should get the final one out of the way. What do you say?"
-    c "Sure."
-    
-    Nm "Only a few days ago, we met at the production facility – but somehow I trust you almost completely, as if we had known each other for many long years."
-    Nm "I wish the circumstances were different, and your stay in our world was a lot more pleasant with less stress."
-    if naomiromance > 8:
-        Nm smile "But despite all odds, you showed me compassion and gave me something I never experienced before. Something I truly hope we're going to share for decades to come."
-    else:
-        Nm smile "But despite all odds, you remained a faithful, reliable friend, and I thank you for that."
-    Nm "To you, [player_name]."
-    c "Woah. That was impressive."
-    Nm shy "Thanks."
-    Nm "I was thinking about what to tell you this whole evening."
-    c "I'd say you did well."
-    
-    play sound "fx/gulping.wav"
-    
-    m "Soon, my cup and Naomi's bowl were empty, and we stuffed them back into now much lighter paper bags. I leaned back in my lounge chair, while the dragoness chose to settle on the tiled floor."
-    m "Outside, the sun had almost completely sunken beneath the horizon, but still gave the clouds a faint red hue."
-    
-    Nm smile "Want to go for another short swim in a few minutes?"
-    c "Is it safe? I mean, we just drank and had food. Muscle or stomach cramps are pretty dangerous in the water."
-    Nm normal "Don't overstrain yourself, and if anything happens, I'll get you out no problem."
-    c "What about you?"
-    Nm smile "I'm not susceptible to them the same way you and some land dragons are."
-    hide naomi with dissolve
-    m "She walked up to the pool's edge and lazily slipped into the water, making little to no splash. I followed suit, albeit my entry was much less graceful."
-    play sound "fx/watersurface.ogg"
-    m "For a time, we enjoyed splashing, slowly swimming or simply relaxing on the shallow part."
-    m "Eventually, exhaustion caught up with me, and I decided to make my way back. Naomi climbed out of the water as well, droplets freely rolling off her scales."
-    show naomi normal with dissolve
-    m "A tired yawn escaped my lips."    
-    c "It's getting late. I doubt I can return to my apartment now."
-    Nm smile "This place is all ours until morning."
-    c "Where am I going to sleep, though? I guess one of the lounge chairs will do."
-    
-    if naomiromance > 11:
-        hide naomi with dissolve
-        play sound "fx/impact3.ogg"
-        with Shake((0, 0, 0, 0), 2, dist=10)
-        m "Suddenly, I found my back pressed against the floor, with the dragoness resting right on top of me. While most of her weight was shifted to her arms and legs, I was still practically pinned down by her soft underside."
-        m "Her draconic hand supported the back of my head and neck, working like a small pillow. I looked up at her face. Our eyes met."
-        show naomi smile with dissolve
-        c "Naomi? What are you doing?"
-        Nm "After all the affection and care you've given me, I thought maybe you and I..."
-        Nm shy "You know..."
-        c "Take it a little further."
-        Nm smile "Yes."
-        Nm normal "I don't know when or even if we'll get another chance."
-        # I am NOT commissioning any art for this. Just nope. XD
-        # Also still no lemons because I really like Steam Workshop.
-        menu:
-            "Accept.":
-                $ renpy.pause (0.5)
-                c "Let's not waste this opportunity, then."
-                Nm smile "I wasn't planning to."
-                c "Want to settle on a lounge chair?"
-                Nm "It wouldn't be able to hold both of us anyway."
-                c "Good point."
-                Nm "But I have a better idea."
-                hide naomi with dissolve
-                m "Without breaking our contact, she rolled a little to the side and, eventually, onto her back to give me more much-appreciated breathing room – while still supporting me firmly with her hand. With her limbs dangling in the air, she looked so vulnerable and oddly cute."
-                m "She grabbed me by the sides and pulled me towards her chest while leaning backward at the same time. Her wings closed above me like a giant blanket."
-                show naomi smile with dissolve
-                Nm "Feeling comfy?"
-                c "Very. Who needs lounge chairs anyway."
-                m "Using the given opportunity, I gently ran my hand along her soft scales in long, firm motions. With every pass, her tense muscles softened up little by little."
-                $ renpy.pause (0.5)
-                Nm smile "Now... I'm even more jealous of your hands, [player_name]."
-                m "The dragoness leaned forward and gave the tip of my nose a playful lick."
-                m "I quickly switched my attention to the area behind her horns and frills. Naomi tilted her head and pushed against my hand the moment I started scratching."
-                show naomi surprisedblush with dissolve
-                m "Her body shook up slightly."
-                show naomi slsmile with dissolve
-                m "She leaned down and planted her lips firmly against mine, not a hint of hesitation or uncertainty in her moves. After a short struggle, I managed to free up my arms and wrapped them tightly around the back of her head."
-                m "Naomi backed away a little. Her blushing muzzle remained a few inches away from my burning face."
-                Nm shy "For a moment there, I was worried. I wasn't sure you like me enough."
-                c "A silly thing to say for a wonderful dragoness."
-                Nm smile "Silly me, indeed."
-                show naomi slsmile with dissolve
-                m "We were reunited in our kiss in an instant. No longer held back by doubts and reservations, we were fully committed to each other. My hands traveled along her soft neck and chest scales, while I soon found her arms holding me tightly around the shoulders."
-                m "For a time, I forgot about everything. There was only she, I and the warmth we shared."
-                    
+
+jump sqb_naomi_m4_interspecies_end
+
+label sqb_naomi_m4_funparts:
+   
+    Nm smile "This place is all ours until morning. I'll be your pillow and blanket."    
+    c "I like that."
+    show naomi aroused with dissolve
+    play sound "fx/craphug.mp3"
+    m "Suddenly, Naomi tied me in a big dragon hug, and pressed me down on the floor. SWhile most of her weight was shifted to her arms and legs, I was still practically pinned down by her soft underside."
+    m "Her draconic hand supported the back of my head and neck, working like a small pillow. I looked up at her face. Our eyes met, and we kissed."
+    play sound "fx/kiss.wav"
+    queue sound "fx/lewd/lickslow.ogg"   
+    c "Ever since we got here, I've been waiting for this part."
+    Nm smile "Me too."
+    $ renpy.pause (2.0)
+    Nm "So, you want to do it in this position?"
+
+    #Naomi on top doesn't work because there are no mattresses. From behind doesn't either because the floor is slippery. 
+    #Lounge chair can't hold both, so Naomi settles on the floor on her back, with PC on top    
 
 jump eck_naomi_m4_morning

@@ -165,18 +165,29 @@ def sqb3naomi(ml):
 
 def sqb4naomi(ml):
 
-    ml.find_label("eck_naomi_m4") \
-    .search_say("Oh well. I don't need") \
-    .hook_to("sqb_naomi_m4_start", condition='sqbnaomi2hadsex == True') \
-    .search_say("Peace and quiet") \
-    .link_from("sqb_naomi_m4_start_end") \
-    .search_say("Things could've been better, of course.") \
-    .hook_to("sqb_naomi_m4_meetinghumans", condition='sqbnaomi2hadsex == True') \
-    .search_say("Come to think of it") \
-    .link_from("sqb_naomi_m4_meetinghumans_end") \
-    .search_say("I sure hope so.") \
-    .hook_to("sqb_naomi_m4_funparts", condition='sqbnaomi2hadsex == True') \
-
+       ml.find_label("eck_naomi_m4") \
+            .search_say("Oh well. I don't need") \
+            .hook_to("sqb_naomi_m4_start", condition='sqbnaomi2hadsex == True') \
+            .search_say("Peace and quiet") \
+            .link_from("sqb_naomi_m4_start_end") \
+            .search_say("Things could've been better, of course.") \
+            .hook_to("sqb_naomi_m4_meetinghumans", condition='sqbnaomi2hadsex == True') \
+            .search_say("Come to think of it") \
+            .link_from("sqb_naomi_m4_meetinghumans_end") \
+            .search_say("I sure hope so.") \
+            .hook_to("sqb_naomi_m4_returndiscussion", condition='sqbnaomi2hadsex == True') \
+            .search_say("Can't wait to see what") \
+            .link_from("sqb_naomi_m4_returndiscussion_end") \
+            .search_say("Go ahead") \
+            .search_menu() \
+            .add_choice(text="To interspecies relationships.", condition='sqbnaomi2hadsex == True', before="To our friendship.") \
+            .hook_to("sqb_naomi_m4_interspecies", condition='sqbnaomi2hadsex == True') \
+            .search_say("Our cups are almost dry") \
+            .link_from("sqb_naomi_m4_interspecies_end") \
+            
+       ml.find_label("eck_naomi_m4_skip") \
+            .search_say("It's getting late") \
+            .hook_to("sqb_naomi_m4_funparts", condition='sqbnaomi2hadsex == True')
 
 #def sqb6naomi(ml):      
 
