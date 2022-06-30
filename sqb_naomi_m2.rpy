@@ -12,9 +12,9 @@ label sqb_naomi_m2_sexskip:
         "Cooking":
             scene black with dissolvemed
             $ renpy.pause (1.0)
-            $ naomi2mood = 10
+            $ naomi2mood = 12
             $ naomiromance += 100
-            $ naomilewd = 4
+            $ naomilewd = 5
             scene eckannabedroom4 with dissolvemed
             play music "mx/airborne.mp3"
             show naomi normal with dissolve
@@ -24,9 +24,9 @@ label sqb_naomi_m2_sexskip:
             s "Alright."
             scene black with dissolvemed
             $ renpy.pause (1.0)
-            $ naomi2mood = 10
+            $ naomi2mood = 12
             $ naomiromance += 100
-            $ naomilewd = 4
+            $ naomilewd = 5
             scene ecknaomiapt03 with dissolvemed
             play music "mx/airborne.mp3"
             show naomi normal with dissolve
@@ -37,9 +37,9 @@ label sqb_naomi_m2_sexskip2:
     s "Alright."
     scene black with dissolvemed
     $ renpy.pause (1.0)
-    $ naomi2mood = 10
+    $ naomi2mood = 12
     $ naomiromance += 100
-    $ naomilewd = 4
+    $ naomilewd = 5
     scene eckannabedroom4 with dissolvemed
     play music "mx/treetops.mp3"
     show naomi smile with dissolve
@@ -182,7 +182,7 @@ label sqb_naomi_m2_movie:
             play sound "fx/sheet.wav"
             $ renpy.pause (0.5)
             m "Naomi slipped off the cushions in a single fluid move – not unlike a huge cat – and walked up to the device located below the large wall-mounted TV. She fiddled with it for a time and then made a quick trip to the fridge, before returning with two portions of snacks and drinks."
-            if naomi2mood > 5:
+            if naomi2mood > 4:
                 m "The dragoness placed them on the glass table nearby and hopped onto the couch, settling next to me."
             else:
                 m "The dragoness placed them on the glass table nearby and hopped back onto her previous spot on the couch."
@@ -281,7 +281,7 @@ label sqb_naomi_m2_movie:
             play sound "fx/sheet.wav"
             $ renpy.pause (0.5)
             m "Naomi slipped off the cushions in a single fluid move – not unlike a huge cat – and walked up to the device located below the large wall-mounted TV. She fiddled with it for a time and then made a quick trip to the fridge, before returning with two portions of snacks and drinks."
-            if naomi2mood > 5:
+            if naomi2mood > 4:
                 m "The dragoness placed them on the glass table nearby and hopped onto the couch, settling next to me."
             else:
                 m "The dragoness placed them on the glass table nearby and hopped back onto her previous spot on the couch."
@@ -660,7 +660,6 @@ label sqb_naomi_m2_bedroomfun:
         "Follow Naomi.":
             m "I decided to resist the the scary thoughts I had."
             $ naomistatus = "girlfriend"
-            $ sqbnaomi2sex = True
             pass
          
         "Try to escape while you still can.":
@@ -1117,6 +1116,7 @@ label sqb_naomi_m2_bedroomfun:
     
     #PC puts clothes back on
     
+    $ sqbnaomi2hadsex = True
     $ persistent.sqbnaomi2sex = True
     
     show naomi normal with dissolve
@@ -1472,7 +1472,7 @@ label sqb_naomi_m2_cooking:
         m "(Since Naomi seems to be skittish of alcohol, I should be careful with the alcohol content. Better to play it safe, as always.)"
         play sound "fx/cabinet.ogg"
         m "I inspected one of the same types of glasses I had served her juice in."
-        m "(She's like two to three times as big as I am, so two portions of alcohol in around a half a liter cocktail should only give her a slight buzz, even if she drank it all in one go.)"
+        m "(She's like three to four times as big as I am, so two portions of alcohol in around a half a liter cocktail should only give her a slight buzz, even if she drank it all in one go.)"
         queue sound "fx/pour.ogg"
         m "I measured two portions of liquor and six portions of simple syrup and poured them into the cocktail shaker."
         play sound "fx/crapfridge.mp3"

@@ -21,8 +21,6 @@ jump sqb_naomi_endingcheck_end
 
 label sqb_naomi_premostart:
 
-    $ naomilewd +=1
-
     m "When I looked back at her, the first thing that popped into my mind was how big she looked from my perspective on the floor."
     c "You're big!"
     show naomi confused b with dissolve

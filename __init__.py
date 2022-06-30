@@ -116,64 +116,67 @@ def sqb3naomi(ml):
             .search_menu("Not interested.").branch() \
             .search_say("I never liked water") \
             .search_say("Just have fun without me") \
-            .hook_to("sqb_naomi_m3_norefusal", condition='sqbpremounlocked ==  True')
+            .hook_to("sqb_naomi_m3_norefusal", condition='sqbnaomi2hadsex ==  True')
        
        ml.find_label("eck_naomi_m3_start") \
             .search_say("Uh, probably a minute") \
-            .hook_to("sqb_naomi_m3_tail", condition='sqbpremounlocked ==  True') \
+            .hook_to("sqb_naomi_m3_tail", condition='sqbnaomi2hadsex ==  True') \
             .search_say("Really? I thought your people") \
             .link_from("sqb_naomi_m3_tail_end") \
             .search_say("Um... do you mind") \
-            .hook_to("sqb_naomi_m3_undressing", condition='sqbpremounlocked ==  True') \
+            .hook_to("sqb_naomi_m3_undressing", condition='sqbnaomi2hadsex ==  True') \
             .search_say("So, how are your preparations") \
             .link_from("sqb_naomi_m3_undressing_end") \
             .search_say("The way you swim") \
             .search_say("A large metal doorframe") \
             .search_say("I'm responsible for your security") \
-            .hook_to("sqb_naomi_m3_explorationforce", condition='sqbpremounlocked ==  True')
+            .hook_to("sqb_naomi_m3_explorationforce", condition='sqbnaomi2hadsex ==  True')
 
        ml.find_label("_call_skiptut_eckn32") \
             .search_menu("Yes. I want to skip ahead.").branch() \
-            .hook_to("sqb_naomi_m3_templabskip", condition='sqbpremounlocked ==  True')
+            .hook_to("sqb_naomi_m3_templabskip", condition='sqbnaomi2hadsex ==  True')
        
        ml.find_label("eck_naomi_m3_early_leave") \
             .search_scene("beach") \
-            .hook_to("sqb_naomi_m3_labteleport", condition='sqbpremounlocked ==  True')
+            .hook_to("sqb_naomi_m3_labteleport", condition='sqbnaomi2hadsex ==  True')
        
        ml.find_label("eck_naomi_m3_biolabalert") \
             .search_say("Be advised, prolonged") \
-            .hook_to("sqb_naomi_m3_biolabalert", condition='sqbpremounlocked ==  True')
+            .hook_to("sqb_naomi_m3_biolabalert", condition='sqbnaomi2hadsex ==  True')
             
        ml.find_label("eck_naomi_m3_panicmenu") \
             .search_menu("Snuggle up with Naomi and surrender to your fate.") \
-            .edit_choice(text="Snuggle up with Naomi and surrender to your fate.", condition='sqbnaomim3nogiveup == False and sqbpremounlocked == True and ecknaomim3boomstop == False' ).branch() \
+            .edit_choice(text="Snuggle up with Naomi and surrender to your fate.", condition='sqbnaomim3nogiveup == False and sqbnaomi2hadsex == True and ecknaomim3boomstop == False' ).branch() \
             .search_python("renpy.pause (0.5)") \
             .hook_to("sqb_naomi_m3_nogiveup")
             
        ml.find_label("eck_naomi_m3_panicmenu") \
             .search_menu("Check on the entrance.").branch() \
-            .hook_to("sqb_naomi_m3_panicdoor", condition='sqbpremounlocked ==  True and ecknaomim3boomstop == False')
+            .hook_to("sqb_naomi_m3_panicdoor", condition='sqbnaomi2hadsex ==  True and ecknaomim3boomstop == False')
        
        ml.find_label("eck_naomi_m3_panicterminalman") \
             .search_menu("Maintenance.").branch() \
             .search_say("There were several more pages") \
-            .hook_to("sqb_naomi_m3_panicterminal", condition='sqbpremounlocked == True')
+            .hook_to("sqb_naomi_m3_panicterminal", condition='sqbnaomi2hadsex == True')
        
        ml.find_label("eck_naomi_m3_escape") \
             .search_say("I'd say we swim") \
-            .hook_to("sqb_naomi_m3_ending", condition='sqbpremounlocked ==  True')
+            .hook_to("sqb_naomi_m3_ending", condition='sqbnaomi2hadsex == True')
 
 def sqb4naomi(ml):
 
     ml.find_label("eck_naomi_m4") \
     .search_say("Oh well. I don't need") \
-    .hook_to("sqb_naomi_m4_start", condition='sqbpremounlocked ==  True') \
+    .hook_to("sqb_naomi_m4_start", condition='sqbnaomi2hadsex == True') \
     .search_say("Peace and quiet") \
     .link_from("sqb_naomi_m4_start_end") \
     .search_say("Things could've been better, of course.") \
-    .hook_to("sqb_naomi_m4_meethumans", condition='sqbpremounlocked ==  True') \
+    .hook_to("sqb_naomi_m4_meetinghumans", condition='sqbnaomi2hadsex == True') \
     .search_say("Come to think of it") \
-    .link_from("sqb_naomi_m4_meethumans_end")
+    .link_from("sqb_naomi_m4_meetinghumans_end") \
+    .search_say("I sure hope so.") \
+    .hook_to("sqb_naomi_m4_funparts", condition='sqbnaomi2hadsex == True') \
+
 
 #def sqb6naomi(ml):      
 
