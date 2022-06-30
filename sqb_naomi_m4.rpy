@@ -96,31 +96,31 @@ label sqb_naomi_m4_returndiscussion:
     $ renpy.pause (2.0)    
     Nm shy "This whole talk made me even more concerned about your safety. You're still going to stay here with me, right?"
     c "I don't think I have a choice, because you said you wouldn't even let me leave."
-    Nm confused "You know that I was just joking, right? If you want to leave, it's your choice, but I would urge you to really think it through."
+    Nm confused "You know that I was just joking, right? If you want to leave, it's your choice, but I would urge you to really think it through before you go."
     $ renpy.pause (2.0)
     c "I know, I was just joking. Of course I'll stay with you. I don't want to be separated from you."
     show naomi smile with dissolve
     c "To be honest, no sane person would ever want to go back to that post-apocalyptic hellhole, even if they were bound by duty." 
-    c "Besides, if your conclusions are correct it seems that I've basically been betrayed, by some people doing shady stuff behind my back that might end up jeopardizing our relations."
+    c "Besides, if your conclusions are correct it seems that I've basically been betrayed, by some in the leadership doing shady stuff behind my back that might end up jeopardizing my entire mission."
     show naomi blank with dissolve
-    c "So fuck them. All this would have been so easy if some in the leadership hadn't been so greedy and hostile towards your people. They're really just a bunch of authoritarian assholes who only care about staying in power."
+    c "So fuck them. All this would have been so easy if some in they hadn't been so greedy and hostile towards your people. They're really just a bunch of authoritarian assholes who only care about staying in power."
     show naomi concern with dissolve
-    c "To think of it, I don't really give a shit about what happens to my city-state anymore. If our people's relations go cold, it would be unfair to expect me to fix everything because none of this is my fault."
-    c "It's unfortunate that innocent people will have to suffer, but at the same time it's unfair to saddle some random guy with two college degrees with the responsibility of fixing everything."
+    c "To think of it, I don't really give a shit about what happens to my city-state anymore. If this mission fails and the relations between our peoples go hostile, it would be unfair to expect me to fix it because none of that would be my fault."
+    c "It's unfortunate that innocent people will have to suffer, but at the same time it's also unfair to saddle some random guy with two college degrees with the responsibility of fixing everything."
     c "All this said, after we stop Reza I'm just going to chill out in your world and not give a fuck anymore. There is only so much hardship one can take."
     Nm "That's a very harsh decision to make. Are you sure you want to abandon your people like that?"
-    c "I've been through a lot, so I just don't care anymore. They can fix their own problems if they want, since it feels like they're just trying to hinder me every step of the way."
+    c "I've been through a lot, so I just don't care anymore. I'll just stay here, and they can fix the problems in their own world by themselves. To me it almost feels like they're just trying to hinder my sincere and good-willed efforts every step of the way."
     Nm smile "Like you already know, we'll be very happy to have you, especially me. There's still a possibility for my dream of humans migrating here coming true."
     c "Sure. That's a goal I could work towards."   
     Nm normal "Also, I realized that if Reza succeeds in his mission, your rulers wouldn't want to leave an uncomfortable witness. If we apprehend and convict Reza, they wouldn't take kindly to someone who played a crucial role in foiling their plans."   
     c "Good point."
     Nm stern "Yeah, they need the generators, like you have said on many occasions. They don't need you."    
     Nm shy "Sorry, if I sounded too harsh."
-    c "It's fine, because you're right. The only way to stay on good terms with my city-state's leadership would be to help Reza complete his plan and that's never going to happen. I'm in danger in my world no matter what reasonable course of action I choose to take."
+    c "It's fine, because you're right. The only way for me to stay on good terms with my city-state's leadership would be to help Reza complete whatever plan he has and that's not going to happen. I'm in danger in my world no matter what reasonable course of action I choose to take."
     Nm stern "Yeah, I bet they'd just drop a stone on your head and call it an accident. These kinds of people will step over as many dead bodies as necessary to reach their goals."
     c "That's another good point. I would like to avoid getting assassinated, thank you very much."
     $ renpy.pause (2.0)
-    c "Enough about this. Let's just agree for now that our first focus is stopping Reza."
+    c "Enough about this. Let's just agree that our first focus is stopping Reza."
     Nm smile "Sounds like a plan."
 
 jump sqb_naomi_m4_returndiscussion_end
