@@ -1107,8 +1107,9 @@ label sqb_naomi_m2_bedroomfun:
                 m "(I can't believe I just came inside an actual, living dragon. I think I just broke a pretty important barrier for the sake of advancing humanity.)"
             
             Nm aroused "[player_name]...{w} I'm approaching my limit. Let's see if you're skillful enough to make us both cum at the same time."
-            c "I'll try my best." #PC fails
-    
+            c "I'll try my best." 
+            #PC fails          
+   
             stop soundloop fadeout 1.0
             stop music fadeout 1.0
         
