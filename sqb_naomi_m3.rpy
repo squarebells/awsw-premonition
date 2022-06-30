@@ -29,7 +29,7 @@ label sqb_naomi_m3_undressing:
     Nm smile "When I asked you to take your clothes off in front of me, did you take that as a sign of me wanting to have sex with you?"
     c "Well...{w} yes."
     c "You wanted that too, right?"
-    Nm "Of course. Although if you had refused to take your clothes off, that would have been pretty awkward, right?"
+    Nm "Of course. Although if you had refused to take your clothes off, that would've been pretty awkward, right?"
     c "Agreed. It all worked out in the end, so I'm not complaining."
     c "Could you please let me put the scuba gear on now?"
     Nm blank "Sure." 
@@ -64,7 +64,7 @@ label sqb_naomi_m3_undressing:
     Nm shy "N-no...{w} it's just intuition, I guess?"
     Nm normal "Anyway to contrast your people with ours, I'll tell you openly that we don't have a problem walking around as we are, really." 
     Nm "Of course, we have specialized outfits for jobs which require them – but for the most part, it comes down to accessories with extra functionality, like bags, insignias and other minor elements that are mostly decorative."
-    c "Makes sense why you'd want to wear a police badge or some protective gear required for your job even if you normally didn't need any clothing." 
+    c "Makes sense why you would want to wear a police badge or some protective gear required for your job even if you normally didn't need any clothing." 
     c "In my case it's still going to take some time to get used to, because like I already implied, in human society being naked in front of someone is actually a sign of affection or even a request for intimacy."     
     Nm blank "Wait a moment..."
     Nm shy "Hold on."
@@ -215,7 +215,7 @@ label sqb_naomi_m3_panicmenureset:
     show naomi surprised with dissolve
     Nm "Did you find out where the backup generator is?"
     c "Yes, it's below us, but I have no idea how to reach it."
-    c "The real bad news is that this console also told me that we have only half an hour before it explodes. I honestly thought we would have a lot longer but the drainage system is completely destroyed."
+    c "The real bad news is that this console also told me that we have only half an hour before it explodes. I honestly thought we would've had a lot longer but the drainage system is completely destroyed."
     Nm stern "Well, hurry up then. I can't operate the computer as fast as you can. See if you can remotely shut down the generator or even to extract it."
     show naomi blank with dissolve
     c "Yes, Naomi."
@@ -352,7 +352,7 @@ label sqb_naomi_m3_ending:
     Nm normal "Now when I am carrying you, I realize that you're much fatter than you look or feel in bed."
     c "Naomi...{w} please not now. I'm going to die from any more exertion."
     Nm smile "Fine. I can't help but tease you."
-    m "She was quiet for the rest of the trip, but I knew she wasn't done with me yet. I would be surprised though, because she would react differently than how I would expect her to based on this day's events so far."
+    m "She was quiet for the rest of the trip, but I knew she wasn't done with me yet. I would be surprised though, because she would react differently than how I expected her to based on this day's events so far."
     scene ecknaomiaptoutside with dissolvemed
     $ renpy.pause (2.0)
     stop soundloop fadeout 1.0
@@ -365,7 +365,7 @@ label sqb_naomi_m3_ending:
     play sound "fx/door/door_open.wav"
     scene eckannabedroom4 with dissolvemed
     $ renpy.pause (2.0)
-    m "When we had made it to Naomi's bedroom, she carried me over to her bed. Then she lowered me on it slowly and carefully on my back."
+    m "In Naomi's bedroom, I dropped the plastic bag with my clothes and scuba gear on the floor and then she carried me over to her bed. She lowered me on it slowly and carefully on my back."
     show naomi blank with dissolve
     Nm "What an evening."
     Nm concern "Are you okay, [player_name]?"
@@ -374,7 +374,7 @@ label sqb_naomi_m3_ending:
     $ renpy.pause (2.0)
     Nm sad "I'm so sorry for ruining what was supposed to be a fun evening for just the two of us."
     c "Naomi, I was just joking. It was my stupid idea to insist on exploring such an unknown and dangerous place."
-    Nm concern "But I could have stopped you."
+    Nm concern "But I could've stopped you."
     c "No, it's mostly my fault, not yours."
     c "Remember that you have no authority to order me around. The most you could really do is offer me friendly advice. I take full responsibility for the disastrous decision to go exploring where I shouldn't have."
     c "It was very fortunate for me that you followed me, since I couldn't have gotten to the generator without your help."
@@ -433,7 +433,7 @@ label sqb_naomi_m3_ending:
     $ renpy.pause (2.0)
     c "Anyway, I'm very impressed by how you figured out so quickly what to do when the alarms went off. Honestly, I was completely stumped in that situation."
     show naomi shy with dissolve
-    c "To me it felt like you knew almost exactly what we should do. How'd you manage to figure everything out so quickly?"    
+    c "To me it felt like you knew almost exactly what we should do. How did you manage to figure everything out so quickly?"    
     Nm "I don't know. How I felt at that moment is hard to explain."
     Nm smile "The best I could explain it is that I've never felt that determined to find a solution in my entire life. I think you being in mortal danger made me brave."    
     c "I feel assured to be able to count on you like that. Let's still agree to not go on an adventure like that ever again, right?"
@@ -521,19 +521,20 @@ label sqb_naomi_m3_ending:
     $ renpy.pause (8.0)
     scene eckannabedroom4 with dissolvemed
     play music "mx/sail.ogg"
-    m "I woke up a lot later than I usually did. I must have actually slept for over twelve hours, like I had planned to."
+    m "I woke up a lot later than I usually did. I must have actually slept for over twelve hours, like I had planned to. Judging by the dragon-sized empty space next to me in the bed, Naomi had already gotten up."
     play sound "fx/sheet.wav"
-    m "My body was still sore all over, but at least I wasn't dead tired anymore. I got off the bed and wandered slowly and painfully into Naomi's living room."
-    play sound "fx/bed.ogg"
+    m "My body was still sore all over, but at least I wasn't dead tired anymore. I got off the bed, slowly put on my clothes from the plastic bag and wandered carefully into the living room."
+    play sound "fx/undress.ogg"
     queue sound "fx/door/door_open.wav"
     $ renpy.pause (4.0)
     scene black with dissolvemed
     $ renpy.pause (2.0)
     scene ecknaomiapt03 with dissolve
     show naomi normal with dissolve
+    m "Naomi was lying on the sofa, seemingly just finishing up her breakfast."
     Nm "Good morning, [player_name]. I made some scrambled eggs and bacon for breakfast. Also, please help yourself to the juice. You need to get your strength up, and it has a lot of beneficial vitamins for you."
     c "Woah, you're able to cook?"
-    Nm stern "Come on. Even someone with as clumsy hands as mine can make something like scrambled eggs and bacon."
+    Nm stern "Come on. Even someone with as clumsy hands as mine can make scrambled eggs and bacon."
     c "I appreciate you seeing the effort. Thanks a lot, Naomi."
     Nm smile "You're welcome."
     Nm blank "I don't really have any time to chat, because I have to go to work. Actually, you woke up just in time to see me off." 
@@ -559,7 +560,7 @@ label sqb_naomi_m3_ending:
     queue sound "fx/glassdown.wav"    
     m "I washed my breakfast down with a full carton of cold juice."
     stop sound fadeout 1.0
-    m "With this hearty breakfast, I was ready to face whatever misadventures would come at me today. I dropped off my dishes at Naomi's sink, and exited to walk to my apartment."
+    m "With this hearty breakfast, I was ready to face whatever misadventures were going to come at me. I dropped off my dishes at Naomi's sink, and exited to walk to my apartment."
     stop music fadeout 1.0
     play sound "fx/door/lock.ogg"
     scene black with dissolvemed
@@ -573,33 +574,35 @@ label sqb_naomi_m3_ending:
     $ renpy.pause (2.0)    
     scene town6 with dissolvemed
     stop soundloop fadeout 1.0
-    #Inspired by Freefall
-    m "When I had reached the park, I sat down on a bench for a break." 
-    m "Then I relaxed myself on the backrest and rest my eyes to think for a moment."
+    #Inspired by Freefall's terrifying flashback scene
+    m "When I had reached the park I sat down on a bench, intending to take a short break." 
+    m "I relaxed myself on the bench's backrest and shut my eyes to rest for a moment."
     $ renpy.pause (2.0)
     scene black with dissolve
     $ renpy.pause (4.0)
     scene eckoldbiolabsep with flash
     show naomi cry sep with dissolve
     $ renpy.pause (2.0)
+    c "{cps=5}Naomi?{/cps}{w=2.0}{nw}"
     play sound "fx/snarl.ogg"
     $ renpy.pause (0.5)
     play sound2 "fx/explosion.ogg"
-    show naomi scared sep with dissolve
+    show naomi scared sep with dissolve and hpunch
     $ renpy.pause (1.0)  
-    scene black with dissolvemed
-    $ renpy.pause (2.0)
-    m "I felt incredible pain as my body first engulfed and then disintegrated by a shockwave of fire."
-    c "NAOMI!!! NO!!!"
-    $ renpy.pause (4.0)
+    scene black with flash
+    scene black with vpunch
+    $ renpy.pause (1.0)
+    m "I felt incredible pain as my body was first engulfed and then disintegrated by a shockwave of fire."
+    c "NAOMI!!! NO!!!{w=4.0}{nw}"
+    $ renpy.pause (1.0)
     stop sound fadeout 1.0
     scene ecknaomiapt01sep with flash
     show naomi hurt sep with dissolve
     $ renpy.pause (1.0)
     play sound "fx/rev.ogg"
-    m "I woke up to pointing a gun upwards inside Naomi's mouth."
+    m "I woke up to pointing a gun upwards under Naomi's chin.{w=8.0}{nw}"
     scene black with dissolveslow
-    c "{cps=15}It's okay, Naomi. It wasn't your-{/cps}{nw}"
+    c "{cps=15}It's okay, Naomi. It wasn't your{/cps}{nw}"
     $ renpy.pause (0.1)
     play sound "fx/gunshot2.wav"
     $ renpy.pause (0.5)
@@ -608,10 +611,11 @@ label sqb_naomi_m3_ending:
     queue sound2 "fx/silence.ogg"
     queue sound2 "fx/silence.ogg"
     queue sound2 "fx/impact3.ogg"
+    c "{cps=10}...fault.{/cps}{w=2.0}{nw}"
     $ renpy.pause (2.0)
-    m "({b}WHAT HAVE I DONE?!{/b})" with vpunch
-    $ renpy.pause (2.0)
-    m "(I can't live after doing this. I don't want to live anymore.)"
+    m "({b}WHAT HAVE I DONE?!{/b}){w=4.0}{nw}" with vpunch
+    $ renpy.pause (4.0)
+    m "(I can't live after doing this. I don't want to live anymore.){w=8.0}{nw}"
     $ renpy.pause (2.0)
     play sound "fx/rev.ogg"
     $ renpy.pause (4.0)
