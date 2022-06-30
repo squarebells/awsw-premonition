@@ -73,7 +73,7 @@ def sqb2naomi(ml):
 
        ml.find_label("_call_skiptut_eckn21") \
             .search_menu("Yes. I want to skip ahead.").branch() \
-            .hook_to("sqb_naomi_m2_sexskip", condition='sqbpremounlocked ==  True and persistent.sqbnaomi2sex == True') \
+            .hook_to("sqb_naomi_m2_skip", condition='sqbpremounlocked ==  True and persistent.sqbnaomi2sex == True') \
             
        ml.find_label("sqb_naomi_m2_bedroomfun") \
             .search_say("I hope you understand that") \
