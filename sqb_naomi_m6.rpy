@@ -1,28 +1,30 @@
 label sqb_naomi_m6_discussion_reality:
 
     stop music fadeout 1.0
-    
+    $ renpy.pause (2.0)
     scene black with dissolvemed
-    
-    play sound "fx/system3.wav"
-    s "Now when that's out of the way, would you like to preview an unfinished scene from chapter 6?"
+    $ renpy.pause (2.0)
+    show naomi smile with dissolve
+    Nm "I bet you expected it to be over, huh?"
+    Nm normal "Would you like to preview an unfinished scene from the upcoming chapter 6?"
     menu:
-        "Yes":
-            s "Alright."
+        "Yes, please.":
+            Nm smile "I hope you enjoy it!"
+            $ renpy.pause (1.0)
+            hide naomi with dissolve
             pass
         
-        "No":
-            s "Alright."
+        "No, back to the main menu please.":
+            Nm blank "Alright."
+            Nm smile "I hope you come back soon!"
             $ renpy.pause (1.0)
-            scene ecknaomiapt03 with dissolvemed
-            play music "mx/airborne.mp3"
-            show naomi smile with dissolve
-            jump sqb_naomi_m6_discussion_reality_end            
-    
-    $ renpy.pause (2.0)
-    
+            hide naomi with dissolve
+            $ renpy.pause (2.0)
+            return
+
+    $ renpy.pause (2.0)    
     scene o at Pan((0, 250), (0, 250), 0.1) with dissolvemed
-    
+    $ renpy.pause (1.0)
     play music "mx/sail.ogg"
     play sound "fx/door/handle.wav"
     $ renpy.pause (2.0)
