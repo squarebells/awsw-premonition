@@ -1115,8 +1115,14 @@ label sqb_naomi_m2_bedroomfun:
         "Use mouth.":
             c "I'm spent, I'll just use my mouth."
             Nm "Works for me."
+            play sound "fx/system3.wav"
+            s "Oral sex scene unfinished, come back later."
     
-    #PC puts clothes back on
+    play sound "fx/bed.ogg"
+    m "I rolled myself off of the bed, and started putting my clothes back on. Naomi watched me the entire time, because I suppose she was interested to see how humans do it."
+    Nm normal "Why are you putting your clothes back on."
+    c "Habit, I guess. Also, there's a chance that someone might come over and I'm not comfortable being naked around anyone but you right now."
+    Nm "I see. Interesting."
     
     show naomi normal with dissolve
     play music "mx/airborne.mp3"
