@@ -19,7 +19,7 @@ Also, in case you didn't already realize, this mod contains lewd scenes. The mod
  + [BangOk](https://github.com/4onenm/AwSW-Bangok) by 4onen (very NSFW)
  
 ### Recommended:
- + Side Images by 4onen
+ + [Side Images](https://github.com/4onen/AwSW-Side-Images) by 4onen
  + Savior by EvilChaosKnight (eventually)
  
 ### Resources credits:
