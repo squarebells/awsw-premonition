@@ -1,12 +1,12 @@
-label sqb_naomi_m2_sexskip:
+label sqb_naomi_m2_skip:
     
     stop music fadeout 1.0
     play sound "fx/system3.wav"
     
-    s "Would you like to skip to the cooking, or straight to the ending? If you have NSFW mode enabled, you can also choose to skip to the sex."
+    s "Would you like to skip to the cooking, or straight to the ending? If you have NSFW mode enabled, you can also choose to skip to the fun."
         
     menu:
-        "Sex" if persistent.nsfwtoggle == True:
+        "Fun" if persistent.nsfwtoggle == True:
             jump sqb_naomi_m2_sexskip2
             
         "Cooking":
@@ -15,6 +15,7 @@ label sqb_naomi_m2_sexskip:
             $ naomi2mood = 12
             $ naomiromance += 100
             $ naomilewd = 5
+            $ sqbnaomi2hadsex = True
             scene eckannabedroom4 with dissolvemed
             play music "mx/airborne.mp3"
             show naomi normal with dissolve
@@ -27,6 +28,7 @@ label sqb_naomi_m2_sexskip:
             $ naomi2mood = 12
             $ naomiromance += 100
             $ naomilewd = 5
+            $ sqbnaomi2hadsex = True
             scene ecknaomiapt03 with dissolvemed
             play music "mx/airborne.mp3"
             show naomi normal with dissolve
@@ -1116,9 +1118,6 @@ label sqb_naomi_m2_bedroomfun:
     
     #PC puts clothes back on
     
-    $ sqbnaomi2hadsex = True
-    $ persistent.sqbnaomi2sex = True
-    
     show naomi normal with dissolve
     play music "mx/airborne.mp3"
     c "That was the best sex I've ever had. I think the hours-long tease had something to do with it."
@@ -1126,6 +1125,9 @@ label sqb_naomi_m2_bedroomfun:
     Nm smile "I'm looking forward to many more sessions like this."
     m "(I'm doomed.{w} Wait no, I'm in heaven.)"
     c "Me too."
+    
+    $ sqbnaomi2hadsex = True
+    $ persistent.sqbnaomi2sex = True
     
     c "Naomi, I can't think of a word to describe how much I love you. Do you want to get married?"
     Nm surprised "Is that how it works in your world?"
