@@ -84,7 +84,7 @@ label sqb_naomi_m2_chairs:
     $ naomilewd +=1
      
     Nm surprised "You mean right now?"
-    c "Sure, if they bother you that much. I'd love to help you out."
+    c "Sure, if they bother you that much. I would love to help you out."
     c "I think I am better suited for moving furniture around than you are, no offense."
     Nm normal "None taken. Also, thank you for the offer but I want to host you, not put you to work."
     Nm blank "I'll do it myself tomorrow."
@@ -97,17 +97,17 @@ jump sqb_naomi_m2_chairs_end
 
 label sqb_naomi_m2_differences:
 
-    c "For example, have you ever considered how big you are compared to a human? If you hugged someone like me, you'd make them feel better in no time."
+    c "For example, have you ever considered how big you are compared to a human? If you hugged someone like me, you would make them feel better in no time."
     show naomi surprisedblush with dissolve
     m "(Why did I say that?)"
     Nm shy "That's a very...{w} interesting point."
-    Nm smile "I bet if I caught a puny human like you, they'd never be able to escape my clutches."
+    Nm smile "I bet if I caught a puny human like you, they would never be able to escape my clutches."
     c "Actually, that's what dragons sometimes do to humans in our fiction."
     show naomi confused with dissolve
     c "Although, usually the dragons who deal with humans are assumed to be male and very powerful, and most of the time they only catch humans of the female sex."
     Nm concern "That trope makes no sense at all to me. Female dragons need representation too because we are just as strong as male dragons."
     $ renpy.pause (2.0)    
-    Nm blank "I'd be very interested in hearing more about dragons in your fiction, especially why they're usually assumed to be male."
+    Nm blank "I would be very interested in hearing more about dragons in your fiction, especially why they're usually assumed to be male."
     c "Well, I didn't really study literature at all or specialize in cultural history so I don't know enough about it to make it interesting. Let me think of something interesting to tell you..."
     m "Then, I had a sudden urge to say something funny."
     c "Now that I think about it, I agree with you that our dragon trope makes no sense. I'm sure there are a lot of male humans who wouldn't mind being caught by a female dragon."
@@ -214,7 +214,7 @@ label sqb_naomi_m2_movie:
     c "I had gotten myself majors from both biology and sociology. Skills from those fields were in demand at the time due to rapid social advances."
     c "Unfortunately, shortly after my graduation the flare hit our world and my degrees became pretty much worthless in the ensuing aftermath."
     show naomi concern with dissolve
-    c "A whole different set of skills would have been far more useful to help me in what I had to go through. Yet somehow, mostly due to sheer luck, I managed to survive."
+    c "A whole different set of skills would've been far more useful to help me in what I had to go through. Yet somehow, mostly due to sheer luck, I managed to survive."
     show naomi sad with dissolve
     c "I really don't want to get into the uncomfortable details. It suffices to say, if you've ever seen a post-apocalyptic movie, it was like that but worse."
     Nm blank "I've never heard of that genre, although based on the name I can guess what it's probably about. It sounds amazingly interesting to me."
@@ -230,7 +230,7 @@ label sqb_naomi_m2_movie:
     c "To fast forward, we found the portal on a scouting mission and sent Reza to investigate your world after the initial contact."
     show naomi blank with dissolve
     c "In his case, there wasn't really any kind of process to select the most suitable person to go since we were desperate for any kind of help or even information. I have to admit that we didn't really care if he had died on the mission."
-    c "This was because Reza was known to be a troublemaker, so him dying really wouldn't have been big loss. You wonderful dragons could have been savage, man-eating monsters for all we knew at the time."
+    c "This was because Reza was known to be a troublemaker, so him dying really wouldn't have been big loss. You wonderful dragons could've been savage, man-eating monsters for all we knew at the time."
     Nm smile "You've seen nothing yet. Just stick around for long enough and I might show you all of my abilities."
     m "Naomi's remark and and shift towards me almost made me jump up from the sofa. I managed to mostly control myself but I'm sure she noticed me twitch and shift my position around."
     c "I... uhh..."
@@ -246,7 +246,7 @@ label sqb_naomi_m2_movie:
     c "I hope we catch him soon and find out the truth so we can end this mess."
     Nm smile "I hope so too. We need to get this murder mystery over with because I want to meet many more cute humans and tell them they're welcome with open arms."
     m "(She really seems to like my species a lot.)"
-    c "Naomi, you and the other dragons I've met have been much nicer to me than I could have ever anticipated."
+    c "Naomi, you and the other dragons I've met have been much nicer to me than I could've ever anticipated."
     c "I really don't know what to say. You caring about me and my people this much makes me feel very happy."
     m "Suddenly I started to feel another surge of emotions. My throat started feeling dry and I wanted to cry."
     show naomi surprisedblush with dissolve
@@ -268,7 +268,7 @@ label sqb_naomi_m2_movie:
         
         "Back off.":
             $ sqbpremounlocked = False
-            m "(I think I can sort my own problems without needing hugs from anyone.)"
+            m "(I think I can solve my own problems. Especially without needing hugs from anyone.)"
             c "Sorry, no. I don't feel like having one right now."        
             Nm sad "Oh well."
             $ renpy.pause (2.0)
@@ -394,9 +394,9 @@ label sqb_naomi_m2_movie:
     Nm normal "We'll be fine. Also, drinking and snacking might distract us from the more important activities."
     Nm smile "You know what I mean?"
     c "Alright, you win. It's not like I can resist your charms anyway."
-    Nm "Good choice. Any escape attempts would have been weak and pathetic anyway."
+    Nm "Good choice. Any escape attempts would've been weak and pathetic anyway."
     play sound "fx/bed.ogg"
-    Nm normal "You'd better get comfortable. I'll only let you go after the movie is over."
+    Nm normal "You should better get comfortable. I'll only let you go after the movie is over."
     m "(This is going to be great.)"
     show naomi smile with dissolve
     m "With those words, Naomi extended her arm and picked up the sizeable remote from the table in front of us."
@@ -408,7 +408,7 @@ label sqb_naomi_m2_movie:
     
     m "I focused more on Naomi's large body, breathing and warmth than watching the movie. I felt a strange mix of arousal, terror and submissiveness throughout the entire session."
     m "Thankfully, because my back was against her belly she didn't find out about the hard erection I had most of the time the movie was playing." 
-    m "It was for the better, because I had no idea how she would have reacted."
+    m "It was for the better, because I had no idea how she would've reacted."
     m "The tease was almost unbearable, but I managed to keep any dirty thoughts to myself."
     m "After the credits started rolling, Naomi let me go and we sat next to each other on the sofa."
     
@@ -469,7 +469,7 @@ label sqb_naomi_m2_bedroomfun:
     Nm confused "I just realized there is something that would improve our cuddling experience by a lot."
     Nm normal "I honestly don't understand why you humans cover up your bodies so much."
     Nm blank "Why don't you take your covers off? Having fabric between you and your partner gets in the way of having a properly intimate cuddling experience."
-    m "(This escalated faster than I ever could have anticipated. What should I do?)"
+    m "(This escalated faster than I ever could've anticipated. What should I do?)"
     menu:
         "Undress in front of Naomi.":
             pass
@@ -655,7 +655,7 @@ label sqb_naomi_m2_bedroomfun:
     hide naomi with dissolve
     m "Naomi started moving towards her bedroom, beckoning me to follow her."
     m "I wanted to have sex with her but suddenly I was also scared of what that would entail."
-    m "This was the last chance to run. If I entered her bedroom, there was no telling what would to happen to me."
+    m "This was the last chance to run. If I entered her bedroom, there was no telling what would happen to me."
     menu:
         "Follow Naomi.":
             m "I decided to resist the the scary thoughts I had."
@@ -917,7 +917,7 @@ label sqb_naomi_m2_bedroomfun:
     play sound "fx/lewd/altpen.ogg"    
     m "Then she moved her mouth to mine and tongue kissed me, applying her long tongue."
     play soundloop "fx/lewd/pussy.ogg"     
-    m "Then she started tickling the inside of my upper jaw with the tip of her tongue. It was a weird tickling sensation I'd never experienced before."
+    m "Then she started tickling the inside of my upper jaw with the tip of her tongue. It was a weird tickling sensation I had never experienced before."
     show naomi aroused with dissolve
     m "When I leaned toward her to reciprocate the dragon tongue kiss, Naomi opened her eyes to look back at me directly. She looked at me like I was what she treasured the most in the entire world."
     Nm shy "(I love you so much.)"
@@ -1047,7 +1047,7 @@ label sqb_naomi_m2_bedroomfun:
     Nm smile "Not that I would let you anyway."
     Nm shy "I thought humans would last longer than this."
     c "It's your fault for teasing me for so long. I've been hard for hours."
-    Nm smile "That's what someone with no stamina would say."
+    Nm smile "That's just what someone with no stamina would say."
     Nm "Finish if you have to. Don't think I'm done with you yet though."
     stop soundloop
     play soundloop "fx/lewd/altpen.ogg"
@@ -1133,7 +1133,7 @@ label sqb_naomi_m2_bedroomfun:
     Nm normal "Marriage is a long-term commitment."
     c "Didn't you say before that you wanted me to stay with you forever?"
     Nm concern "I did...{w} and I really do like you. I just want to be absolutely sure before I start making any actual long-term plans for my future."
-    Nm sad "I've had some bad experiences in the past and I'd rather not get hurt like that ever again."
+    Nm sad "I've had some bad experiences in the past and I would rather not get hurt like that ever again."
     m "(Seems that her fear of abandonment and self-esteem issues are worse than I initially thought.)"
     c "I'll do my best to prove myself worthy of you, then."
     Nm smile "Thank you for being so understanding."
@@ -1154,13 +1154,13 @@ label sqb_naomi_m2_cooking:
 
     #Inspired by the original ASM's, Adine's shopping spree mod's and Lorem mod's cooking scenes
     
-    Nm normal "We could order some food if you wanted. Cooking ourselves works as well if that's something you'd want to do."
+    Nm normal "We could order some food if you wanted. Cooking ourselves works as well if that's something you would want to do."
     c "Actually, a fun time in the kitchen sounds great right now. I want to return all the hospitality I've gotten here so far by pampering you back."
     Nm shy "You really don't have to. I enjoyed myself as well."
     Nm blank "Wouldn't it be easier if we just phoned in a food order and showered together while waiting for the delivery to arrive?"
     c "Shower can wait. I really feel like cooking right now."
     c "Besides, I also want to find out how similar your food products are to ours. One of my personal reasons for coming here was to learn more about your society and customs."
-    c "For now I'll have to say that the food's been pretty similar to ours. Still, I'd be very interested in delving deeper into this by getting some first-hand experience."
+    c "For now I'll have to say that the food's been pretty similar to ours. Still, I would be very interested in delving deeper into this by getting some first-hand experience."
     Nm smile "Well, if you put it like that...{w} I suppose I will have to let you sate your curiosity. More importantly, I would never turn down a delicious home-cooked meal." 
     c "Looks like that's settled then. I promise you won't be left hungry, because I'll cook a couple of dishes."
     Nm normal "I can't wait to do some taste testing. What delicious human dishes are you going to cook?"
@@ -1199,10 +1199,10 @@ label sqb_naomi_m2_cooking:
     m "(I really needed that. It tastes a bit like orange and mango juice.)"
     m "Now I was fully prepared to continue figuring out what all the stuff in Naomi's kitchen was."
     play sound "fx/cabinet.ogg"
-    m "(It's the mostly the same thing with the produce in her cabinets as well. Also, there's so much stuff you'd think she cooks at home.)"
+    m "(It's the mostly the same thing with the produce in her cabinets as well. Also, there's so much stuff that you would think she cooks at home.)"
     m "(Wait, did she buy all this just to impress me? That's very cute.)"
     m "(But how did she know I like cooking? I suppose I should ask her when she comes back.)"
-    m "(Back to the main task at hand. I think at first I should move a bunch of stuff on the kitchen counter and sort everything by type.)"
+    m "(Back to the main task at hand. I think at first it would be good to move a bunch of stuff on the kitchen counter and sort everything by type.)"
     play sound "fx/rummage.ogg"
     m "With some effort, I moved most of the foodstuffs and ingredients onto Naomi's kitchen counter and organized them."
     m "(This is going to be fun. Still, having only two cooktops might pose a challenge. They're pretty old-fashioned as well.)"
@@ -1231,7 +1231,7 @@ label sqb_naomi_m2_cooking:
     m "As I was pondering on how to proceed, Naomi came out of the bathroom to check on how I was doing."   
     show naomi normal with easeinright
     Nm "Did you manage to find out where everything is?"
-    c "Yes, thank you. You seem to have quite a lot of stuff stored in your kitchen. I'd have guessed you usually cooked at home if you already didn't tell me otherwise."
+    c "Yes, thank you. You seem to have quite a lot of stuff stored in your kitchen. I would have guessed you usually cooked at home if you already didn't tell me otherwise."
     Nm shy "Well..."
     Nm normal "I wanted to try out something new since you were coming over, so I made an exception and went on a shopping spree after work. It felt just like the right thing to do."
     Nm smile "Looks like my plan worked, since I managed to get you to cook for me."
@@ -1407,7 +1407,7 @@ label sqb_naomi_m2_cooking:
     if naomi1drink == "cocktail":
     
         Nm confused "By the way, could you fix up a human cocktail for me? I want something to drink with these delicious bread sticks."
-        c "I'd love to, but did you happen to buy any liquor on your shopping spree? I didn't see any in the kitchen."
+        c "I would love to, but did you happen to buy any liquor on your shopping spree? I didn't see any in the kitchen."
         Nm normal "Yeah, I bought a bottle of something at the store that was recommended to me by the clerk. It's hidden in the fridge's door compartment."
         c "Alright. I'll look at what other cocktail ingredients you have and make the best one I can come up with."
         Nm smile "Thanks a lot. I knew I could count on you on that front."
@@ -1721,7 +1721,7 @@ label sqb_naomi_m2_cooking:
     c "That's why I call my style of cooking simple but delicious. This philosophy leaves more time for eating."
     Nm smile "I love that idea. Eating is of course the most important part."
     c "Now when I think about it, there was also some luck involved in creating our delicious meal. You managed to buy decent ingredients, even though you're not that good at cooking."
-    c "By the way, how'd you like the fried noodles?"
+    c "By the way, how did you like the fried noodles?"
     Nm normal "I hope I'm not boring you but I have to say that it was really good, like everything else. I especially liked the different textures it had. Too often people make boring versions of that dish."
     c "Yeah, those prepared giant prawns you bought were a really great pick. I honestly have to give you credit as well."
     m "I looked at Naomi's plate and she had some mashed potatoes with a breaded chicken fillet on top, but it was missing the sauce."
@@ -1774,7 +1774,7 @@ label sqb_naomi_m2_ending:
     c "Well if I had to guess, the human that allegedly visited your world a long time ago had a bigger impact on your development than you think."
     Nm normal "Oh yes, that thing from the history class. I had completely forgotten about it."
     c "Also, similar sentient species usually developing along the same lines probably has something to do with it."
-    Nm shy "Now that's a point I agree with. I'd like to add that our species are very similar since we're able to have a romantic relationship with each other."
+    Nm shy "Now that's a point I agree with. I also would like to add that our species are very similar since we're able to have a romantic relationship with each other."
     c "Hey, don't forget about our differences. I think we will make a great team due to them. All in all, interacting with other sentient species is a very exciting time."
     Nm normal "Likewise." 
     c "Anyway, I think I ate way too much. Do you mind if I take a short nap for about half an hour?"
@@ -1793,7 +1793,7 @@ label sqb_naomi_m2_ending:
     Nm "Time to wake up."
     play sound "fx/sheet.wav"
     show naomi normal with dissolve
-    m "After I had gotten up from the sofa, I noticed it was already very late. I'd stayed for much longer than I'd initially planned for."   
+    m "After I had gotten up from the sofa, I noticed it was already very late. I had stayed for much longer than I had initially planned for."   
     Nm normal "It's getting very late, so maybe you should get going. Even though my vacation is coming up, I shouldn't stay up too late."
     Nm smile "Unless you want to sleep together with me?"
     c "I can't, sorry. There's some material I have to go over at my apartment tomorrow morning. I have a feeling if I stay the night I won't have any time for that."

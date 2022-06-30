@@ -22,7 +22,7 @@ label sqb_naomi_cafe_discussion:
         "Coffee":
             $ renpy.pause (0.5)
             $ naomi1drink = "coffee"
-            c "I'd love some coffee right now."
+            c "I would love some coffee right now."
             Ad "Alright. I'll be right back."
             
         "Cocktail":
@@ -120,7 +120,7 @@ label sqb_naomi_cafe_eating:
          c "Another beer, please. I quite liked it."
     
     else:
-         c "I'd like another glass of [naomi1drink]."
+         c "I would like another glass of [naomi1drink]."
     
     Ad "Alright. I'll be back shortly."
     play sound "fx/dishes.wav"
@@ -206,7 +206,7 @@ label sqb_naomi_cafe_eating:
     if naomi1drink == "beer":
          c "I like this beer quite a lot. You can't get good quality stuff like this any more in my world."
          Nm normal "That brand is popular around here. How does it compare to human beer?"
-         c "It doesn't taste anything like the mass-produced ones we used to have. I'd say it's probably a local high-quality brand."
+         c "It doesn't taste anything like the mass-produced ones we used to have. I would say it's probably a local high-quality brand."
          c "An important thing to note though is that your beer is quite a bit stronger than what we humans normally drink. If I had to guess this particular beer is probably about nine to ten percent alcohol, so about twice as strong as regular beer in our world."
          show naomi blank with dissolve
          c "Of course we also have beer as strong as this, but people don't drink that stuff very often."
@@ -258,7 +258,7 @@ label sqb_naomi_cafe_money:
          Nm surprisedblush "Why don't we invite your people to live here with us? There's plenty of room for everyone, and the living conditions are significantly better."
          m "Her idea caught me off guard."
          c "I... um...{w} D-do you think it could work?"
-         Nm smile "Of course it could! We like humans and and the benefits would be mutual."
+         Nm smile "Of course! We like humans and and the benefits would be mutual."
          c "That's...{w} a great idea! I haven't even thought of anything like that being realistically possible."
          c "I'll ask my superiors what they think next the time we're in contact. Thanks, Naomi."
          Nm "You're welcome."

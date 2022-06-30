@@ -23,20 +23,20 @@ label sqb_naomi_premostart:
 
     $ naomilewd +=1
 
-    m "When I looked back at her, the first thing that popped into my mind was how gigantic she looked from my perspective on the floor."
-    c "Y-you're big!"
+    m "When I looked back at her, the first thing that popped into my mind was how big she looked from my perspective on the floor."
+    c "You're big!"
     show naomi confused b with dissolve
     "???" "Thanks?"
-    m "I was very confused. I had no idea what had just happened. I could only stare back at the dragoness looming over me."
+    m "I was very confused. I had no idea what had just happened. I was only able to stare back at the dragoness looming over me."
     c "..."
     show naomi concern b with dissolve
-    m "The large blue dragoness looked back at me worriedly while still holding her hand out to me."
+    m "She looked back at me worriedly while still holding her hand out to me."
     m "My head felt weird, as if my brain was trying very hard to remember something."
-    c "A large blue dragon?"
+    c "A large blue dragoness?"
     show naomi confused b with dissolve
     "???" "Huh? Are you okay?"
-    m "She extended her hand closer to me."
-    m "After looking at her once more, I grabbed her hand, and she effortlessly pulled me back onto my feet."
+    m "The large blue dragoness extended her hand closer to me."
+    m "After taking another glance at her, I grabbed her hand, and she effortlessly pulled me back onto my feet."
     show naomi stern b with dissolve
     "???" "By the way I have a name, you small and squishy human."
     m "I blurted out the next words instinctively, without thinking."

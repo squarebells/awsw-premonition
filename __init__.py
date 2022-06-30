@@ -208,11 +208,6 @@ def sqb3naomi(ml):
             .search_say("Sure thing") \
             .hook_to("sqb_naomi_m3_labrest", condition='sqbpremounlocked == True') \
             
-       #ml.find_label("eck_naomi_m3_panicmenu") \
-            #.search_menu("Snuggle up with Naomi and surrender to your fate.").branch() \
-            #.search_python("renpy.pause (0.5)") \
-            #.hook_to("sqb_naomi_m3_nogiveup", condition='sqbpremounlocked == True') \
-            
        ml.find_label("eck_naomi_m3_panicmenu") \
             .search_menu("Snuggle up with Naomi and surrender to your fate.") \
             .edit_choice(text="Snuggle up with Naomi and surrender to your fate.", condition='sqbnaomim3nogiveup == False and sqbpremounlocked == True and ecknaomim3boomstop == False' ).branch() \
@@ -236,9 +231,17 @@ def sqb4naomi(ml):
 
     ml.find_label("eck_naomi_m4") \
     .search_say("Oh well. I don't need") \
-    .hook_to("sqb_naomi_m4_clothes", condition='sqbpremounlocked ==  True') \
-    .search_say("She swam a few quick laps") \
-    .link_from("sqb_naomi_m4_clothes_end") 
+    .hook_to("sqb_naomi_m4_start", condition='sqbpremounlocked ==  True') \
+    .search_say("Peace and quiet") \
+    .link_from("sqb_naomi_m4_start_end")
+    
+    ml.find_label("eck_naomi_m4") \
+    .search_say("Oh well. I don't need") \
+    .search_say("Though, I'm surprised") \
+    .search_say("Things could've been better, of course.") \
+    .hook_to("sqb_naomi_m4_meethumans", condition='sqbpremounlocked ==  True') \
+    .search_say("Come to think of it") \
+    .link_from("sqb_naomi_m4_meethumans_end")
 
 #def sqb6naomi(ml):      
 

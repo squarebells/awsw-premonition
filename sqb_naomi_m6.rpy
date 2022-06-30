@@ -71,7 +71,7 @@ label sqb_naomi_m6_discussion_reality:
     $ renpy.pause (1.0)
     
     show naomi flip normal at left with easeinleft
-    Nm normal flip "What a day at work. It suffices to say that the case would have been left unsolved for some time without me."
+    Nm normal flip "What a day at work. It suffices to say that the case would've been left unsolved for some time without me."
     c "Hey, Naomi."
     Nm "Hey, [player_name]. Is the food ready?"
     show naomi surprised flip at left with dissolve
@@ -131,14 +131,14 @@ label sqb_naomi_m6_discussion_reality:
     Nm smile flip "You know I feel the same way."
     c "Still, what makes me the saddest about this whole situation, is that I'm not able to share this wonderful experience with the rest of my people."
     Nm sad flip "You and me both."
-    c "I know we humans have our faults, but I'm sure most of us would have loved to meet you dragons. We aren't all like Reza."
+    c "I know we humans have our faults, but I'm sure most of us would've loved to meet you dragons. We aren't all like Reza."
     Nm stern flip "I would like to think that all humans are as nice as you are. It's hard to believe that you used to be friends with someone like Reza." 
     Nm annoyed flip "He's is such a horrible person. How could he personally murder all those dragons and then intend to abandon us all to die?"
     Nm blank flip "I'm still glad we stopped Maverick from killing him. He doesn't deserve to die no matter how evil he is. I hope we can rehabilitate him so that he'll change for the better."
     c "Agreed. Anyway, to continue my line of thought, I had initially placed great hopes in our inter-species cooperation. Your immigration idea was a stroke of genius."
     show naomi surprisedblush flip with dissolve
     c "It's unfortunate that some from our leadership didn't see it the same way. Reza confirmed that he wasn't acting alone."
-    c "I wouldn't be stuck here if it hadn't been for the plot that Reza was a part of. I would have still preferred to stay here of course, but I wish the connection between our worlds hadn't been severed."
+    c "I wouldn't be stuck here if it hadn't been for the plot that Reza was a part of. I would've still preferred to stay here of course, but I wish the connection between our worlds hadn't been severed."
     show naomi confused flip with dissolve
     c "I think Izumi's reasons for severing the connection were understandable, even though the repercussions were terrible." #Or were they?
     c "If everything had gone well, over time we could have even relocated the majority of my people here, like you said before." 
@@ -162,13 +162,7 @@ label sqb_naomi_m6_discussion_reality:
     c "Now I can't help but think that all of what we experience might be a simulation. This realization is the most unsettling of them all."
     c "I've noticed that there is so much about my behavior that doesn't any make sense at all."
     show naomi concern flip with dissolve
-    c "From a scientific standpoint, remembering things from alternate realities is highly implausible."
-    
-    #if lorem2played == True:
-         #c "One of Anna's co-workers did tell me some things about this but honestly it all sounds just like what a simulation would come up with."
-         
-    #else:
-        #pass
+    c "From a scientific standpoint, remembering things from alternate realities is highly implausible."   
     
     c "In addition to this, I feel like my life is on rails; there are things I can't force myself to do, no matter how hard I try."
     c "For example, whenever we go out, why can we only go to the places where Adine or Zhong work at?"
