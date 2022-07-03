@@ -123,10 +123,13 @@ label sqb_naomi_m4_returndiscussion:
     c "It's fine, because you're right. It seems that the only way for me to stay on good terms with my city-state's leadership would be to help Reza complete whatever plan he has and that's not going to happen." 
     c "I'm in danger in my own world no matter what reasonable course of action I choose to take."
     Nm stern "Yeah, I bet they'd just drop a stone on your head and call it an accident. These kinds of people will step over as many dead bodies as necessary to reach their goals."
-    c "That's another good point. I would like to avoid getting assassinated, thank you very much."
+    c "That's another good point. I would like to avoid getting assassinated, thank you very much.  Also, let me remind you that even if they don't murder me right away they would still most likely make up some arbitrary reason to justify never letting me come back."
+    Nm "Yeah, that's true."
+    c "So don't worry, I will stay with you no matter what happens."
+    Nm smile "Thank you so much, [player_name]. You have no idea how relieved I am."
     $ renpy.pause (2.0)
-    c "Enough about this. Let's just agree that our first focus is stopping Reza."
-    Nm smile "Sounds like a plan."
+    c "It's settled then, once and for all. Let's just agree for now that our first priority is stopping Reza."
+    Nm normal "Sounds like a plan."
 
 jump sqb_naomi_m4_returndiscussion_end
 
@@ -149,11 +152,11 @@ jump sqb_naomi_m4_interspecies_end
 
 label sqb_naomi_m4_funparts:
    
-    Nm smile "This place is all ours until morning. I'll be your pillow and blanket."    
-    c "I like that a lot."
+    Nm smile "This place is all ours until morning. You can sleep on top of me."    
+    c "That sounds great."
     show naomi aroused with dissolve
     play sound "fx/craphug.mp3"
-    m "Due to mu approval, suddenly Naomi tied me in a big dragon hug, and pressed me down on the floor. While most of her weight was shifted to her arms and legs, I was still practically pinned down by her soft underside."
+    m "Due to my show of approval, Naomi tied me in a big dragon hug, and pressed me down on the floor. While most of her weight was shifted to her arms and legs, I was still practically pinned down by her soft underside."
     m "Her draconic hand supported the back of my head and neck, acting as a small pillow. I looked up at her face. Our eyes met, and we kissed."
     play sound "fx/kiss.wav"
     queue sound "fx/lewd/lickslow.ogg"
@@ -161,9 +164,61 @@ label sqb_naomi_m4_funparts:
     c "Ever since we got here, I've been waiting for this part."
     Nm smile "Me too."
     $ renpy.pause (2.0)
-    Nm "So, you want to do it in this position?"
-
-    #Naomi on top doesn't work because there are no mattresses. From behind doesn't either because the floor is slippery. 
-    #Lounge chair can't hold both, so Naomi settles on the floor on her back, with PC on top    
+    Nm "Are you fine with me being on top this time?"
+    c "Depends. Do they have any mattresses we can use?"
+    Nm blank "Probably not. Why, though?"
+    c "I have to admit that I'm not very comfortable right now because the tiled floor is rather cold and hard. Also, you weigh a lot more than me. I know I said my body can take some pressure but just to be safe we should try some other position."
+    c "Some broken bones in case you get a little bit too excited doesn't sound very nice to me."
+    hide naomi with dissolve
+    m "Naomi got off of me and sat down on her rump."
+    show naomi shy with dissolve
+    Nm shy "I didn't think of that. Let's try something else then."
+    Nm smile "How about this?"
+    hide naomi with dissolve
+    m "Naomi got up on all fours, turned around and lifted her backside and tail up. I could see her glistening and aroused pussy."
+    show naomi smile with dissolve
+    Nm "Well?"
+    c "Alright, let's try this."
+    m "I walked up to her and used one hand to support myself by grabbing her tail and the other to work my dick in order to fuck her."
+    m "As I started positioning myself in order to penetrate Naomi, my foot slipped a little bit because of the floor tiles being wet. I managed to steady myself by holding onto Naomi's tail."
+    Nm confused "You okay?"
+    c "The floor is wet, so this position doesn't really work either because I might slip when we start really getting into it. Let's try to figure out something else." 
+    Nm surprisedblush "So fussy. Oh well, I should trust you to know your bodily limits."   
+    c "Yeah, I don't want to hurt myself. That would really ruin this evening." 
+    c "I think we should try new positions next time we do it in bed."
+    Nm blank "Alright. How about you decide the position then?"
+    c "How about you lie down on your back and I'll fuck you from the front. I don't think those lounge chairs are big enough so it will have to be on the floor."
+    Nm normal "Fine. That works for me."
+    hide naomi with dissolve
+    m "Naomi turned around again, laid down on her back and spread her wings for balance. After that she spread her legs, giving me unobstructed access to her draconic pussy."
+    show naomi aroused with dissolve    
+    m "Then she gestured for me to come and get her by wagging a finger at me." 
+    Nm smile "Come show me a good time, my human lover."
+    c "I'd be right happy to!"
+    m "I stroked my dick to harden it as I got over to Naomi. I positioned myself between her large thighs, sitting on top of her tail."
+    c "You asked me at the beach which exposed part of you I like the most, and I have to admit that from a human perspective I like your thighs. They're so big and naughty."
+    c "They're my favorite, if we don't count your dragon pussy."
+    Nm shy "Oh."
+    Nm smile "Since my species is not as good at flying like Maverick for example, I had to compensate by training my body harder. My strong thighs for example, allow me to run and jump well enough so that I don't have to take off from the top of a building."
+    Nm normal "I can also land at higher speeds much more safely than someone of my species that hasn't trained."
+    c "You forgot how your thighs would be great to play with while I fuck you. Training your body to become strong makes you very hot. I'll be sure to feed and exercise you a lot so you stay in shape."
+    Nm smile "I know what you mean. Please feed my other hole a lot of your human seed as well."
+    $ renpy.pause (2.0)
+    Nm blank "I'm incredibly horny. Start getting into it already."
+    #BangOk condition
+    play sound "fx/lewd/pussy.ogg"
+    show naomi smile with dissolve
+    c "After being given permission, I spread Naomi's cloaca with my fingers and lined the tip of my dick with her vaginal passage."
+    play sound "fx/lewd/penfast.ogg"
+    show naomi surprisedblush with dissolve
+    c "With my dick ready in this proper place, I supported myself by placing my arms around Naomi's lower back. Then, without hesitation I plunged myself as far as I could go into her."
+    c "Being prepared, Naomi locked me in place with her legs the moment I penetrated her. From our last time, I knew that there was no escape until I had both gotten her off and released my human seed into her most special place."   
+    Nm aroused "Remember, don't pull out."
+    c "I know the drill."
+    play sound loop "fx/lewd/penslow.ogg"
+    show naomi smile with dissolve
+    m "I lowered my entire body on Naomi and started fucking her pussy with slow, deep thrusts. She tied her arms around my upper body, tying me to her completely."
+    
+    c "Being able to cushion yourself completely on your lover's body while you fuck them relentlessly is amazing."
 
 jump eck_naomi_m4_morning

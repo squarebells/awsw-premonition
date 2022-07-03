@@ -1,7 +1,7 @@
 # Premonition
-I really liked how Naomi's and PC's relationship started developing in the two last scenes of A Solitary Mind's (ASM) ending A. As I was left wanting for more, I wrote an expansion. Most of the content is in date two, because I had to come up with a plausible reason for why Naomi would want to get intimate with the PC that early.
+I really liked how Naomi's and PC's relationship started developing in the two last scenes of A Solitary Mind's (ASM) ending A, so I decided to write an expansion. This mod's extra interactions are mostly based on remembering things from other timelines. I decided to use this trope because it was the most interesting thing in the base game for me.
 
-You need to have acquired ASM's ending A to unlock this mod, because it takes place in a timeline after that. To get the the new scenes, start from the very beginning, select the new options whenever possible and of course be as nice as possible to mod Naomi. Don't skip, since only dates two and three have proper skips as of right now.
+You need to have acquired ASM's ending A to unlock this mod, because it takes place in a timeline after that. To get the the new scenes, start from the very beginning, select the new options whenever possible and of course be as nice as possible to Naomi. Avoid skipping.
 
 Also, in case you didn't already realize, this mod contains lewd scenes. The mod assumes the PC is male, for now.
 
@@ -13,7 +13,7 @@ Also, in case you didn't already realize, this mod contains lewd scenes. The mod
  + A Solitary Mind and Chaos_Knight Core mod (ECK Core) by EvilChaosKnight
  + [Community Resource and Assets Pack](https://gitlab.com/jakzie2/awsw-crap) by Jakzie2, Eval, 4onen, Azrynfolf and Ryann
  
- I recommend using "manual" versions from GitHub whenever possible, because having too many steam mod subscriptions causes an annoying startup-crashing race condition bug.
+ I recommend using "manual" versions from GitHub whenever possible, because having too many steam mod subscriptions causes an annoying startup-crashing race condition bug. You can use the steam workshop mods as well, but the versions there might be older.
  
  ### Optional Requirement:
  + [BangOk](https://github.com/4onenm/AwSW-Bangok) by 4onen (very NSFW)

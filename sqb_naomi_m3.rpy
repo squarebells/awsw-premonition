@@ -399,6 +399,7 @@ label sqb_naomi_m3_ending:
     show naomi hurt with dissolve
     m "Then, after some time I felt and heard that Naomi had started crying quietly."
     Nm "Hey, [player_name]..."
+    m "I shifted my arm around and comforted her by scratching the area behind her horns and frills."
     c "What's wrong, Naomi?"
     play music "mx/lily.mp3"
     show naomi cry with dissolve
@@ -560,7 +561,7 @@ label sqb_naomi_m3_ending:
     queue sound "fx/glassdown.wav"    
     m "I washed my breakfast down with a full carton of cold juice."
     stop sound fadeout 1.0
-    m "With this hearty breakfast, I was ready to face whatever misadventures were going to come at me. I dropped off my dishes at Naomi's sink, and exited to walk to my apartment."
+    m "With this hearty breakfast, I was ready to face whatever misadventures were going to come at me. I dropped off my dishes at Naomi's sink, and exited to start the journey back to my apartment."
     stop music fadeout 1.0
     play sound "fx/door/lock.ogg"
     scene black with dissolvemed
@@ -575,8 +576,7 @@ label sqb_naomi_m3_ending:
     scene town6 with dissolvemed
     stop soundloop fadeout 1.0
     #Inspired by Freefall's terrifying flashback scene
-    m "When I had reached the park I sat down on a bench, intending to take a short break." 
-    m "I relaxed myself on the bench's backrest and shut my eyes to rest for a moment."
+    m "When I had reached the park I decided to sit down on a bench in order to take a break. I relaxed myself on the bench's backrest and shut my eyes for a moment."
     $ renpy.pause (2.0)
     scene black with dissolve
     $ renpy.pause (4.0)
@@ -593,8 +593,8 @@ label sqb_naomi_m3_ending:
     scene black with vpunch
     $ renpy.pause (1.0)
     m "I felt incredible pain as my body was first engulfed and then disintegrated by a shockwave of fire."
-    c "NAOMI!!! NO!!!{w=4.0}{nw}"
-    $ renpy.pause (1.0)
+    c "NAOMI!!! NO!!!{w=8.0}{nw}"
+    $ renpy.pause (4.0)
     stop sound fadeout 1.0
     scene ecknaomiapt01sep with flash
     show naomi hurt sep with dissolve
@@ -622,7 +622,7 @@ label sqb_naomi_m3_ending:
     play sound "fx/gunshot2.wav"
     $ renpy.pause (1.0)
     play sound "fx/impact.ogg"
-    m "My entire body went limp and I fell on the cold, hard floor."
+    m "My entire body went limp and I fell face down on the cold, hard floor."
     $ renpy.pause (8.0)
     m "When I had finally snapped out of it, I found myself lying on the ground next to the bench I had sat on. My hair and shirt were wet, because my entire upper body had sweated profusely."
     scene town6 with dissolvemed
@@ -631,7 +631,7 @@ label sqb_naomi_m3_ending:
     $ renpy.pause (2.0)
     m "(Was it real?)"
     $ renpy.pause (2.0)
-    m "Bewildered by this horrifying experience, I got up from the ground without saying anything and continued making my way to my apartment."
+    m "Bewildered by this horrifying experience, I got up from the ground without saying anything and continued making my way back to my apartment."
     play soundloop "fx/steps/steps.ogg"
     scene town7 with dissolve
     m "Since nothing like this obviously had happened to me before, and because dreams could sometimes show your worst fears, I decided to shrug off what I had just seen. I had more important things to worry about right now."    
