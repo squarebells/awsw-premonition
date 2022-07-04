@@ -80,7 +80,7 @@ label sqb_naomi_m6_discussion_reality:
     m "She noticed me resting on the couch, with my arms spread out and my head hanging limply over the backrest."
     Nm "Are you okay? You look worried."
     m "I stretched my arms upwards, then leaned forward, followed by placing my elbows on my knees and finally resting my head in my hands."
-    c "I've just been deep in thought. Because of that I forgot to cook like I had promised."
+    c "I have just been deep in thought. Because of that I forgot to cook like I had promised."
     Nm concern flip "That sounds serious. Are you feeling down because of the thing we talked about earlier?"
     m "I straightened my back, placed my arms on both sides of the backrest, sighed and looked at Naomi."
     play music "mx/darkrock.ogg"
@@ -112,7 +112,7 @@ label sqb_naomi_m6_discussion_reality:
     c "Thank you for always being there to cheer me up whenever I have a hard time."
     Nm smile flip "You're too cute to be left in a sad mood."
     m "I released my hug and shifted back to my previous position, still looking at her."
-    Nm normal flip "Would you like to talk more about your problem now that you've calmed down? You know you can talk to me about anything."
+    Nm normal flip "Would you like to talk more about your problem now that you have calmed down? You know you can talk to me about anything."
     c "Thank you. Maybe if I get all of this baggage off my back I can start to forget."
     
     c "Firstly, what do you think about the outcome of this timeline?"
@@ -120,7 +120,7 @@ label sqb_naomi_m6_discussion_reality:
     c "Even though we saved this world, somehow I still feel like I failed. I wonder if there was something more we could have done."
     c "Maybe I'm just not good enough?"
     Nm blank flip "We did what we could, given the circumstances."
-    c "I keep telling myself that very thing, but sometimes I just can't help but recalculate everything I've done."
+    c "I keep telling myself that very thing, but sometimes I just can't help but recalculate everything I have done."
     #more, explanation
     Nm concern flip "I don't think you should be dwelling in the past this much."
     Nm normal flip "What's done is done. We should focus on the future."
@@ -129,7 +129,7 @@ label sqb_naomi_m6_discussion_reality:
     c "But even if I tried my best, do I deserve all this?"
     
     c "A life like this is something I could have only dreamed of a few weeks ago. Living in the city-state I came from was awful, but it was the safest place to live in the post-flare world that I knew of."
-    c "Like I've already told you multiple times, living here has been great for me. I'm looking forward to spending the rest of my life here with you."
+    c "Like I have already told you multiple times, living here has been great for me. I'm looking forward to spending the rest of my life here with you."
     Nm smile flip "You know I feel the same way."
     c "Still, what makes me the saddest about this whole situation, is that I'm not able to share this wonderful experience with the rest of my people."
     Nm sad flip "You and me both."
@@ -162,7 +162,7 @@ label sqb_naomi_m6_discussion_reality:
     Nm confused flip "Go on."    
     c "So, before I learned that the multiverse theory was real and realized its implications, I used to think that I had the tools to figure out what's real. In other words trying to figure out what's actually real is right now a futile effort." 
     c "Now I can't help but think that all of what we experience might be a simulation. This realization is the most unsettling of them all."
-    c "I've noticed that there is so much about my behavior that doesn't any make sense at all."
+    c "I have noticed that there is so much about my behavior that doesn't any make sense at all."
     show naomi concern flip with dissolve
     c "From a scientific standpoint, remembering things from alternate realities is highly implausible."   
     
@@ -184,7 +184,7 @@ label sqb_naomi_m6_discussion_reality:
     c "I'm just very tired. Maybe it's finally the time to stop." 
     c "After all this hardship I just want to live in peace and forget all the negative things that happened in the past."
     c "I'm finished. That was quite a lot to unpack."
-    Nm confused flip "You've were philosophical as usual." 
+    Nm confused flip "You were philosophical as usual." 
     Nm blank flip "I didn't fully understand everything you said but I got the general idea."
     Nm normal flip "I have to say I am relieved you managed to come to a satisfactory conclusion even though I don't share these feelings of uncertainty you have. Both of us being happy is all that matters from now on." 
     Nm shy flip "I can think of an experience that would do just that, especially after a long day at work."

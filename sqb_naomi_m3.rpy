@@ -60,7 +60,7 @@ label sqb_naomi_m3_undressing:
     c "This became especially true in regards to hiding certain – more private – parts of our bodies."
     Nm smile "I see. Is that why you became visibly flustered when I stared at you after you had taken your clothes off? Were you afraid that I would see your private parts?"
     c "..."
-    c "Are you sure you've never interacted with a human before? You know just the correct ways to make me feel as embarrassed as possible to be one."
+    c "Are you sure you have never interacted with a human before? You know just the correct ways to make me feel as embarrassed as possible to be one."
     Nm shy "N-no...{w} it's just intuition, I guess?"
     Nm normal "Anyway to contrast your people with ours, I'll tell you openly that we don't have a problem walking around as we are, really." 
     Nm "Of course, we have specialized outfits for jobs which require them – but for the most part, it comes down to accessories with extra functionality, like bags, insignias and other minor elements that are mostly decorative."
@@ -393,7 +393,7 @@ label sqb_naomi_m3_ending:
     Nm smile "Good to know."
     show naomi normal with dissolve
     $ renpy.pause (2.0)
-    show naomi slsleep with dissolve
+    show naomi slsmile with dissolve
     m "We laid down in this position for a while. Naomi shifted herself occasionally to rub me and take comfort in me."
     $ renpy.pause (4.0)
     show naomi hurt with dissolve
@@ -436,7 +436,7 @@ label sqb_naomi_m3_ending:
     show naomi shy with dissolve
     c "To me it felt like you knew almost exactly what we should do. How did you manage to figure everything out so quickly?"    
     Nm "I don't know. How I felt at that moment is hard to explain."
-    Nm smile "The best I could explain it is that I've never felt that determined to find a solution in my entire life. I think you being in mortal danger made me brave."    
+    Nm smile "The best I could explain it is that I have never felt that determined to find a solution in my entire life. I think you being in mortal danger made me brave."    
     c "I feel assured to be able to count on you like that. Let's still agree to not go on an adventure like that ever again, right?"
     Nm normal "Deal."
     $ renpy.pause (2.0)

@@ -3,6 +3,8 @@ init:
 
     $ naomilewd = 0
     $ sqbpremounlocked = False
+    $ sqbnaomi2hadsex = False
+    $ sqbnaomi4hadsex = False
     
     image sqbnaomiapt04 = "bg/sqbnaomiapt04.jpg"
     image eckoldbiolabsep = im.Sepia("bg/eckoldbiolab.jpg")

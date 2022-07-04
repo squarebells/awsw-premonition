@@ -300,7 +300,7 @@ label sqb_naomi_cafe_money:
          c "Of course, I was just speaking hypothetically for now."
          Nm blank "Yes, of course."
          Nm shy "Even though we are being hypothetical right now, I wouldn't mind having another get-together with you." 
-         Nm normal "Since I met you I've felt like there might be something more to you than what meets the eye." 
+         Nm normal "Since I met you I have felt like there might be something more to you than what meets the eye." 
          Nm shy "I want to find out what it is."
          c "I'll do my best to make the time." 
          c "After all, to be on track to solve the problem that your parents were so worried about, I should get you to date me as soon as possible."

@@ -3,9 +3,7 @@ I really liked how Naomi's and PC's relationship started developing in the two l
 
 You need to have acquired ASM's ending A to unlock this mod, because it takes place in a timeline after that. To get the the new scenes, start from the very beginning, select the new options whenever possible and of course be as nice as possible to Naomi. Avoid skipping.
 
-Also, in case you didn't already realize, this mod contains lewd scenes. The mod assumes the PC is male, for now.
-
-
+Contains lewd scenes. In case you don't like that kind of stuff, the NSFW toggle that comes with modtools works. Also, this mod assumes the PC is male, at least for now.
  
 ### Requirements:
  + [Modtools](https://github.com/4onen/AWSW-Modtools) by 4onen
@@ -13,7 +11,7 @@ Also, in case you didn't already realize, this mod contains lewd scenes. The mod
  + A Solitary Mind and Chaos_Knight Core mod (ECK Core) by EvilChaosKnight
  + [Community Resource and Assets Pack](https://gitlab.com/jakzie2/awsw-crap) by Jakzie2, Eval, 4onen, Azrynfolf and Ryann
  
- I recommend using "manual" versions from GitHub whenever possible, because having too many steam mod subscriptions causes an annoying startup-crashing race condition bug. You can use the steam workshop mods as well, but the versions there might be older.
+ I recommend using "manual" versions from GitHub whenever possible, because having too many steam mod subscriptions causes an annoying startup-crashing race condition bug. You can use the steam workshop mods as well, but the versions there might be older. If you want to be absolutely sure everything works, use the "manual" versions.
  
  ### Optional Requirement:
  + [BangOk](https://github.com/4onenm/AwSW-Bangok) by 4onen (very NSFW)
@@ -27,3 +25,5 @@ Also, in case you didn't already realize, this mod contains lewd scenes. The mod
 + `fx/lewd/`: Sounds edited by squarebells, originally extracted from COM3D2.
 + `fx/*.ogg`: Edited from base game sound assets by squarebells.
 + `cr/naomi_*.png`: Put together from ECK Core's assets by squarebells.
+
+### Special thanks to the AwSW discord modding community.
