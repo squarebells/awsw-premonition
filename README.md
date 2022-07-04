@@ -8,7 +8,7 @@ Contains lewd scenes. In case you don't like that kind of stuff, the NSFW toggle
 ### Requirements:
  + [Modtools](https://github.com/4onen/AWSW-Modtools) by 4onen
  + [Magmalink](https://gitlab.com/jakzie2/awsw-magmalink) by Jakzie2 
- + A Solitary Mind and Chaos_Knight Core mod (ECK Core) by EvilChaosKnight
+ + A Solitary Mind and Chaos_Knight Core mod (ECK Core) by EvilChaosKnight. Updated to use Magmalink by Jakzie2.
  + [Community Resource and Assets Pack](https://gitlab.com/jakzie2/awsw-crap) by Jakzie2, Eval, 4onen, Azrynfolf and Ryann
  
  I recommend using "manual" versions from GitHub whenever possible, because having too many steam mod subscriptions causes an annoying startup-crashing race condition bug. You can use the steam workshop mods as well, but the versions there might be older. If you want to be absolutely sure everything works, use the "manual" versions.
