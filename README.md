@@ -26,4 +26,6 @@ Contains lewd scenes. In case you don't like that kind of stuff, the NSFW toggle
 + `fx/*.ogg`: Edited from base game sound assets by squarebells.
 + `cr/naomi_*.png`: Put together from ECK Core's assets by squarebells.
 
-### Special thanks to the AwSW discord modding community.
+### As always, special thanks go to the AwSW discord modding community.
+
+### About giving feedback:
