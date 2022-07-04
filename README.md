@@ -3,7 +3,7 @@ I really liked how Naomi's and PC's relationship started developing in the two l
 
 You need to have acquired ASM's ending A to unlock this mod, because it takes place in a timeline after that. To get the the new scenes, start from the very beginning, select the new options whenever possible and of course be as nice as possible to Naomi. I'm not sure if I have yet patched all the holes that can be caused by skipping, so avoid doing that.
 
-Contains lewd scenes. In case you don't like that kind of stuff, the NSFW toggle that comes with modtools works. Also, this mod assumes the PC is male, at least for now.
+Contains lewd scenes. In case you don't like that kind of stuff, the NSFW toggle that comes with the modtools works well. Also, this mod assumes the PC is male, at least for now.
  
 ### Requirements:
  + [Modtools](https://github.com/4onen/AWSW-Modtools) by 4onen
