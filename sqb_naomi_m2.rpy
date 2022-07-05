@@ -312,25 +312,29 @@ label sqb_naomi_m2_movie:
     c "Thank you again, Naomi. It seems that your thoughtful advice is really useful for my well-being."
     Nm "So, it's settled then. You'll stay here with me so I can keep you safe forever."
     play sound "fx/bed.ogg"
-    m "Before I could think of a witty comeback to get back at her, she shifted me around and slowly started using her body to push me down on the sofa. I kind of liked how she handled me so I didn't protest."
+    m "Before I could think of a witty comeback to throw at Naomi, she started using her body to slowly push me down on the sofa. Since I didn't protest, she then took one of the pillows that were lying around, put it at the end of the sofa and lowered both of our heads on it."
+    m "I didn't protest because frankly, I still needed a few hugs, but I was also intrigued by how Naomi was interested in interacting with humans in this way."
     show naomi surprisedblush with dissolve
     play sound "fx/sheet.wav"
-    m "Then, while she was pushing me down, she gently turned me to position my back against her chest and then she shifted us both to put her between me and the sofa's backrest."
+    m "Then, when I was down on the pillow, Naomi turned us both a little bit so that her back was against the sofa's backrest and mine was against her belly."
+    c "Your body is so cute and cuddly, Naomi."
+    Nm smile "Thank you, [player_name]. Yours is as well."
     show naomi aroused with dissolve 
     play sound "fx/craphug.mp3"    
-    m "Then she locked her arms under my armpits to tie me in a tight embrace. At this point, I couldn't have escaped even if I had wanted to try."
-    show naomi shy with dissolve
-    m "Finally, she placed her right wing over me as some kind of an impromptu dragon-blanket."
+    m "As a response to my approval of her methods, she locked her arms under my armpits to tie me in a tight embrace. At this point, I couldn't have escaped even if I had wanted to try."
+    show naomi slsmile with dissolve
+    m "Finally, she placed her wing over me as some kind of an impromptu dragon-blanket."
+    $ renpy.pause (4.0)
     play music "mx/enigma.mp3"
     Nm smile "If you ever try to go back to your horrible world I will capture you before you make it to the portal and hug you until you change your mind."
     m "(Oh well, looks like she already solved my problem for me. Sadly, I won't ever be able to go back to that post-apocalyptic hellhole.)"
     Nm stern "I'll also protect you if they try to take you back by force. I'm a lot of dragon with a few tricks they won't be expecting."
     Nm normal "You will be safe here with me for the rest of your life."
     show naomi smile with dissolve
-    m "My mental resistance was waning rapidly in front of Naomi's advances. I was in no mood to refuse anything from her."
-    c "T-thanks..."
+    m "My mental resistance was waning rapidly in front of Naomi's advances, so I was in no mood to refuse anything from her. She was such a very lovely dragoness, who I wanted to get to know a lot better, if you catch my drift."
+    c "Thanks..."
     Nm smile "When your ambassador duties are over, your new job will be to act as my body pillow whenever I feel like getting a few cuddles."
-    c "(Just what have I gotten myself into?)"
+    c "(Just what have I gotten myself into? This is getting very interesting.)"
     show naomi slsmile with dissolve
     play sound "fx/sheet.wav"
     c "We lied on the sofa for what seemed like forever. Occasionally Naomi shifted and rubbed my body in various ways, as if she was trying to find out where I was the squishiest."
@@ -347,7 +351,7 @@ label sqb_naomi_m2_movie:
     show naomi slsmile with dissolve
     play sound "fx/rub2.ogg"
     m "Naomi started shyly rubbing my upper chest with her hands."
-    c "..."
+    c "Ohh..."
     play sound "fx/bed.ogg"
     m "She moved me a bit so my head was firmly lodged below her chin and then she tightened her grip on me even more to properly lock me in place."
     c "I suppose this means I passed the product testing stage?"

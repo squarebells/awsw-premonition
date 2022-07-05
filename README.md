@@ -6,10 +6,10 @@ You need to have acquired ASM's ending A to unlock this mod, because it takes pl
 Contains lewd scenes. In case you don't like that kind of stuff, the NSFW toggle that comes with the modtools works well. Also, this mod assumes the PC is male, at least for now.
  
 ### Requirements:
- + [Modtools](https://github.com/4onen/AWSW-Modtools) by 4onen
- + [Magmalink](https://gitlab.com/jakzie2/awsw-magmalink) by Jakzie2 
+ + [Modtools](https://github.com/4onen/AWSW-Modtools) by 4onen [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1305731599)
+ + [Magmalink](https://gitlab.com/jakzie2/awsw-magmalink) by Jakzie2 [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2594080243)
  + ASM and Chaos_Knight Core mod (ECK Core) by EvilChaosKnight. Updated to use Magmalink by Jakzie2.
- + [Community Resource and Assets Pack](https://gitlab.com/jakzie2/awsw-crap) by Jakzie2, Eval, 4onen, Azrynfolf and Ryann
+ + [Community Resource and Assets Pack](https://gitlab.com/jakzie2/awsw-crap) by Jakzie2, Eval, 4onen, Azrynfolf and Ryann [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2665870882)
  
  I recommend using "manual" versions from GitHub whenever possible, because having too many steam mod subscriptions causes an annoying startup-crashing race condition bug. You can use the steam workshop mods as well, but the versions there might be older. If you want to be absolutely sure everything works, use the "manual" versions.
  
@@ -17,7 +17,7 @@ Contains lewd scenes. In case you don't like that kind of stuff, the NSFW toggle
  + [BangOk](https://github.com/4onenm/AwSW-Bangok) by 4onen (very NSFW)
  
 ### Recommended:
- + [Side Images](https://github.com/4onen/AwSW-Side-Images) by 4onen
+ + [Side Images](https://github.com/4onen/AwSW-Side-Images) by 4onen [Steam]()
  + Savior by EvilChaosKnight (eventually)
  
 ### Resources credits:

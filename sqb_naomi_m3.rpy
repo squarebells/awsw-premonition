@@ -365,7 +365,7 @@ label sqb_naomi_m3_ending:
     play sound "fx/door/door_open.wav"
     scene eckannabedroom4 with dissolvemed
     $ renpy.pause (2.0)
-    m "In Naomi's bedroom, I dropped the plastic bag with my clothes and scuba gear on the floor and then she carried me over to her bed. She lowered me on it slowly and carefully on my back."
+    m "In Naomi's bedroom, I dropped the plastic bag with my clothes and scuba gear on the floor and then she carried me over to her bed. She lowered me on it slowly on my back, taking extra care to set my head on one of the pillows."
     show naomi blank with dissolve
     Nm "What an evening."
     Nm concern "Are you okay, [player_name]?"
