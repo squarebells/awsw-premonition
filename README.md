@@ -17,7 +17,7 @@ Contains lewd scenes. In case you don't like that kind of stuff, the NSFW toggle
  + [BangOk](https://github.com/4onenm/AwSW-Bangok) by 4onen (very NSFW)
  
 ### Recommended:
- + [Side Images](https://github.com/4onen/AwSW-Side-Images) by 4onen [Steam]()
+ + [Side Images](https://github.com/4onen/AwSW-Side-Images) by 4onen [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2521431664)
  + Savior by EvilChaosKnight (eventually)
  
 ### Resources credits:
