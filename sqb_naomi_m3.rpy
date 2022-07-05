@@ -576,7 +576,10 @@ label sqb_naomi_m3_ending:
     scene town6 with dissolvemed
     stop soundloop fadeout 1.0
     #Inspired by Freefall's terrifying flashback scene
-    m "When I had reached the park I decided to sit down on a bench in order to take a break. I relaxed myself on the bench's backrest and shut my eyes for a moment."
+    m "When I had reached the park I was feeling a bit drowsy, so I decided to sit on one of the benches."
+    m "(Just a short rest, and I can continue my journey back to my apartment.)"
+    $ renpy.pause (2.0)
+    m "I relaxed myself on the bench's backrest and shut my eyes for a moment."
     $ renpy.pause (2.0)
     scene black with dissolve
     $ renpy.pause (4.0)
@@ -615,7 +618,7 @@ label sqb_naomi_m3_ending:
     $ renpy.pause (2.0)
     m "({b}WHAT HAVE I DONE?!{/b}){w=4.0}{nw}" with vpunch
     $ renpy.pause (4.0)
-    m "(I can't live after doing this. I don't want to live anymore.){w=8.0}{nw}"
+    m "(I can't live after doing something this horrible.){w=8.0}{nw}"
     $ renpy.pause (2.0)
     play sound "fx/rev.ogg"
     $ renpy.pause (4.0)
@@ -626,12 +629,10 @@ label sqb_naomi_m3_ending:
     $ renpy.pause (8.0)
     m "When I had finally snapped out of it, I found myself lying on the ground next to the bench I had sat on. My hair and shirt were wet, because my entire upper body had sweated profusely."
     scene town6 with dissolvemed
-    m "A group of dragons had gathered around me to see if I was okay."
-    m "(What the hell was that!? It felt...{w} so real.)"
+    m "A group of dragons had gathered around me to see if I was okay. I was still so confused, that I paid them no mind."
+    m "(What the hell was that!? It felt...{w} so real. Could it even be real?)"
     $ renpy.pause (2.0)
-    m "(Was it real?)"
-    $ renpy.pause (2.0)
-    m "Bewildered by this horrifying experience, I got up from the ground without saying anything and continued making my way back to my apartment."
+    m "Bewildered by this horrifying experience, I got up from the ground without saying anything, patted my clothes and continued making my way back to my apartment."
     play soundloop "fx/steps/steps.ogg"
     scene town7 with dissolve
     m "Since nothing like this obviously had happened to me before, and because dreams could sometimes show your worst fears, I decided to shrug off what I had just seen. I had more important things to worry about right now."    
