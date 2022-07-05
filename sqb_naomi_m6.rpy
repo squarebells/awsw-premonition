@@ -3,7 +3,7 @@ label sqb_naomi_m6_discussion_reality:
     stop music fadeout 1.0
     $ renpy.pause (2.0)
     scene black with dissolvemed
-    $ renpy.pause (2.0)
+    $ renpy.pause (8.0)
     show naomi smile with dissolve
     Nm "I bet you expected it to be over, huh?"
     Nm normal "Would you like to preview an unfinished scene from the upcoming chapter 6?"
@@ -14,7 +14,7 @@ label sqb_naomi_m6_discussion_reality:
             hide naomi with dissolve
             pass
         
-        "No, back to the main menu please.":
+        "No, take me back to the main menu.":
             Nm blank "Alright."
             Nm smile "I hope you come back soon!"
             $ renpy.pause (1.0)
@@ -63,9 +63,10 @@ label sqb_naomi_m6_discussion_reality:
     m "(There are so many things about my actions that make no sense.)" 
     m "(Did I do the right things after all? How do I figure out what's real?)"
     m "..."
+    $ renpy.pause (4.0)
     stop music fadeout 1.0
     play sound "fx/steps/rough_gravel.ogg"
-    m "After some time my thoughts were interrupted by the sound of Naomi walking outside my apartment. She entered with the key I had given her."
+    m "After some time my thoughts were interrupted by the sound of Naomi walking outside my apartment. She entered her own key, in high spirits."
     
     play sound "fx/door/handle.wav"
     $ renpy.pause (2.0)
@@ -104,7 +105,7 @@ label sqb_naomi_m6_discussion_reality:
     m "With those words, Naomi walked up to my couch and climbed on it. She rested her belly on it and lifted her tail over the armrest on the opposite side. After she had finished positioning herself, her face was next to mine."
     show naomi normal flip at center with dissolve
     play sound "fx/sheet.wav"
-    m "Lastly, she shifted herself closer to me and planted her hands on my right thigh."
+    m "Lastly, she shifted herself closer to me and planted her elbows on my right thigh."
     show naomi smile flip with dissolve
     m "That was my signal. I placed my arms around her upper body and hugged her. She leaned towards me."
     show naomi slsmile flip with dissolve
@@ -116,33 +117,34 @@ label sqb_naomi_m6_discussion_reality:
     c "Thank you. Maybe if I get all of this baggage off my back I can start to forget."
     
     c "Firstly, what do you think about the outcome of this timeline?"
-    show naomi confused flip with dissolve
-    c "Even though we saved this world, somehow I still feel like I failed. I wonder if there was something more we could have done."
+    Nm confused flip "It seems pretty good to me. What's wrong with it?"
+    c "Well, even though we saved this world, I still have the lingering feeling of failure in me. I just wonder if there was something more we could have done."
     c "Maybe I'm just not good enough?"
-    Nm blank flip "We did what we could, given the circumstances."
+    Nm blank flip "We did what we could, given the circumstances. You have done more than what could be reasonably expected from the average person."
     c "I keep telling myself that very thing, but sometimes I just can't help but recalculate everything I have done."
     #more, explanation
-    Nm concern flip "I don't think you should be dwelling in the past this much."
+    Nm concern flip "If I am being completely honest, I have to tell you that I don't think you should be dwelling in the past this much."
     Nm normal flip "What's done is done. We should focus on the future."
     c "You're right. Maybe we should be happy we're alive in the first place."
-    Nm blank "Exactly."
-    c "But even if I tried my best, do I deserve all this?"
+    Nm blank flip "Exactly."
+    c "Still, even if I tried my best, do I deserve all this?"
     
     c "A life like this is something I could have only dreamed of a few weeks ago. Living in the city-state I came from was awful, but it was the safest place to live in the post-flare world that I knew of."
     c "Like I have already told you multiple times, living here has been great for me. I'm looking forward to spending the rest of my life here with you."
     Nm smile flip "You know I feel the same way."
     c "Still, what makes me the saddest about this whole situation, is that I'm not able to share this wonderful experience with the rest of my people."
-    Nm sad flip "You and me both."
+    Nm sad flip "You and me both. Also, I'm sure a lot of dragons would have been really excited to meet more humans."
     c "I know we humans have our faults, but I'm sure most of us would've loved to meet you dragons. We aren't all like Reza."
-    Nm stern flip "I would like to think that all humans are as nice as you are. It's hard to believe that you used to be friends with someone like Reza." 
+    Nm stern flip "I'm sure most humans are as nice as you are. Actually, it's hard to believe that you used to be friends with someone like Reza." 
     Nm annoyed flip "He's is such a horrible person. How could he personally murder all those dragons and then intend to abandon us all to die?"
-    Nm blank flip "I'm still glad we stopped Maverick from killing him. He doesn't deserve to die no matter how evil he is. I hope we can rehabilitate him so that he'll change for the better."
-    c "Agreed. Anyway, to continue my line of thought, I had initially placed great hopes in our inter-species cooperation. Your immigration idea was a stroke of genius."
+    Nm stern flip "Don't forget that he even tried to shoot me with his weapon."
+    Nm blank flip "I'm still glad I stopped Maverick from killing him. He doesn't deserve to die no matter how evil he is. I hope we can rehabilitate him so that he'll change for the better."
+    c "Agreed. Anyway, to continue my line of thought, I had initially placed great hopes in our interspecies cooperation. Your immigration idea was a stroke of genius."
     show naomi surprisedblush flip with dissolve
-    c "It's unfortunate that some from our leadership didn't see it the same way. Reza confirmed that he wasn't acting alone."
-    c "I wouldn't be stuck here if it hadn't been for the plot that Reza was a part of. I would've still preferred to stay here of course, but I wish the connection between our worlds hadn't been severed."
+    c "It's unfortunate that some from our leadership didn't see it the same way. Honestly, now when I think of it, Reza was probably lying about coming up with his plan all by himself. Someone as narcissistic as him will make up any kind of lie in order to stroke their ego."
+    c "The fact that I wouldn't be stuck here if it hadn't been for the plot that Reza was a part of still upsets me a little bit. I just wish the connection between our worlds hadn't been severed."
     show naomi confused flip with dissolve
-    c "I think Izumi's reasons for severing the connection were understandable, even though the repercussions were terrible." #Or were they?
+    c "I think Izumi's reasons for severing the connection were understandable, even though the repercussions were terrible."
     c "If everything had gone well, over time we could have even relocated the majority of my people here, like you said before." 
     c "We could have left a heavily armed force to guard the portal to enable us to gradually let in any humans who managed get to there. In the end, I just want to help as many people as possible."
     c "Some time after that, we could have started to really rebuild."
@@ -171,18 +173,18 @@ label sqb_naomi_m6_discussion_reality:
     Nm surprised flip "...what?"
     c "Naomi, I know I sound crazy, but I have no idea how to break from these chains. Right now I feel like they are the only thing I can lose."
     c "I understand how reification works and we should fight against it whenever we can, but honestly for the first time in my life I'm in a situation in which there is absolutely nothing I can do to resist the powers that control my life."
-    show naomi blank with dissolve
+    show naomi blank flip with dissolve
     c "In the end the most shocking realization is that I can't be entirely sure if even my life before arriving through the portal is real."
     show naomi concern flip with dissolve    
     c "Anyway, if we're in the type of simulation I think we might be in, we won't ever be able to break out of it. Even trying would probably have us lose our sanity."
     show naomi confused flip with dissolve
     m "Naomi was getting visibly bored with my antics."    
-    c "I suppose in the end it doesn't seem like I'm getting anywhere with this line of thought."
-    c "Because of this I guess I have to come to the conclusion that I should stop theorizing before I lose my mind." 
+    c "I suppose in the end it doesn't seem like I'm getting anywhere with this line of thought. Because of this I guess I have to come to the conclusion that I should stop theorizing before I lose my mind." 
     c "Let's just focus on what we experience, especially on experiences that make both of us happy."
     Nm normal flip "That I can agree with." 
     c "I'm just very tired. Maybe it's finally the time to stop." 
     c "After all this hardship I just want to live in peace and forget all the negative things that happened in the past."
+    $ renpy.pause (2.0)
     c "I'm finished. That was quite a lot to unpack."
     Nm confused flip "You were philosophical as usual." 
     Nm blank flip "I didn't fully understand everything you said but I got the general idea."
@@ -205,6 +207,7 @@ label sqb_naomi_m6_discussion_reality:
     m "(I'm going to need a lot of comfort food. Nobody can tell me all the food I manage to eat tonight isn't real.)"
     m "I ordered some fried cheese, two boxes of fried chicken, several hamburgers and two dragon-sized portions of fried noodles with aurochs meat and steamed vegetables."
     m "(Perfect. With this much, we won't have to cook tomorrow.)"
+    play sound "fx/sheet.wav"
     m "After I had placed the order, I lied down on the couch."
     m "(I guess right now it's better to just keep my eyes ahead and do my best to avoid going crazy.)"
     $ renpy.pause (1.0)
@@ -217,23 +220,24 @@ label sqb_naomi_m6_discussion_reality:
     m "As she placed the pitcher on the table I got off the couch."
     c "Thank you. I'll go get the glasses."
     Nm "Sure."
-    c "I still feel a bit down. Could I please get a dragon hug before I go?"
+    $ renpy.pause (2.0)
+    c "By the way, I still feel a bit down. Could I please get a dragon hug before I go?"
     stop music fadeout 1.0
     Nm smile "Of course."
-    m "I got off the couch and walked up to her. As I placed my arms around her neck and she shifted herself closer to hug me back."
+    m "I got off the couch and walked up to her. As I placed my arms around her upper body and she shifted herself closer to hug me back."
     m "She held me tightly and placed her wings around me. Lastly, she wrapped her tail loosely around my ankles."
     play music "mx/enigma.mp3"
-    Nm slsmile "Looks like I caught my favorite human again. I might eat you because the dinner wasn't ready when I came over."
-    Nm smile "I think I'll eat you in a different way. I like having you around for cuddling."
-    Nm "What if I pushed you to the floor and we had sex right now?" #Rethink?
-    c "Naomi... that will have to be later because we haven't eaten yet. I need the energy and hydration to perform."
-    c "You seem to be eager so you can be on top later if you just wait a bit longer."
-    Nm surprisedblush "Aww... what a buzzkill. I guess I'll wait if you insist."
+    Nm slsmile "Looks like I caught my favorite human again."
+    Nm smile "What if I pushed you to the floor and we had sex right now?"
+    c "Naomi, the bare floor isn't a good place for me to have sex with someone as large as you on top. Also, we should eat first, since I need the energy and hydration to perform."
+    c "You seem to be eager so you can be on top all night if you want to. Just wait a bit longer."
+    Nm surprisedblush "What a letdown. I guess I'll wait if you insist."
     m "A funny thought came into my mind."
     c "Hey, if you consider all the different timelines, we've probably waited quite a while get to this point in the first place."
     c "In addition to that, if we're in a simulation, every time we have sex someone or something had to program it. Really makes you think, huh?"
+    $ renpy.pause (2.0)
     stop music fadeout 1.0
-    Nm stern "Is that supposed to be an attempt at a joke? Why can't you just try to tell jokes that are actually funny?"
+    Nm stern "Is that supposed to be an attempt at a joke? Why can't you just tell some of your old jokes that are actually funny?"
     m "I had no idea how to respond. I knew I had just said something I shouldn't have."
     c "Can we just calm down and wait for the food?"
     Nm "Only if you stop implying in a roundabout way that I'm not real." 
@@ -253,19 +257,18 @@ label sqb_naomi_m6_discussion_reality:
     stop soundloop fadeout 2.0
     Nm smile "Feeling comfortable?"
     c "Sure... but can I go get the glasses now? I'm thirsty and I bet you are as well."
-    Nm aroused "You're always looking for an excuse to escape. I'm not finished with you yet."
+    Nm blank "You're always looking for an excuse to escape. I'm not finished with you yet."
     c "I'll be back, I promise."
     
     #The PC and Naomi eating
     
+    stop music fadeout 1.0
     scene black with dissolvemed
-    
+    $ renpy.pause (2.0)   
+    play sound "fx/system3.wav"
+    s "Thank you for playing!"
     $ renpy.pause (2.0)
-    
-    scene ecknaomiapt01 with dissolvemed
-    play music "mx/airborne.mp3"
-    show naomi smile with dissolve
 
-jump sqb_naomi_m6_discussion_reality_end    
+jump ml_main_menu    
     
     

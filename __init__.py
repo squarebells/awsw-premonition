@@ -20,7 +20,7 @@ class Premonition(Mod):
          sqb2naomi(ml)
          sqb3naomi(ml)
          sqb4naomi(ml)
-         #sqb5naomi(ml)
+         sqb5naomi(ml)
          #sqb6naomi(ml)
          
     @staticmethod
@@ -205,6 +205,39 @@ def sqb4naomi(ml):
        ml.find_label("eck_naomi_m4_skip") \
             .search_say("It's getting late") \
             .hook_to("sqb_naomi_m4_funparts", condition='sqbnaomi2hadsex == True')
+            
+def sqb5naomi(ml):
+
+       ml.find_label("eck_naomi_m5") \
+            .search_say("This might be our only chance") \
+            .search_say("Since when do you") \
+            .hook_to("sqb_naomi_m5_rezatalk1", condition='sqbnaomim4hadsex == True') \
+            .search_say("Just let me through") \
+            .link_from("sqb_naomi_m5_rezatalk1_end") \
+            .search_say("As long as you can") \
+            .hook_to("sqb_naomi_m5_rezatalk2", condition='sqbnaomim4hadsex == True') \
+            .search_say("I mean, what are you going to") \
+            .link_from("sqb_naomi_m5_rezatalk2_end")
+            
+       ml.find_label("eck_naomi_m5_betterend") \
+            .search_say("Waiting for a special") \
+            .hook_to("sqb_naomi_m5_rezatalk3", condition='sqbnaomim4hadsex == True') \
+            .search_say("Looks like your friends") \
+            .link_from("sqb_naomi_m5_rezatalk3_end") \
+            .search_play("fx/box1.wav") \
+            .hook_to("sqb_naomi_m5_rezafight", condition='sqbnaomim4hadsex == True') \
+            .search_say("As long as you stay true") \
+            .link_from("sqb_naomi_m5_rezafight_end") \
+            .search_say("You are good at reading others") \
+            .hook_to("sqb_naomi_m5_maverick", condition='sqbnaomim4hadsex == True') \
+            .search_say("Maverick lifted his arm") \
+            .link_from("sqb_naomi_m5_maverick_end") \
+            .search_say("I gasped and took a step back") \
+            .hook_to("sqb_naomi_m5_ending", condition='sqbnaomim4hadsex == True')
+            
+       ml.find_label("eck_naomi_m5_betterend_aftermath") \
+            .search_say("Hey.") \
+            .hook_to("sqb_naomi_m5_aftermath", condition='sqbnaomim4hadsex == True') \
 
 #def sqb6naomi(ml):      
 
