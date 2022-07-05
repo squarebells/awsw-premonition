@@ -5,25 +5,21 @@ label sqb_naomi_cafe_discussion:
             $ renpy.pause (0.5)
             $ naomi1drink = "juice"
             c "Some juice would be good."
-            Ad "Alright. I'll be right back."
             
         "Soda":
             $ renpy.pause (0.5)
             $ naomi1drink = "soda"
             c "Could you get me a soda?"
-            Ad "Alright. I'll be right back."
             
         "Beer":
             $ renpy.pause (0.5)
             $ naomi1drink = "beer"
             c "Could you get me a local beer?"
-            Ad "Alright. I'll be right back."
             
         "Coffee":
             $ renpy.pause (0.5)
             $ naomi1drink = "coffee"
             c "I would love some coffee right now."
-            Ad "Alright. I'll be right back."
             
         "Cocktail":
             $ renpy.pause (0.5)
@@ -31,8 +27,8 @@ label sqb_naomi_cafe_discussion:
             c "For drink, could I have a cocktail?"
             Ad "Sure, what kind?"
             c "Since I'm new here, just get me the one that you think is the most popular."
-            Ad "Alright. I'll be right back."
             
+    Ad "Alright. I'll be right back."        
     show adine normal b with dissolve
     hide adine with easeoutleft
     hide naomi with dissolve
