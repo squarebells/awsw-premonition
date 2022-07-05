@@ -8,7 +8,7 @@ Contains lewd scenes. In case you don't like that kind of stuff, the NSFW toggle
 ### Requirements:
  + Modtools: [GitHub](https://github.com/4onen/AWSW-Modtools) [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1305731599) by 4onen
  + Magmalink: [GitHub](https://gitlab.com/jakzie2/awsw-magmalink) [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2594080243) by Jakzie2
- + ASM and Chaos_Knight Core mod (ECK Core): by EvilChaosKnight Updated to use Magmalink by Jakzie2.
+ + ASM and Chaos_Knight Core mod (ECK Core): [GitHub] by EvilChaosKnight. Updated to use Magmalink by Jakzie2.
  + Community Resource and Assets Pack: [GitHub](https://gitlab.com/jakzie2/awsw-crap) [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2665870882) by Jakzie2, Eval, 4onen, Azrynfolf and Ryann
  
  I recommend using "manual" versions from GitHub whenever possible, because having too many steam mod subscriptions causes an annoying startup-crashing race condition bug. The steam workshop versions there might be older, so if you want to be absolutely sure everything works, use GitHub versions.
