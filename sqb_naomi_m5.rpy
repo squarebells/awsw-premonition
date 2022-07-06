@@ -474,10 +474,9 @@ label sqb_naomi_m5_aftermath:
     stop music fadeout 1.0
     $ renpy.pause (2.0)
     play sound "fx/door/doorclose3.wav"
-    m "I followed Naomi to bed, and we made sweet love for almost the entire day. We even tried out all the different positions we couldn't at the pool."
+    m "I followed Naomi to bed, and we made sweet love for almost the entire day. We had saved the world, and life was good."
     scene black with dissolvemed
     $ renpy.pause (2.0)
-    m "The world was saved, and life was good."
     $ persistent.sqbnaomiendingseens    
 
 label sqb_naomi_m5_thebestend:

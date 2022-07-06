@@ -304,7 +304,7 @@ label sqb_naomi_m4_funparts:
     m "As I kept pounding Naomi's dragon-pussy, suddenly I felt her starting to shake subtly. She pressed my entire body into her even more strongly than before. When I was closer, I could feel that something powerful was building up in her."
     c "Be careful, Naomi!"
     Nm shy "I'm..."
-    m "Then without warning, she came. Her vaginal walls clamped on my dick, desperate to milk me dry. Thankfully, she didn't crush me to death in her excitement."
+    m "Then without warning, she came. Her vaginal walls clamped on my dick, desperate to milk me dry. Thankfully, she didn't break any of my bones in her excitement."
     play sound "fx/snarl.ogg"
     play sound2 "fx/lewd/pussy.ogg"
     stop soundloop fadeout 1.0

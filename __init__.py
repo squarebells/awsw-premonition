@@ -21,7 +21,6 @@ class Premonition(Mod):
          sqb3naomi(ml)
          sqb4naomi(ml)
          sqb5naomi(ml)
-         #sqb6naomi(ml)
          
     @staticmethod
     def mod_complete():
@@ -46,6 +45,7 @@ def sqbintronaomi(ml):
           .link_from("sqb_naomi_premostart_end")
        
 def sqb1naomi(ml):
+
        ml.find_label("eck_naomi_m1") \
            .search_say("You're also working on the latest case, I assume") \
            .search_say("For me it's more of a personal thing") \
@@ -73,7 +73,7 @@ def sqb2naomi(ml):
 
        ml.find_label("_call_skiptut_eckn21") \
             .search_menu("Yes. I want to skip ahead.").branch() \
-            .hook_to("sqb_naomi_m2_skip", condition='sqbpremounlocked ==  True') \
+            .hook_to("sqb_naomi_m2_skip", condition='sqbpremounlocked ==  True')
             
        ml.find_label("sqb_naomi_m2_bedroomfun") \
             .search_say("I hope you understand that") \
@@ -85,7 +85,7 @@ def sqb2naomi(ml):
        ml.find_label("eck_naomi_m2") \
            .search_menu("I can imagine.") \
            .add_choice(text="I could move them for you.", condition='sqbpremounlocked == True', jump="sqb_naomi_m2_chairs") \
-           .search_say("She led me") \
+           .search_scene("ecknaomiapt03") \
            .link_behind_from("sqb_naomi_m2_chairs_end") \
            .search_say("We all have drawbacks") \
            .hook_to("sqb_naomi_m2_differences", condition='sqbpremounlocked == True') \
@@ -174,7 +174,7 @@ def sqb4naomi(ml):
 
        ml.find_label("_call_skiptut_eckn41") \
             .search_menu("Yes. I want to skip ahead.").branch() \
-            .hook_to("sqb_naomi_m4_skip", condition='sqbpremounlocked ==  True') \
+            .hook_to("sqb_naomi_m4_skip", condition='sqbpremounlocked ==  True')
 
        ml.find_label("eck_naomi_m4") \
             .search_if("ecknaomim3earlyleave").branch_else() \
@@ -200,7 +200,7 @@ def sqb4naomi(ml):
             .add_choice(text="To interspecies relationships.", condition='sqbnaomi2hadsex == True', before="To our friendship.") \
             .hook_to("sqb_naomi_m4_interspecies", condition='sqbnaomi2hadsex == True') \
             .search_say("Our cups are almost dry") \
-            .link_from("sqb_naomi_m4_interspecies_end") \
+            .link_from("sqb_naomi_m4_interspecies_end")
             
        ml.find_label("eck_naomi_m4_skip") \
             .search_say("It's getting late") \
@@ -237,13 +237,5 @@ def sqb5naomi(ml):
             
        ml.find_label("eck_naomi_m5_betterend_aftermath") \
             .search_say("Hey.") \
-            .hook_to("sqb_naomi_m5_aftermath", condition='sqbnaomim4hadsex == True') \
-
-#def sqb6naomi(ml):      
-
-        #ml.find_label("") \
-        #.search_say("") \
-        #.search_say("") \
-        #.hook_to("sqb_naomi_m6_discussion_reality", condition='sqbpremounlocked == True') \
-        #.search_say("") \
-        #.link_from("sqb_naomi_m6_discussion_reality_end")      
+            .hook_to("sqb_naomi_m5_aftermath", condition='sqbnaomim4hadsex == True')
+            

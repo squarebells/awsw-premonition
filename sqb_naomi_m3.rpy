@@ -134,8 +134,7 @@ label sqb_naomi_m3_templabskip:
     play sound "fx/system3.wav"
     s "Alright."
     play sound "fx/system3.wav"
-    s "In this mod's timeline, for now, you are forced to take the old generator. I'm going to write an extended worst ending in the future."    
-    
+    s "In this mod's timeline, for now, you are forced to take the old generator. I'm going to write an extended worst ending in the future."        
     scene black with dissolvemed
     $ renpy.pause (1.0)
     $ persistent.skipnumber += 1

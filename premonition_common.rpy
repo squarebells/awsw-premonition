@@ -4,6 +4,8 @@ init:
     $ naomilewd = 0
     $ sqbpremounlocked = False
     $ sqbnaomi2hadsex = False
+    $ sqbnaomim3nogiveup = False
+    $ sqbnaomim3protect = False
     $ sqbnaomi4hadsex = False
     
     image sqbnaomiapt04 = "bg/sqbnaomiapt04.jpg"

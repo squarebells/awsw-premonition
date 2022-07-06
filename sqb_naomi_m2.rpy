@@ -1,10 +1,8 @@
 label sqb_naomi_m2_skip:
     
     stop music fadeout 1.0
-    play sound "fx/system3.wav"
-    
-    s "Would you like to skip to the cooking, or straight to the ending? If you have NSFW mode enabled, you can also choose to skip to the fun."
-        
+    play sound "fx/system3.wav"    
+    s "Would you like to skip to the cooking, or straight to the ending? If you have NSFW mode enabled, you can also choose to skip to the fun."       
     menu:
         "Fun." if persistent.nsfwtoggle == True:
             s "Alright."
@@ -47,8 +45,7 @@ label sqb_naomi_m2_chairs:
 
     $ renpy.pause (0.5)
     $ naomi2mood += 2
-    $ naomilewd +=1
-     
+    $ naomilewd +=1     
     Nm surprised "You mean right now?"
     c "Sure, if they bother you that much. I would love to help you out."
     c "I think I am better suited for moving furniture around than you are, no offense."
@@ -56,8 +53,6 @@ label sqb_naomi_m2_chairs:
     Nm blank "I'll do it myself tomorrow."
     Nm "Enough about my chairs. Let's go rest on the sofa."
     scene ecknaomiapt03 with dissolvemed
-    m "She led me to a white sofa in front of the large TV. I took my seat by the armrest on the left, while Naomi settled on her belly on the cushions nearby and shifted her wings slightly."
-    show naomi normal with dissolve
 
 jump sqb_naomi_m2_chairs_end
 
@@ -148,10 +143,12 @@ label sqb_naomi_m2_movie:
             play sound "fx/sheet.wav"
             $ renpy.pause (0.5)
             m "Naomi slipped off the cushions in a single fluid move – not unlike a huge cat – and walked up to the device located below the large wall-mounted TV. She fiddled with it for a time and then made a quick trip to the fridge, before returning with two portions of snacks and drinks."
+            
             if naomi2mood > 4:
                 m "The dragoness placed them on the glass table nearby and hopped onto the couch, settling next to me."
             else:
                 m "The dragoness placed them on the glass table nearby and hopped back onto her previous spot on the couch."
+                
             $ renpy.pause (1.5)
             show naomi smile with dissolve
             Nm "Now, we are all set."
@@ -161,8 +158,7 @@ label sqb_naomi_m2_movie:
             scene black with dissolvemed
             $ renpy.pause (2.5)
             scene ecknaomiapt03 with dissolvemed
-            play music "mx/airborne.mp3"
-            
+            play music "mx/airborne.mp3"          
             jump sqb_naomi_m2_movie_end
     
     Nm blank "Don't worry, I can take it."
@@ -226,8 +222,7 @@ label sqb_naomi_m2_movie:
     c "Thank you again, Naomi. I really mean it."
     play sound "fx/bed.ogg"
     m "With my accidental encouragement, she shifted yet a little bit closer towards me. From up close I finally fully realized how big she was compared to me. I started feeling a little intimidated but also intrigued by her different and powerful physique."
-    Nm shy "Would you like a hug? I don't want to see a cute little human like you sad like this ever again."
-    
+    Nm shy "Would you like a hug? I don't want to see a cute little human like you sad like this ever again."   
     menu:
         "Hug Naomi.":
             m "(I already like her a lot and turning down her offer of comfort would be downright rude.)"
@@ -247,10 +242,12 @@ label sqb_naomi_m2_movie:
             play sound "fx/sheet.wav"
             $ renpy.pause (0.5)
             m "Naomi slipped off the cushions in a single fluid move – not unlike a huge cat – and walked up to the device located below the large wall-mounted TV. She fiddled with it for a time and then made a quick trip to the fridge, before returning with two portions of snacks and drinks."
+            
             if naomi2mood > 4:
                 m "The dragoness placed them on the glass table nearby and hopped onto the couch, settling next to me."
             else:
                 m "The dragoness placed them on the glass table nearby and hopped back onto her previous spot on the couch."
+                
             $ renpy.pause (1.5)
             show naomi smile with dissolve
             Nm "Now, we are all set."
@@ -260,8 +257,7 @@ label sqb_naomi_m2_movie:
             scene black with dissolvemed
             $ renpy.pause (2.5)
             scene ecknaomiapt03 with dissolvemed
-            play music "mx/airborne.mp3"
-            
+            play music "mx/airborne.mp3"           
             jump sqb_naomi_m2_movie_end
                
     c "I-I really need a hug right now..."
@@ -370,18 +366,15 @@ label sqb_naomi_m2_movie:
     m "(This is going to be great.)"
     show naomi smile with dissolve
     m "With those words, Naomi extended her arm and picked up the sizeable remote from the table in front of us."
-    m "She pressed a couple of buttons on it, and after a few moments of fiddling with the remote the movie started playing."
-    
+    m "She pressed a couple of buttons on it, and after a few moments of fiddling with the remote the movie started playing."   
     stop music fadeout 2.0
     $ renpy.pause (2.5)
-    scene black with dissolvemed
-    
+    scene black with dissolvemed  
     m "I focused more on Naomi's large body, breathing and warmth than watching the movie. I felt a strange mix of arousal, terror and submissiveness throughout the entire session."
     m "Thankfully, because my back was against her belly she didn't find out about the hard erection I had most of the time the movie was playing." 
     m "It was for the better, because I had no idea how she would've reacted."
     m "The tease was almost unbearable, but I managed to keep any dirty thoughts to myself."
-    m "After the credits started rolling, Naomi let me go and we sat next to each other on the sofa."
-    
+    m "After the credits started rolling, Naomi let me go and we sat next to each other on the sofa."   
     $ renpy.pause (2.5)
     scene ecknaomiapt03 with dissolvemed
     play music "mx/airborne.mp3"
@@ -391,8 +384,7 @@ jump sqb_naomi_m2_movie_end
 label sqb_naomi_m2_bedroomfun:
 
     $ naomi2mood += 4
-    $ naomiromance += 100
-     
+    $ naomiromance += 100    
     Nm concern "Umm..."
     c "Come on, I like you as well."
     c "Or are you trying to say that the type of cuddling we just did is normally done among just friends here?"
@@ -526,6 +518,7 @@ label sqb_naomi_m2_bedroomfun:
             show naomi smile with dissolve
             $ renpy.pause (1.0)
             m "Only then I realized the complete lack of cutlery, save for a lone ladle."
+            
             if ecknaomim2food == "beef" or ecknaomim2food == "fish" or ecknaomim2food == "chicken":
                 Nm "Smells delicious, [player_name]."
                 c "Thanks. I tried my best."
@@ -698,12 +691,10 @@ label sqb_naomi_m2_bedroomfun:
             play sound "fx/steps/steps.ogg"
             m "Not even bothering to put my clothes on, I slowly wandered back to my apartment and went straight to bed."
             stop sound fadeout 1.0
-            m "My dreams that night were full of fire and suffering. I woke up several times trembling in cold sweat."
-    
+            m "My dreams that night were full of fire and suffering. I woke up several times trembling in cold sweat." 
             $ naomistatus = "bad"
             $ naomiavailable = False
-            $ naomiscenesfinished = 2
-            
+            $ naomiscenesfinished = 2           
             jump ml_date_end               
      
     $ renpy.pause (1.0)
