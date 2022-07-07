@@ -86,7 +86,7 @@ label sqb_naomi_cafe_eating:
         "Order some more food.":
             $ renpy.pause (0.5)
             $ naomi1mood += 1
-            $ naomilewd +=1
+            $ sqbnaomilewd +=1
             c "If you want to eat some more, we could place another order. I'm full enough, so I'll just have another drink."
         
         "Don't.":        
@@ -235,7 +235,7 @@ label sqb_naomi_cafe_money:
     $ renpy.pause (2.0)
     
     if naomi1mood > 2:
-         $ naomilewd +=1
+         $ sqbnaomilewd +=1
          show naomi shy with dissolve
          m "Naomi seemed to be thinking about something."
          Nm "I just got an idea. Don't you think that a better choice opened up for your people when we were connected through the portal?" 
@@ -275,15 +275,15 @@ label sqb_naomi_cafe_money:
     
     if naomi1mood > 4:       
          $ naomi1mood += 1
-         $ naomilewd +=1         
+         $ sqbnaomilewd +=1         
          Nm surprisedblush "You wouldn't mind either?" 
          Nm smile "I'm so relieved to hear that. After all, now that I have met you in the flesh, I think humans are cute."
          Nm shy "On top of that I like your personality, but still I think we should get to know each other a little better before we get into anything more serious."
          c "Of course, being pushy wasn't my intent. I was just speaking hypothetically, for now."
          Nm blank "Yes, of course."
          $ renpy.pause (1.0)
-         Nm shy "Even though we are being hypothetical right now, I wouldn't mind having another get-together with you. Since I met you I have felt like there might be something more to you than what meets the eye at first meeting" 
-         Nm normal "I want to find out what it is."
+         Nm shy "Even though we are being hypothetical right now, I wouldn't mind having another get-together with you." 
+         Nm normal "Since I met you I have felt like there might be something more to you than what meets the eye at first meeting. I want to at least find out what it is."
          c "I'll do my best to make the time. After all, to be on track to solve the problem that your parents were so worried about, I should get you to date me as soon as possible."
          Nm stern "..."
          Nm "Careful, you're pushing it."
@@ -291,8 +291,8 @@ label sqb_naomi_cafe_money:
          c "Uhh...{w} speaking of your parents, what are they up to these days?"
          Nm blank "Oh, not much."
          Nm normal "They recently moved their business to the big city, and I stayed back here on my own."    
-    else:   
-         Nm normal "I never thought of it like that."
+    else:  #Rethink response
+         Nm normal "I have never thought of it like that."
          c "So, what do you think?"
          Nm concern "..."
          c "You do have interspecies dating here, right?"

@@ -1,7 +1,7 @@
 
 init:
 
-    $ naomilewd = 0
+    $ sqbnaomilewd = 0
     $ sqbpremounlocked = False
     $ sqbnaomi2hadsex = False
     $ sqbnaomim3nogiveup = False

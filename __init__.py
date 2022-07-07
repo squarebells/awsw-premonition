@@ -46,41 +46,34 @@ def sqbintronaomi(ml):
        
 def sqb1naomi(ml):
 
-       ml.find_label("eck_naomi_m1") \
-           .search_say("You're also working on the latest case, I assume") \
-           .search_say("For me it's more of a personal thing") \
-           .search_say("To make things worse, when I submitted those documents") \
-           .search_say("What would you like") \
-           .search_say("What about drinks?") \
-           .hook_to("sqb_naomi_cafe_discussion", condition='sqbpremounlocked == True') \
-           .search_say("I'm the analyst.") \
-           .link_from("sqb_naomi_cafe_discussion_end") \
-           .search_say("Soon, her plate") \
-           .hook_to("sqb_naomi_cafe_eating", condition='sqbpremounlocked == True') \
-           .search_say("It happens sometimes") \
-           .link_from("sqb_naomi_cafe_eating_end") \
-           .search_say("...") \
-           .hook_to("sqb_naomi_cafe_money", condition='sqbpremounlocked == True') \
-           .search_say("Of course, we haven't") \
-           .link_from("sqb_naomi_cafe_money_end") \
-           .search_say("Do you have any specific places") \
-           .search_say("Don't you have friends") \
-           .hook_to("sqb_naomi_special_question", condition='sqbpremounlocked == True') \
-           .search_say("I know what you mean") \
-           .link_from("sqb_naomi_special_question_end")
+      ml.find_label("eck_naomi_m1") \
+          .search_say("You're also working on the latest case, I assume") \
+          .search_say("For me it's more of a personal thing") \
+          .search_say("To make things worse, when I submitted those documents") \
+          .search_say("What would you like") \
+          .search_say("What about drinks?") \
+          .hook_to("sqb_naomi_cafe_discussion", condition='sqbpremounlocked == True') \
+          .search_say("I'm the analyst.") \
+          .link_from("sqb_naomi_cafe_discussion_end") \
+          .search_say("Soon, her plate") \
+          .hook_to("sqb_naomi_cafe_eating", condition='sqbpremounlocked == True') \
+          .search_say("It happens sometimes") \
+          .link_from("sqb_naomi_cafe_eating_end") \
+          .search_say("...") \
+          .hook_to("sqb_naomi_cafe_money", condition='sqbpremounlocked == True') \
+          .search_say("Of course, we haven't") \
+          .link_from("sqb_naomi_cafe_money_end") \
+          .search_say("Do you have any specific places") \
+          .search_say("Don't you have friends") \
+          .hook_to("sqb_naomi_special_question", condition='sqbpremounlocked == True') \
+          .search_say("I know what you mean") \
+          .link_from("sqb_naomi_special_question_end")
 
 def sqb2naomi(ml):
 
        ml.find_label("_call_skiptut_eckn21") \
-            .search_menu("Yes. I want to skip ahead.").branch() \
-            .hook_to("sqb_naomi_m2_skip", condition='sqbpremounlocked ==  True')
-            
-       ml.find_label("sqb_naomi_m2_bedroomfun") \
-            .search_say("I hope you understand that") \
-            .search_say("I picked up my clothes") \
-            .search_say("Her remark made me feel") \
-            .search_say("Alright, we've had enough foreplay") \
-            .link_from("sqb_naomi_m2_sexskip_end")
+           .search_menu("Yes. I want to skip ahead.").branch() \
+           .hook_to("sqb_naomi_m2_skip", condition='sqbpremounlocked ==  True')
             
        ml.find_label("eck_naomi_m2") \
            .search_menu("I can imagine.") \
@@ -92,19 +85,26 @@ def sqb2naomi(ml):
            .search_say("Naomi eyed my legs") \
            .link_from("sqb_naomi_m2_differences_end") \
            .search_say("I was met by a light gust") \
-           .hook_to("sqb_naomi_m2_balcony", condition='sqbpremounlocked == True') \
+           .hook_to("sqb_naomi_m2_balcony", condition='sqbpremounlocked ==  True') \
            .search_say("Beautiful, isn't it?") \
            .link_from("sqb_naomi_m2_balcony_end") \
            .search_say("Of course, he meant no harm") \
            .search_say("Sounds uncomfortable.") \
-           .hook_to("sqb_naomi_m2_movie", condition='sqbpremounlocked == True') \
+           .hook_to("sqb_naomi_m2_movie", condition='sqbpremounlocked ==  True') \
+           .search_say("You said you like") \
+           .link_from("sqb_naomi_m2_origmovie_end") \
            .search_say("A couple of hours later") \
            .link_from("sqb_naomi_m2_movie_end") \
            .search_say("Do you have anyone in mind") \
-           .hook_to("sqb_naomi_m2_bedroomfun", condition='sqbpremounlocked == True and naomi2mood > 8 and naomilewd > 4')
+           .hook_to("sqb_naomi_m2_bedroomfun", condition='sqbpremounlocked ==  True and naomi2mood > 7 and sqbnaomilewd > 5') \
+           .search_say("Sounds like a plan") \
+           .link_from("sqb_naomi_m2_origcooking_end") \
+           .search_say("We'll see how things unfold") \
+           .link_from("sqb_naomi_m2_origkiss_end")
+           
            
        n = ml.find_label("sqb_naomi_m2_bedroomfun") \
-           .search_say("I hope you understand that") \
+           .search_say("A whisper buried deep") \
            .search_say("I picked up my clothes") \
            .search_say("Her remark made me feel") \
            .search_say("Do you really want to go further with me") \
@@ -114,6 +114,13 @@ def sqb2naomi(ml):
            .search_say("Finish if you have to") \
            .search_say("It was certainly") \
            .hook_from_node(n)
+           
+       ml.find_label("sqb_naomi_m2_bedroomfun") \
+           .search_say("A whisper buried deep") \
+           .search_say("I picked up my clothes") \
+           .search_say("Her remark made me feel") \
+           .search_say("Alright, we've had enough foreplay") \
+           .link_from("sqb_naomi_m2_sexskip_end")
            
 def sqb3naomi(ml):
        
@@ -172,7 +179,7 @@ def sqb4naomi(ml):
 
        ml.find_label("_call_skiptut_eckn41") \
             .search_menu("Yes. I want to skip ahead.").branch() \
-            .hook_to("sqb_naomi_m4_skip", condition='sqbpremounlocked ==  True')
+            .hook_to("sqb_naomi_m4_skip", condition='sqbnaomi2hadsex == True')
 
        ml.find_label("eck_naomi_m4") \
             .search_if("ecknaomim3earlyleave").branch_else() \
