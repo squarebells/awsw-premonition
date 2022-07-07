@@ -245,19 +245,15 @@ label sqb_naomi_m3_panicterminal:
 jump eck_naomi_m3_panicterminalman
 
 label sqb_naomi_m3_panicdoor:
-
+    
+    $ renpy.pause (0.5)
     m "(We can't leave, because we haven't disabled the generator yet. It might explode on our way out, and then we're dead for sure.)"
 
 jump eck_naomi_m3_panicmenu
 
 label sqb_naomi_m3_nogiveup:
-    
-    #if sqbnaomim3nogiveup == True:
-        #c "I still can't figure out what to do. I think we should just give up."
-        #Nm stern "Get yourself together, [player_name]. Try harder."
-        #c "Sorry."
-        #show naomi blank with dissolve
         
+    $ renpy.pause (0.5)    
     $ sqbnaomim3nogiveup = True
     c "I give up. I have no ideas left, and time is running out."
     Nm stern "What, seriously? We've come this far, so we can't just give up."
@@ -267,7 +263,7 @@ label sqb_naomi_m3_nogiveup:
 jump eck_naomi_m3_panicmenu
 
 label sqb_naomi_m3_labrest:
-
+    
     $ naomi3mood += 3
     hide naomi with dissolve
     m "Naomi sat down in a relatively clean corner of the room and beckoned me to come over. I eagerly made my way to her, sat down next to her and leaned onto her side."

@@ -92,7 +92,6 @@ label sqb_naomi_cafe_eating:
         "Don't.":        
             $ renpy.pause (0.5)
             m "(I'm already feeling tired. I just want to go back to my apartment before it gets late.)"
-            $ renpy.pause (2.0)
             c "So, you really do miss your lunch breaks often?"
             jump sqb_naomi_cafe_eating_end
     

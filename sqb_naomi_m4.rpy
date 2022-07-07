@@ -173,7 +173,7 @@ jump sqb_naomi_m4_returndiscussion_end
 label sqb_naomi_m4_interspecies:
     
     $ renpy.pause (0.5)
-    c "To our exciting interspecies relationship, and let's hope many others experience one as well!"
+    c "To our lovely interspecies relationship, and let's hope many others experience one as well!"
     Nm smile "I'm with you on that. If we manage to start a migration plan there will be a lot of dragons interested in forming relationships with humans."
     c "There's a small problem though. From what I know, there aren't that many of us left compared to you. I just hope there will be enough humans to go around."
     Nm aroused "{cps=20}There's a solution for that...{/cps}"

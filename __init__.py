@@ -101,9 +101,7 @@ def sqb2naomi(ml):
            .search_say("A couple of hours later") \
            .link_from("sqb_naomi_m2_movie_end") \
            .search_say("Do you have anyone in mind") \
-           .hook_to("sqb_naomi_m2_bedroomfun", condition='sqbpremounlocked == True and naomi2mood > 8 and naomilewd > 4') \
-           .search_say("I guess we should get going") \
-           .link_from("sqb_naomi_m2_bedroomfun_end")
+           .hook_to("sqb_naomi_m2_bedroomfun", condition='sqbpremounlocked == True and naomi2mood > 8 and naomilewd > 4')
            
        n = ml.find_label("sqb_naomi_m2_bedroomfun") \
            .search_say("I hope you understand that") \

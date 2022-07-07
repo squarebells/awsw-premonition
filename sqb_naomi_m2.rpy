@@ -2,10 +2,11 @@ label sqb_naomi_m2_skip:
     
     stop music fadeout 1.0
     play sound "fx/system3.wav"    
-    s "Would you like to skip to the cooking, or straight to the ending? If you have NSFW mode enabled, you can also choose to skip to the fun."       
+    s "Would you like to skip to the cooking, or straight to the ending? If you have NSFW mode enabled, you can also skip to the fun."       
     menu:
         "Fun." if persistent.nsfwtoggle == True:
             s "Alright."
+            $ renpy.pause (0.5)
             scene black with dissolvemed
             $ renpy.pause (1.0)
             $ naomi2mood = 12
@@ -17,6 +18,8 @@ label sqb_naomi_m2_skip:
             jump sqb_naomi_m2_sexskip_end
             
         "Cooking.":
+            s "Alright."
+            $ renpy.pause (0.5)
             scene black with dissolvemed
             $ renpy.pause (1.0)
             $ naomi2mood = 12
@@ -30,6 +33,7 @@ label sqb_naomi_m2_skip:
         
         "Ending.":
             s "Alright."
+            $ renpy.pause (0.5)
             scene black with dissolvemed
             $ renpy.pause (1.0)
             $ naomi2mood = 12
@@ -47,9 +51,9 @@ label sqb_naomi_m2_chairs:
     $ naomi2mood += 2
     $ naomilewd +=1     
     Nm surprised "You mean right now?"
-    c "Sure, if they bother you that much. I would love to help you out."
+    c "Sure, if the additional chairs bother you that much. I wouldn't mind helping you out."
     c "I think I am better suited for moving furniture around than you are, no offense."
-    Nm normal "None taken. Also, thank you for the offer but I want to host you, not put you to work."
+    Nm normal "None taken. Thank you for the offer but I want to host you, not put you to work."
     Nm blank "I'll do it myself tomorrow."
     Nm "Enough about my chairs. Let's go rest on the sofa."
     scene ecknaomiapt03 with dissolvemed
@@ -58,19 +62,19 @@ jump sqb_naomi_m2_chairs_end
 
 label sqb_naomi_m2_differences:
 
-    c "For example, have you ever considered how big you are compared to a human? If you hugged someone like me, you would make them feel better in no time."
-    show naomi surprisedblush with dissolve
-    m "(Why did I say that?)"
-    Nm shy "That's a very...{w} interesting point."
-    Nm smile "I bet if I caught a puny human like you, they would never be able to escape my clutches."
+    #I get this transition is kind of silly. I will scapegoat the multiverse
+    c "Also, have you considered how much bigger you are compared to a human, or some of the smaller species of dragons? That brings up some interesting dynamics with people who appreciate differences."
+    m "(Let's tease Naomi a bit with a flirt, to see how she reacts to my advances."
+    c "Just speaking hypothetically, I bet someone as big as you would give excellent hugs to someone smaller than them."   
+    Nm smile "Also just hypothetically, if I caught a puny human such as yourself, they would never be able to escape my clutches." 
     c "Actually, that's what dragons sometimes do to humans in our fiction."
     show naomi confused with dissolve
     c "Although, usually the dragons who deal with humans are assumed to be male and very powerful, and most of the time they only catch humans of the female sex."
-    Nm concern "That trope makes no sense at all to me. Female dragons need representation too because we are just as strong as male dragons."
+    Nm concern "That trope makes no sense at all to me. Female dragons need representation too because we are just as strong as males."
     $ renpy.pause (2.0)    
     Nm blank "I would be very interested in hearing more about dragons in your fiction, especially why they're usually assumed to be male."
     c "Well, I didn't really study literature at all or specialize in cultural history so I don't know enough about it to make it interesting. Let me think of something interesting to tell you..."
-    m "Then, I had a sudden urge to say something funny."
+    m "I had a sudden urge to respond with something that I considered to be funny."
     c "Now that I think about it, I agree with you that our dragon trope makes no sense. I'm sure there are a lot of male humans who wouldn't mind being caught by a female dragon."
     Nm confused "I hope you know that I was just being hypothetical."
     c "Yes, of course."
@@ -124,6 +128,7 @@ label sqb_naomi_m2_movie:
     m "(Should I tell her about my past?)"
     menu:
         "Tell her.":
+            $ renpy.pause (0.5)
             c "My story isn't a happy one. I hope you don't mind."
             $ naomilewd +=1
             $ naomi2mood += 4
@@ -131,6 +136,7 @@ label sqb_naomi_m2_movie:
             m "Naomi sighed and looked at me with concern."
             
         "Don't ruin the mood.":
+            $ renpy.pause (0.5)
             $ sqbpremounlocked = False
             c "I'm sorry to disappoint you, but I don't want to ruin the mood. The story of how I ended up here is not a happy one."
             Nm sad "Oh well. I'm sorry if that question was too personal."
@@ -213,7 +219,6 @@ label sqb_naomi_m2_movie:
     m "Suddenly I started to feel another surge of emotions. My throat started feeling dry and I wanted to cry."
     show naomi surprisedblush with dissolve
     c "Your unconditional kindness towards us is somewhat unexpected, because I don't know what we did to deserve it. Being as dependent on technology as we were wasn't good, so the mess we're in is kind of our own making."
-    #A check if Naomi likes PC enough
     Nm stern "Don't say that. Everyone needs help sometimes."
     Nm confused "Just make sure you have good friends..." 
     Nm smile "...or something more to help you out."
@@ -225,11 +230,13 @@ label sqb_naomi_m2_movie:
     Nm shy "Would you like a hug? I don't want to see a cute little human like you sad like this ever again."   
     menu:
         "Hug Naomi.":
+            $ renpy.pause (0.5)
             m "(I already like her a lot and turning down her offer of comfort would be downright rude.)"
         
         "Back off.":
+            $ renpy.pause (0.5)
             $ sqbpremounlocked = False
-            m "(I think I can solve my own problems. Especially without needing hugs from anyone.)"
+            m "(This didn't turn the way I expected it to. I think I can solve my problems on my own, without needing hugs from Naomi.)"
             c "Sorry, no. I don't feel like having one right now."        
             Nm sad "Oh well."
             $ renpy.pause (2.0)
@@ -260,7 +267,7 @@ label sqb_naomi_m2_movie:
             play music "mx/airborne.mp3"           
             jump sqb_naomi_m2_movie_end
                
-    c "I-I really need a hug right now..."
+    c "Thank you. I really do need a hug right now."
     stop music fadeout 1.0
     show naomi slsmile with dissolve
     play sound "fx/sheet.wav"
@@ -434,9 +441,11 @@ label sqb_naomi_m2_bedroomfun:
     m "(This escalated faster than I ever could've anticipated. What should I do?)"
     menu:
         "Undress in front of Naomi.":
+            $ renpy.pause (0.5)  
             pass
             
         "Keep your clothes on.":
+            $ renpy.pause (0.5)
             $ sqbpremounlocked = False
             c "I'm sorry, I don't feel comfortable doing that."
             Nm concern "Really? What's the big deal?"
@@ -621,11 +630,13 @@ label sqb_naomi_m2_bedroomfun:
     m "This was the last chance to run. If I entered her bedroom, there was no telling what would happen to me."
     menu:
         "Follow Naomi.":
+            $ renpy.pause (0.5)
             m "I decided to resist the the scary thoughts I had."
             $ naomistatus = "girlfriend"
             pass
          
         "Try to escape while you still can.":
+            $ renpy.pause (0.5)
             stop music fadeout 2.0
             m "(If I want to escape, I have to time this correctly.)"
             scene ecknaomiapt02 with dissolvemed
