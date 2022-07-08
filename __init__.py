@@ -97,10 +97,10 @@ def sqb2naomi(ml):
            .link_from("sqb_naomi_m2_movie_end") \
            .search_say("Do you have anyone in mind") \
            .hook_to("sqb_naomi_m2_bedroomfun", condition='sqbpremounlocked ==  True and naomi2mood > 7 and sqbnaomilewd > 5') \
-           .search_say("Sounds like a plan") \
-           .link_from("sqb_naomi_m2_origcooking_end") \
            .search_say("We'll see how things unfold") \
-           .link_from("sqb_naomi_m2_origkiss_end")
+           .link_from("sqb_naomi_m2_kiss_orig_end") \
+           .search_say("Sounds like a plan") \
+           .link_from("sqb_naomi_m2_cooking_orig_end")
            
            
        n = ml.find_label("sqb_naomi_m2_bedroomfun") \
@@ -209,7 +209,19 @@ def sqb4naomi(ml):
             
        ml.find_label("eck_naomi_m4_skip") \
             .search_say("It's getting late") \
-            .hook_to("sqb_naomi_m4_funparts", condition='sqbnaomi2hadsex == True')
+            .hook_to("sqb_naomi_m4_funparts", condition='sqbnaomi2hadsex == True') \
+            .search_if("naomiromance > 11").branch() \
+            .search_menu("Accept.").branch() \
+            .search_say("We were reunited in our") \
+            .hook_to("sqb_naomi_m4_fun_orig", condition='persistent.nsfwtoggle == True')
+              
+       ml.find_label("eck_naomi_m4_takingitslow") \
+            .search_menu("Accept.").branch() \
+            .search_menu("Caress her neck and chest.").branch() \
+            .search_menu("Kiss her.").branch() \
+            .search_menu("Take things further.").branch() \
+            .search_say("We were reunited in our") \
+            .hook_to("sqb_naomi_m4_fun_orig2", condition='persistent.nsfwtoggle == True')
             
 def sqb5naomi(ml):
 

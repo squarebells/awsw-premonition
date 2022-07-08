@@ -63,7 +63,7 @@ jump sqb_naomi_m2_chairs_end
 label sqb_naomi_m2_differences:
 
     #I get this transition is kind of silly. I scapegoat the multiverse
-    c "Also, have you ever considered how much bigger you are compared to a human, or some of the smaller species of dragons? That fact brings up some interesting dynamics with people who appreciate differences."
+    c "Also, have you ever considered how much bigger you are compared to a human, or some of the smaller species of dragons? That brings up some interesting dynamics with people who appreciate differences."
     show naomi blank with dissolve
     m "(Let's tease Naomi a bit with a flirt, to see how she reacts to my advances."
     c "Just speaking hypothetically, I bet someone as big as you would give excellent hugs to someone smaller than them."
@@ -96,7 +96,11 @@ label sqb_naomi_m2_differences:
         show naomi shy with dissolve
         c "By the way, how long does flying across the town even take you?"
     else:
-        pass #Add dialogue later
+        Nm blank "I suppose that's true. Can you please tell me what your point is?"
+        c "It's just a funny observation. Sorry if I offended you in any way, I was just being quirky."
+        Nm normal "It's fine." 
+        Nm concern "Hugs aside, being this big is quite an annoyance to me. I often have problems with just picking up or operating small things. Being a runner or even a human would make simple everyday life much easier for me." 
+        c "How long does it take you to cross the town, though?"        
 
 jump sqb_naomi_m2_differences_end
 
@@ -124,12 +128,12 @@ label sqb_naomi_m2_balcony:
         c "Thank you, Naomi. Hearing that makes me feel very happy."
         show naomi smile with dissolve
         c "I would love to take you up on your offer, if it ever becomes possible."
-        Nm "I'm so glad to hear that."
+        Nm "I'm happy to hear that. I know we would get along nicely."
         $ renpy.pause (1.0)
         c "To change the topic to something less gruesome, I have to say that in addition to the fresh sea air I really like the view as well."    
     else:
         Nm blank "I just hope things get better for your people. Do you mind if we changed the topic?"
-        c "Not at all. The view from your balcony is nice, isn't it?"
+        c "Not at all. This view from your balcony is nice, isn't it?"
 
 jump sqb_naomi_m2_balcony_end
 
@@ -137,13 +141,12 @@ label sqb_naomi_m2_movie:
 
     c "I couldn't agree more."
     c "Anyway, hearing the story of how through an unlikely series of events you became a police analyst was interesting. It's actually similar in some ways to how I ended up becoming an ambassador to your world."
-    Nm shy "Oh, really?"
-    Nm blank "I sense another story coming up."
+    Nm normal "Oh, really? I would be very interested in hearing more about you."
     m "(Should I tell her about my past?)"
     menu:
-        "Tell her.":
+        "Tell Naomi.":
             $ renpy.pause (0.5)
-            c "My story isn't a happy one. I hope you don't mind."
+            c "Unfortunately, my story isn't a happy one. I hope you don't mind."
             $ sqbnaomilewd +=1
             $ naomi2mood += 1
             show naomi concern with dissolve
@@ -153,47 +156,25 @@ label sqb_naomi_m2_movie:
             $ renpy.pause (0.5)
             $ sqbpremounlocked = False #Just in case, might be redundant
             c "I'm sorry to disappoint you, but I don't want to ruin the mood. The story of how I ended up here is not a happy one."
-            Nm sad "Oh well. I'm sorry if that question was too personal."
-            Nm normal "Speaking of moods, would you like to shift your focus from the harsh realities of life by watching a fine movie with me? I've got quite a collection."
-            c "Sure, what kind of movie do you have in mind?"
-            Nm smile "You said you like [ecknaomim2movie] films if I'm not mistaken."
-            c "Yeah."
-            Nm "I think I know a good one. Let me set everything up."
-            hide naomi with dissolve
-            play sound "fx/sheet.wav"
-            $ renpy.pause (0.5)
-            m "Naomi slipped off the cushions in a single fluid move – not unlike a huge cat – and walked up to the device located below the large wall-mounted TV. She fiddled with it for a time and then made a quick trip to the fridge, before returning with two portions of snacks and drinks."
-            
-            if naomi2mood > 4:
-                m "The dragoness placed them on the glass table nearby and hopped onto the couch, settling next to me."
-            else:
-                m "The dragoness placed them on the glass table nearby and hopped back onto her previous spot on the couch."
-                
-            $ renpy.pause (1.5)
-            show naomi smile with dissolve
-            Nm "Now, we are all set."
-            m "She picked up a sizeable remote and pushed a couple of buttons on it. A second later, the screen lit up."
-            stop music fadeout 2.0
-            $ renpy.pause (2.5)
-            scene black with dissolvemed
-            $ renpy.pause (2.5)
-            scene ecknaomiapt03 with dissolvemed
-            play music "mx/airborne.mp3"          
-            jump sqb_naomi_m2_movie_end
+            Nm sad "Oh well. I'm sorry if my inquiry into your past was too personal."
+            c "It's fine. I just don't feel like talking about myself right now."
+            $ renpy.pause (1.0)
+            Nm normal "Speaking of moods, would you like to shift your focus from the harsh realities of everyday life by watching a fine movie with me? I've got quite the collection."
+            c "I would like that a lot. What kind of movie do you have in mind?"
+            jump sqb_naomi_m2_origmovie_end
     
     Nm blank "Don't worry, I can take it."
-    c "Where to begin..."
+    c "Alright. Where to begin..."
     show naomi normal with dissolve
     c "Like I might have alluded to earlier, my world used to be pretty prosperous. Our quality of life and general happiness was dramatically higher than ever before due to technological advances."
     c "Well, I suppose social advances such as decreasing inequality and getting rid of most of human exploitation played a huge part too."
     c "Also, we used our technology to automate most tedious and difficult jobs in order to have more time to do what we actually wanted to do with our lives, like anything related to hobbies or simply just improving ourselves as people."
     show naomi surprised with dissolve    
-    c "Our technology was far superior to yours. For example, we had computers everywhere, even on our wrists."
+    c "Our technology was far superior to yours. I suppose it still is, but just very hard to come by. For example, we had computers everywhere, even on our wrists."
     Nm blank "That sounds like a very inconvenient invention to me. I wouldn't even know how to begin to use a computer on my wrist."
-    c "You're in luck, because those are pretty rare nowadays due to the solar flare and high-tech manufacturing being practically impossible."
-    c "Anyway, the future seemed pretty bright for all of humanity, but especially for me as well."
+    c "Then you're in luck, because those are pretty rare nowadays due to what I told you earlier."
     show naomi normal with dissolve
-    c "I had gotten myself majors from both biology and sociology. Skills from those fields were in demand at the time due to rapid social advances."
+    c "Anyway, the future seemed pretty bright for all of humanity, but especially for me as well, because I had gotten myself majors from both biology and sociology. Skills from those fields were in demand at the time due to rapid social advances."
     c "Unfortunately, shortly after my graduation the flare hit our world and my degrees became pretty much worthless in the ensuing aftermath."
     show naomi concern with dissolve
     c "A whole different set of skills would've been far more useful to help me in what I had to go through. Yet somehow, mostly due to sheer luck, I managed to survive."
@@ -457,11 +438,11 @@ label sqb_naomi_m2_bedroomfun:
                 Nm sad "Oh well. I get it."
                 $ renpy.pause (2.0)
                 Nm normal "Look at the time. Would you at least like to eat something before you leave?"
-                jump sqb_naomi_m2_origcooking_end
+                jump sqb_naomi_m2_cooking_orig_end
                 
     else:
         #Add text
-        jump sqb_naomi_m2_origkiss_end               
+        jump sqb_naomi_m2_kiss_orig_end               
         
     m "A whisper buried deep in my mind told me to just do as she says."
     m "(I suppose because dragons don't wear clothes in the way we do, she doesn't understand the implications of asking me to remove them in front of her.)"

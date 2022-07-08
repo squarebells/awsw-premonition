@@ -1,10 +1,8 @@
 label sqb_naomi_m4_skip:
     
     stop music fadeout 1.0
-    play sound "fx/system3.wav"
-    
-    s "Would you like to skip to the fun or straight to the ending? If you have NSFW mode disabled, you won't be able to view the fun though."
-        
+    play sound "fx/system3.wav"    
+    s "Would you like to skip to the fun or straight to the ending? If you have NSFW mode disabled, you won't be able to view the fun though."       
     menu:
         "Fun.":
             s "Alright."
@@ -13,8 +11,7 @@ label sqb_naomi_m4_skip:
             play music "mx/treetops.mp3"
             scene eckswimmingpool with dissolvemed
             show naomi smile with dissolve
-            jump eck_naomi_m4_skip
-       
+            jump eck_naomi_m4_skip    
         
         "Ending.":
             s "Alright."
@@ -368,3 +365,30 @@ label sqb_naomi_m4_funparts:
     $ persistent.sqbnaomi4sex = True
 
 jump eck_naomi_m4_morning
+
+label sqb_naomi_m4_fun_orig:
+
+    $ renpy.pause (1.0)
+    show naomi sad with dissolve
+    play sound "fx/system3.wav"
+    s "Under construction, check back later. Meanwhile, you can enjoy the alternate date 2 and 4 fun scenes."
+    $ renpy.pause (1.0)
+    show naomi slsmile with dissolve
+    m "For a time, I forgot about everything. There was only she, I and the warmth we shared."
+    $ naomiromance += 100
+        
+jump eck_naomi_m4_morning
+
+label sqb_naomi_m4_fun_orig2:
+
+    $ renpy.pause (1.0)
+    show naomi sad with dissolve
+    play sound "fx/system3.wav"
+    s "Under construction, check back later. Meanwhile, you can enjoy the alternate date 2 and 4 fun scenes."
+    $ renpy.pause (1.0)
+    show naomi slsmile with dissolve
+    m "For a time, I forgot about everything. There was only she, I and the warmth we shared."
+    $ naomiromance += 50
+        
+jump eck_naomi_m4_morning
+
