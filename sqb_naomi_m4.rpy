@@ -29,7 +29,7 @@ label sqb_naomi_m4_start:
 
 jump sqb_naomi_m4_start_end
 
-#Just straight copy pasting a lot of ECK's script because I have to change a lot
+#Just straight copy pasting a lot of ECK's script because I don't want to make a million labels
 label sqb_naomi_m4_pool:
 
     c "Also, there's no lockers or containers for my clothes. I guess I'll just have to drop them on the floor."
@@ -371,7 +371,7 @@ label sqb_naomi_m4_fun_orig:
     $ renpy.pause (1.0)
     show naomi sad with dissolve
     play sound "fx/system3.wav"
-    s "Under construction, check back later. Meanwhile, you can enjoy the alternate date 2 and 4 fun scenes."
+    s "Under construction, check back later. Meanwhile, you can enjoy the new timeline date 2 and 4 fun scenes."
     $ renpy.pause (1.0)
     show naomi slsmile with dissolve
     m "For a time, I forgot about everything. There was only she, I and the warmth we shared."
@@ -384,7 +384,7 @@ label sqb_naomi_m4_fun_orig2:
     $ renpy.pause (1.0)
     show naomi sad with dissolve
     play sound "fx/system3.wav"
-    s "Under construction, check back later. Meanwhile, you can enjoy the alternate date 2 and 4 fun scenes."
+    s "Under construction, check back later. Meanwhile, you can enjoy the new timeline date 2 and 4 fun scenes."
     $ renpy.pause (1.0)
     show naomi slsmile with dissolve
     m "For a time, I forgot about everything. There was only she, I and the warmth we shared."

@@ -73,16 +73,16 @@ label sqb_naomi_m5_rezatalk2:
     Rz "There is no way to know what would happen if we caused that paradox to happen. It might even destroy the fabric of reality itself, or at least make it so that both humans and dragons came to exist. Is that what you want?"
     c "..."
     c "You don't know that for sure!"
-    Rz "That's the only logical outcome. Deal with it."
+    Rz "That's the only logical outcome of what you want to do. Deal with it."
     $ renpy.pause (2.0)
     c "No, you've got it completely wrong. I know there's already been multiple timelines, so if the portal actually sent people to the past of their own timeline, the paradox would have surely happened already."
     c "In other words, we're right now in the past of a timeline alternate from our own. That means if we save the dragons here, we won't suddenly stop existing. Doing that just means that this timeline will just take an alternate path, without affecting our own."
     Rz annoyed "I don't buy your multiverse theory."
-    Rz normal "Even if you were right, I don't want to take the chance of us failing to save this world. I know for a fact that this generator will save my city-state. I'll take what I have right now." 
-    Rz amused "Besides, you were right earlier. I'm doing this because I want to leverage the clout I get from the generator in order to eventually become a dictator. I was even promised a minor leadership role as a reward for completing my mission." 
-    Rz "For your own sake, I hope you now see that I am the only one worthy and ruthless enough to lead humanity into a new golden age. You either follow me or you die."
+    Rz "Even if you were right, I don't want to take the chance of us failing to save this world. I know for a fact that this generator will save my city-state, so I'll take what I have right now." 
+    Rz amused "Besides, you were right earlier. I'm doing this because I want to leverage the clout I get from the generator in order to eventually become a dictator. I was promised a minor leadership role as a reward for completing my mission." 
+    Rz "For your own sake, I hope you now see that I am the only one worthy and ruthless enough to lead humanity to a new golden age. Your choices are to either follow me or to die."
     c "You're completely insane."
-    Rz annoyed "I guess that means your answer is no then. Like I said, it's your funeral. At least I won't have to kill you personally, since the comet will take care of that for me."
+    Rz annoyed "I guess that means your answer is no. Like I said, it's your funeral. At least I won't have to kill you personally, since the comet will take care of that for me."
     Rz amused "This little chat was fun and all, but the grownups must get back to work now."    
 
 jump sqb_naomi_m5_rezatalk2_end
@@ -96,10 +96,10 @@ jump sqb_naomi_m5_rezatalk3_end
 label sqb_naomi_m5_rezafight:
 
     Nm annoyed "Maverick, don't kill him! He needs to be interrogated!"
-    m "Both dragons scrambled to their feet and followed him by ground. I set down the generator and joined them."
+    m "Both dragons scrambled to their feet and followed Reza by ground. I set down the generator and joined them."
     hide maverick with easeoutleft
     hide naomi with easeoutleft 
-    m "Soon, we managed to catch up to Reza, who was staring at the screen in shock. Hearing our footsteps, he turned around sharply."
+    m "Soon, we managed to catch up to him, who was staring at the screen in shock. Hearing our footsteps, he turned around sharply."
     show reza rage at Position (xpos = 0.12) with dissolve
     show maverick angry at Position (xpos = 0.77) with dissolve
     show naomi annoyed at Position (xpos = 0.88) with dissolve
@@ -120,11 +120,10 @@ label sqb_naomi_m5_rezafight:
     play sound "fx/bite.ogg"    
     m "Maverick pinned Reza down and bit into his left arm with a sickening crunch, forcing him to drop the gun."
     play sound "fx/snarl.ogg"
-    Nm angry "MAVERICK, STOP! YOU'VE ALREADY DISABLED HIM!"
+    Nm angry "MAVERICK, STOP! YOU'VE ALREADY MADE HIM HARMLESS!"
     show naomi annoyed with dissolve
     m "By the time I managed to catch up, I only saw a shaken Maverick walking away from an unmoving Reza." 
-    m "I saw that based on his wounds Reza was most likely still alive, so it seems that the blood loss and shock from Maverick's bite had caused him to lose consciousness already."
-    
+    m "I saw that based on his wounds Reza was most likely still alive, so it seems that the blood loss and shock from Maverick's bite had caused him to lose consciousness."    
     stop music fadeout 2.0
     show rezadeadneck at Pan ((0, 326), (580, 126), 10.0) with fade
     play sound "fx/system3.wav"
@@ -134,11 +133,9 @@ label sqb_naomi_m5_rezafight:
     play music "mx/prayer.ogg"
     $ renpy.pause (3.5)
     hide naomi
-    hide rezadeadneck with fade
-    
+    hide rezadeadneck with fade    
     show maverick scared flip at Position (xpos = 0.12) with dissolve
-    show naomi concern at Position (xpos = 0.77) with dissolve
-    
+    show naomi concern at Position (xpos = 0.77) with dissolve    
     Mv "Naomi?"
     Mv angry flip "Why couldn't I kill him? He deserves to die for what he did."
     Nm stern "Be a big male and throw your grudges aside for once. We need to find out why he did what he did, and what other plans might be in store for us. Besides, summary execution is never the correct punishment no matter what you did."    
@@ -270,6 +267,7 @@ label sqb_naomi_m5_ending:
     show areth normal b at Position (xpos = 0.65) with easeinright
     show reneila normal b at Position (xpos = 0.75) with easeinright
     
+    #Mention detaining Reza?
     Arh "Rapid reponse team on site. What's the situation?"
     c "Not so rapid, it seems."
     Arh "Excuse me?"

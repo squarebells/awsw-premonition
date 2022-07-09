@@ -96,8 +96,8 @@ def sqb2naomi(ml):
            .search_say("A couple of hours later") \
            .link_from("sqb_naomi_m2_movie_end") \
            .search_say("Do you have anyone in mind") \
-           .hook_to("sqb_naomi_m2_bedroomfun", condition='sqbpremounlocked ==  True and naomi2mood > 7 and sqbnaomilewd > 5') \
-           .search_say("We'll see how things unfold") \
+           .hook_to("sqb_naomi_m2_bedroomfun", condition='sqbpremounlocked ==  True and naomi2mood > 5 and sqbnaomilewd > 3') \
+           .search_show("naomi blank") \
            .link_from("sqb_naomi_m2_kiss_orig_end") \
            .search_say("Sounds like a plan") \
            .link_from("sqb_naomi_m2_cooking_orig_end")
