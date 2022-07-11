@@ -6,7 +6,7 @@ You need to have acquired ASM's ending A to unlock this mod, because it takes pl
 Contains lewd scenes. In case you don't like that kind of stuff, the NSFW toggle that comes with the modtools works well. Also, this mod assumes the PC is male, at least for now.
  
 ### Requirements:
- + Modtools by 4onen. [GitHub](https://github.com/4onen/AWSW-Modtools) [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1305731599)
+ + Modtools by 4onen/Blue. [GitHub](https://github.com/4onen/AWSW-Modtools) [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1305731599)
  + Magmalink by Jakzie2. [GitHub](https://gitlab.com/jakzie2/awsw-magmalink) [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2594080243)
  + A Solitary Mind (ASM) by EvilChaosKnight. Updated to use Magmalink by Jakzie2. [GitHub]
  + Chaos_Knight Core mod (ECK Core) by EvilChaosKnight. Updated to use Magmalink by Jakzie2. [GitHub]
