@@ -13,7 +13,7 @@ Contains lewd scenes. In case you don't like that kind of stuff, the NSFW toggle
  + Modtools by 4onen and Blue. [GitHub](https://github.com/4onen/AWSW-Modtools) [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1305731599)
  + Side Images by 4onen. [GitHub](https://github.com/4onen/AwSW-Side-Images) [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2521431664)
  
- I recommend using "manual" versions from GitHub whenever possible, because having too many steam mod subscriptions causes an annoying startup-crashing race condition bug. Also, the steam workshop versions there might be older, so if you want to be absolutely sure everything works, use GitHub versions.
+ I recommend using "manual" versions from GitHub whenever possible, because having too many steam mod subscriptions causes an annoying startup-crashing race condition bug. Also, the steam workshop versions might be older, so if you want to be absolutely sure everything works, use the provided GitHub versions.
  
  ### Optional Requirement:
  + BangOk by 4onen (very NSFW). [GitHub](https://github.com/4onenm/AwSW-Bangok)
