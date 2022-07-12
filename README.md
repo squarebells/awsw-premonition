@@ -24,6 +24,4 @@ Contains lewd scenes. In case you don't like that kind of stuff, the NSFW toggle
 + `fx/lewd/`: Sounds edited by squarebells, originally extracted from COM3D2.
 + `fx/*.ogg`: Edited from base game sound assets by squarebells.
 
-### As always, special thanks go to the AwSW discord modding community.
-
 ### About giving feedback:
