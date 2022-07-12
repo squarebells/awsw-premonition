@@ -103,24 +103,24 @@ def sqb2naomi(ml):
            .link_from("sqb_naomi_m2_cooking_orig_end")
            
            
-       n = ml.find_label("sqb_naomi_m2_bedroomfun") \
-           .search_say("A whisper buried deep") \
-           .search_say("I picked up my clothes") \
-           .search_say("Her remark made me feel") \
-           .search_say("Do you really want to go further with me") \
-           .search_if("persistent.nsfwtoggle == False").branch() \
-           .search_play("mx/airborne.mp3")
-       n.search_say("Can you see the slit") \
-           .search_say("Finish if you have to") \
-           .search_say("It was certainly") \
-           .hook_from_node(n)
-           
        ml.find_label("sqb_naomi_m2_bedroomfun") \
-           .search_say("A whisper buried deep") \
+           .search_say("A whisper coming from") \
            .search_say("I picked up my clothes") \
-           .search_say("Her remark made me feel") \
-           .search_say("Alright, we've had enough foreplay") \
+           .search_say("Have you thought of what") \
+           .search_say("I think we've we've had enough foreplay") \
            .link_from("sqb_naomi_m2_sexskip_end")
+       
+       n = ml.find_label("sqb_naomi_m2_bedroomfun") \
+           .search_say("A whisper coming from") \
+           .search_say("I picked up my clothes") \
+           .search_if("persistent.nsfwtoggle == False").branch() \
+           .search_python("renpy.pause (2.0)") \
+           .search_python("renpy.pause (2.0)")
+       n.search_say("After a moment of silence") \
+           .search_say("Can you see the slit") \
+           .search_say("That's just what someone") \
+           .search_say("I can't understate how much fun") \
+           .hook_from_node(n)
            
 def sqb3naomi(ml):
        
