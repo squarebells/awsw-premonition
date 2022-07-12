@@ -613,7 +613,7 @@ label sqb_naomi_m3_ending:
     $ renpy.pause (2.0)
     m "({b}WHAT HAVE I DONE?!{/b}){w=4.0}{nw}" with vpunch
     $ renpy.pause (4.0)
-    m "(I can't live after doing something this horrible.){w=8.0}{nw}"
+    m "(I don't want to live after doing this.){w=8.0}{nw}"
     $ renpy.pause (2.0)
     play sound "fx/rev.ogg"
     $ renpy.pause (4.0)
@@ -624,10 +624,10 @@ label sqb_naomi_m3_ending:
     $ renpy.pause (8.0)
     m "When I had finally snapped out of it, I found myself lying on the ground next to the bench I had sat on. My hair and shirt were wet, because my entire upper body had sweated profusely."
     scene town6 with dissolvemed
-    m "A group of dragons had gathered around me to see if I was okay. I was still so confused, that I paid them no mind."
+    m "A group of dragons had gathered around me to see if I was okay, but by some miracle I hadn't hurt myself badly when I had fallen down. I was still confused, so I started getting up without paying them no mind."
     m "(What the hell was that!? It felt...{w} so real. Could it even be real?)"
     $ renpy.pause (2.0)
-    m "Bewildered by this horrifying experience, I got up from the ground without saying anything, patted my clothes and continued making my way back to my apartment."
+    m "After a moment, I finally managed to get up from the ground. When standing I said nothing, still bewildered by this horrifying experience, patted my clothes and continued making my way back to my apartment."
     play soundloop "fx/steps/steps.ogg"
     scene town7 with dissolve
     m "Since nothing like this obviously had happened to me before, and because dreams could sometimes show your worst fears, I decided to shrug off what I had just seen. I had more important things to worry about right now."    

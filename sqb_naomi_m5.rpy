@@ -354,7 +354,7 @@ label sqb_naomi_m5_ending:
     c "Yeah, no way. I like it here a lot."
     As "Yes, I saw that. In every timeline before this, it has taken up to your fourth date for you and Naomi to get intimate."
     c "Hey, even though you're me, you should respect my privacy."
-    As "Chill out, I only heard your short exchange with Sebastian after your and Naomi's second date."
+    As "Chill out. I only eavesdropped your short exchange with Sebastian when you were coming home from Naomi's place."
     $ renpy.pause (2.0)
     As "Anyway, in past timelines I gave my other selves two options. If they agreed to travel back to the day of their arrival, I would have replaced them. I also would have made sure that your closest people, like Naomi, would know that I wasn't the genuine article."
     c "That's very cruel. You may look and sound like me, but you're not really me. Do you realize that your solution isn't really a solution at all? It would be far better if you kept everyone blissfully ignorant."
@@ -494,7 +494,6 @@ label sqb_naomi_m5_thebestend:
 label sqb_naomi_credits_thebestest:
 
     stop music fadeout 2.0
-
     $ renpy.pause (2.0)
     $ _game_menu_screen = None
     stop sound fadeout 2.0
@@ -503,25 +502,24 @@ label sqb_naomi_credits_thebestest:
     $ renpy.block_rollback()
     play music "mx/lily.mp3"
     $ renpy.pause (1.5)
-    
-    
+      
     $ renpy.pause (1.5)
     show eckunderwater02 at Pan((-650, 0), (-750,0), 20.0)
-    show eckcreditsnm1 at left
-    with dissolvemed
+    show eckcreditsnm1 at left with dissolvemed
     $ renpy.pause (10.0)
     
     $ renpy.pause (1.5)
     show eckclouds2 at Pan((750, 0), (650,0), 20.0)
-    show eckcreditsnm2 at right
-    with dissolvemed
+    show eckcreditsnm2 at right with dissolvemed
     $ renpy.pause (10.0)
     
-    
+    $ renpy.pause (1.5)
+    show eckannabedroom4 at Pan((750, 0), (650,0), 20.0)
+    show sqbcreditsnm at right with dissolvemed
+    $ renpy.pause (10.0)
     
     show fireworks at Pan ((-960, 545), (-200, 350), 20)
-    show credits1 at left
-    with dissolvemed
+    show credits1 at left with dissolvemed
     $ renpy.pause (8.0)
     
     show black2 at left with dissolvemed
@@ -531,47 +529,37 @@ label sqb_naomi_credits_thebestest:
     scene black with dissolvemed 
     
     show ecknaomicg1 at Pan ((1050, 120), (1420, 30), 20.7)
-    show credits3 at right
-    with dissolvemed
+    show credits3 at right with dissolvemed
     
     $ renpy.pause (8.0)
     show black2 at right with dissolvemed
     show credits4 at right with dissolvemed
     $ renpy.pause (8.0)
     
-    scene black with dissolvemed
-    
-    
+    scene black with dissolvemed    
     
     show ecknaomicg2 at Pan ((-450, 0), (-100, 130), 20.7)
-    show credits5 at left
-    with dissolvemed
+    show credits5 at left with dissolvemed
     
     $ renpy.pause (8.0)
     show black2 at left with dissolvemed
     show credits6 at left with dissolvemed
     $ renpy.pause (8.0)
     
-    scene black with dissolvemed
-    
-    
+    scene black with dissolvemed      
     
     show cgmeeting at Pan ((740, 608), (1240, 0), 24)
-    show credits7 at right
-    with dissolvemed
+    show credits7 at right with dissolvemed
     
     $ renpy.pause (8.0)
     show black2 at right with dissolvemed
     show credits8 at right with dissolvemed
     $ renpy.pause (8.0)
     
-    scene black with dissolvemed
-    
-    
+    scene black with dissolvemed     
     
     show ecknaomiaptbalcony at Pan ((-650, 0), (-750,0), 20.0)
-    show credits9 at left
-    with dissolvemed
+    show credits9 at left with dissolvemed
     
     $ renpy.pause (8.0)
     show black2 at left with dissolvemed
@@ -587,7 +575,7 @@ label sqb_naomi_credits_thebestest:
     stop music fadeout 1.4
     $ renpy.pause (2.0)
     
-    if ecknaomisecretscene and naomiromance > 50 and naomi5stay:
+    if ecknaomisecretscene:
         scene o3 at Pan((0, 250), (0, 250), 0.0)
         show dark2
         with dissolvemed
@@ -596,17 +584,15 @@ label sqb_naomi_credits_thebestest:
         $ renpy.pause (1.0)
         play sound "fx/door/doorclose.ogg"
         $ renpy.pause (2.0)
-        c "(That was one long day. Trying to sort out both citizenship and apartment paperwork in a single visit wasn't my best decision.)"
-        m "I navigated through the dark living room and sat down on a couch. Something – or rather, someone – was missing, but I couldn't put my finger on who."
-        c "(Hold on. Didn't Naomi say she wanted to come over this evening? I completely forgot about it. Strange. Normally she'd wait for me here, but not this time. Might be asleep in the bedroom, though, considering it's almost past eleven.)"
+        c "(That was one long day. Trying to sort out both the citizenship and housing paperwork in a single visit clearly wasn't one of my best decisions.)"
+        m "I navigated through the dark living room and sat down on the couch. Something – or rather, someone – was missing, but I couldn't immediately put my finger on who."
+        $ renpy.pause (1.0)
+        c "(Hold on. Didn't Naomi say she wanted to come over this evening? I completely forgot about it, strange. Normally she'd wait for me here, but not this time. She might be asleep in the bedroom, though, considering it's almost past eleven.)"
         m "I smirked."
-        c "(More than likely she's stretched over my entire bed with that dopey little smile plastered on her face.)"
-        c "(Looks like I might as well grab a quick snack and call it a night myself.)"
-        
+        c "(More than likely she's stretched over my entire bed with that dopey little smile plastered on her face. Looks like I might as well grab a quick snack and call it a night myself.)"       
         scene eckkitchenx
         show naomi blank flip at Position (xpos = 0.65)
-        show dark2
-        with dissolvemed
+        show dark2 with dissolvemed
         $ renpy.pause (2.0)
         play sound2 "fx/switch.wav"
         $ renpy.pause (0.5)
@@ -615,34 +601,35 @@ label sqb_naomi_credits_thebestest:
         show naomi bacon flip
         $ renpy.pause (2.5)
         play music "mx/airborne.mp3"
-        c "That's not exactly what I meant by \"feel yourself at home,\" Naomi."
-        Nm "Um. Want some bacon?" 
-        #Think of a better joke?
-        c "I'm alright. Just pass me the chicken bits. There should be some leftovers from yesterday's dinner."
-        Nm shy flip "Yeah... about that."
-        c "Meat snacks?"
-        Nm "..."
+        c "Hey, Naomi. I see you're enjoying the bacon and meat snacks I bought for you earlier. As you already know, I'm always prepared for anything"
+        Nm "Um, sure. Do you want some?" 
+        c "Just pass me the chicken bits. There should be a heap of them in the fridge."
+        Nm normal flip "Sure, there's around half still left. You sure seem to love chicken."
+        c "All the time you had, and you didn't manage to eat all of the chicken bits? You disappoint me, Naomi."
+        Nm shy flip "..."
         c "..."
-        c "Missed your lunch break again, didn't you?"
-        play sound "fx/book.ogg"
-        Nm blank "Had to. You know how police work is."
-        if persistent.eckannacured:
-            Nm "Also went to the production facility to check on the ancient generator research and met Anna there. She acted oddly nice today."
-            Nm stern "I mean, she was still pretty unbearable, but much less so than usual."
-            c "Maybe she just was in a good mood for once."
-            Nm normal "Could be. I asked around her colleagues, and they said that she's recently returned from an extended sick leave."
-            Nm shy "Maybe I could use a vacation as well."
-        else:
-            pass
-            
-        Nm normal "So, how was your day, [player_name]?"
-        c "As busy as yours. The council sure love their paperwork."
-        Nm "Tell me about it."
+        c "Hey, what did I tell you about missing your lunch breaks?"
+        play sound "fx/crapfridge.mp3"
+        Nm blank "I know, I know, it was just this once."
+        $ renpy.pause (1.0)
+        Nm normal "Actually, it's your fault for not cooking enough for me to take with me to work."
+        m "I sighed and shook my head."
+        c "Yeah, whatever. By the way, how was your day?"        
+        Nm "I went to the production facility to check on the ancient generator research and met Anna there. She acted oddly nice today."
+        Nm stern "I mean, she was still pretty unbearable, but much less so than usual."
+        c "Maybe she just was in a good mood for once."
+        Nm normal "Could be. I asked around her colleagues, and they said that she's recently returned from an extended sick leave."
+        Nm shy "Maybe I could use a vacation as well."
+        c "I like that idea a lot."
+        $ renpy.pause (1.0)
+        Nm normal "So, how was your day, [player_name]?"          
+        c "Probably as busy as yours. Your bureaucrats sure love their paperwork."
+        Nm blank "Tell me about it."
         c "Yeah. Even going there early in the morning didn't help. Get this..."
         scene black with dissolveslow
         stop music fadeout 2.0
         $ renpy.pause (2.5)
     
-    call ml_ending_check("sqb_naomi", "best", "You have seen the very best ending for Naomi!", izumi_seen=True)
+    call ml_ending_check("sqb_naomi", "s-tier", "You have seen the S-tier ending for Naomi!", izumi_seen=True)
     
 jump sqb_naomi_m6_discussion_reality 

@@ -16,6 +16,8 @@ init:
     image naomi hurt sep = im.Sepia("cr/naomi_hurt.png")
     image naomi aroused = "cr/naomi_aroused.png"
     image naomi aroused flip = im.Flip("cr/naomi_aroused.png", horizontal=True)
+    image side naomi aroused = im.Flip(im.Scale(im.Crop("cr/naomi_aroused.png",(70,80,500,600)),250,300),horizontal=True)
     image naomi cums = "cr/naomi_cums.png"
     image naomi cums flip = im.Flip("cr/naomi_cums.png", horizontal=True)
+    image side naomi cums = im.Flip(im.Scale(im.Crop("cr/naomi_cums.png",(70,80,500,600)),250,300),horizontal=True)
 
