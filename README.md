@@ -11,15 +11,12 @@ Contains lewd scenes. In case you don't like that kind of stuff, the NSFW toggle
  + A Solitary Mind (ASM) by EvilChaosKnight. Updated to use Magmalink by Jakzie2. [GitHub]
  + Chaos_Knight Core mod (ECK Core) by EvilChaosKnight. Updated to use Magmalink by Jakzie2. [GitHub]
  + Community Resource and Assets Pack by Jakzie2, Eval, 4onen, Azrynfolf and Ryann. [GitHub](https://gitlab.com/jakzie2/awsw-crap) [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2665870882)
+ + Side Images by 4onen. [GitHub](https://github.com/4onen/AwSW-Side-Images) [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2521431664)
  
  I recommend using "manual" versions from GitHub whenever possible, because having too many steam mod subscriptions causes an annoying startup-crashing race condition bug. Also, the steam workshop versions there might be older, so if you want to be absolutely sure everything works, use GitHub versions.
  
  ### Optional Requirement:
  + BangOk by 4onen (very NSFW). [GitHub](https://github.com/4onenm/AwSW-Bangok)
- 
-### Recommended:
- + Side Images by 4onen. [GitHub](https://github.com/4onen/AwSW-Side-Images) [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2521431664)
- + Savior by EvilChaosKnight (eventually)
  
 ### Resources credits:
 + `bg/sqbnaomiapt04.jpg`: Background edited (not finished yet) by squarebells, original by Uncle Mugen.
