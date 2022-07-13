@@ -1,6 +1,5 @@
 label sqb_naomi_m6_discussion_reality:
 
-    stop music fadeout 1.0
     $ renpy.pause (2.0)
     scene black with dissolvemed
     $ renpy.pause (8.0)

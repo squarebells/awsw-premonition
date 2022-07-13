@@ -1,17 +1,19 @@
 label sqb_naomi_m5_rezatalk1:
      
-    c "You're right about that. Also, I have realized that I would be in huge trouble back in our world even if I started helping you right now. I just can't trust you to stay quiet about all this."
+    c "You're absolutely correct. Even if I wanted to help you, due to my self-interest I would have no choice but to stay here. I realized that I will be in huge trouble back in our world no matter what even if I started helping you right now." 
+    c "I just can't trust you to stay quiet about all this, so my best option is to stay here."
     Rz amused "I'm glad we're on the same page. Personally, I don't mind if you stay here. It's your funeral."
 
 jump sqb_naomi_m5_rezatalk1_end
 
 label sqb_naomi_m5_rezatalk2:
 
-    c "I do care about what happens at home, but I'm not blindly loyal enough to murder millions just to follow orders." 
+    c "I do care about what happens at home, but I'm not blindly loyal enough to murder millions just to follow orders."
+    show reza amused with dissolve    
     c "Do you not realize that even from a purely pragmatic perspective the most beneficial thing for humanity would be to cooperate with the dragons long-term? I feel like you're only doing this for our own megalomaniacal goals."
     c "Come to think of it, even though our leaders are assholes, I have a hard time believing that they wouldn't opt for long-term cooperation rather than killing millions for one measly generator."
     Rz annoyed "You have no idea what you're talking about."
-    c "Reza, I see it now. Have you really been honest about how things are in this world? What kind of misinformation have you been feeding back through the portal before it was shut down?"
+    c "Reza, I see it now. Have you really been honest to our leadership about how things are in this world? What kind of misinformation have you been feeding back through the portal before it was shut down?"
     Rz angry "Shut up!"
     Rz "You just want to stay here because you don't have a life back home!"
     show reza annoyed with dissolve
@@ -26,8 +28,10 @@ label sqb_naomi_m5_rezatalk2:
     Rz "Look back into the past. For all of our efforts, what did we get? A vote that was meaningless in a sea of stupidity and lies. Now everyone has to pull their own weight. We make the rules."
     Rz "You, of all people, should understand."
     Rz "Of course those dragons wouldn't. They haven't experienced how it is, to live like we do now. To see the world burn and everyone you know die around you."
-    c "And because I have, I won't let the same thing happen to them."   
+    c "But why should they? Do you think that making the dragons suffer will somehow correct our own past mistakes? You're completely insane."    
+    c "There is seriously no reason to let the same thing happen to them."   
     Rz "How many do you think died back home just in the two weeks you've been here because we don't have power for the hospital, huh? Do you think those victims aren't worth mentioning, or do you just care about the few dragons I killed?"
+    
     c "Did you think your murders would bring the dead in our city-state back? Or, perhaps, you thought you had a way to prevent all these deaths by using the generator you stole?"
     c "Fighting evil with evil will only get you so far."
     Rz "Our city is the last bastion of civilized society in a world where nothing else is left."
@@ -73,15 +77,18 @@ label sqb_naomi_m5_rezatalk2:
     Rz "There is no way to know what would happen if we caused that paradox to happen. It might even destroy the fabric of reality itself, or at least make it so that both humans and dragons came to exist. Is that what you want?"
     c "..."
     c "You don't know that for sure!"
-    Rz "That's the only logical outcome of what you want to do. Deal with it."
+    Rz "That's the only logical outcome stemming from you want to do. Deal with it."
     $ renpy.pause (2.0)
-    c "No, you've got it completely wrong. I know there's already been multiple timelines, so if the portal actually sent people to the past of their own timeline, the paradox would have surely happened already."
-    c "In other words, we're right now in the past of a timeline alternate from our own. That means if we save the dragons here, we won't suddenly stop existing. Doing that just means that this timeline will just take an alternate path, without affecting our own."
+    c "No, you've got it completely wrong. I know there's already been multiple timelines, so if the portal actually sent people to the past of their own timeline, the grandfather paradox would have surely happened already."
+    c "In other words, I believe we're right now in the past of a timeline alternate from our own. That means if we save the dragons here, we won't suddenly stop existing." 
+    c "Saving them now just means that this timeline will take an alternate path, without affecting our own."
     Rz annoyed "I don't buy your multiverse theory."
+    Rz "..."
+    $ renpy.pause (2.0)
     Rz "Even if you were right, I don't want to take the chance of us failing to save this world. I know for a fact that this generator will save my city-state, so I'll take what I have right now." 
     Rz amused "Besides, you were right earlier. I'm doing this because I want to leverage the clout I get from the generator in order to eventually become a dictator. I was promised a minor leadership role as a reward for completing my mission." 
-    Rz "For your own sake, I hope you now see that I am the only one worthy and ruthless enough to lead humanity to a new golden age. Your choices are to either follow me or to die."
-    c "You're completely insane."
+    Rz "For your own sake, I hope you now see that I am the only one worthy and ruthless enough to lead humanity to a new golden age. Your choices are either to follow me or to die."
+    c "Reza, you've gone absolutely insane."
     Rz annoyed "I guess that means your answer is no. Like I said, it's your funeral. At least I won't have to kill you personally, since the comet will take care of that for me."
     Rz amused "This little chat was fun and all, but the grownups must get back to work now."    
 
@@ -362,7 +369,7 @@ label sqb_naomi_m5_ending:
     As "..."
     As "It's better you don't know."
     c "What did you do?"
-    As "Honestly, I don't want to ruin your evening."
+    As "Honestly, I don't want to ruin your evening. Or life, for that matter."
     c "Whatever. Was what you did the reason you deleted the coordinates back to the human world?"
     As "Yeah."
     As "To be honest, you have earned your better future since I botched mine, so I'll just take the portal again."
@@ -436,7 +443,8 @@ label sqb_naomi_m5_aftermath:
     m "Looking down at her hand planted on my upper chest, I soon realized that there was no escape. After shaking off my shoes, I decided to at least move my legs up there as well to get somewhat comfortable."
     m "Content with my position, Naomi settled down herself, keeping most of her weight on her limbs and off my body, yet surely holding me in place."
     c "This is heaven. I love you so much Naomi."
-    Nm aroused "Thank you. I love you more than anything else in the world."
+    Nm aroused "Thank you. I love you more than anything else in the world. I'm so happy you chose to stay with me instead of continuing your mission."
+    c "Fuck my mission. You'd have to be a total chump to want to complete it any more."
     $ renpy.pause (2.0)
     Nm smile "Since I didn't sleep that well last night, mind if I take a nap on top of you?"
     c "By all means."
@@ -458,6 +466,7 @@ label sqb_naomi_m5_aftermath:
     play sound "fx/rub2.ogg"
     queue sound "fx/lewd/lickslow.ogg"
     m "I woke up to Naomi sitting next to me on the couch and rubbing my belly. When I shifted myself, she gently nudged my cheek with her snout."
+    stop sound fadeout 1.0
     play music "mx/airborne.mp3"
     show naomi smile with dissolve
     Nm "Mmm... that was a good nap."
@@ -465,7 +474,7 @@ label sqb_naomi_m5_aftermath:
     Nm shy "Feeling your body against mine has left me wanting for something more, though."
     Nm smile "How about we have have some more fun in the bedroom?"
     m "I got immediately aroused and almost jumped up from the mention of being able to be with Naomi again."
-    c "Anything for you. I also really need that right now."
+    c "Anything for you. I really need that right now."
     Nm "Good little human. Don't keep me waiting."
     show naomi smile flip with dissolve
     hide naomi with easeoutright
@@ -477,7 +486,7 @@ label sqb_naomi_m5_aftermath:
     play sound "fx/door/doorclose3.wav"
     m "I followed Naomi to bed, and we made sweet love for almost the entire day. We had saved the world, and life was good."
     scene black with dissolvemed
-    $ renpy.pause (2.0)
+    $ renpy.pause (4.0)
     $ persistent.sqbnaomiendingseens    
 
 label sqb_naomi_m5_thebestend:
@@ -505,12 +514,12 @@ label sqb_naomi_credits_thebestest:
       
     $ renpy.pause (1.5)
     show eckunderwater02 at Pan((-650, 0), (-750,0), 20.0)
-    show eckcreditsnm1 at left with dissolvemed
+    show eckcreditsnm1 at right with dissolvemed
     $ renpy.pause (10.0)
     
     $ renpy.pause (1.5)
     show eckclouds2 at Pan((750, 0), (650,0), 20.0)
-    show eckcreditsnm2 at right with dissolvemed
+    show eckcreditsnm2 at left with dissolvemed
     $ renpy.pause (10.0)
     
     $ renpy.pause (1.5)

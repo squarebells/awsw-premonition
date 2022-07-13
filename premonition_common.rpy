@@ -9,6 +9,8 @@ init:
     $ sqbnaomi4hadsex = False
     
     image sqbnaomiapt04 = "bg/sqbnaomiapt04.jpg"
+    image sqbcreditsnm = "cg/sqbcreditsnm.jpg"
+    image sqbendings = "cg/sqbendings.jpg"
     image eckoldbiolabsep = im.Sepia("bg/eckoldbiolab.jpg")
     image ecknaomiapt01sep = im.Sepia("bg/ecknaomiapt01.jpg")
     image naomi cry sep = im.Sepia("cr/naomi_cry.png")
