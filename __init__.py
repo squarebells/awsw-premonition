@@ -107,7 +107,7 @@ def sqb2naomi(ml):
            .search_say("A whisper coming from") \
            .search_say("I picked up my clothes") \
            .search_say("Have you thought of what") \
-           .search_say("I think we've we've had enough foreplay") \
+           .search_say("I think we've had enough foreplay") \
            .link_from("sqb_naomi_m2_sexskip_end")
        
        n = ml.find_label("sqb_naomi_m2_bedroomfun") \
