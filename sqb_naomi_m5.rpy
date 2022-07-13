@@ -482,7 +482,7 @@ label sqb_naomi_m5_aftermath:
 
 label sqb_naomi_m5_thebestend:
 
-    scene black with dissolvemed
+    scene sqbendings with dissolvemed #Placeholder
     $ renpy.pause (2.5)   
     $ _game_menu_screen = None
     $ renpy.block_rollback()
