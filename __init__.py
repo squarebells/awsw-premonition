@@ -172,7 +172,7 @@ def sqb3naomi(ml):
             .hook_to("sqb_naomi_m3_panicterminal", condition='sqbnaomi2hadsex == True')
        
        ml.find_label("eck_naomi_m3_escape") \
-            .search_say("I'd say we swim") \
+            .search_say("Soon, we were back on the beach") \
             .hook_to("sqb_naomi_m3_ending", condition='sqbnaomi2hadsex == True')
 
 def sqb4naomi(ml):

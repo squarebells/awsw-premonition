@@ -5,6 +5,7 @@ label sqb_naomi_m6_discussion_reality:
     $ renpy.pause (8.0)
     show naomi smile with dissolve
     Nm "I bet you expected it to be over, huh?"
+    $ renpy.pause (2.0)
     Nm normal "Would you like to preview an unfinished scene from the upcoming chapter 6?"
     menu:
         "Yes, please.":
@@ -28,9 +29,8 @@ label sqb_naomi_m6_discussion_reality:
     play sound "fx/door/handle.wav"
     $ renpy.pause (2.0)
     play sound "fx/door/doorclose3.wav"
-    $ renpy.pause (1.0)
-    
-    m "(Another great day at work. Regardless of that, I hope I can soon start doing something other than just cataloging information from the PDAs.)"
+    $ renpy.pause (1.0)    
+    m "(Another great day at work. Regardless of that, I hope I can soon start doing something other than just cataloging information from the human PDAs.)"
     m "I had asked Naomi to come over after her shift to try out some of the new dishes I had come up with."
     m "(Time to take a shower.)"
     play sound "fx/door/door_open.wav"
@@ -46,10 +46,10 @@ label sqb_naomi_m6_discussion_reality:
     play sound "fx/book.ogg"
     m "I wanted to relax after the shower so I went back to the living room and picked up a book from the bookshelf and started reading."
     play sound "fx/pages.ogg"
-    m "(I really need to stop procrastinating and go buy a television. I like reading but I need more variety in my life.)"
+    m "(I really need to stop procrastinating and go buy a television. I like reading but I need some more variety in entertainment.)"
     scene o2 at Pan((0, 250), (0, 250), 0.1) with dissolvemed
     m "I read for a while until I realized I would have to start cooking soon."
-    m "(Look at the time. I need to start cooking already.)"
+    $ renpy.pause (1.0)
     scene eckkitchenx at Pan((0, 250), (0, 250), 0.1) with dissolvemed
     stop music fadeout 1.0
     m "(Now, what should I start off with first?)"

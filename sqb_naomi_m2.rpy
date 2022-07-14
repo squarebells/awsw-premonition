@@ -939,6 +939,7 @@ label sqb_naomi_m2_bedroomfun:
     Nm smile "If you can't go again you can finish me off with your mouth."
     menu:
         "Use dick.":
+            $ sqbnaomi2sexroundtwo = True
             c "I still have another round in me. Just give me a few moments to recover."
             Nm stern "Try to last longer this time."
             c "I promise I'll do better."
@@ -1784,6 +1785,7 @@ label sqb_naomi_m2_ending:
     Nm smile "Thank you so much for your company, [player_name]."
     c "I had a great time as well. Actually, didn't you just say you had a vacation coming up, so do you want to meet again then? We can have the entire day to spend with each other."
     Nm "How considerate of you to suggest that. Actually, I might have just the idea on how to make our time together more interesting. I can't tell you right now what it is though, because it's a secret."
+    c "I'm intrigued."
     Nm normal "Let's get going already, because I'm already starting to get pretty tired."
     hide naomi with dissolve
     scene ecknaomiapt01 with dissolvemed
@@ -1819,7 +1821,7 @@ label sqb_naomi_m2_ending:
     play sound "fx/kiss.wav"
     queue sound "fx/lewd/lickslow.ogg"
     m "Then, after a moment's hesitation, Naomi embraced and tongue kissed me like back when we had been together. After she was done with me, she winked at Sebastian."
-    m "(Looks like she's starting to be less shy about openly showing she likes someone.)"
+    m "(Looks like she's starting to be less shy about openly showing she likes me.)"
     Nm smile flip "Don't keep me waiting, [player_name]!"
     c "I promise I won't. See you later, Naomi."
     $ renpy.pause (0.5)
