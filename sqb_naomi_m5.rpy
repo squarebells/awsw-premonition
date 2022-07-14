@@ -495,7 +495,7 @@ label sqb_naomi_m5_aftermath:
 
 label sqb_naomi_m5_thebestend:
 
-    scene sqbendings with dissolvemed #Placeholder, I'll make a better one post-release
+    scene sqbendings with dissolvemed #I'll try to come up with a better text and improve the transparency post-release
     $ renpy.pause (2.5)   
     $ _game_menu_screen = None
     $ renpy.block_rollback()
