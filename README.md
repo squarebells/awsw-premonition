@@ -15,13 +15,19 @@ Contains lewd scenes. In case you don't like that kind of stuff, the NSFW toggle
  
  I recommend using "manual" versions from GitHub whenever possible, because having too many steam mod subscriptions causes an annoying startup-crashing race condition bug. Also, the steam workshop versions might be older, so if you want to be absolutely sure everything works, use the provided GitHub versions.
  
+ To install mods from GitHub, the folder extracted from the downloaded archive goes to `~\Angels with Scaly Wings\game\mods`.
+ 
  ### Optional Requirement:
  + BangOk by 4onen (very NSFW). [GitHub](https://github.com/4onenm/AwSW-Bangok)
  
 ### Resources credits:
-+ `bg/sqbnaomiapt04.jpg`: Background edited (not finished yet) by squarebells, original by Uncle Mugen.
-+ `cr/naomi_*.png`: Put together from ECK Core's assets by squarebells.
-+ `fx/lewd/`: Sounds edited by squarebells, originally extracted from COM3D2.
-+ `fx/*.ogg`: Edited from base game sound assets by squarebells.
++ `bg\sqbnaomiapt04.jpg`: Background edited (not finished yet) by squarebells, original by Uncle Mugen.
++ `cr\naomi_*.png`: Put together from ECK Core's assets by squarebells.
++ `fx\lewd\`: Sounds edited by squarebells, originally extracted from COM3D2.
++ `fx\*.ogg`: Edited from base game sound assets by squarebells.
 
 ### About giving feedback:
+
++ The place to give me feedback and bug reports is on Discord. You can find me on the AwSW Fan Discord -server.
++ Remember to always download the latest version before playing the mod, if your intention is to give feedback. At first, I will probably push small fixes at least every other day.
++ Properly formatting all your feedback beforehand is good for easier readability. It's also good because you can send me everything in a single go and won't have to constantly bombard me with messages, which can get annoying.
