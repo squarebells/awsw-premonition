@@ -47,27 +47,26 @@ def sqbintronaomi(ml):
 def sqb1naomi(ml):
 
       ml.find_label("eck_naomi_m1") \
-          .search_say("You're also working on the latest case, I assume") \
-          .search_say("For me it's more of a personal thing") \
-          .search_say("To make things worse, when I submitted those documents") \
-          .search_say("What would you like") \
-          .search_say("What about drinks?") \
-          .hook_to("sqb_naomi_cafe_discussion", condition='sqbpremounlocked == True') \
+          .search_say("What about drinks?", depth=400) \
+          .hook_to("sqb_naomi_m1_discussion", condition='sqbpremounlocked == True') \
           .search_say("I'm the analyst.") \
-          .link_from("sqb_naomi_cafe_discussion_end") \
+          .link_from("sqb_naomi_m1_discussion_end") \
           .search_say("Soon, her plate") \
-          .hook_to("sqb_naomi_cafe_eating", condition='sqbpremounlocked == True') \
+          .hook_to("sqb_naomi_m1_eating", condition='sqbpremounlocked == True') \
           .search_say("It happens sometimes") \
-          .link_from("sqb_naomi_cafe_eating_end") \
+          .link_from("sqb_naomi_m1_eating_end") \
           .search_say("...") \
-          .hook_to("sqb_naomi_cafe_money", condition='sqbpremounlocked == True') \
+          .hook_to("sqb_naomi_m1_discussion2", condition='sqbpremounlocked == True') \
           .search_say("Of course, we haven't") \
-          .link_from("sqb_naomi_cafe_money_end") \
-          .search_say("Do you have any specific places") \
-          .search_say("Don't you have friends") \
-          .hook_to("sqb_naomi_special_question", condition='sqbpremounlocked == True') \
+          .link_from("sqb_naomi_m2_discussion2_end") \
+          .search_say("Err, what I mean to say") \
+          .hook_to("sqb_naomi_m1_escort", condition='naomi1mood > 5 and sqbnaomilewd > 2') \
+          .search_say("Alright.") \
+          .link_from("sqb_naomi_m1_escort_end") \
+          .search_say("Normally, I'd expect my") \
+          .hook_to("sqb_naomi_m1_dating", condition='naomi1mood > 6 and sqbnaomilewd > 2') \
           .search_say("I know what you mean") \
-          .link_from("sqb_naomi_special_question_end")
+          .link_from("sqb_naomi_m1_dating_end")
 
 def sqb2naomi(ml):
 
@@ -104,29 +103,22 @@ def sqb2naomi(ml):
            
            
        ml.find_label("sqb_naomi_m2_bedroomfun") \
-           .search_say("A whisper coming from") \
-           .search_say("I picked up my clothes") \
-           .search_say("Have you thought of what") \
-           .search_say("I think we've had enough foreplay") \
+           .search_say("I think we've had enough foreplay", depth=600) \
            .link_from("sqb_naomi_m2_sexskip_end")
        
        n = ml.find_label("sqb_naomi_m2_bedroomfun") \
-           .search_say("A whisper coming from") \
-           .search_say("I picked up my clothes") \
+           .search_say("I picked up my clothes", depth=400) \
            .search_if("persistent.nsfwtoggle == False").branch() \
            .search_python("renpy.pause (2.0)") \
            .search_python("renpy.pause (2.0)")
        n.search_say("After a moment of silence") \
-           .search_say("Can you see the slit") \
-           .search_say("That's just what someone") \
-           .search_say("I can't understate how much fun") \
+           .search_say("I can't understate how much fun", depth=600) \
            .hook_from_node(n)
            
 def sqb3naomi(ml):
        
        ml.find_label("eck_naomi_m3_startchoice") \
             .search_menu("Not interested.").branch() \
-            .search_say("I never liked water") \
             .search_say("Just have fun without me") \
             .hook_to("sqb_naomi_m3_norefusal", condition='sqbnaomi2hadsex ==  True')
        
@@ -139,9 +131,7 @@ def sqb3naomi(ml):
             .hook_to("sqb_naomi_m3_undressing", condition='sqbnaomi2hadsex ==  True') \
             .search_say("So, how are your preparations") \
             .link_from("sqb_naomi_m3_undressing_end") \
-            .search_say("The way you swim") \
-            .search_say("A large metal doorframe") \
-            .search_say("I'm responsible for your security") \
+            .search_say("I'm responsible for your security", depth=400) \
             .hook_to("sqb_naomi_m3_explorationforce", condition='sqbnaomi2hadsex ==  True')
 
        ml.find_label("_call_skiptut_eckn32") \
@@ -226,8 +216,7 @@ def sqb4naomi(ml):
 def sqb5naomi(ml):
 
        ml.find_label("eck_naomi_m5") \
-            .search_say("This might be our only chance") \
-            .search_say("Since when do you") \
+            .search_say("Since when do you", depth=400) \
             .hook_to("sqb_naomi_m5_rezatalk1", condition='sqbnaomim4hadsex == True') \
             .search_say("Just let me through") \
             .link_from("sqb_naomi_m5_rezatalk1_end") \

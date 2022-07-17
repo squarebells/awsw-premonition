@@ -378,7 +378,7 @@ label sqb_naomi_m3_ending:
     show naomi hurt with dissolve
     m "Then, after some time I felt and heard that Naomi had started crying quietly."
     Nm "Hey, [player_name]..."
-    m "I comforted her by scratching the area behind her horns and frills."
+    m "I comforted her by scratching the frills behind her horns."
     c "What's wrong, Naomi?"
     play music "mx/lily.mp3"
     show naomi cry with dissolve
@@ -394,7 +394,9 @@ label sqb_naomi_m3_ending:
     else:
         Nm crysmile "I went in with the full intention of protecting you with my life if needed."
         Nm "You would do the same thing for me."
-
+    
+    show naomi shy with dissolve
+    m "I grabbed Naomi's chin to direct it towards mine and I kissed her deeply."
     c "There isn't anything I wouldn't do for you."
     hide naomi with dissolve
     play sound "fx/sheet.wav"

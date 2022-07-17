@@ -134,8 +134,8 @@ label sqb_naomi_m5_rezafight:
     Nm angry "MAVERICK, STOP!"
     show naomi annoyed with dissolve
     m "By the time I managed to catch up, I only saw a shaken Maverick walking away from an unmoving Reza."
-    $ renpy.pause (2.+)    
-    m "At a glance, I saw that Reza was most likely still alive. It seemed that the blood loss and shock from Maverick's bite had caused him to lose consciousness."    
+    $ renpy.pause (2.0)    
+    m "At a glance, I saw that Reza was most likely still alive. It seemed that the blood loss and shock from Maverick's attack had caused him to lose consciousness."    
     stop music fadeout 2.0
     show rezadeadneck at Pan ((0, 326), (580, 126), 10.0) with fade
     play sound "fx/system3.wav"
@@ -340,7 +340,7 @@ label sqb_naomi_m5_ending: #I can't be bothered to make a million new labels any
     As "Calm down, I just want to talk."
     c "Then, what do you actually want from me?"
     As "Your clothes, your boots and your motorcycle."
-    c "Nice."'
+    c "Nice."
     $ renpy.pause (2.0) 
     m "I heard the Administrator audibly groan while holding up a hand to their mask."
     As "I never thought I was so dense. Don't you hear it? Don't you notice something is off?"

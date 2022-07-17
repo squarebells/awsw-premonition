@@ -12,7 +12,6 @@ label sqb_naomi_m6_discussion_reality:
             Nm smile "I hope you enjoy it!"
             $ renpy.pause (1.0)
             hide naomi with dissolve
-            pass
         
         "No, take me back to the main menu.":
             Nm blank "Alright."
@@ -30,9 +29,8 @@ label sqb_naomi_m6_discussion_reality:
     $ renpy.pause (2.0)
     play sound "fx/door/doorclose3.wav"
     $ renpy.pause (1.0)    
-    m "(Another great day at work. Regardless of that, I hope I can soon start doing something other than just cataloging information from the human PDAs.)"
-    m "I had asked Naomi to come over after her shift to try out some of the new dishes I had come up with."
-    m "(Time to take a shower.)"
+    m "(Yay, another great day at work. I still hope I can soon start doing something other than just cataloging information from the human PDAs, because it's already getting boring.)"
+    m "(Naomi's coming over this evening to try out some of the new dishes I had come up with. First, it's time to take a shower.)"
     play sound "fx/door/door_open.wav"
     scene bath with dissolve
     $ renpy.pause (2.0)
@@ -42,11 +40,13 @@ label sqb_naomi_m6_discussion_reality:
     m "(Ahhh.)"
     stop sound
     m "(That was refreshing.)"
+    play sound "fx/door/door_open.wav"
     scene o at Pan((0, 250), (0, 250), 0.1) with dissolvemed
     play sound "fx/book.ogg"
     m "I wanted to relax after the shower so I went back to the living room and picked up a book from the bookshelf and started reading."
     play sound "fx/pages.ogg"
-    m "(I really need to stop procrastinating and go buy a television. I like reading but I need some more variety in entertainment.)"
+    m "(I really need to stop procrastinating and buy a television. I like reading but I need some more variety in entertainment.)"
+    $ renpy.pause (2.0)
     scene o2 at Pan((0, 250), (0, 250), 0.1) with dissolvemed
     m "I read for a while until I realized I would have to start cooking soon."
     $ renpy.pause (1.0)
