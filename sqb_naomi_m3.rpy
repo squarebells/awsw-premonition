@@ -71,16 +71,16 @@ label sqb_naomi_m3_undressing:
     Nm smile "So, because I haven't worn any clothing, have I been unintentionally making you horny all the time by signaling that I want to have sex with you, [player_name]?"
     c "Well... uhh...{w} maybe a little?"
     Nm "So, you've been taking advantage of our society's traditions the entire time you've been here?"
-    c "Well, I guess that kind of just happened. In my defense, your genitalia is a lot more hidden than ours."
+    c "Well, I guess that kind of just happened. In my defense, your private parts are a lot more hidden than ours."
     Nm normal "Yeah, I saw that."
     m "I had almost finished putting the scuba gear on."
-    Nm smile "Anyway, this has been a pretty interesting talk. I'm happy to know that I arouse you simply by just being around you. Care to tell which exposed part of me excites you the most?"
+    Nm smile "Anyway, this has been a pretty interesting talk. I'm happy to know that I arouse you simply by just being around you. Care to tell which exposed part of me excites you the most when I am going about my day, unaware of you admiring me?"
     c "Naomi...{w} please no more. Can we just go diving already? At least underwater you won't be able to talk to me."
     Nm blank "Fine, but this conversation isn't over. I'm going to find all of your buttons and press them as I please. Rest assured, it's only going to get worse from here on out."
-    m "(Did I make a mistake by choosing to stay here with Naomi? Oh well, I can recall what she said she would do if I try to leave, so it's too late to regret that decision anyway.)"
+    m "(Did I make a mistake by choosing to stay here with Naomi? Oh well, I recall what she said she would do if I try to leave, so it's too late to regret that decision anyway.)"
     $ renpy.pause (2.0)
     m "(Just kidding, I love her because she teases me like this.)"
-    show naomi surprised with dissolve
+    show naomi surprisedblush with dissolve
     m "For the rest of the time of me putting on the gear, Naomi stared at me with intent, but at least she was quiet, save for a few giggles and flicks of her tongue. After a couple of long minutes of being under her gaze, I finally managed to finish putting the gear on."
 
 jump sqb_naomi_m3_undressing_end
@@ -243,7 +243,7 @@ label sqb_naomi_m3_panicterminal:
         show naomi blank with dissolve
     else:
         $ sqbnaomim3genhatchtold = True
-        Nm "Alright."       
+        Nm normal "Alright."       
 
 jump eck_naomi_m3_panicterminalman
 
@@ -342,7 +342,7 @@ label sqb_naomi_m3_ending:
     play sound "fx/door/door_open.wav"
     scene eckannabedroom4 with dissolvemed
     $ renpy.pause (2.0)
-    m "When we had gotten to Naomi's bedroom, I dropped the plastic bag on the floor and then she carried me over to her bed. She lowered me on it slowly on my back, taking extra care so I was able to lay my head on one of the pillows."
+    m "When we had gotten into Naomi's bedroom, I immediately dropped my plastic bag on the floor and then she carried me over to her bed. She lowered me on it slowly on my back, taking extra care so I was able to lay my head on one of the pillows."
     show naomi blank with dissolve
     Nm "What an evening."
     Nm concern "Are you okay, [player_name]?"
@@ -386,7 +386,7 @@ label sqb_naomi_m3_ending:
     Nm "You're the best thing that has ever happened to me."
     c "I feel the same way. Please always be there for me."
     Nm "I-I don't know what I would have done if you had...{w} had died."    
-    c "There's no need to speculate about something like that. You saved my life, and we will both be happy forever that you did."
+    c "There's no need to speculate about something like that. You saved my life, and we will both be happy for the rest of our lives that you were there for me when it counted the most."
     
     if sqbnaomim3protect == True:
         Nm crysmile "I promised I would protect you with my life, didn't I?"
@@ -395,7 +395,6 @@ label sqb_naomi_m3_ending:
         Nm crysmile "I went in with the full intention of protecting you with my life if needed."
         Nm "You would do the same thing for me."
     
-    show naomi shy with dissolve
     m "I grabbed Naomi's chin to direct it towards mine and I kissed her deeply."
     c "There isn't anything I wouldn't do for you."
     hide naomi with dissolve
@@ -543,7 +542,7 @@ label sqb_naomi_m3_ending:
     play sound "fx/pour.ogg"
     queue sound "fx/gulp4.wav"
     queue sound "fx/glassdown.wav"    
-    m "I washed my breakfast down with a full carton of cold juice. Even though this breakfast was very simple, it tasted like the best thing I had ever eaten."
+    m "I washed my breakfast down with a full carton of cold juice. Even though this breakfast was very simple, it tasted like the best thing I had ever eaten, because Naomi had made it for me."
     stop sound fadeout 1.0
     m "With this hearty breakfast, I was ready to face whatever misadventures were going to come at me today. I dropped off my dishes at Naomi's sink, and exited to start the journey back to my apartment."
     stop music fadeout 1.0
@@ -587,7 +586,7 @@ label sqb_naomi_m3_ending:
     show naomi hurt sep with dissolve
     $ renpy.pause (1.0)
     play sound "fx/rev.ogg"
-    m "I woke up to pointing a gun upwards under Naomi's chin.{w=8.0}{nw}"
+    m "I woke up in Naomi's living room, pointing a gun upwards under her chin.{w=8.0}{nw}"
     scene black with dissolveslow
     c "{cps=15}It's okay, Naomi. It wasn't your{/cps}{nw}"
     $ renpy.pause (0.1)

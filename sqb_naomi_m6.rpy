@@ -1,5 +1,7 @@
 label sqb_naomi_m6_discussion_reality:
-
+    
+    $ save_name = _("Chapter 6 - Naomi")
+    $ _game_menu_screen = "navigation"
     $ renpy.pause (2.0)
     scene black with dissolvemed
     $ renpy.pause (8.0)
@@ -29,7 +31,7 @@ label sqb_naomi_m6_discussion_reality:
     $ renpy.pause (2.0)
     play sound "fx/door/doorclose3.wav"
     $ renpy.pause (1.0)    
-    m "(Yay, another great day at work. I still hope I can soon start doing something other than just cataloging information from the human PDAs, because it's already getting boring.)"
+    m "(Yay, another great day at work. I still hope I can soon start doing something other than just cataloging information from the PDAs, because it's already getting monotonous.)"
     m "(Naomi's coming over this evening to try out some of the new dishes I had come up with. First, it's time to take a shower.)"
     play sound "fx/door/door_open.wav"
     scene bath with dissolve
@@ -65,13 +67,11 @@ label sqb_naomi_m6_discussion_reality:
     $ renpy.pause (4.0)
     stop music fadeout 1.0
     play sound "fx/steps/rough_gravel.ogg"
-    m "After some time my thoughts were interrupted by the sound of Naomi walking outside my apartment. She entered her own key, in high spirits."
-    
+    m "After some time my thoughts were interrupted by the sound of Naomi walking outside my apartment. She entered with her own key, in high spirits."   
     play sound "fx/door/handle.wav"
     $ renpy.pause (2.0)
     play sound "fx/door/doorclose3.wav"
-    $ renpy.pause (1.0)
-    
+    $ renpy.pause (1.0)   
     show naomi flip normal at left with easeinleft
     Nm normal flip "What a day at work. It suffices to say that the case would've been left unsolved for some time without me."
     c "Hey, Naomi."
@@ -85,8 +85,7 @@ label sqb_naomi_m6_discussion_reality:
     m "I straightened my back, placed my arms on both sides of the backrest, sighed and looked at Naomi."
     play music "mx/darkrock.ogg"
     c "You could say that."
-    c "Going through this ordeal who knows how many times has really taken its toll on me. I can only remember glimpses of previous timelines but clearly even that's too much for me to handle."
-    c "I second guess everything I do and sometimes I get this feeling of dread deep in my stomach that won't go away no matter what I do."
+    c "Going through this ordeal who knows how many times has really taken its toll on me. I can only remember glimpses of previous timelines but clearly even that's too much for me to handle. Because of this I second guess everything I do and sometimes I get this feeling of dread deep in my stomach that won't go away."
     show naomi surprised flip at left with dissolve
     c "The weird thing is that I have never been this happy in my entire life. Even pre-flare earth wasn't as good as this place." 
     c "What I'm going through is something entirely different than just simply feeling down."

@@ -31,7 +31,7 @@ jump sqb_naomi_m4_start_end
 
 label sqb_naomi_m4_pool: #Just straight copy pasting a lot of ECK's script because I don't want to make a million hooks and labels
 
-    c "Also, there's no lockers or containers for my clothes. I guess I'll just have to drop them on the floor."
+    c "Also, there's no lockers or any type of containers for my clothes. I guess I'll just have to drop them on the floor."
     Nm blank "Is that a problem?"
     c "They might get wet or dirty. Wet clothes aren't very nice to wear, especially if it's cold. We have to leave this place at some point, you know."
     Nm normal "Just put them on the lounge chair over there. I think it's far enough from the pool, so I can easily avoid splashing any water over there."
@@ -145,7 +145,7 @@ label sqb_naomi_m4_returndiscussion:
     c "All this said, after we stop Reza I'm just going to chill out in your world and not give a fuck anymore. There is only so much hardship one can take."
     Nm concern "That's a very difficult decision to make. Are you sure you want to abandon your people like that?"
     c "I've been through a lot, so I just don't care anymore. I'll just stay here, and they can fix the problems of their own world by themselves. To me it almost feels like they're just trying to hinder my sincere and good-willed efforts every step of the way."
-    Nm smile "Alright. It seems you have really thought this through, and I trust your judgment."
+    Nm smile "Alright. It seems you have really thought this through, so I trust your judgment."
     Nm "Like you already know, we'll be very happy to have you, especially me. Also, there's still a possibility for my dream of humans migrating here coming true."
     c "Sure. Actually, that's a goal I could still work towards."   
     Nm normal "Also, I realized that if Reza succeeds in his mission, your rulers wouldn't want to leave an uncomfortable witness. If we apprehend and convict Reza, they wouldn't take kindly to someone who played a crucial role in foiling their plans."   
@@ -212,7 +212,7 @@ label sqb_naomi_m4_funparts:
 
     Nm "Are you fine with me being on top this time?"
     c "Depends. Do they have any mattresses we can use?"
-    Nm blank "There aren't any here at the pool, and the receptionist is probably still asleep. Why do we need a one, though?"
+    Nm blank "There aren't any here at the pool, and the receptionist is probably still asleep. Why do we need one, though?"
     c "I'm actually not very comfortable right now because the tiled floor is rather cold and hard. Also, you weigh a lot more than me. I know I said my body can take some pressure but just to be safe we should try some other position."
     c "Some broken bones in case you get a little bit too excited doesn't sound like a good time to me."
     $ renpy.pause (2.0)
@@ -280,6 +280,7 @@ label sqb_naomi_m4_funparts:
     show naomi surprisedblush with dissolve
     m "With my dick ready in this proper place, I supported myself by placing my arms around Naomi's lower back. Then, without hesitation I plunged myself as far as I could go into her."
     play sound "fx/lewd/penslow.ogg"
+    queue sound "fx/craphug.mp3"
     m "Being prepared, Naomi locked me in place with her legs the moment I penetrated her. From our last time, I knew that there was no escape until I had released my human seed into her most special place."   
     Nm aroused "Remember, don't pull out."
     c "I know the drill."
@@ -359,7 +360,7 @@ label sqb_naomi_m4_funparts:
     show naomi slsmile with dissolve
     play sound "fx/craphug.mp3"
     m "With my agreement, Naomi wrapped her wings around me and supported my head with her draconic hand, in order to make sure I would stay still while I slept on top of her. Lastly, she shifted her lower body upwards slightly, presumably to stop most of my semen from flowing out of her pussy."   
-    m "(She's really trying as hard as possible to conceive, isn't she? I'm afraid I'm going to have to break the bad news to her some time. Not right now though."
+    m "(She's really trying as hard as possible to conceive, isn't she? I'm afraid I'm going to have to break the bad news to her some time. Not right now though.)"
     play sound "fx/purr.ogg"
     play sound2 "fx/rub2.ogg"
     m "Then, she closed her eyes and started humming contently and quietly as she gently and slowly rubbed my body against hers."
@@ -371,7 +372,7 @@ label sqb_naomi_m4_funparts:
     scene black with dissolveslow
     m "Obeying Naomi, I shut my eyes and steadied myself on her body in a slightly more comfortable sleeping position."
     $ renpy.pause (4.0)
-    m "Even though I didn't feel tired, it didn't take me very long to fall asleep in her loving embrace."
+    m "Even though I hadn't felt tired, it didn't take me very long to fall asleep in her loving embrace."
     $ renpy.pause (2.0)
     $ sqbnaomim4hadsex = True
     $ persistent.sqbnaomi4sex = True

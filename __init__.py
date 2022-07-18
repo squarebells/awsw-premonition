@@ -46,6 +46,11 @@ def sqbintronaomi(ml):
        
 def sqb1naomi(ml):
 
+      ml.find_label("_call_skiptut_eckn11") \
+          .search_menu("Yes. I want to skip ahead.").branch() \
+          .search_python("naomi1mood = 3") \
+          .hook_to("sqb_naomi_m1_skip", condition='sqbpremounlocked ==  True')
+    
       ml.find_label("eck_naomi_m1") \
           .search_say("What about drinks?", depth=400) \
           .hook_to("sqb_naomi_m1_discussion", condition='sqbpremounlocked == True') \
@@ -58,7 +63,7 @@ def sqb1naomi(ml):
           .search_say("...") \
           .hook_to("sqb_naomi_m1_discussion2", condition='sqbpremounlocked == True') \
           .search_say("Of course, we haven't") \
-          .link_from("sqb_naomi_m2_discussion2_end") \
+          .link_from("sqb_naomi_m1_discussion2_end") \
           .search_say("Err, what I mean to say") \
           .hook_to("sqb_naomi_m1_escort", condition='naomi1mood > 5 and sqbnaomilewd > 2') \
           .search_say("Alright.") \
@@ -80,7 +85,7 @@ def sqb2naomi(ml):
            .search_scene("ecknaomiapt03") \
            .link_behind_from("sqb_naomi_m2_chairs_end") \
            .search_say("We all have drawbacks") \
-           .hook_to("sqb_naomi_m2_differences", condition='sqbpremounlocked == True') \
+           .hook_to("sqb_naomi_m2_differences", condition='sqbnaomim1flirted == True') \
            .search_say("Naomi eyed my legs") \
            .link_from("sqb_naomi_m2_differences_end") \
            .search_say("I was met by a light gust") \
@@ -94,7 +99,7 @@ def sqb2naomi(ml):
            .link_from("sqb_naomi_m2_origmovie_end") \
            .search_say("A couple of hours later") \
            .link_from("sqb_naomi_m2_movie_end") \
-           .search_say("Do you have anyone in mind") \
+           .search_say("Yeah, but the police department") \
            .hook_to("sqb_naomi_m2_bedroomfun", condition='sqbpremounlocked ==  True and naomi2mood > 5 and sqbnaomilewd > 3') \
            .search_show("naomi blank") \
            .link_from("sqb_naomi_m2_kiss_orig_end") \
@@ -112,7 +117,7 @@ def sqb2naomi(ml):
            .search_python("renpy.pause (2.0)") \
            .search_python("renpy.pause (2.0)")
        n.search_say("After a moment of silence") \
-           .search_say("I can't understate how much fun", depth=600) \
+           .search_say("It was certainly fun to", depth=600) \
            .hook_from_node(n)
            
 def sqb3naomi(ml):
@@ -155,6 +160,11 @@ def sqb3naomi(ml):
        ml.find_label("eck_naomi_m3_panicmenu") \
             .search_menu("Check on the entrance.").branch() \
             .hook_to("sqb_naomi_m3_panicdoor", condition='sqbnaomi2hadsex ==  True and ecknaomim3boomstop == False')
+            
+       ml.find_label("eck_naomi_m3_panicmenu") \
+            .search_menu("Get some rest.").branch() \
+            .search_say("Sure thing") \
+            .hook_to("sqb_naomi_m3_labrest", condition='sqbnaomi2hadsex ==  True')
        
        ml.find_label("eck_naomi_m3_panicterminalman") \
             .search_menu("Maintenance.").branch() \

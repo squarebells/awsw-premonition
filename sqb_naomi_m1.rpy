@@ -1,3 +1,15 @@
+label sqb_naomi_m1_skip:
+
+    $ naomi1mood = 10
+    $ sqbnaomilewd = 3
+    $ sqbnaomim1flirted = True
+    $ naomi1drink = "cocktail"
+    play music "mx/cr_serene.mp3"
+    scene eckplayeraptextra1
+    show naomi normal with dissolvemed
+
+jump eck_naomi_m1_skip
+
 label sqb_naomi_m1_discussion:
 
     menu:
@@ -201,7 +213,7 @@ label sqb_naomi_m1_eating:
         Nm surprisedblush "You were right." 
         Nm normal "I need to get one of these next time."
     
-    if naomi1drink == "beer":
+    elif naomi1drink == "beer":
         c "I actually like this beer quite a lot. You can't get good quality stuff like this any more in my world."
         Nm normal "That brand is popular around here. How does it compare to human beer?"
         c "It doesn't taste anything like the mass-produced ones we used to have. I would say it's probably a local high-quality brand."
@@ -222,7 +234,7 @@ label sqb_naomi_m1_eating:
         $ renpy.pause (2.0)
         
     $ renpy.pause (2.0)
-    c "It's your turn now. Would you tell me more about why you miss your lunch breaks so often?"
+    c "It's your turn to tell me something about yourself. How about telling me more about why you miss your lunch breaks so often?"
     Nm normal "Why not?"
     
 jump sqb_naomi_m1_eating_end
@@ -232,7 +244,7 @@ label sqb_naomi_m1_discussion2:
     c "I'm just kidding, because I don't really even care about money. We don't use it any more in my city-state."
     Nm surprised "Really? How does a system like that even work?"
     c "Empirically speaking it seems to work fine for the time being. There even used to be political movements in our world that wanted to abolish the concept money, among other things."
-    Nm confused "That sounds like a really weird and inconvenient to me. How did the people of your city-state come to adopt a system like that?"
+    Nm confused "That sounds like really weird and inconvenient to me. How did the people of your city-state come to adopt a system like that?"
     c "Well, for us it's more of a necessity dictated by our circumstances rather than a calculated choice." 
     c "As you probably know, money needs to be backed by an institution with enough authority to be worth anything. I'm sure it works like that here too."
     c "So, some time after the flare hit entire countries fell because of the destruction that it had caused, so physical money became pretty much worthless without a reliable backer." 
@@ -264,7 +276,7 @@ label sqb_naomi_m1_discussion2:
          Nm "Of course! Most of us already like humans and those in need should always be helped."
          c "That's a great idea! I didn't even realize such a possibility existed."
          c "I'll ask my superiors what they think next the time we're in contact. Thanks a lot, Naomi."
-         Nm "You're welcome."
+         Nm "You're welcome, [player_name]."
          show naomi normal with dissolve
          $ renpy.pause (2.0)        
     else:
@@ -295,7 +307,7 @@ label sqb_naomi_m1_discussion2:
     m "Naomi stared me in the eyes, eagerly waiting for an answer."
     Nm concern "Did you space out? My question wasn't rhetorical."
     c "Oh, right."
-    c "That sounds fine to me. Both of our species are sentient and we can communicate well with each other so there aren't any problems with having an interspecies relationship."
+    c "That sounds fine to me. Both of our species are sentient and we can communicate well with each other so there aren't any problems with an interspecies relationship."
     
     if naomi1mood > 5 and sqbnaomilewd > 1:      
          $ naomi1mood += 1
@@ -332,26 +344,28 @@ jump sqb_naomi_m1_discussion2_end
 
 label sqb_naomi_m1_escort:
             
-    c "No worries, I know what you mean. Actually, I would be really happy if you did that for me."
+    c "No worries, I know what you mean. I would be really happy if you did that for me."
     $ naomi1mood += 1
-    Nm smile "Thanks. I'm so relieved to hear that."                   
-    c "Actually, did you arrange this to be able to spend more time with me?"
+    Nm smile "Thanks. I'm so relieved to hear that I didn't give you the wrong impression."                   
+    c "Oh, I see. Did you actually arrange this to be able to spend more time with me?"
     $ renpy.pause (1.0) 
     Nm shy "Uh...{w} now that I think of it, I suppose I did? You got me there, [player_name]."
-    Nm smile "Well, mainly I just thought that – since we'd be hanging out together – there'd be no need to keep Seb stationed on security duty as well. One officer is enough."
-    Nm normal "Bryce agreed with my suggestion, so here we are now."
+    Nm smile "You're just that much of good company."
+    Nm normal "Well, mainly I just thought that – since we'd be hanging out together – there'd be no need to keep Seb stationed on security duty as well. One officer is enough."
+    Nm "Bryce agreed with my suggestion, so here we are now."
 
 jump sqb_naomi_m1_escort_end
 
 label sqb_naomi_m1_dating:
    
+    $ sqbnaomim1flirted = True   
     c "Is that an implication of a date I hear?"
     show naomi surprisedblush with dissolve
     $ renpy.pause (2.0)
     Nm "Umm...{w} maybe?"
     $ renpy.pause (2.0)
-    Nm shy "No... uhh...{w} what I meant to say is that right now my objective is your security."
-    Nm smile "Let's go. I'll stay close to you to make sure you're safe."    
+    Nm shy "No... uhh...{w} what I meant to say is that right now my main objective is your security."
+    Nm smile "Let's go. I'll stay close to you to make sure you're safe all the way back to your apartment."    
     scene black with dissolvemed
     stop music fadeout 2.0
     $ renpy.pause (2.0)

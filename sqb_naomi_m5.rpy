@@ -46,7 +46,7 @@ label sqb_naomi_m5_rezatalk2:
     c "Don't be hyperbolic, I don't want everyone in our city-state die. Besides, you're about to commit genocide via neglect. If you had any basic human decency in you, you would realize that it is our duty to help the dragons."
     c "Even more so, because up to an extent we created them after our own image. We gave them sentience, so we have a duty to help them develop in their own way."
     show reza annoyed with dissolve
-    c "I even agree the dragon society has some flaws, but its problems are really minuscule compared to ours. In other words, I would rather have their problems than the massive ones humanity has had throughout most of its entire recorded history."
+    c "I even agree the dragon society has some flaws, but its problems are really minuscule compared to humanity's as a whole. In other words, I would rather have their problems than the massive ones humanity has had throughout most of its entire recorded history."
     c "It seems as if we have been entirely on the wrong track, always leading to our inevitable destruction. Maybe it's time to try a different path?"
     $ renpy.pause (2.0)
     c "Look, if you're concerned about the loss of human life, long-term cooperation should be in your best interests. Yes, some people will die if we save the dragons, but think of the countless more we could save with their resources if we help them."
@@ -90,10 +90,13 @@ label sqb_naomi_m5_rezatalk2:
     Rz annoyed "I don't buy your multiverse theory."
     $ renpy.pause (2.0)
     Rz "Even if you were right, I still don't want to take the chance of us failing to save this world. I know for a fact that this generator will save my city-state, so I'll take what I have right now." 
-    Rz amused "Besides, you were right earlier. I'm doing this because I want to leverage the clout I get from the generator in order to eventually become a dictator. I was promised a minor leadership role as a reward for completing my mission." 
-    Rz "For your own sake, I hope you now see that I am the only one worthy and ruthless enough to lead humanity to a new golden age. Your only choices are either to follow me or to die."
+    Rz amused "Besides, you were right earlier. I'm doing this because I want to leverage the clout I get from the generator in order to eventually become a dictator. I was promised a minor leadership role as a reward for completing my mission."
+    play sound "fx/rev.ogg"    
+    Rz gunself "For your own sake, I hope you now see that I am the only one worthy and ruthless enough to lead humanity to a new golden age. Your only choices are either to follow me or to die."
     c "Reza, you've gone absolutely insane."
-    Rz annoyed "I guess that means your answer is no, but like I said, it's your funeral. At least I won't have to kill you personally, since the comet will take care of that for me."
+    Rz "I guess that means your answer is no, but like I said, it's your funeral. At least I won't have to kill you personally, since the comet will take care of that for me."
+    show reza amused with dissolve
+    $ renpy.pause (1.0)
     Rz amused "This little chat was fun and all, but the grownups must get back to work now."    
 
 jump sqb_naomi_m5_rezatalk2_end
@@ -193,8 +196,8 @@ jump sqb_naomi_m5_rezafight_end
 
 label sqb_naomi_m5_maverick:
 
-    c "Look, your conclusions were reasonable based on the information you had available at the time. I understand why it seemed to you that I blindly trusted my superiors, without realizing that I was being used. I just wasn't being used in the way you thought." 
-    c "To be frank, I was actually used as a kind of decoy."
+    c "Look, your conclusions were reasonable based on the information you had available at the time. I understand why it seemed to you that I blindly trusted my superiors, without realizing that I was being used."
+    c "I just wasn't being used in the way you thought. To be frank, I was actually used as a kind of decoy."
     c "In other words you were right to suspect the motivations of my city-state's leadership. Even if we manage to get out of this incident without ruining the relations between our peoples, I would still be very suspicious when interacting with them."
     c "Still, don't automatically start blaming the regular people, who are just trying to survive in our harsh world. In fact, to make sure we get along nicely, I'll do my best to make sure that my people won't be able to exploit yours."
     c "The fact of the matter is that Reza was the main culprit here. I sincerely admit that at first I had a hard time believing he would do something like this, mostly due to our shared history."
@@ -227,7 +230,7 @@ label sqb_naomi_m5_ending: #I can't be bothered to make a million new labels any
     c "Nice idea waiting outside to get a jump on Reza."
     Nm "Thank you."
     c "But how did you come up with it?"
-    Nm normal "Rememember back when we were stuck in that underwater lab faced with death, instead of just rushing through the very first idea I got, I stopped for a moment and analyzed the situation." 
+    Nm normal "Remember back when we were stuck in that underwater lab faced with death, instead of just rushing through the very first idea I got, I stopped for a moment and analyzed the situation." 
     Nm stern "I figured out that there must be some way to access the generator for maintenance, so I told you to get on the terminal to find the schematics. Once we knew what we were dealing with, I have to admit that it all went pretty nicely."
     Nm blank "This time, I realized that Reza is going to have to come out of from under the portal at some point. Also, confronting him in a narrow well-lit corridor was out of the question, because he had a long-range weapon capable of causing serious harm."
     Nm smile "So, I figured out that the best course of action would be to attack him outside when he leaves for the portal. There was no way he could predict the direction of our attack, and we could also use our flight, speed, size, and strength to full advantage."
@@ -290,7 +293,7 @@ label sqb_naomi_m5_ending: #I can't be bothered to make a million new labels any
     Nm blank flip "None. The suspect is out of it though, and he might need medical attention."
     Arh "Phew. Good to hear."
     Rnl "Ambassador [player_name], Naomi, do you require any assistance?"
-    c "We're fine, I think. Go check on Reza though, because we want to question him later."
+    c "We're fine, I think. Go check on Reza though, because we want to question him later. Can't do that if he's dead."
     Arh "Alright. I'm going to secure the area before the emergency teams arrive. You do your stuff, Ren."
     Rnl "Yep. Got it."
     show areth normal b flip with dissolve
@@ -336,7 +339,7 @@ label sqb_naomi_m5_ending: #I can't be bothered to make a million new labels any
     c "And what do you think that is, Izumi?"
     As "Quite funny you remember that name even though you were never formally introduced in this timeline."
     c "If you want to try and convince me to change to mind, I'll let you know upfront that my decision is final." 
-    c "In fact, I have the police department on speed dial, so don't start acting in a any kind of hostile manner towards me. You're not going to drag me to the portal."
+    c "In fact, I have the police department on speed dial, so don't start acting in any kind of hostile manner towards me. You're not going to drag me to the portal."
     As "Calm down, I just want to talk."
     c "Then, what do you actually want from me?"
     As "Your clothes, your boots and your motorcycle."
@@ -355,7 +358,7 @@ label sqb_naomi_m5_ending: #I can't be bothered to make a million new labels any
     c "Right."
     As "But fine."    
     show izumi normal with dissolve   
-    c "You still haven't explained why you came to meet me."   
+    c "Could you please explain already why you have come to meet me?"   
     As "To be honest, I was going to ask you to assume my place and take the portal. But, after seeing how your relationship ended up developing with Naomi in this timeline, I will do you the courtesy of not even asking you."
     As "I've been asking my alternate selves to take my place in countless timelines and so far not one has accepted the offer. I suppose this is a punishment for what I did."
     c "You thought there was a possibility of me agreeing for you to you take my place in this timeline?"
@@ -381,7 +384,7 @@ label sqb_naomi_m5_ending: #I can't be bothered to make a million new labels any
     As "The portal is tampering with our memories so none of us can even imagine, I'm afraid."
     c "I see."
     c "Good luck in your mission."   
-    As "Thank you, I think I'm going to need. I am planning to prevent the disaster that happened to me from happening again to our other selves, hopefully for good."
+    As "Thank you, I think I'm going to need it. I am planning to prevent the disaster that happened to me from happening again to our other selves, hopefully for good."
     c "Seriously, can you tell me what happened?"
     As "As I said, you don't want to know. Just be satisfied that you get to live out your happy life."
     c "Oh well. I hope you succeed, other me."
@@ -403,11 +406,11 @@ label sqb_naomi_m5_aftermath:
     stop sound fadeout 0.5
     play sound "fx/door/handle.wav"
     $ renpy.pause (1.5)    
+    show naomi flip normal with easeinleft
     show naomi normal with dissolve
     $ renpy.pause (1.5)
     play sound "fx/door/doorclose.ogg"
-    $ renpy.pause (1.5)    
-    #Expand about topics that are in chapter 6?
+    $ renpy.pause (1.5)
     Nm "Good morning, [player_name]."
     c "Hey."
     Nm "This is my day off, so did you think of anything fun to do? Do you want to go see some new place or just hang out over here?"
@@ -434,6 +437,7 @@ label sqb_naomi_m5_aftermath:
     c "Seems like it. I guess they just like you a lot."
     Nm blank "Someone using the multiverse to stalk me is really something. I suppose it doesn't matter any more."
     c "You're right. All this multiverse speculation is really pointless at this point in time. The best course of action would be to completely forget about it."
+    Nm normal "Yeah, I agree with you."
     $ renpy.pause (2.0)
     c "So, what do you want to do today? As you can see, I still don't have a television so we can't binge any of your series together."
     Nm smile "First, how about a few cuddles?"
@@ -458,7 +462,7 @@ label sqb_naomi_m5_aftermath:
     m "Still firmly trapped, I wrapped one arm around Naomi in order to cuddle her to sleep, while also gently running my hand along her neck. She mumbled something inaudible and shifted to put her chin on top of my head."
     $ renpy.pause (1.0)
     show naomi sleep with dissolve
-    m "Feeling her breathing and heartbeat peacefully slow down, I switched most of my attention to listening to her sounds. Since this couch was smaller than what we had before cuddled on, I my position was feeling little uncomfortable, but I decided against disturbing Naomi's slumber."
+    m "Feeling her breathing and heartbeat peacefully slow down, I switched most of my attention to listening to her. Since the couch was smaller than what we had before cuddled on, I my position was feeling little uncomfortable, but I decided against disturbing Naomi's slumber."
     stop music fadeout 1.0
     $ renpy.pause (8.0)
     m "Then, after about ten minutes I started feeling drowsy myself. I closed my eyes and drifted off to sleep in Naomi's loving embrace."
@@ -489,23 +493,25 @@ label sqb_naomi_m5_aftermath:
     play sound "fx/door/doorclose3.wav"
     m "I followed Naomi to my bedroom, and we made sweet love for almost the entire day." 
     m "I was at the top of the world. Life was good."
-    scene black with dissolvemed
-    $ renpy.pause (4.0)
-    $ persistent.sqbnaomiendingseens    
+    $ renpy.pause (2.0)  
 
 label sqb_naomi_m5_thebestend:
-
-    scene sqbendings with dissolvemed #I'll try to come up with a better text and improve the transparency post-release
+ 
+    scene black with dissolvemed
+    stop music fadeout 2.0
     $ renpy.pause (2.5)   
     $ _game_menu_screen = None
     $ renpy.block_rollback()
     $ persistent.sqbnaomiendingseens = "S"
+    show sqbendings with dissolvemed
     $ renpy.pause (4.0)
+    hide sqbendings with dissolvemed
     s "Mod's endings seen: [persistent.sqbnaomiendingseens] [persistent.ecknaomiendingseena] [persistent.ecknaomiendingseenb] [persistent.ecknaomiendingseenc] [persistent.ecknaomiendingseend] [persistent.ecknaomiendingseene]{w=5.0}{nw}"
-    $ renpy.pause (4.0)
+    
+jump sqb_naomi_credits_thebestest
     
 label sqb_naomi_credits_thebestest:
-
+  
     stop music fadeout 2.0
     $ renpy.pause (2.0)
     $ _game_menu_screen = None
@@ -518,17 +524,20 @@ label sqb_naomi_credits_thebestest:
       
     $ renpy.pause (1.5)
     show eckunderwater02 at Pan((-650, 0), (-750,0), 20.0)
-    show eckcreditsnm1 at right with dissolvemed
+    show eckcreditsnm1 at left
+    with dissolvemed
     $ renpy.pause (10.0)
     
     $ renpy.pause (1.5)
     show eckclouds2 at Pan((750, 0), (650,0), 20.0)
-    show eckcreditsnm2 at left with dissolvemed
+    show eckcreditsnm2 at right
+    with dissolvemed
     $ renpy.pause (10.0)
     
     $ renpy.pause (1.5)
-    show eckannabedroom4 at Pan((750, 0), (650,0), 20.0)
-    show sqbcreditsnm at right with dissolvemed
+    show eckannabedroom4 at Pan((-650,0), (-750,0), 20.0)
+    show sqbcreditsnm at right 
+    with dissolvemed
     $ renpy.pause (10.0)
     
     show fireworks at Pan ((-960, 545), (-200, 350), 20)
@@ -606,7 +615,8 @@ label sqb_naomi_credits_thebestest:
         c "(More than likely she's stretched over my entire bed with that dopey little smile plastered on her face. Looks like I might as well grab a quick snack and call it a night myself.)"       
         scene eckkitchenx
         show naomi blank flip at Position (xpos = 0.65)
-        show dark2 with dissolvemed
+        show dark2 
+        with dissolvemed
         $ renpy.pause (2.0)
         play sound2 "fx/switch.wav"
         $ renpy.pause (0.5)
@@ -643,7 +653,6 @@ label sqb_naomi_credits_thebestest:
         scene black with dissolveslow
         stop music fadeout 2.0
         $ renpy.pause (2.5)
-    
-    call ml_ending_check("sqb_naomi", "s-tier", "You have seen the S-tier ending for Naomi!", izumi_seen=True)
+        call ml_ending_check("sqb_naomi", "s-tier", "You have seen the S-tier ending for Naomi!", izumi_seen=True, is_good=True)
     
 jump sqb_naomi_m6_discussion_reality 

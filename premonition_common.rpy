@@ -3,6 +3,7 @@ init:
 
     $ sqbnaomilewd = 0
     $ sqbpremounlocked = False
+    $ sqbnaomim1flirted = False
     $ sqbnaomi2hadsex = False
     $ sqbnaomim3nogiveup = False
     $ sqbnaomim3protect = False
