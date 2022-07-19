@@ -574,7 +574,7 @@ label sqb_naomi_m3_ending:
     $ renpy.pause (0.5)
     play sound2 "fx/explosion.ogg"
     show naomi scared sep with dissolve and hpunch
-    $ renpy.pause (1.0)  
+    $ renpy.pause (0.5)  
     scene black with flash
     scene black with vpunch
     $ renpy.pause (1.0)

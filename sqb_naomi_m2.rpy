@@ -63,8 +63,8 @@ jump sqb_naomi_m2_chairs_end
 label sqb_naomi_m2_differences:
 
     c "Also, have you ever considered how much bigger you are compared to a human, or some of the smaller species of dragons? That brings up some interesting dynamics for people who appreciate differences."
-    show naomi blank with dissolve
-    m "(Let's tease Naomi a bit with a flirt. Her squirming was really cute to watch last time.)" #Oops, it "backfires" on the PC
+    show naomi confused with dissolve
+    m "(Let's tease Naomi a bit. Her squirming was really cute to watch last time.)" #Oops, it "backfires" on the PC
     c "Just speaking hypothetically, I bet someone as big as you would give excellent hugs to someone smaller than them."
     $ renpy.pause (1.0)
     Nm shy "..."
@@ -72,14 +72,14 @@ label sqb_naomi_m2_differences:
     
     if naomi2mood > 2 and sqbnaomilewd > 3:
         $ sqbnaomilewd +=1
-        Nm smile "Also, just hypothetically, if I caught a puny human such as yourself, they would never be able to escape my clutches." 
+        Nm smile "Also, just speaking hypothetically, if I caught a puny human such as yourself, they would never be able to escape my clutches." 
         c "Actually, that's what dragons sometimes do to humans in our fiction."
         show naomi confused with dissolve
         c "Although, usually the dragons who deal with humans are assumed to be male and very powerful, and most of the time they only catch humans of the female sex."
         Nm concern "That trope makes no sense at all to me. Female dragons need representation too because we are just as strong as males."
         $ renpy.pause (2.0)    
         Nm blank "I would be very interested in hearing more about dragons in your fiction, especially why they're usually assumed to be male."
-        c "Well, I didn't really study literature at all or specialize in cultural history so I don't really know enough to really break it down for you."
+        c "Well, I didn't really study literature at all or specialize in cultural history so I don't really know enough to break it down for you."
         show naomi concern with dissolve
         m "Naomi looked visibly disappointed."
         c "Fine, I'll try to think of something interesting to tell you."
@@ -144,7 +144,7 @@ label sqb_naomi_m2_movie:
     c "I couldn't agree more."
     c "Anyway, hearing the story of how through an unlikely series of events you became a police analyst was interesting. It's actually similar in some ways to how I ended up becoming an ambassador to your world."
     Nm surprised "Oh, really?" 
-    Nm normal "I would be very interested in hearing more about you."
+    Nm normal "I would be very interested in hearing even more about you."
     menu:
         "Tell Naomi about my past.":
             $ renpy.pause (0.5)
@@ -180,7 +180,7 @@ label sqb_naomi_m2_movie:
     c "Anyway, the future seemed pretty bright for all of humanity, but especially for me as well, because I had gotten myself majors from both biology and sociology. Skills from those fields were in demand at the time due to rapid social advances."
     c "Unfortunately, shortly after my graduation the flare hit our world and my degrees became pretty much worthless in the ensuing aftermath."
     show naomi concern with dissolve
-    c "A whole different set of skills would've been far more useful to help me in what I had to go through. Yet somehow, mostly due to sheer luck, I managed to survive."
+    c "A whole different set of skills would've been far more useful to help me in what I had to go through. Yet somehow, mostly due to sheer luck, I managed to stay alive."
     show naomi sad with dissolve
     c "I really don't want to get into the uncomfortable details. It suffices to say, if you have ever seen a post-apocalyptic movie, it was like that but worse."
     Nm blank "I have never heard of that genre, although based on the name I can guess what it's most likely about. It sounds amazingly interesting to me."
@@ -208,7 +208,7 @@ label sqb_naomi_m2_movie:
     c "Well... that would be the understatement of the century, if he is indeed guilty. Murdering someone is unforgivable even in our harsh society. I hope we catch him soon and find out the truth so we can end this mess."
     Nm smile "I hope so too. We need to get this murder mystery over with because I want to meet many more cute humans and tell them they're welcome with open arms."
     m "(She seems to like humans a lot.)"
-    c "Naomi, you and the other dragons I have met have been much nicer to me than I could've ever anticipated. I really don't know what to say." 
+    c "Naomi, you and the other dragons I have met have been much nicer to me than I could have ever anticipated. I really don't know what to say." 
     c "You caring about my people makes me feel very happy."
     m "Suddenly I started to feel another surge of emotions. My throat started feeling dry and I wanted to cry."
     show naomi surprisedblush with dissolve
@@ -222,7 +222,7 @@ label sqb_naomi_m2_movie:
         m "Naomi moved a bit closer towards me on the sofa."
         c "Thank you again, Naomi. I really mean it."
         play sound "fx/bed.ogg"
-        m "With my encouragement, she got up a little bit and shifted even closer towards me. From up close I finally fully realized how big she was. I started feeling a little intimidated but also intrigued by her different and powerful physique."
+        m "With my encouragement, she got up a little bit and shifted even closer towards me. Up close from my sitting position I finally fully realized how big she was. I started feeling a little intimidated but also intrigued by her different and powerful physique."
         Nm shy "Would you like a hug? I don't want to see a cute little human like you sad like this ever again."        
         menu:
             "Hug Naomi.":
@@ -250,9 +250,11 @@ label sqb_naomi_m2_movie:
     stop music fadeout 1.0
     show naomi slsmile with dissolve
     play sound "fx/sheet.wav"
-    m "With that, Naomi leaned against me and I showed my affection to her by wrapping my arms around her upper body."
+    m "With that, Naomi leaned against me and I returned the show of affection by wrapping my arms around her upper body."
     m "Naomi was softer and cuddlier than I had expected from a water dragon. I was also surprised when I felt her strong breathing."  
     m "(I suppose an aquatic dragon needs strong lungs to be able to stay underwater for extended periods of time.)"
+    play sound "fx/craphug.mp3"
+    queue sound "fx/rub2.ogg"
     m "After I had been feeling her for a moment, she returned my hug by tying her arms behind my back and gently rubbing the side of my head with her snout."
     $ renpy.pause (2.0)
     Nm smile "Are you feeling better yet?"
@@ -264,13 +266,16 @@ label sqb_naomi_m2_movie:
     Nm slsmile "Let's stay like this so you won't feel sad while you finish your story."
     c "Sure, that works for me. Anyway, to continue..."
     show naomi normal with dissolve    
-    c "Like you already know, our most important goal is to get one of your generators. Our need is urgent because soon we don't have enough power to run our hospital properly." 
-    c "It's pretty advanced because luckily, a decent amount of tech, especially medical equipment was spared in our city due to precautions taken before the flare. I just hope it's still standing when it's time for me to return."
+    c "Like you already know, our most important goal is to get one of your generators. Our need is urgent because soon we won't have enough power to run our hospital properly." 
+    c "It's pretty advanced because luckily, a decent amount of tech, especially medical equipment was spared in our city due to precautions taken before the flare. I just hope the hospital or even our entire city to be honest is still standing by the time my mission is completed."
     show naomi blank with dissolve  
     m "As I said that I was hit by the realization that I might not be able to come back here after I had completed my mission. After all, given the precarious situation we were in, who would care about researching dragon society and culture?"
     play music "mx/flashback.ogg" 
-    m "Because of this sudden insight, it was the first time when thinking about having to return made my stomach feel like an endless pit. A surge of panic was brewing up in me, so I confided in Naomi to ease it off."
-    Nm concern "Something wrong?"
+    m "Because of this sudden insight, it was the first time when thinking about having to return made my stomach feel like an endless pit. A surge of panic was brewing up in me, so I thought about confiding in Naomi to ease it off."
+    $ renpy.pause (1.0)
+    Nm concern "Is something wrong?"
+    $ renpy.pause (1.0)
+    c "..."
     c "Yes, you could say that. I hate to admit that I am not looking forward to the day when I finally have to go back to my own world."
     c "How should I sum this up...{w} sticking together and working for the greater good has kept my people alive so far."
     show naomi confused with dissolve
@@ -280,7 +285,7 @@ label sqb_naomi_m2_movie:
     c "What I'm trying to say is that, I sincerely don't want to leave at all because your world is so much better than mine."
     show naomi slsmile with dissolve
     play sound "fx/rub2.ogg"
-    m "Again, Naomi started rubbing the side of my head with her snout."
+    m "Again, Naomi started rubbing the side of my head with the side of her snout."
     Nm smile "If you really feel that bad about returning, you should definitely stay here with me."
     Nm normal "I'm sure they won't miss one human, or other potential like-minded folks who want to live with us instead."
     c "B-but...{w} I have to go back."
@@ -295,35 +300,35 @@ label sqb_naomi_m2_movie:
     c "I suppose you are right. I'll still have to make a formal request though, but I don't see why it would be declined if I explained myself well enough."
     show naomi smile with dissolve
     c "Thank you again, Naomi. Your advice is really thoughtful."
+    play music "mx/enigma.mp3"
     Nm "So, it's settled then. You'll stay here with me so I can keep you safe forever."
     play sound "fx/bed.ogg"
-    m "Before I could think of a witty comeback to throw at Naomi, she started using her body to slowly push me down on the sofa. Since I didn't protest, she then took one of the pillows that were lying around, put it at the end of the sofa and lowered both of our heads on it."
-    m "I still didn't protest because frankly, I still needed a few hugs, but I was also intrigued by how an another sentient being was interested in me in such a way, and I wanted to find out what that would entail."
+    m "Before I could think of a witty comeback to throw at Naomi, she started using her body to slowly push me down on the sofa. Since I didn't protest, she then took one of the pillows that were lying around, put it down and lowered both of our heads on it."
+    m "I didn't protest because I still needed a few hugs."
     show naomi surprisedblush with dissolve
     play sound "fx/sheet.wav"
-    m "Then, when I was down on the pillow, Naomi turned us both a little bit so that her back was against the sofa's backrest and mine was against her belly."
+    m "Then, when we were down on the pillow, Naomi turned us both a little bit so that her back was against the sofa's backrest and mine was against her belly."
+    $ renpy.pause (2.0)
     c "I feel a lot better now. Thank you, Naomi."
-    Nm smile "Likewise, [player_name]. I couldn't resist because your body is just too cute."
+    Nm smile "Likewise, [player_name]. I couldn't resist pushing you down because your body is just too soft and cute."
     show naomi aroused with dissolve 
     play sound "fx/craphug.mp3"    
-    m "As a response to my approval, she then locked her arms under my armpits to tie me in a tight embrace. At this point, I couldn't have escaped even if I had wanted to try."
+    m "As a response to my approval of her methods, Naomi then locked her arms under my armpits to tie me in a tight embrace. At this point, I couldn't have escaped even if I had wanted to try."
     show naomi slsmile with dissolve
     m "Finally, she placed her wing over me as some kind of an impromptu dragon-blanket."
     $ renpy.pause (4.0)
-    play music "mx/enigma.mp3"
     Nm smile "If you ever try to go back to your horrible world I will capture you before you make it to the portal and hug you until you change your mind."
     m "(Oh well, looks like she solved my problem for me. Sadly, I won't ever be able to go back to that post-apocalyptic hellhole.)"
     Nm stern "I'll also protect you if they try to take you back by force. I'm a lot of dragon with a few tricks they won't be expecting."
     Nm normal "You will be safe here with me for the rest of your life."
-    show naomi smile with dissolve
     c "I promise I won't try to escape."
-    Nm normal "Good choice. I only have your well-being in mind."
-    Nm smile "Also, when your ambassador duties are over, your new job will be to act as my body pillow whenever I feel like getting a few cuddles."
-    c "(This is getting very interesting. I wonder what I just got myself into.)"
+    Nm smile "Good choice. You should always remember that I only have your well-being in mind."
+    Nm smile "Also, when your ambassador duties are over, your new job will be to act as my body pillow whenever I feel like it."
+    c "(This is getting very interesting. I wonder what I have just gotten myself into.)"
     show naomi slsmile with dissolve
     play sound "fx/sheet.wav"
-    m "We lied on the sofa for what seemed like forever. Occasionally Naomi shifted and rubbed my body in various ways, as if she was trying to find out where I was the squishiest. Based on the number of rubs, my lower belly seemed to interest her the most."
-    m "Even though I was slowly getting more and more aroused and a little intimidated as her live body pillow, I still felt a peace I hadn't felt in a very long time."
+    m "We lied on the sofa for what seemed like forever. Occasionally Naomi shifted and rubbed my body in various ways, as if she was trying to find out where I was the squishiest. Based on the number of rubs, my belly seemed to interest her the most."
+    m "Even though I was slowly getting more and more aroused and a little intimidated as well as Naomi's live body pillow, I still felt a peace I hadn't felt in a very long time."
     $ renpy.pause (3.0)
     Nm "You are a very cute and cuddly partner."
     Nm normal "Would you like to watch a fine movie with me?"
@@ -344,20 +349,19 @@ label sqb_naomi_m2_movie:
     Nm "You're in luck because I just happen to have a good movie of that genre in the player. I don't want to get off the sofa so let's just watch that one."
     c "Don't you think we should get some snacks or at least something to drink though?"
     Nm smile "Are you trying to escape? Sorry, now that I finally caught myself a human I'm not letting them go."
-    Nm normal "We'll be fine. Also, drinking and snacking might distract us from the more important part of watching films with someone else."
+    Nm normal "We'll be fine. Also, drinking and snacking might distract us from the more important part of watching films with someone you like."
     Nm smile "You know what I mean?"
     c "Alright, you win. It's not like I can resist your charms anyway."
     Nm "Good choice. Any escape attempts would've been weak and pathetic anyway."
     play sound "fx/bed.ogg"
     Nm normal "You better get comfortable. I'll only let you go after the movie is over."
-    m "Naomi extended her arm and picked up the sizeable remote from the table in front of us. She pressed a couple of buttons on it, and after a few moments of fiddling with the it the movie started playing."   
+    m "Naomi extended her arm and picked up the sizeable remote from the table in front of us. She pressed a couple of buttons on it, and after a few moments of fiddling with it the movie started playing."   
     stop music fadeout 2.0
     $ renpy.pause (2.5)
     scene black with dissolvemed  
-    m "I focused more on Naomi's large body, breathing and warmth than watching the movie. I felt a strange mix of arousal, terror and submissiveness throughout the entire session."
+    m "I focused more on Naomi's large body, breathing and warmth than watching the movie. My thoughts were a strange mix of arousal, submissiveness and terror throughout the entire session."
     m "Thankfully, because my back was against her belly she didn't find out about the hard erection I had most of the time the movie was playing. It was for the better, because I had no idea how she would've reacted."
-    m "The tease was almost unbearable, but I managed to keep any dirty thoughts to myself."
-    m "When the credits started rolling, Naomi released me and we sat up next to each other on the sofa."   
+    m "The tease was almost unbearable, but I managed to keep any dirty thoughts to myself. When the credits started rolling, Naomi released me and we sat up next to each other on the sofa."   
     $ renpy.pause (2.5)
     scene ecknaomiapt03 with dissolvemed
     play music "mx/airborne.mp3"
@@ -366,23 +370,25 @@ jump sqb_naomi_m2_movie_end
 
 label sqb_naomi_m2_bedroomfun:
     
-    c "Well, you forgot that you have me to keep you company from now on. I'll stay with you if you're okay with that."
-    Nm shy "T-thanks...{w} but you don't have to stay with me {b}all{/b} the time if you don't want to."
-    c "Hey, there's no problem with us seeing each other as many times as we want. We have had a lot of fun already, I'm sure there's a lot more to come."
+    c "Well, you forgot that you have me to keep you company from now on. I'll come watch movies or series with you every day if that's something you would like."
+    Nm shy "T-thanks...{w} but you don't have to stay with me {b}all{/b} the time, if you don't actually want to."
+    c "Hey, there's no problem with us seeing each other as many times as we want. We have already had a lot of fun together."
+    show naomi smile with dissolve
     $ renpy.pause (2.0)
-    c "I have to admit that you're a such a nice person to be with, so I'm very surprised to hear that you don't have a special someone yet."
+    c "I have to admit that for being such a nice person, I'm very surprised to hear that you don't have a special someone yet."
     Nm surprisedblush "Oh? How so?"
     c "It's hard to believe that no dragon has ever tried to swoon you, because you're so cute."
     $ naomi2mood += 1
     Nm smile "My police badge might be scaring them off."
     Nm normal "But even if it doesn't, my schedule and lifestyle don't involve meeting a lot of new faces."
+    Nm shy "I haven't had the chance to meet a person I'd consider for such a role in my life. Or maybe I'm just not trying hard enough, because..."
     Nm concern "...because I'm too afraid."
-    c "Afraid of what?"
+    c "What's there for you to be afraid of?"
     Nm "Of getting rejected or humiliated, and then having said person think less of me for the rest of my life."
-    c "That sounds rather extreme. I doubt anyone would actually do that to you."
+    c "Oh. That sounds rather extreme. I doubt anyone would actually do that to you."
     Nm "I know. But then, there's another fear. Something I once almost fell a victim to."
     Nm "The fear that said person would lie to me and fake acceptance, only to use me one way or another. Once bitten, twice shy."
-    c "You mentioned it earlier, but you talked about it so lightly, I didn't think it was anything serious."
+    c "Oh. You did mention that earlier, but you talked about it so lightly, that I didn't think it had been anything serious."
     Nm blank "I've long moved on, but I just can't trust people in such matters anymore. Maybe not yet."
     c "There is no need to rush things. I'm sure that if someone likes you a lot they will let you take their time. Just look for different signs of affection to find out if they are really the right person for you."
     Nm smile "Sounds like a good plan, [player_name]."
@@ -401,40 +407,43 @@ label sqb_naomi_m2_bedroomfun:
             Nm normal "But what happened later? Are you still seeing that person?"
             c "No, I'm not."
             Nm blank "Why? What happened?"
-            c "It's not the best time to talk about that."
+            c "This isn't the best time to talk about something like that."
             Nm normal "Alright. I'll think about using your method."
             
         "No. It was merely an assumption.":
             $ renpy.pause (0.5)
             $ naomi2mood += 1
-            Nm smile "Don't you have anyone waiting for you back home?"
-            c "Can't say I have."
+            Nm smile "Didn't you say earlier you don't have anyone waiting for you back home?"
+            c "Yeah, you remember correctly."
             Nm normal "I see. I'll try your method and see if it works."
     
     $ renpy.pause (1.0)
-    c "Actually, I have to ask, do you at least have someone in mind? I hope it's not a secret."
+    c "Actually, I really have to ask, do you at least have someone in mind? I hope it's not a secret."
     Nm concern "..."
     c "Come on, I like you as well. There's no need to hide your feelings if they are indeed mutual."
     c "Or are you trying to say that the type of cuddling we just did is normally done among just friends here?"   
     show naomi shy with dissolve
-    m "Seems it was my turn to catch Naomi off-guard. She nervously looked me in the eyes, but then tried avoiding my gaze when I smiled and stared back."
+    m "Seems it was my turn to catch Naomi off-guard. She nervously looked me in the eyes, but then tried avoiding my gaze when I smiled and tried to stare back."
     Nm "I... umm..."
+    $ renpy.pause (2.0)
     
     if naomi2mood > 9 and sqbnaomilewd > 5:
         $ naomiromance += 100
-        show naomi aroused with dissolve
-        m "After a moment of hesitation, Naomi finally looked back at me. Then she opened her maw she was going to say something, but stopped for a moment and sighed audibly."
-        $ renpy.pause (1.0)
-        Nm smile "I suppose it's time to finally openly admit that I like you as well."
+        show naomi smile with dissolve
+        m "After a moment of hesitation, Naomi finally looked back at me. Then she looked as if she was going to say something, but then stopped and sighed audibly."
+        Nm "..."
+        $ renpy.pause (2.0)
+        Nm shy "I suppose it's time to finally openly admit that I like you as well."
         Nm surprisedblush "I've been thinking about dating you ever since we met. Are you happy now?"
         c "You're-{nw}"
+        show naomi smile with dissolve
         m "She cut me off as soon as I started to reply."
         Nm confused "You've been so persistent in trying to get me to admit I like you. Why else would you obey my every whim?"
-        Nm normal "The weird thing about us is that even though we met very recently I feel like we have known each other for a long time. Also, we complement each other nicely and I like how you understand me really well and like me for who I am."
-        c "What's not to like in a cute dragoness such as you?"
+        Nm normal "The weird thing about us is that even though we met very recently I feel like we have known each other for a long time. Also, we complement each other nicely because you understand me really well and also like me for who I am."
+        c "What's not to like in a cute dragoness such as yourself?"
         Nm shy "Oh, stop it. You're much cuter than I am."
         $ renpy.pause (2.0)
-        Nm smile "Did you know that I have always fantasized about having a partner smaller than myself? That's because I want to be able to easily put them in their place if they misbehave."
+        Nm smile "Did you know that I have always looked for a partner much smaller than myself? That's because I want to be able to easily put them in their place if they misbehave."
         Nm surprisedblush "I..."
         Nm shy "I didn't mean it like that."
         Nm "Well, I did but...{w} not that directly."
@@ -450,11 +459,12 @@ label sqb_naomi_m2_bedroomfun:
         show naomi aroused with dissolve
         m "With that, she suddenly kissed me on my left cheek."
         play sound "fx/lewd/lickslow.ogg"
-        m "As she was pulling back from the kiss, she licked me with her long tongue, leaving some saliva behind."
+        m "As she was pulling back from the kiss, she licked my cheek with her long tongue, leaving some saliva behind."
         Nm smile "I really like you too."
-        Nm "You're the best body pillow I have ever had. We're going to have a lot of fun together."
-        c "That sounds wonderful. A dragoness using someone as a body pillow is certainly something no human has ever experienced before."
-        Nm normal "Yeah. I'm so happy you like me even though we're not of the same species."
+        Nm "You're the best body pillow I have ever had. We're going to have a lot of fun times together."
+        c "That sounds wonderful." 
+        m "(Being used as a body pillow by a dragoness is certainly something no human has ever experienced before.)"
+        Nm normal "I'm so happy that you like me even though we're not of the same species."
         Nm smile "I hope you already realized that from my perspective, you humans are the cutest."
         m "(Yes, I think I might have gotten that impression.)"    
         Nm "I have never had such an adorable and squishy boyfriend before."
@@ -463,7 +473,7 @@ label sqb_naomi_m2_bedroomfun:
         $ renpy.pause (2.0)
         show naomi shy with dissolve
         m "Naomi looked off to the side and then back at me. She was clearly thinking about something."
-        Nm confused "I just realized there is something that would improve our intimacy by a lot."
+        Nm confused "I just realized there is something that would improve our body pillow experience by a lot."
         Nm normal "I honestly don't understand why you humans cover up your bodies so much."
         Nm blank "Why don't you take your covers off? Having fabric between you and your partner kind of gets in the way."
         m "(This escalated faster than I ever could have anticipated.)"
@@ -504,25 +514,26 @@ label sqb_naomi_m2_bedroomfun:
     m "(I suppose because dragons don't wear clothes in the way we humans do, Naomi doesn't understand the implications of asking me to remove them in front of her.)"
     m "(We're indoors, so what does it matter if I take all my clothes off in front of her? I should probably get adjusted to dragon culture already, so if it doesn't bother her, it shouldn't bother me either. When in Rome...)"
     Nm confused "Well?"
-    c "Sure. In fact, that's a really good point. I have never really thought about my clothes like that."
+    c "Sure. In fact, that's a really good point. I have never thought about my clothes like that."
     show naomi normal with dissolve
     $ renpy.pause (2.0)
     stop music fadeout 1.0
     play sound "fx/undress.ogg"
     show naomi surprised with dissolve
     #Male or female?
-    m "Naomi looked at me curiously as I removed my clothes piece by piece."
+    m "Naomi looked at me curiously as I slowly removed my clothes piece by piece."
     play sound "fx/undress.ogg"
     $ renpy.pause (2.0)
     show naomi surprisedblush with dissolve
-    m "She was the most attentive when I started to remove my lower garments though. Her eyes fixated on my groin after I had taken my underpants off. Her stare caused a chill to enter my spine and I shuddered, hopefully not visibly."
+    m "She was the most attentive when I started to remove my lower garments though. Her eyes fixated on my groin after I had taken my underpants off. The stare caused a chill to enter my spine and I shuddered, hopefully not visibly."
     Nm normal "In addition to your head, have fur even on your chest and between your legs? That must be weird." #Male version
-    c "I can shave off my pubic hair if it bothers you."
+    c "I can shave off my extra hair if it bothers you."
     Nm smile "No, I like it because it's kind of cute but also different from what I've seen before. I was mostly just wondering how it will feel when I hug you."
     c "..."
     #If player is female, Naomi comments on breasts instead.
     Nm normal "Also, your male parts look pretty squishy. I bet they're very vulnerable because they hang outside of your body like that."
     m "(Just what have I gotten myself into?)"
+    $ renpy.pause (2.0)
     show naomi blank flip with dissolve
     m "Then, Naomi focused her attention away from my groin and looked to her left. I turned to see what she was looking at."
     scene sqbnaomiapt04 with dissolvemed
@@ -530,7 +541,7 @@ label sqb_naomi_m2_bedroomfun:
     m "She seemed to be eyeing the area right of her fridge. I presumed that the door over there would lead to her bedroom. As I realized what she was thinking about, an another series cold chills went down my spine."
     m "(I hope I can make it undamaged out of this. She was already pretty rough with me.)"
     show naomi normal with dissolve
-    m "Before I had more time to ponder about my fate she came in closer, close and right in front of me."
+    m "Before I had more time to ponder about my fate she came in, close and looming right in front of me."
     play music "mx/campfire.ogg"
     Nm smile "This sofa is awfully small for cuddling. How about we have another session in the bedroom? If you play it nice, we could even go further than earlier."
     Nm aroused "Please?"
@@ -632,15 +643,15 @@ label sqb_naomi_m2_bedroomfun:
     hide naomi with dissolve
     play sound "fx/sheet.wav"
     queue sound "fx/door/door_open.wav"
-    m "I picked up my clothes from the floor and trailed behind Naomi as she walked up to her bedroom door and nudged it open with her snout." 
+    m "I picked up my clothes from the floor and quickly trailed behind Naomi as she walked up to her bedroom door and nudged it open with her snout." 
     scene eckannabedroom4 with dissolvemed
     show naomi smile with dissolve
-    Nm "Welcome to my bedroom. Consider yourself lucky to see it so soon into our dating." 
+    Nm "Welcome to my bedroom. Consider yourself lucky to see it so early into our dating." 
     c "Did you finally come around to admitting that our meetups were actually dates from the get-go?"
-    Nm stern "Don't ruin the mood by trying to be a smart ass. Don't forget that over here, I'm in control."
+    Nm stern "Don't ruin the mood by trying to be a smart ass. From now on, always remember that in the bedroom, I'm in control."
     c "S-sorry."
     show naomi smile with dissolve
-    m "After silently accepting my apology with a nod, Naomi walked to up to the side of her bed. She turned her head at me and gave an inviting look."
+    m "After silently accepting my apology with a nod, Naomi walked to up to the side of her bed. There, she turned at me to give an inviting look."
     play sound "fx/bed.ogg"
     m "Then she climbed on the bed and rolled on her back, spreading her wings wide."
     show naomi surprisedblush with dissolve

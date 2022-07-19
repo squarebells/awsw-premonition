@@ -37,7 +37,7 @@ def sqbintronaomi(ml):
       ml.find_label("eck_naomi_introduction") \
           .search_say("As I was passing through") \
           .hook_to("sqb_naomi_endingcheck", condition='persistent.ecknaomiendingseena == "A"') \
-          .search_say("Before I knew it") \
+          .search_play("fx/impact3.ogg") \
           .link_from("sqb_naomi_endingcheck_end") \
           .search_say("Let me help.") \
           .hook_to("sqb_naomi_premostart", condition='sqbpremounlocked == True') \
@@ -64,6 +64,10 @@ def sqb1naomi(ml):
           .hook_to("sqb_naomi_m1_discussion2", condition='sqbpremounlocked == True') \
           .search_say("Of course, we haven't") \
           .link_from("sqb_naomi_m1_discussion2_end") \
+          .search_say("I guess I should consider") \
+          .hook_to("sqb_naomi_m1_backhome", condition='naomi1mood > 4 and sqbnaomilewd > 2') \
+          .search_say("She glanced at the window.") \
+          .link_from("sqb_naomi_m1_backhome_end") \
           .search_say("Err, what I mean to say") \
           .hook_to("sqb_naomi_m1_escort", condition='naomi1mood > 5 and sqbnaomilewd > 2') \
           .search_say("Alright.") \
@@ -94,7 +98,7 @@ def sqb2naomi(ml):
            .link_from("sqb_naomi_m2_balcony_end") \
            .search_say("Of course, he meant no harm") \
            .search_say("Sounds uncomfortable.") \
-           .hook_to("sqb_naomi_m2_movie", condition='sqbpremounlocked ==  True') \
+           .hook_to("sqb_naomi_m2_movie", condition='sqbpremounlocked == True and sqbnaomim1flirted == True') \
            .search_say("You said you like") \
            .link_from("sqb_naomi_m2_origmovie_end") \
            .search_say("A couple of hours later") \

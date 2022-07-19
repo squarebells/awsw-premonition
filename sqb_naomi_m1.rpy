@@ -62,7 +62,7 @@ label sqb_naomi_m1_discussion:
              c "Unfortunately, I do."
              m "(Hold on, how do I know about it? Did someone tell me?)"
              Nm sad "Oh well. It normally takes longer for people to find out." 
-             Nm "I worry about him. I think he should get some hobbies other than drinking."
+             Nm "I worry about him. I think he should get hobbies other than drinking."
              
          c "I agree with you. It's blatantly obvious to me that he drinks way too much."
          c "Anyway, we shouldn't talk ill of someone who's not present."
@@ -87,7 +87,7 @@ label sqb_naomi_m1_eating:
     c "Also, starving yourself can make you eat too much when you finally have the time, which might lead to gaining weight." 
     c "Not that I think it would happen to you, as you're a big and athletic dragoness who I'm sure needs lots and lots of food to keep herself fed in the first place."
     Nm shy "I'm not sure how to respond to that. Thank you, I guess?"
-    Nm surprisedblush "I suppose it's obvious looking at my physique that I work out a lot."   
+    Nm surprisedblush "I suppose it's obvious when looking at my physique that I work out a lot."   
     m "(Why did I even say that? I'm lucky she didn't take offense.)"
     show naomi normal with dissolve
     $ renpy.pause (2.0) 
@@ -107,8 +107,9 @@ label sqb_naomi_m1_eating:
             jump sqb_naomi_cafe_eating_end
     
     Nm confused "Are you sure you're fine watching me eat?"
-    c "Of course. I don't mind staying with you a while longer. You're very cute and then we would also have time to chat some more."
+    c "Of course, I don't mind staying a while longer. You're good company, so I would love to chat with you some more."
     Nm normal "In that case... {w}Adine, could you come over here?"
+    m "Naomi unfolded her wing and lifted it in the air to signal Adine to come over to our table."
     $ renpy.pause (2.0)
     show naomi normal at right with ease
     show adine normal b flip at left with easeinleft
@@ -132,7 +133,7 @@ label sqb_naomi_m1_eating:
     show naomi normal with dissolve
 
     if naomi1main == "snacks" and naomi1side == "pasta":
-        c "I can't help but remark that it seems that you were the one to copy someone's tastes this time by choosing meat snacks and pasta for your second serving."
+        c "I can't help but remark that it seems that you were the one to copy my tastes this time by choosing meat snacks and pasta for your second serving."
         Nm blank "This time?"
         Nm concern "What do you mean? We've never had dinner together before."
         c "..."
@@ -143,20 +144,20 @@ label sqb_naomi_m1_eating:
     else:
         pass
         
-    Nm blank "So, you said you wanted to talk some more with me. How about a story while we wait for the food?"      
+    Nm blank "So, you said you wanted to chat some more with me. How about a story while we wait for the food?"      
     Nm confused "Did you really say that lunch breaks used to be mandatory in your world? I'm curious as to what changed that."
     c "It's a long one, so I'll just tell you the short version. Where to begin..."
     show naomi normal with dissolve
-    c "Our living standards got significantly worse because we got messed up badly by a solar flare. Nowadays we don't really think about our long-term welfare like we used to."
+    c "Nowadays we don't really think about our long-term welfare like we used to. Right now we pretty much live on a day to day basis, most of the time just barely managing to get by."
+    show naomi blank with dissolve
+    c "This is because our living standards got significantly worse when we got messed up badly by a solar flare. There used to be billions of us but as far as I know most of us have died and our world is pretty much destroyed. "
     show naomi concern with dissolve
-    c "Right now we pretty much live on a day to day basis, most of the time just barely managing to get by."
-    show naomi sad with dissolve
     c "Uhh... anyway, I don't want to ruin the mood, so let's not talk about the negative stuff any more than we have to."
-    Nm "I'm so sorry to hear about something like that happening to your people. Hearing of humans suffering just breaks my heart."
+    Nm "I'm so sorry to learn about something like that happening to your people. Hearing of humans suffering just breaks my heart."
     c "I appreciate that a lot. In fact, I hope your people can help us."
     Nm confused "How exactly do you think we would be able to help?"
     c "In short, we need your production facilities. Right now it's practically impossible for us to build an entire production chain from scratch. It's very hard for us to make even basic electronic devices, let alone something like computers." 
-    c "We really can't even salvage because the flare pretty much destroyed almost everything electronic that wasn't locked away in a electromagnetic shock proof bunker. The best we can do is try to find some parts that weren't destroyed and hope we can actually build something useful out of them."
+    c "We really can't even salvage because the flare pretty much destroyed almost everything electronic that wasn't locked away in a electromagnetic shock proof bunker. The best we can hope for is to find some intact parts and try to build something actually useful out of them."
     show naomi normal with dissolve
     c "With your resources and facilities we could resume production, while of course benefiting both parties. I believe our advanced technology would be a great boon to your people as a part of this exchange." 
     c "In the end, I hope this first contact between our peoples develops over time into a mutually beneficial and longstanding relationship."
@@ -208,7 +209,7 @@ label sqb_naomi_m1_eating:
         m "I moved the cocktail glass over to Naomi's side of the table."
         play sound "fx/slurp.ogg"
         show naomi surprised with dissolve
-        m "She carefully lowered her mouth to the edge of the glass and took a long sip."
+        m "She carefully lowered her mouth to the edge of the glass and took a sip."
         $ renpy.pause (1.0)
         Nm surprisedblush "You were right." 
         Nm normal "I need to get one of these next time."
@@ -234,19 +235,19 @@ label sqb_naomi_m1_eating:
         $ renpy.pause (2.0)
         
     $ renpy.pause (2.0)
-    c "It's your turn to tell me something about yourself. How about telling me more about why you miss your lunch breaks so often?"
+    c "Now it's your turn to tell me something about yourself. How about telling me more on why you miss your lunch breaks so often?"
     Nm normal "Why not?"
     
 jump sqb_naomi_m1_eating_end
 
 label sqb_naomi_m1_discussion2:
     
-    c "I'm just kidding, because I don't really even care about money. We don't use it any more in my city-state."
+    c "I'm just kidding, because I don't really care about money. We don't even use it anymore in my city-state."
     Nm surprised "Really? How does a system like that even work?"
     c "Empirically speaking it seems to work fine for the time being. There even used to be political movements in our world that wanted to abolish the concept money, among other things."
-    Nm confused "That sounds like really weird and inconvenient to me. How did the people of your city-state come to adopt a system like that?"
+    Nm confused "That sounds really weird and inconvenient to me. How did the people of your city-state come to adopt a system like that?"
     c "Well, for us it's more of a necessity dictated by our circumstances rather than a calculated choice." 
-    c "As you probably know, money needs to be backed by an institution with enough authority to be worth anything. I'm sure it works like that here too."
+    c "Money needs to be backed by an institution with enough authority to be worth anything. I'm sure it works like that here too, so you probably know this already."
     c "So, some time after the flare hit entire countries fell because of the destruction that it had caused, so physical money became pretty much worthless without a reliable backer." 
     c "On top of that, most of our money was stored electronically as a number on some servers. You can probably guess what happened to all that when the flare hit. Not that it would have mattered long-term anyway."
     show naomi blank with dissolve
@@ -270,10 +271,10 @@ label sqb_naomi_m1_discussion2:
          m "Naomi looked past me and I noticed that she seemed to be thinking about something."
          Nm "I just got an idea. Don't you think that a lot of better options opened up for your people when we were connected through the portal?" 
          Nm smile "Why don't we invite your people to live here with us?" 
-         Nm "In our world there's also plenty of room for everyone. I know leaving your home behind can be hard, but the living conditions here are so much better compared to your world that I'm sure a lot of humans would be up for it."
+         Nm "In our world there's also plenty of room for everyone. I know leaving your home behind can be hard, but the living conditions here are so much better compared to your world's that I'm sure a lot of humans would be up for it."
          m "Her idea caught me off guard."
          c "I... um...{w} do you think it could work?"
-         Nm "Of course! Most of us already like humans and those in need should always be helped."
+         Nm "Of course it could! Most of us already like humans and believe that those in need should always be helped."
          c "That's a great idea! I didn't even realize such a possibility existed."
          c "I'll ask my superiors what they think next the time we're in contact. Thanks a lot, Naomi."
          Nm "You're welcome, [player_name]."
@@ -321,7 +322,7 @@ label sqb_naomi_m1_discussion2:
          Nm shy "Even though we are being entirely hypothetical right now, I wouldn't mind having another get-together with you."
          c "I wouldn't mind one either."         
          Nm normal "Since I met you I have felt like there might be something more to you than what meets the eye. I want to find out what that is."
-         c "I'll do my best to make the time. After all, to be on track to solve the problem that your parents were so worried about, I need get you to start a more 'serious' relationship with me as soon as possible."
+         c "I'll do my best to make the time. After all, to be on track to solve the problem that your parents were so worried about, I need get you to start a more \"serious\" relationship with me as soon as possible."
          Nm stern "..."
          Nm "Careful, now you're really pushing it."
          $ renpy.pause (1.0)
@@ -342,6 +343,26 @@ label sqb_naomi_m1_discussion2:
  
 jump sqb_naomi_m1_discussion2_end
 
+label sqb_naomi_m1_backhome:
+    
+    show naomi shy with dissolve
+    $ renpy.pause (2.0)
+    Nm "So...{w} there's no one waiting for you back home? You can tell me, if it's not a secret of course."
+    c "Nope, I'm currently single. I don't even have any friends waiting for me because they're all dead." #No, I came here for the sole purpose of dating dragons
+    Nm sad "I'm so sorry to hear that."
+    $ renpy.pause (1.0)
+    Nm concern "On top of helping your people I really hope that you're able to fix such a serious personal problem like that during your visit."
+    $ renpy.pause (2.0)
+    Nm shy "Aww... you must be pretty lonely."
+    c "Yeah I am, but I have learned to live with it. Living on such precarious conditions for a long time hasn't really let me focus on dating or building friendships."
+    Nm blank "I kind of know what you mean. I guess eventually it just becomes a sort of background noise in the back of your head."
+    c "Still, sometimes, you can't help but wonder if there's something you can do to make things better."
+    Nm normal "Very true. In the end, it's all up to you, of course."
+    c "Isn't it what everything in life boils down to?"
+    Nm "Naturally."
+
+jump sqb_naomi_m1_backhome_end
+
 label sqb_naomi_m1_escort:
             
     c "No worries, I know what you mean. I would be really happy if you did that for me."
@@ -350,7 +371,7 @@ label sqb_naomi_m1_escort:
     c "Oh, I see. Did you actually arrange this to be able to spend more time with me?"
     $ renpy.pause (1.0) 
     Nm shy "Uh...{w} now that I think of it, I suppose I did? You got me there, [player_name]."
-    Nm smile "You're just that much of good company."
+    Nm smile "You're just such good company."
     Nm normal "Well, mainly I just thought that – since we'd be hanging out together – there'd be no need to keep Seb stationed on security duty as well. One officer is enough."
     Nm "Bryce agreed with my suggestion, so here we are now."
 
@@ -375,7 +396,7 @@ label sqb_naomi_m1_dating:
     show naomi normal with dissolve   
     Nm "With someone nearby, it feels so different from going on my own."
     c "Don't you have friends or somebody special to hang out with?"
-    Nm smile "You just keep asking me that question over and over again. I'm happy to hear that you're this interested in getting to date me."
+    Nm smile "You just keep asking me personal questions over and over again, don't you? I'm happy to hear that you're this interested in getting to date me."
     Nm blank "But anyway, like I already implied, I don't. I just haven't found the right person yet."
     Nm "For example, the guys at the department are nice, but we finish at different hours, and they have their own hobbies and routines. Bryce goes drinking, Seb is more of an indoor person, and Mav is just... Mav."
 

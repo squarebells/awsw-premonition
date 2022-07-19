@@ -337,11 +337,11 @@ label sqb_naomi_m5_ending: #I can't be bothered to make a million new labels any
     play sound "fx/door/doorclose.ogg"    
     As "I know what you want to do, [player_name]."
     c "And what do you think that is, Izumi?"
-    As "Quite funny you remember that name even though you were never formally introduced in this timeline."
+    As "Quite funny for you to remember her name even though you were never formally introduced in this timeline."
     c "If you want to try and convince me to change to mind, I'll let you know upfront that my decision is final." 
     c "In fact, I have the police department on speed dial, so don't start acting in any kind of hostile manner towards me. You're not going to drag me to the portal."
     As "Calm down, I just want to talk."
-    c "Then, what do you actually want from me?"
+    c "So, what do you actually want from me?"
     As "Your clothes, your boots and your motorcycle."
     c "Nice."
     $ renpy.pause (2.0) 
@@ -358,13 +358,14 @@ label sqb_naomi_m5_ending: #I can't be bothered to make a million new labels any
     c "Right."
     As "But fine."    
     show izumi normal with dissolve   
-    c "Could you please explain already why you have come to meet me?"   
-    As "To be honest, I was going to ask you to assume my place and take the portal. But, after seeing how your relationship ended up developing with Naomi in this timeline, I will do you the courtesy of not even asking you."
-    As "I've been asking my alternate selves to take my place in countless timelines and so far not one has accepted the offer. I suppose this is a punishment for what I did."
+    c "Could you please explain already why you have come to meet yourself?"
+    As "I came here to tell where things stand, in order to give you the full picture. There are some things you should know before I depart."    
+    As "To start off with, you should know that in previous timelines I would have asked you to assume my place and take the portal. But, after seeing how your relationship ended up developing with Naomi in this time around, I will do you the courtesy of not even asking."
+    As "I have been asking my alternate selves to take my place in countless timelines and so far not one has accepted the offer. I suppose this is a punishment for what I did."
     c "You thought there was a possibility of me agreeing for you to you take my place in this timeline?"
     As "One can dream."
     c "Yeah, no way. I like it here a lot."
-    As "Yes, I saw that. In every timeline before this, it has taken up to your fourth date for you and Naomi to get intimate."
+    As "Yes, I have seen that. For example, in every timeline before this, it has taken you up to your fourth date to get intimate with Naomi."
     c "Hey! Even though you're me, you should respect my privacy. Or is it our privacy? I don't know, ha-ha."
     As "Chill out. I only eavesdropped your short exchange with Sebastian when you were coming home from Naomi's place."
     $ renpy.pause (2.0)
@@ -380,12 +381,12 @@ label sqb_naomi_m5_ending: #I can't be bothered to make a million new labels any
     As "Yeah."
     As "To be honest, you have earned your better future since I botched mine, so I'll just take the portal again."
     As "In any case, I need some of the items you're holding."
+    $ renpy.pause (1.0)
     c "Wait a second, how many other timelines do you think there are?"
     As "The portal is tampering with our memories so none of us can even imagine, I'm afraid."
-    c "I see."
-    c "Good luck in your mission."   
-    As "Thank you, I think I'm going to need it. I am planning to prevent the disaster that happened to me from happening again to our other selves, hopefully for good."
-    c "Seriously, can you tell me what happened?"
+    c "I see. Good luck on your mission."   
+    As "Thank you. I think I'm going to need it. I'll let you know that I am planning to prevent the disaster that happened to me from ever happening again to our other selves, hopefully for good."
+    c "Seriously, can you just tell me what happened?"
     As "As I said, you don't want to know. Just be satisfied that you get to live out your happy life."
     c "Oh well. I hope you succeed, other me."
     As "Thanks."
@@ -413,7 +414,7 @@ label sqb_naomi_m5_aftermath:
     $ renpy.pause (1.5)
     Nm "Good morning, [player_name]."
     c "Hey."
-    Nm "This is my day off, so did you think of anything fun to do? Do you want to go see some new place or just hang out over here?"
+    Nm "This is my day off, so did you think of anything fun to do? Maybe we should go check out some new place or just hang out over here?"
     c "We'll see. You know, we don't have to lock into anything specific yet."
     c "By the way, something really weird happened to me last night. I guarantee you won't believe it."
     Nm confused "Oh? That sounds interesting."
@@ -428,31 +429,33 @@ label sqb_naomi_m5_aftermath:
     c "My alternate self was going to ask me to take the portal back in time to an another timeline, and wanted to take my place in this one. What really tops it all, is that they were going to tell everyone they were the fake version of me."
     show naomi stern with dissolve
     c "Needless to say, I would have never agreed to that."
-    Nm "That's really messed up. I don't know how I would be around someone who looks and sounds like you but I know to not be the version of you that I really love."
-    c "Oh well, there's no need to speculate about that. After they saw how well our current timeline went, they had the courtesy to not even ask me to take the portal."
-    Nm confused "What do you mean?"
-    c "Well, my alternate self said that they've been watching over multiple timelines so far and they've never seen us get intimate before the pool party. I guess they knew that there was no way I would take up on the offer."
+    Nm "That's really messed up. I don't know how I would feel about someone who looks and sounds like you but I know to not be the version of you that I really love."
+    c "Oh well, there's no need to speculate about that. After they saw how well our current timeline went, they had the courtesy of not even asking me to take the portal."
+    Nm confused "What does that even mean?"
+    c "Well, my alternate self said that they have been watching over multiple timelines so far and that they have never before seen us get intimate before the pool party." 
+    c "What I mean is that they knew that there was no way I would take up on the offer, because of how well we got along this time around."
     Nm blank "Wait."
     Nm stern "Has your alternate self been visiting other timelines and observing multiple other versions of me?"
     c "Seems like it. I guess they just like you a lot."
-    Nm blank "Someone using the multiverse to stalk me is really something. I suppose it doesn't matter any more."
+    Nm blank "Someone using the multiverse to stalk me is really something. But, I suppose it doesn't matter any more."
     c "You're right. All this multiverse speculation is really pointless at this point in time. The best course of action would be to completely forget about it."
     Nm normal "Yeah, I agree with you."
     $ renpy.pause (2.0)
     c "So, what do you want to do today? As you can see, I still don't have a television so we can't binge any of your series together."
-    Nm smile "First, how about a few cuddles?"
+    Nm smile "I got a little bit sad due to hearing even of the vague possibility of you leaving. So first, how about a few cuddles?"
     c "I like the sound of that."
     hide naomi with dissolve
-    m "As Naomi walked up to my couch I started getting excited because I knew what was coming."
+    m "Naomi started walking up to my couch and I got excited because I knew what was coming."
+    $ renpy.pause (1.0)
     play sound "fx/sheet.wav"
-    m "After she had casually climbed on the couch, she started pushing me firmly but carefully down from the sitting position I was in, my head landing on a large cylindrical pillow near the armrest."
+    m "After she had casually climbed on it, she started pushing me firmly but carefully down from the sitting position I was in, my head landing on a large cylindrical pillow near the armrest."
     show naomi smile with dissolve
-    m "Looking down at her hand planted on my upper chest, I soon realized that there was no escape. After shaking off my shoes, I decided to at least move my legs up there as well to get somewhat comfortable."
+    m "Looking down at Naomi's hand planted on my upper chest, I soon realized again that there was absolutely no escape until she was satisfied with me. I shook off my shoes and decided to at least move my legs up to get somewhat comfortable."
     m "Content with my position, Naomi settled down herself, keeping most of her weight on her limbs and off my body, yet surely holding me in place."
     c "I love you so much, Naomi."
-    Nm aroused "I love you more than anything else in the world, [player_name]. I'm so relieved and happy that you chose to stay with me instead of going on an endless and potentially dangerous mission."
+    Nm "I love you more than anything else in the world, [player_name]. I'm so relieved and happy that you chose to stay with me instead of going on an endless and potentially dangerous mission."
     c "Fuck my mission. You would have to be a total chump to want to complete it any more."
-    Nm smile "Yeah, you're right that only a crazy person would choose to go on it."
+    Nm normal "Yeah, you're right that only a crazy person would choose to go on it."
     $ renpy.pause (2.0)
     Nm smile "Since I didn't sleep that well last night, do you mind if I take a nap on top of you?"
     c "Not at all."
@@ -464,7 +467,7 @@ label sqb_naomi_m5_aftermath:
     show naomi sleep with dissolve
     m "Feeling her breathing and heartbeat peacefully slow down, I switched most of my attention to listening to her. Since the couch was smaller than what we had before cuddled on, I my position was feeling little uncomfortable, but I decided against disturbing Naomi's slumber."
     stop music fadeout 1.0
-    $ renpy.pause (8.0)
+    $ renpy.pause (4.0)
     m "Then, after about ten minutes I started feeling drowsy myself. I closed my eyes and drifted off to sleep in Naomi's loving embrace."
     scene black with dissolvemed
     $ renpy.pause (8.0)
@@ -472,27 +475,27 @@ label sqb_naomi_m5_aftermath:
     $ renpy.pause (2.0)
     play sound "fx/rub2.ogg"
     queue sound "fx/lewd/lickslow.ogg"
-    m "I woke up to Naomi sitting next to me on the couch and rubbing my belly. When I shifted myself due to her massage, she gently nudged my cheek with her snout."
+    m "I woke up to Naomi sitting next to me on the couch and rubbing my belly. When I shifted myself due to the massage, she gently nudged my cheek with her snout."
     stop sound fadeout 1.0
     play music "mx/airborne.mp3"
     show naomi smile with dissolve
     Nm "Mmm... that was a good nap."
     c "Hey."
-    Nm shy "Feeling your soft body against mine has left me wanting for something more, though."
+    Nm shy "Feeling your soft human body against mine has left me wanting for something more, though."
     Nm smile "How about we have have some more fun in the bedroom?"
     m "I got immediately aroused and partially jumped up from the mention of being able to be with Naomi again."
     c "Anything for you."
-    Nm "Good little human. Don't take took long getting up, because I don't like to be kept waiting."
+    Nm "Good boy. You better get hydrated before we start, but don't take took long, because I don't like to be kept waiting."
     show naomi smile flip with dissolve
     hide naomi with easeoutright
     play sound "fx/door/handle.wav"
-    m "Suddenly, Naomi jumped off of my couch and rushed off to the bedroom."
+    m "Then, Naomi jumped off the couch and rushed off to the bedroom. I clearly heard the thud of her jumping on my bed on her back."
     m "(I love her so much.)"
     stop music fadeout 1.0
     $ renpy.pause (2.0)
     play sound "fx/door/doorclose3.wav"
-    m "I followed Naomi to my bedroom, and we made sweet love for almost the entire day." 
-    m "I was at the top of the world. Life was good."
+    m "After drinking some water, I followed Naomi to the bedroom, and we made sweet love for almost the entire day." 
+    m "I felt like I was at the top of the world. Life was good."
     $ renpy.pause (2.0)  
 
 label sqb_naomi_m5_thebestend:
