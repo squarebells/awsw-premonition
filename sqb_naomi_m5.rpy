@@ -1,6 +1,6 @@
 label sqb_naomi_m5_rezatalk1:
      
-    c "You're absolutely correct. Still, even if I wanted to help you, due to my self-interest I have no choice but to stay here. I realized that I will be in huge trouble back in our world no matter what, even if I started helping you right now." 
+    c "You're absolutely correct. Even if I wanted to help you, due to my self-interest I have no choice but to stay here. I realized that I will be in huge trouble back in our world no matter what, even if I started helping you right now." 
     c "I just can't trust you to stay quiet about all this, so my best option is to stay here."
     Rz amused "I'm glad we're on the same page. Personally, I don't mind if you stay here. It's your funeral."
 
@@ -19,8 +19,8 @@ label sqb_naomi_m5_rezatalk2:
     Rz "You just want to stay here because you don't have a life back home!"
     show reza annoyed with dissolve
     c "What we have at home is hardly what one might call a life. It's survival at best."
-    c "It would be silly to deny that things are much better here. But, I never forgot about the greater picture. The difference between us is that I'm working towards a solution that won't make anyone pay a price too great." 
-    c "In the end, both parties will be better off, than trying to go alone."   
+    c "It would be silly to deny that things are much better here. But, I never forgot about the bigger picture. The difference between us is that I'm working towards a solution that won't make anyone pay a price too great." 
+    c "In the end, both parties will be better off, compared to just trying to go alone."   
     Rz normal "I think you just want to stay here with your stupid dragons. Still, I have to admit that I can even understand your choice a little." 
     Rz "Of course, it would be nice to just stay here, where they have everything that we don't. But being here also reminded me of everything I hated about our world as it used to be."
     Rz angry "The pettiness and the politics. Say about the solar flare what you want, but it leveled the playing field and gave people like us a chance to make a difference."
@@ -76,8 +76,8 @@ label sqb_naomi_m5_rezatalk2:
     Rz normal "..."
     Rz laugh "Hahahahahahahahahahaha!"
     c "What are you laughing at?"
-    Rz "With your multiple degrees, I expected you to be smarter than this. Did you already forget that we're in the past?!" 
-    Rz amused "This means that the dragons don't get wiped out, humans would never come to exist. Humans not existing would create a kind of a grandfather paradox, because we created the dragons, but due to our actions the dragons would be the reason humans never existed."
+    Rz "With your multiple university degrees, I expected you to be smarter than this. Did you already forget that we're in the past?!" 
+    Rz amused "That means if the dragons don't get wiped out, humans would never come to exist. Humans not existing would create a kind of a grandfather paradox, because we created the dragons, but due to our actions the dragons would be the reason humans never existed."
     Rz "There is no way to know what would happen if we caused that to happen. It might even destroy the fabric of reality itself, or at least make it so that both humans and dragons came to exist. Is that what you want?"
     c "..."
     c "You don't know that for sure!"
@@ -232,10 +232,11 @@ label sqb_naomi_m5_ending: #I can't be bothered to make a million new labels any
     c "But how did you come up with it?"
     Nm normal "Remember back when we were stuck in that underwater lab faced with death, instead of just rushing through the very first idea I got, I stopped for a moment and analyzed the situation." 
     Nm stern "I figured out that there must be some way to access the generator for maintenance, so I told you to get on the terminal to find the schematics. Once we knew what we were dealing with, I have to admit that it all went pretty nicely."
-    Nm blank "This time, I realized that Reza is going to have to come out of from under the portal at some point. Also, confronting him in a narrow well-lit corridor was out of the question, because he had a long-range weapon capable of causing serious harm."
+    Nm blank "This time, I realized that Reza is going to have to come out of from under the portal at some point. Also, that confronting him in a narrow well-lit corridor was out of the question, because he had a long-range weapon capable of causing serious harm."
     Nm smile "So, I figured out that the best course of action would be to attack him outside when he leaves for the portal. There was no way he could predict the direction of our attack, and we could also use our flight, speed, size, and strength to full advantage."
-    Nm sad "I'm sorry I put you in harm's way by having you confront him alone. What I just told you was the best plan I could come up with in such a short time."
+    Nm sad "I'm sorry I put you in harm's way by having you confront him alone. What I just told you was the best plan I could come up with on such short notice."
     c "No worries, it was a great plan. Reza wouldn't suddenly kill me for no reason because of our past and also because he might still hope to convert me to his cause."
+    m "(Well, he {b}did{/b} almost shoot me, but I better not tell Naomi, or I would never hear the end of it.)"
     Nm normal "I'm relieved to hear that, even though it is after the fact. You are are unharmed, and that is all that matters to me."
     c "So are you. And Maverick, too."
     Nm stern "Sometimes I want to slap him."
@@ -256,7 +257,7 @@ label sqb_naomi_m5_ending: #I can't be bothered to make a million new labels any
     c "It is."
     c "Sadly, this timeline isn't my first attempt, either."
     Nm sad "I see. So, you want to go and try again?"
-    c "No, I certainly don't. There's no way in hell I am going to risk my life like this ever again. Also, I might end up messing things up really badly on my next try. I think this timeline is a pretty good one to stop at."
+    c "No, I definitely don't. There's no way in hell I am going to risk my life like this ever again. Also, I might end up messing things up really badly on my next try. I think this timeline is a pretty good one to stop at."
     show naomi smile with dissolve
     c "Besides, I could never abandon you. Who's going to cook for you and be your body pillow then?"
     play sound "fx/kiss.wav"
@@ -494,7 +495,7 @@ label sqb_naomi_m5_aftermath:
     stop music fadeout 1.0
     $ renpy.pause (2.0)
     play sound "fx/door/doorclose3.wav"
-    m "After drinking some water, I followed Naomi to the bedroom, and we made sweet love for almost the entire day." 
+    m "After drinking some water, I followed Naomi into my bedroom, and we made sweet love for almost the entire day." 
     m "I felt like I was at the top of the world. Life was good."
     $ renpy.pause (2.0)  
 
@@ -527,20 +528,17 @@ label sqb_naomi_credits_thebestest:
       
     $ renpy.pause (1.5)
     show eckunderwater02 at Pan((-650, 0), (-750,0), 20.0)
-    show eckcreditsnm1 at left
-    with dissolvemed
+    show eckcreditsnm1 at left with dissolvemed
     $ renpy.pause (10.0)
     
     $ renpy.pause (1.5)
     show eckclouds2 at Pan((750, 0), (650,0), 20.0)
-    show eckcreditsnm2 at right
-    with dissolvemed
+    show eckcreditsnm2 at right with dissolvemed
     $ renpy.pause (10.0)
     
     $ renpy.pause (1.5)
-    show eckannabedroom4 at Pan((-650,0), (-750,0), 20.0)
-    show sqbcreditsnm at right 
-    with dissolvemed
+    show eckannabedroom4 at Pan((-650,0), (-500,0), 20.0)
+    show sqbcreditsnm at left with dissolvemed
     $ renpy.pause (10.0)
     
     show fireworks at Pan ((-960, 545), (-200, 350), 20)
@@ -628,7 +626,7 @@ label sqb_naomi_credits_thebestest:
         show naomi bacon flip
         $ renpy.pause (2.5)
         play music "mx/airborne.mp3"
-        c "Hey, Naomi. I see you're enjoying the bacon and meat snacks I bought for you yesterday. As you already know, I'm always prepared for anything"
+        c "Hey, Naomi. I see you're enjoying the bacon and meat snacks I bought for you yesterday. As you already know, I'm always prepared for anything."
         Nm "Um, sure. Do you want some?" 
         c "Just pass me the chicken bits. There should be a heap of them in the fridge."
         Nm normal flip "Sure, there's around half still left. You sure seem to love chicken."

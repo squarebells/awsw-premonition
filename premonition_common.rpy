@@ -6,6 +6,7 @@ init:
     $ sqbnaomim1flirted = False
     $ sqbnaomi2hadsex = False
     $ sqbnaomim3nogiveup = False
+    $ sqbnaomim3entrchkblk = False
     $ sqbnaomim3protect = False
     $ sqbnaomi4hadsex = False
     

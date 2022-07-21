@@ -157,23 +157,35 @@ def sqb3naomi(ml):
             
        ml.find_label("eck_naomi_m3_panicmenu") \
             .search_menu("Snuggle up with Naomi and surrender to your fate.") \
-            .edit_choice(text="Snuggle up with Naomi and surrender to your fate.", condition='sqbnaomim3nogiveup == False and sqbnaomi2hadsex == True and ecknaomim3boomstop == False' ).branch() \
+            .edit_choice(text="Snuggle up with Naomi and surrender to your fate.", condition='sqbnaomim3nogiveup == False and ecknaomim3boomstop == False').branch() \
             .search_python("renpy.pause (0.5)") \
-            .hook_to("sqb_naomi_m3_nogiveup")
+            .hook_to("sqb_naomi_m3_nogiveup", condition='sqbnaomi2hadsex == True')
             
        ml.find_label("eck_naomi_m3_panicmenu") \
-            .search_menu("Check on the entrance.").branch() \
-            .hook_to("sqb_naomi_m3_panicdoor", condition='sqbnaomi2hadsex ==  True and ecknaomim3boomstop == False')
+            .search_menu("Check on the entrance.") \
+            .edit_choice(text="Check on the entrance.", condition='sqbnaomim3entrchkblk == False and ecknaomim3currentloc == "corridors"').branch() \
+            .search_python("renpy.pause (0.5)") \
+            .hook_to("sqb_naomi_m3_panicdoor", condition='sqbnaomi2hadsex == True and ecknaomim3boomstop == False')
             
        ml.find_label("eck_naomi_m3_panicmenu") \
             .search_menu("Get some rest.").branch() \
             .search_say("Sure thing") \
             .hook_to("sqb_naomi_m3_labrest", condition='sqbnaomi2hadsex ==  True')
+            
+       ml.find_label("eck_naomi_m3_panicmenu") \
+            .search_menu("Access the hatch.").branch() \
+            .search_if("ecknaomim3scubaon").branch_else() \
+            .search_if("ecknaomim3boom < 25").branch_else() \
+            .search_if("persistent.endingsseen > 0").branch() \
+            .search_if("ecknaomim3genhatch").branch_else() \
+            .search_menu("Agreed.").branch() \
+            .search_python("ecknaomim3boom = 30000") \
+            .hook_to("sqb_naomi_m3_entrance", condition='sqbnaomi2hadsex ==  True')
        
        ml.find_label("eck_naomi_m3_panicterminalman") \
             .search_menu("Maintenance.").branch() \
             .search_say("There were several more pages") \
-            .hook_to("sqb_naomi_m3_panicterminal", condition='sqbnaomi2hadsex == True')
+            .hook_to("sqb_naomi_m3_panicterminal", condition='sqbnaomi2hadsex == True')            
        
        ml.find_label("eck_naomi_m3_escape") \
             .search_say("Soon, we were back on the beach") \

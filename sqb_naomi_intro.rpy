@@ -1,6 +1,6 @@
 label sqb_naomi_endingcheck:
 
-    m "While I was focusing too much on what was happening outside..."   
+    m "While focusing too much on what was happening outside..."   
     menu:
         "I was suddenly interrupted.":
              $ renpy.pause (0.5)
@@ -17,20 +17,20 @@ label sqb_naomi_endingcheck:
 
 label sqb_naomi_premostart:
 
-    m "When I looked again at the dragon, the first thing that popped into my mind was how big she looked from my perspective on the floor."
+    m "When I looked again at the dragoness, the first thing that popped into my mind was how big she looked from my floor perspective."
     c "You're big!"
     show naomi confused b with dissolve
     "???" "Thanks?"
     m "I had no idea what had just happened. I was only able to stare at the dragoness looming over me."
     c "..."
     show naomi concern b with dissolve
-    m "She stared back at me worriedly while still holding her hand out to me."
+    m "She started staring back at me worriedly, while still holding her hand out to me."
     $ renpy.pause (1.0)
     m "My head felt weird, as if my brain was trying very hard to remember something."
     c "A large blue dragon?"
     show naomi confused b with dissolve
     "???" "Are you okay?"
-    m "She leaned towards me and extended her hand closer."
+    m "She leaned further towards me, extending her hand even closer."
     $ renpy.pause (1.0)
     m "After taking another glance, I grabbed her hand, and she effortlessly pulled me back onto my feet."
     show naomi stern b with dissolve
@@ -47,7 +47,6 @@ label sqb_naomi_premostart:
     Nm "But what if you have a concussion? You might feel fine now, but you never really know with them. I would be in big trouble if I ended up hurting you badly."
     c "Don't worry about it. I should have paid more attention to where I was going."
     show naomi normal b with dissolve
-    $ renpy.pause (1.0)
     c "Since I somehow already know your name, it would be fair to let you know mine. I'm [player_name]."
     Nm smile b "Nice to meet you, [player_name]."
     

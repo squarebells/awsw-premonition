@@ -23,7 +23,7 @@ label sqb_naomi_m4_start:
 
     Nm smile "Oh, well, hopefully that won't be an issue for you tonight. I would be very disappointed if you couldn't perform."
     show sebastian shy b flip with dissolve
-    m "Sebastian was about to say something, but then he stopped and looked away from us."
+    m "Sebastian was about to say something, but then he stopped and looked past us."
     $ renpy.pause (1.0)
     Nm normal "Anyway, we discovered this ancient sunken facility, explored it for a while and found some stuff. But then, its generator was about to blow up due to seawater we let in by accident. Thankfully, by working together we managed to find a solution in time."
 
@@ -107,7 +107,7 @@ label sqb_naomi_m4_pool: #Just straight copy pasting a lot of ECK's script becau
     show naomi aroused with dissolve
     queue sound "fx/lewd/lickslow.ogg"
     queue sound "fx/lewd/pussy.ogg"
-    m "I leaned over and kissed Naomi. When we made contact, she penetrated my lips with her long tongue and wriggled it inside my mouth. As I pulled back, I gently sucked on her tongue, and after I was done she flicked my nose and temple with it."
+    m "I leaned over and kissed Naomi. When we made contact, she penetrated my lips with her long tongue and wriggled it inside my mouth. Then, as I pulled back, I sucked gently on her tongue, and after I was done she flicked my nose and temple with it."
     Nm smile "You're so cute. I love being around you so much."
     c "Me too. Being with you is the best thing that has ever happened to me."
     $ renpy.pause (2.0)
@@ -140,7 +140,7 @@ label sqb_naomi_m4_returndiscussion:
     c "So fuck them. All this would have been so easy if some of them hadn't been so greedy and hostile towards your people. They're really just a bunch of authoritarian assholes who only care about staying in power no matter the cost."
     show naomi surprised with dissolve
     c "To be completely honest, I don't really give a shit about what happens to my city-state anymore." 
-    c "If this mission fails and the relations between our peoples go hostile, it would be unreasonable to expect me to fix it because none of this is my fault in the first place. I have been doing everything in my power to establish friendly relations."
+    c "If this mission fails and the relations between our peoples go hostile, it would be unreasonable to expect me to fix the situation because none of it would be my fault. I have been doing everything in my power to establish friendly relations."
     c "It's unfortunate that innocent people will have to suffer, but at the same time it's also unfair to saddle some random guy with two college degrees with the responsibility of fixing everything."
     c "All this said, after we stop Reza I'm just going to chill out in your world and not give a fuck anymore. There is only so much hardship one can take."
     Nm concern "That's a very difficult decision to make. Are you sure you want to abandon your people like that?"
@@ -171,12 +171,12 @@ label sqb_naomi_m4_interspecies:
     $ renpy.pause (0.5)
     c "To our lovely interspecies relationship, and let's hope many others experience one as well!"
     Nm smile "I'm with you on that. If we manage to start a migration plan there will be a lot of dragons interested in forming relationships with humans."
-    c "There's a small problem though, since from what I know, there aren't that many of us left in my city state compared to you. If my calculations are correct, the dragon-to-human ratio is already hundred to one. On top of that you need to keep in mind that not everyone will agree to migrate."
+    c "There's a small problem though, since from what I know, there aren't that many of us left in my city state compared to you. If my calculations are correct, the dragon-to-human ratio is already hundred-to-one. On top of that you need to keep in mind that not everyone will agree to migrate."
     c "I just hope that there will be enough humans to go around."
     Nm aroused "{cps=20}There's a solution for that...{/cps}"
-    m "I shuddered at the thought of what she was implying."
-    c "Oh."
     $ renpy.pause (2.0)
+    c "Oh."
+    m "I shuddered at the thought of what she was implying."
     show naomi smile with dissolve
     c "Let's drink."
     play sound "fx/gulping.wav"   
@@ -190,7 +190,7 @@ label sqb_naomi_m4_funparts:
     c "Sounds like a plan."
     show naomi aroused with dissolve
     play sound "fx/craphug.mp3"
-    m "Instead of responding verbally, Naomi tied me in a big dragon hug, and pressed me down on the floor. While most of her weight was shifted to her arms and legs, I was still practically pinned down by her soft underside."
+    m "Without saying anything, Naomi tied me in a big dragon hug, and pressed me down on the floor. While most of her weight was shifted to her arms and legs, I was still practically pinned down by her soft underside."
     m "Her draconic hand supported the back of my head and neck, acting as a small pillow. I looked up at her face. Our eyes met, and we kissed."
     play sound "fx/kiss.wav"
     queue sound "fx/lewd/lickslow.ogg"
@@ -218,11 +218,12 @@ label sqb_naomi_m4_funparts:
     $ renpy.pause (2.0)
     hide naomi with dissolve
     m "Naomi got off of me and sat down on her rump."
+    $ renpy.pause (2.0)
     show naomi shy with dissolve
     Nm shy "I suppose I still have some more to learn about human physiology. Let's try something else then."
     Nm smile "How about this?"
-    $ renpy.pause (2.0)
     hide naomi with dissolve
+    $ renpy.pause (2.0)
     m "Naomi got up on all fours, turned around and lifted her backside and tail up. I could see her glistening and aroused dragon pussy."
     show naomi smile with dissolve
     Nm "Well?"
@@ -239,12 +240,12 @@ label sqb_naomi_m4_funparts:
     c "How about you lie down on your back and I'll fuck you from the front? I don't think those lounge chairs are big enough so it will have to be on the floor."
     Nm normal "Fine. That works for me."
     hide naomi with dissolve
-    m "Naomi turned around again, laid down on her back and spread her wings for balance. After that she spread her legs, giving me unobstructed access to her draconic pussy."
+    m "Naomi turned around again, laid down on her back and spread her wings for increased balance. After that she spread her legs, giving me unobstructed access to her draconic pussy."
     show naomi aroused with dissolve    
     m "Then she gestured for me to come and get her by wagging a finger at me." 
     Nm smile "Come show me a good time, my human lover."
     c "I'd be right happy to!"
-    m "I stroked my dick to harden it as I got over to Naomi. I positioned myself between her large thighs, sitting on the base of her tail."
+    m "I stroked my dick to harden it as I got over to Naomi. Over there, I positioned myself in front of her large thighs, sitting on the base of her tail."
     c "You asked me at the beach which exposed part of you I like the most, and I have to admit that from a human perspective I like your thighs. They're so big and naughty."
     show naomi surprisedblush with dissolve
     c "They're my favorite, if we don't count your dragon pussy."
@@ -286,7 +287,7 @@ label sqb_naomi_m4_funparts:
     c "I know the drill."
     play soundloop "fx/lewd/penslow.ogg"
     show naomi smile with dissolve
-    m "I lowered my body on Naomi and started fucking her pussy with slow, deep thrusts. She tied her arms around my upper body, tying me to her completely."
+    m "I lowered my body on Naomi and started fucking her pussy with slow, deep thrusts. She pressed her arms on my back, tying me to her completely."
     $ renpy.pause (4.0)
     Nm "You're so cute when you cling to me, holding for dear life."
     c "That's because your belly is just that soft and cuddly. I realize now that a live dragon-cushion is all I ever should have wanted in life."
@@ -307,12 +308,12 @@ label sqb_naomi_m4_funparts:
     m "To think of it, throughout our intimate session I had felt hints of Naomi being a lot more sensitive this time. Realizing one of the possible reasons for that made me shudder and feel a strange tingle in the back of my head."
     m "I stopped myself from obsessing about the extremely unlikely but still possible implications of that, and instead focused on making Naomi feel as good as possible."
     c "I'm still some ways off from coming myself."
-    Nm aroused "Then I want you to keep fucking me through my orgasm. Just shoot your seed inside me as soon as possible."
+    Nm aroused "Then I want you to keep fucking me through my orgasm. Just focus on shooting your seed inside me as soon as possible."
     $ renpy.pause (2.0)
-    m "As I kept pounding Naomi's dragon-pussy, suddenly I felt her starting to shake subtly. She pressed my entire body into her even more strongly than before. When I was as close as I could get to her, I could feel that something powerful was building up in her."
+    m "As I kept pounding Naomi's dragon-pussy, suddenly I felt her starting to shake subtly. She pressed my entire body onto her even more strongly than before. When I was as close as I could get to her, I could feel that something powerful was building up in her."
     c "Careful, Naomi!"
     Nm shy "I'm..."
-    m "Naomi came with a cry of ecstasy. Her vaginal walls clamped on my dick, desperate to milk me dry. Thankfully, even though she was already holding me tightly, she didn't break any of my bones in her excitement."
+    m "Naomi came with a cry of ecstasy. Her vaginal walls clamped on my dick, desperate to milk me dry. Thankfully, even though she was already holding me tightly, she didn't break any of my bones in her increased excitement."
     play sound "fx/snarl.ogg"
     play sound2 "fx/lewd/pussy.ogg"
     stop soundloop fadeout 1.0
@@ -338,7 +339,7 @@ label sqb_naomi_m4_funparts:
     m "I reached my absolute limit, plunged myself inside Naomi as deep as possible, and exploded inside her."
     $ renpy.pause (2.0)
     show naomi aroused with dissolve
-    m "I was proud of myself, as I had managed to shoot two large loads of my cum into Naomi's most feminine place. If she wasn't superbly satisfied after this, I would be completely at a loss on how to perform well enough for her."
+    m "I was proud of myself, as I had managed to shoot a very large load of my cum into Naomi's most feminine place. If she wasn't superbly satisfied after this, I would be completely at a loss on how to perform well enough for her."
     m "My dick went limp inside Naomi and so did I, as I slumped on top of her." 
     m "I had come so much that some of my semen had already started seeping out of Naomi's pussy. Thankfully due to where we were at, washing ourselves would be easy."
     $ renpy.pause (2.0)
@@ -359,7 +360,7 @@ label sqb_naomi_m4_funparts:
     c "Sure. That's just what I was thinking of as well."
     show naomi slsmile with dissolve
     play sound "fx/craphug.mp3"
-    m "With my agreement, Naomi wrapped her wings around me and supported my head with her draconic hand, in order to make sure I would stay still while I slept on top of her. Lastly, she shifted her lower body upwards slightly, presumably to stop most of my semen from flowing out of her pussy."   
+    m "With my agreement, Naomi wrapped her wings around me and supported my head with her draconic hand, in order to make sure I would stay still while I sleeping on top of her. Lastly, she shifted her lower body upwards slightly, presumably to stop most of my semen from flowing out of her pussy."   
     m "(She's really trying as hard as possible to conceive, isn't she? I'm afraid I'm going to have to break the bad news to her some time. Not right now though.)"
     play sound "fx/purr.ogg"
     play sound2 "fx/rub2.ogg"
