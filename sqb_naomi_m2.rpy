@@ -178,7 +178,7 @@ label sqb_naomi_m2_movie:
     c "Then you're in luck, because those are pretty rare nowadays due to what I told you about earlier."
     show naomi normal with dissolve
     c "Anyway, the future seemed pretty bright for all of humanity, but especially for me as well, because I had gotten myself majors from both biology and sociology. Skills from those fields were in demand at the time due to rapid social advances."
-    c "Unfortunately, shortly after my graduation the flare hit our world and my degrees became pretty much worthless in the ensuing aftermath."
+    c "Unfortunately, not that long after my graduation the flare hit our world and my degrees became pretty much worthless in the ensuing aftermath."
     show naomi concern with dissolve
     c "A whole different set of skills would've been far more useful to help me in what I had to go through. Yet somehow, mostly due to sheer luck, I managed to stay alive."
     show naomi sad with dissolve
@@ -191,7 +191,7 @@ label sqb_naomi_m2_movie:
     c "So, somehow I managed to survive and find my way to the city-state, Bastion, where I currently reside in. Things are quite bad there compared to your world but like I said, the world outside our city's walls is basically a hellscape."
     show naomi sad with dissolve
     c "Anyway, before I became ambassador I was just doing odd jobs to survive. I suppose things weren't all that bad if you look at the big picture."
-    c "To fast forward, we found the portal on a scouting mission and sent Reza to investigate your world after the initial contact."
+    c "To fast forward, we found the portal on a scouting mission and sent Reza, who had volunteered, to investigate your world after the initial contact."
     show naomi blank with dissolve
     c "In his case, there wasn't really any kind of process to select the most suitable person to go since we were desperate for any kind of help or even information. I have to admit that we didn't really care if he had died on the mission."
     c "This was because Reza was known to be a troublemaker, so him dying really wouldn't have been big loss. You wonderful dragons could've been savage, man-eating monsters for all we knew at the time."
@@ -789,16 +789,16 @@ label sqb_naomi_m2_bedroomfun:
     Nm smile "I'm happy to hear that, my cute and vulnerable human. Let's see how well your species can perform." 
     Nm normal "When you removed your clothes, I saw where your genitals are located. I don't think our anatomies are too different to make this inconvenient for us."
     
-    #Naomi thinks having multiple partners is fine as long as you like her the most
+    #Note to self for later: Naomi thinks having multiple partners is fine as long as you like her the most
     if modinfo.has_mod("BangOk?") and  bangok_four_anna2.unplayed == False:  
         c "Actually, our anatomies aren't too different. I already had sex with Anna."
         Nm confused "What, really? She hates everyone, but suddenly took a liking to you?"
         Nm stern "Hold on...{w} did she agree do it to experiment on human anatomy?"
         c "Hey, you have been experimenting a lot on me as well."
-        c "I just asked her to have sex with me as a wager of a game. She's also rather promiscuous, not that I mind."
-        Nm smile "We're all promiscuous over here."
+        c "I just asked her to have sex with me as a wager for a game. It was that easy, because she is rather promiscuous. Not that I mind, of course."
+        Nm smile "We're all promiscuous over here." #Meta, she means compared to humans
         c "So, how do you want to proceed from here?"
-        Nm aroused "First, I have another experiment of my own in mind."
+        Nm "First, I have another experiment of my own in mind."
         
     elif modinfo.has_mod("BangOk?") and bangok_four_bryce1_unplayed == False:
         c "Actually, Our anatomies aren't too different. I had sex with Bryce when I went drinking with him."
@@ -807,33 +807,39 @@ label sqb_naomi_m2_bedroomfun:
         c "The alcohol helped a lot. And of course lots of lube."
         c "So, how do you want to proceed from here?"
         Nm smile "Let me think..."
+        play sound "fx/system3.wav"
+        s "Dialogue unfinished, for now."
     
     elif modinfo.has_mod("BangOk?") and bangok_four_xsebastian_unplayed == False:
         c  "Actually, I already had sex with Sebastian. Our anatomies aren't too different."
         Nm "I'm not surprised, he's kinda cute. I just wish he dropped his dutiful police officer persona once in a while."
-        #More
+        play sound "fx/system3.wav"
+        s "Dialogue unfinished, for now."
     
-    #PC says he came here to establish friendly relations and fucking dragons is one way of achieving that
+    #Note to self for later: PC is going to say he came here to establish friendly relations and fucking dragons is one way of achieving that
     elif modinfo.has_mod("BangOk?") and bangok_four_bryce1_unplayed == False or bangok_four_anna2.unplayed == False:
         c "I have already had sex with Anna and Bryce. Our anatomies aren't too different."
         Nm surprised "You've already fucked two people I know since you came here?"
         Nm confused "That can't be a coincidence."
         Nm smile "Are you sure you're not a dragon-fucking sex tourist rather than an ambassador?"
-        #More
+        play sound "fx/system3.wav"
+        s "Dialogue unfinished, for now."
     
     elif modinfo.has_mod("BangOk?") and bangok_four_xsebastian_unplayed == False or bangok_four_anna2.unplayed == False:
         c "I have already had sex with Anna and Sebastian. Our anatomies aren't too different."
         Nm surprised "You've already fucked two people I know since you came here?"
         Nm confused "That can't be a coincidence."
         Nm smile "Are you sure you're not a dragon-fucking sex tourist rather than an ambassador?"
-        #More
+        play sound "fx/system3.wav"
+        s "Dialogue unfinished, for now."
     
     elif modinfo.has_mod("BangOk?") and bangok_four_bryce1_unplayed == False or bangok_four_xsebastian_unplayed == False:
         c "I have already had sex with Bryce and Sebastian. Our anatomies aren't too different."
         Nm surprised "You've already fucked two people I know since you came here?"
         Nm confused "That can't be a coincidence."
         Nm smile "Are you sure you're not a dragon-fucking sex tourist rather than an ambassador?"
-        #More
+        play sound "fx/system3.wav"
+        s "Dialogue unfinished, for now."
     
     else:
         c "You're right about that. I know for almost certain where yours are as well."
@@ -1115,7 +1121,7 @@ label sqb_naomi_m2_bedroomfun:
             c "I'm spent, I'll just use my mouth."
             Nm "That works for me, since you already came inside."
             play sound "fx/system3.wav"
-            s "Pussy eating scene unfinished, come back later."
+            s "Scene unfinished, come back later."
     
     $ sqbnaomi2hadsex = True
     $ persistent.sqbnaomi2sex = True
