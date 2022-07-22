@@ -65,11 +65,7 @@ def sqb1naomi(ml):
           .search_say("Of course, we haven't") \
           .link_from("sqb_naomi_m1_discussion2_end") \
           .search_say("I guess I should consider") \
-          .hook_to("sqb_naomi_m1_backhome", condition='naomi1mood > 4 and sqbnaomilewd > 2') \
-          .search_say("She glanced at the window.") \
-          .link_from("sqb_naomi_m1_backhome_end") \
-          .search_say("Err, what I mean to say") \
-          .hook_to("sqb_naomi_m1_escort", condition='naomi1mood > 5 and sqbnaomilewd > 2') \
+          .hook_to("sqb_naomi_m1_escort", condition='naomi1mood > 4 and sqbnaomilewd > 2') \
           .search_say("Alright.") \
           .link_from("sqb_naomi_m1_escort_end") \
           .search_say("Normally, I'd expect my") \

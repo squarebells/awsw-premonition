@@ -90,7 +90,7 @@ label sqb_naomi_m1_eating:
     show naomi shy with dissolve
     $ renpy.pause (1.0)
     Nm "I'm not sure how to respond to that. Thank you, I guess?"
-    Nm surprisedblush "I suppose it's obvious when looking at my physique that I work out a lot."   
+    Nm surprisedblush "I suppose it's obvious when looking at my physique that I work out."   
     m "(Why did I even say that? I'm lucky she didn't take offense.)"
     show naomi normal with dissolve
     $ renpy.pause (2.0) 
@@ -137,8 +137,8 @@ label sqb_naomi_m1_eating:
     show naomi normal with dissolve
 
     if naomi1main == "snacks" and naomi1side == "pasta":
-        c "I can't help but remark that this time on our dinner meetup you were the one to copy my tastes by choosing meat snacks and pasta."
-        Nm blank "This time?"
+        c "Kind of cute that on this time us having dinner you were the one copy my tastes instead of it being the other way around."
+        Nm blank "On this time? The other way around?"
         Nm concern "What do you mean? We've never had dinner together before."
         c "..."
         c "You're right. I have no idea why I just said that."
@@ -148,15 +148,15 @@ label sqb_naomi_m1_eating:
     else:
         pass
         
-    Nm blank "So, you said you wanted to chat some more with me. How about a story while we wait for the food to arrive?"      
+    Nm blank "So, you said you wanted to chat some more with me. How about a story while we wait for the food?"      
     Nm confused "Did you really say that lunch breaks used to be mandatory in your world? I'm curious as to what changed that."
     c "It's a long one, so I'll just tell you the short version. Where to begin..."
     show naomi normal with dissolve
     c "Nowadays we don't really think about our long-term welfare like we used to. Right now we pretty much live on a day to day basis, most of the time just barely managing to get by."
     show naomi blank with dissolve
-    c "This is because our living standards got significantly worse when we got messed up badly by a solar flare. There used to be billions of humans but as far as I know most of us have died and our world is pretty much destroyed."
+    c "This is because our living standards got significantly worse when we were badly messed up by a solar flare. There used to be billions of humans but as far as I know most of us have died and our world is pretty much destroyed."
     show naomi concern with dissolve
-    c "Uhh... anyway, I don't want to ruin the mood, so let's not talk about the negative stuff any more than we have to."
+    c "Uhh... anyway, I don't want to ruin the mood, so let's not talk about the negative stuff any more than necessary."
     Nm "I'm so sorry to learn about something like that happening to your people. Hearing of humans suffering just breaks my heart."
     c "I appreciate that a lot. In fact, I hope your people can help us."
     Nm confused "How exactly do you think we would be able to help?"
@@ -256,12 +256,13 @@ label sqb_naomi_m1_discussion2:
     Nm confused "That sounds really weird and inconvenient to me. How did the people of your city-state come to adopt a system like that?"
     c "Well, for us it's more of a necessity dictated by our circumstances rather than a calculated choice." 
     c "Money needs to be backed by an institution with enough authority to be worth anything. I'm sure it works like that here too, so you probably know this already."
+    Nm "Yeah, I do."
     c "So, some time after the flare hit entire countries fell because of the destruction that it had caused, so physical money became pretty much worthless without a reliable backer." 
     c "On top of that, most of our money was stored electronically as a number on some servers. You can probably guess what happened to all that when the flare hit. Not that it would have mattered long-term anyway."
     show naomi blank with dissolve
     c "Now there's no real authority to keep track of how much of money people have. In the end because we can't print our own in my city-state, we decided have our markets operate based on labor rather than previously accumulated wealth."
     c "Well, even if we could print our own money, that wouldn't really work because there aren't very many different consumer products anyone can buy due to what I told you about earlier." 
-    c "Housing is pretty much free due to the amount of empty space. Also, most of the time only absolutely necessary utilities work. To avoid discontent, we decided to not charge anything for them."
+    c "Housing is pretty much free due to the amount of empty space. Also, most of the time only absolutely necessary utilities work. To avoid discontent, we decided to not charge anything for either."
     show naomi surprised with dissolve
     c "Due to these circumstances, introducing money again would probably just cause inflation and significant amounts of inequality. So, we came to the conclusion of using labor as a currency." 
     c "A strict regime allocates important resources like food and water based on how much you work. Still, I don't understand why our city-state has to be so authoritarian. Unfortunately, dissenting voices are not allowed." #Dissenters get sent straight to the gulag
@@ -299,7 +300,7 @@ label sqb_naomi_m1_discussion2:
     c "Did you say you have had trouble finding a suitable boyfriend? I find that hard to believe."
     m "(Fuck, I did it again.)"
     Nm stern "What's that supposed to mean?"
-    c "Oh, I was just wondering if you would consider me a suitable candidate?"
+    c "Oh, uh...{w} I was just wondering if you would consider me a suitable candidate?"
     show naomi surprisedblush with dissolve
     $ renpy.pause (2.0)
     
@@ -351,7 +352,7 @@ label sqb_naomi_m1_discussion2:
  
 jump sqb_naomi_m1_discussion2_end
 
-label sqb_naomi_m1_backhome:
+label sqb_naomi_m1_escort:
     
     show naomi shy with dissolve
     $ renpy.pause (2.0)
@@ -359,20 +360,19 @@ label sqb_naomi_m1_backhome:
     c "Nope, I'm currently single. I don't even have any friends waiting for me because they're all dead from the apocalypse." #No, I came here for the sole purpose of dating dragons
     Nm sad "I'm so sorry to hear that."
     $ renpy.pause (1.0)
-    Nm concern "On top of helping your people I really hope that you're able to fix such a serious personal problem like that during this visit."
+    Nm concern "On top of helping your people I really hope that you're able to fix such a serious personal problem during your visit."
     $ renpy.pause (2.0)
     Nm shy "Aww... you must be pretty lonely."
     c "Yeah I am, but I have learned to live with it. Living on such precarious conditions for a long time hasn't really let me focus on dating or building real friendships."
-    Nm blank "I kind of know what you mean. I guess eventually it just becomes a sort of background noise in the back of your head."
+    Nm blank "I think I kind of know what you mean. I guess eventually it just becomes a sort of background noise in the back of your head."
     c "Still, sometimes, you can't help but wonder if there's something you can do to make things better."
     Nm normal "Very true. In the end, it's all up to you, of course."
     c "Isn't it what everything in life boils down to?"
     Nm "Naturally."
-
-jump sqb_naomi_m1_backhome_end
-
-label sqb_naomi_m1_escort:
-            
+    m "She glanced at the window."
+    Nm "Let's go for a walk. We should have some time before the sunset, and I could certainly use my share of fresh air."
+    Nm smile "Besides, Bryce has given me the permission to take over Sebastian's duties for the evening, so I'll be your escort for a time."
+    Nm shy "Err, what I mean to say with 'escort' is..."           
     c "No worries, I know what you mean. I would be really happy if you did that for me."
     $ naomi1mood += 1
     Nm smile "Thanks. I'm so relieved to hear that I didn't give you the wrong impression."                   
@@ -386,8 +386,7 @@ label sqb_naomi_m1_escort:
 jump sqb_naomi_m1_escort_end
 
 label sqb_naomi_m1_dating:
-   
-    $ sqbnaomim1flirted = True   
+    
     c "Is that an implication of a date I hear?"
     show naomi surprisedblush with dissolve
     $ renpy.pause (2.0)
@@ -407,6 +406,7 @@ label sqb_naomi_m1_dating:
     Nm smile "You just keep asking me personal questions over and over again, don't you? I'm happy to hear that you're this interested in getting to date me."
     Nm blank "But anyway, like I already implied, I don't. I just haven't found the right person yet."
     Nm "For example, the guys at the department are nice, but we finish at different hours, and they have their own hobbies and routines. Bryce goes drinking, Seb is more of an indoor person, and Mav is just... Mav."
+    $ sqbnaomim1flirted = True
 
 jump sqb_naomi_m1_dating_end
     
