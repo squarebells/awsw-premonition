@@ -100,13 +100,13 @@ label sqb_naomi_m6_discussion_reality:
     m "Naomi climbed on the couch next to me, resting her belly on it. To be able to fit, she lifted her tail and legs over the armrest on the opposite side. After that, she leaned herself closer to me and planted her elbows on my right thigh."
     show naomi smile flip with dissolve
     play sound "fx/sheet.wav"
-    m "Finally, when she had fully finished positioning herself, her snout was in front of my face. I placed my arms around her upper body and hugged her, which she reciprocated"
+    m "Finally, when she had fully finished positioning herself, her snout was in front of my face. I placed my arms around her upper body and hugged her, which she reciprocated."
     show naomi slsmile flip with dissolve
     play music "mx/serene.ogg"
     c "Thank you for always being there to cheer me up whenever I have a hard time."
     Nm smile flip "You're too cute to be left in a sad mood."
     m "I released the hug and changed back to my previous sitting position"
-    Nm normal flip "Would you like to talk more about your problem now that you have calmed down? You know you can talk to me about anything."
+    Nm normal flip "Would you like to talk more about your problem now that you've calmed down? You know you can talk to me about anything."
     c "I would like to do that very much. Maybe if I get all of this baggage off my back I can start to forget. Where to start..."
     $ renpy.pause (2.0) 
     c "Firstly, what do you think about the outcome of this timeline?"
@@ -118,53 +118,55 @@ label sqb_naomi_m6_discussion_reality:
     Nm blank flip "But if I am being completely honest, I'll have to tell you that I don't think you should be dwelling in the past this much."
     Nm concern flip "We can't change what's already happened, not anymore at least. Let's just focus on the future."
     c "You're right. Maybe we should be happy we're alive in the first place."
-    Nm normal flip "Exactly."
+    Nm normal flip "Yeah, exactly."
     c "Still, even if I tried my best, do I deserve all this?"
     Nm "Of course, we saved the world."
     c "I suppose so, but a life like this is something I could have only dreamed of a few weeks ago. Living in the city-state I came from was awful, even though it was the safest place to live in the post-flare world that I knew of."
     c "Well, what I am trying to say is that I'm sad because I'm not able to share this wonderful experience with the rest of my people."
     Nm sad flip "You and me both. I know that a lot of dragons would have been really excited to meet more humans."
-    c "I know we humans have our faults, but I'm confident that most of us would've loved to meet you dragons. We aren't all like Reza or our leadership."
+    c "Yeah, I know we humans have our faults, but I'm confident that most of us would've loved to meet you dragons as well. We aren't all like Reza or our leadership."
     Nm stern flip "It's still hard for me to believe that you used to be friends with someone like Reza. How could he personally murder all those dragons and then intend to abandon us all to die?"
-    Nm "On top of all this, he even tried to hurt me with his long-range weapon."
+    Nm "On top of all this, he even tried to hurt me and Maverick with his long-range weapon."
     c "Yeah, I remember."
     Nm blank flip "I'm still glad I stopped Maverick from killing him, since he doesn't deserve to die no matter how evil he is. I hope we can rehabilitate him so that he'll change for the better."
-    c "Agreed. Anyway, to continue my line of thought, I had initially placed great hopes in our interspecies cooperation. Your immigration idea was a stroke of genius."
+    c "Agreed. Anyway, to continue my line of thought, I had initially placed great hopes in our interspecies cooperation. Your immigration idea was a stroke of genius. It's unfortunate that some from our leadership didn't see it that way."
     show naomi smile flip with dissolve
-    c "It's unfortunate that some from our leadership didn't see it that way. Honestly, now when I have thought about it more, Reza was probably lying about coming up with his plan all by himself. Someone as narcissistic as him will make up all sorts of lies in order to inflate their ego."
-    c "Also, the fact that I wouldn't be stuck here if it hadn't been for the plot that Reza was a part of still upsets me a little bit. I just wish the connection between our worlds hadn't been severed."
+    c "Oh yeah, now when I have thought about it more, Reza was probably lying about coming up with his plan all by himself. Someone as narcissistic as him will make up all sorts of lies in order to inflate their ego."
     show naomi blank flip with dissolve
-    c "I think Izumi's reasons for severing the connection were understandable, even though the repercussions were terrible."
-    c "If everything had gone well, over time we could have even relocated the majority of my people here, like you said before. We could have left a heavily armed force to guard the portal to enable us to gradually let in any humans who managed get to there. In the end, I just want to help as many people as possible."
-    c "And some time after that, we could have started to really rebuild."
+    c "Also, the fact that I wouldn't be stuck here if it hadn't been for the plot that Reza was a part of still upsets me a little bit. I just wish the connection between our worlds hadn't been severed."
+    c "I think my other self's reasons for severing the connection were understandable, even though the repercussions were terrible."
+    c "If everything had gone well, over time we could have even relocated the majority of my people here, like you said before. We could have left a heavily armed force to guard the portal to enable us to gradually let in any humans who managed get to there." 
+    c "In the end, I just want to help as many people as possible. And some time after that, we could have started to really rebuild."
     Nm concern flip "Again, you're trying to save everyone. You have such a big heart, [player_name]. "
     Nm "Still, you should focus more on taking care of yourself." 
     Nm sad flip "Seeing you sad like this upsets me a little bit."
-    c "You're right, but like I said, sometimes I can't stop thinking about what could have been. I know it's all in the past and that there's nothing we can do to change it. I still can't shake the feeling of guilt caused by my failure, even though in the end it really wasn't my fault, like you pointed it."
+    c "You're right, but like I said, sometimes I can't stop thinking about what could have been. I know it's all in the past and that there's nothing we can do to change it. I still can't shake the feeling of guilt caused by my failure, even though in the end it really wasn't my fault, like you pointed out."
     show naomi blank flip with dissolve
     c "What bothers me, is that I get to have a wonderful life, while my city-state and the people I knew slowly wither away from existence."
     show naomi concern flip with dissolve
-    m "Naomi sighed loudly."
-    Nm stern flip "Stop feeling bad about it already. Do I need to remind you that the task you were given was nigh-impossible due to circumstances outside of your control?"
+    m "Naomi was getting visibly annoyed with me and she sighed loudly."
+    Nm stern flip "Stop feeling bad about it already. Do I need to remind you again that the task you were given was nigh-impossible due to circumstances outside of your control?"
     Nm normal flip "We did the best we could."  
     c "I guess I should finally accept that. Is it really the time to finally let go?"
     $ renpy.pause (2.0)
     c "Alright, let's just focus on us from now on."
     show naomi smile flip with dissolve
-    c "Anyway, one more thing and I'm done unpacking all my problems onto you. I hope you don't mind, since I need to get this off my chest."
-    Nm confused flip "Go on."    
+    c "Anyway, one more thing and I'm done unpacking all my problems onto you. I hope you don't mind, since I need to get this one last thing off my chest."
+    Nm confused flip "Go on."
+    $ renpy.pause (1.0)    
     c "So, before I learned that the multiverse theory was real and realized its implications, I used to think that I had the tools to figure out what's real." 
     c "What I mean to say is that trying to figure out what's actually real is right now a futile effort. Now I can't help but think that all of what we experience might be a simulation. This realization is the most unsettling of them all that I have had."
+    show naomi concern flip with dissolve
     c "Firstly, I have noticed that there is so much about my behavior that doesn't any make sense at all." 
     c "Secondly, I think that from a scientific standpoint, remembering things from alternate realities is highly implausible. Also, I feel like my life is on rails; there are things I can't force myself to do, no matter how hard I try."
     c "A good example would be that whenever we go out, we only seem to be able to go to the places where Adine or Zhong work at."
     Nm surprised flip "Uhh... what?"
     c "Naomi, I know I sound crazy, but I have no idea how to break from these chains."
     c "I understand how reification works and we should fight against it whenever we can, but honestly for the first time in my life I'm in a situation in which there is absolutely nothing I can do to resist whatever it is that controls my life."
-    c "The most shocking realization is that I can't even be entirely sure if my life before arriving through the portal is real."
-    show naomi concern flip with dissolve    
+    show naomi concern flip with dissolve
+    c "The most shocking realization is that I can't even be entirely sure if my life before arriving through the portal is real." 
     c "Anyway, if we're in the type of simulation I think we might be in, we won't ever be able to break out of it. Even trying would probably have us lose our sanity."
-    show naomi confused flip with dissolve
+    show naomi blank flip with dissolve 
     m "Naomi was getting visibly bored with my antics."    
     c "I suppose in the end it doesn't seem like I'm getting anywhere with this line of thought. Because of this I guess I have to come to the conclusion that I should stop theorizing before I lose my mind." 
     c "Let's just focus on what we experience, especially on experiences that make both of us happy."
@@ -194,7 +196,7 @@ label sqb_naomi_m6_discussion_reality:
     m "I ordered some fried cheese, two boxes of fried chicken, several hamburgers and two dragon-sized portions of fried noodles with aurochs meat and steamed vegetables."
     m "(Perfect. With this much, we won't have to cook tomorrow.)"
     play sound "fx/sheet.wav"
-    m "After I had placed the order, I lied down on the couch."
+    m "After I had placed the order, I lay down on the couch."
     m "(I guess right now it's better to just keep my eyes ahead and do my best to avoid going crazy.)"
     $ renpy.pause (1.0)
     m "(I wonder if Naomi actually went to just raid my fridge?)"
@@ -255,6 +257,4 @@ label sqb_naomi_m6_discussion_reality:
     s "Thank you for playing!"
     $ renpy.pause (2.0)
 
-jump ml_main_menu    
-    
-    
+jump ml_main_menu  

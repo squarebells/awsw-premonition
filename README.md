@@ -18,7 +18,7 @@ Contains lewd scenes. In case you don't like that kind of stuff, the NSFW toggle
  To install mods from GitHub, the folder extracted from the downloaded archive goes to `~\Angels with Scaly Wings\game\mods`.
  
 ### Optional Requirement:
- + BangOk by 4onen (very NSFW). [GitHub](https://github.com/4onenm/AwSW-Bangok)
+ + BangOk by 4onen (all references not yet done though, also very NSFW). [GitHub](https://github.com/4onenm/AwSW-Bangok)
  
 ### Resources credits:
 + `bg\sqbnaomiapt04.jpg`: Background edited by squarebells, original by Uncle Mugen.

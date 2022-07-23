@@ -1,7 +1,7 @@
 label sqb_naomi_m5_rezatalk1:
      
-    c "You're absolutely correct. Even if I wanted to help you, due to my self-interest I have no choice but to stay here. I realized that I will be in huge trouble back in our world no matter what, even if I started helping you right now." 
-    c "I just can't trust you to stay quiet about all this, so my best option is to stay here."
+    c "You're absolutely correct. I have no choice because even if I wanted to help you, due to my self-interest it's best if I stay here. I realized that I will be in huge trouble back in our world no matter what, even if I started helping you right now." 
+    c "I just can't trust you to stay quiet about all this, so really my only option is to stay."
     Rz amused "I'm glad we're on the same page. Personally, I don't mind if you stay here. It's your funeral."
 
 jump sqb_naomi_m5_rezatalk1_end
@@ -59,7 +59,8 @@ label sqb_naomi_m5_rezatalk2:
     c "Anyway, you're so pathetic because you're always just looking to save your own skin. If you cooperate with the dragons you will go to prison, yes, but at least you stopped before making an even bigger mistake."
     c "Also, what were you expecting me to do once you started sabotaging my mission?"
     Rz "I expected you to join me."
-    c "Yeah, that was never going to happen. You don't know me very well, do you?"
+    c "Yeah, that was never going to happen. You don't know me very well, do you?" 
+    c" I'm not going to help you commit genocide because we were friends in high school."
     show reza annoyed with dissolve
     $ renpy.pause (2.0)
     Rz angry "How dare you call yourself an ambassador for humanity? This generator is the only thing we need for our city-state to survive. How can you even argue about something as simple as this?"   
@@ -78,7 +79,7 @@ label sqb_naomi_m5_rezatalk2:
     c "What are you laughing at?"
     Rz "With your multiple university degrees, I expected you to be smarter than this. Did you already forget that we're in the past?!" 
     Rz amused "That means if the dragons don't get wiped out, humans would never come to exist. Humans not existing would create a kind of a grandfather paradox, because we created the dragons, but due to our actions the dragons would be the reason humans never existed."
-    Rz "There is no way to know what would happen if we caused that to happen. It might even destroy the fabric of reality itself, or at least make it so that both humans and dragons came to exist. Is that what you want?"
+    Rz "There is no way to know what would happen if we made that happen. It might even destroy the fabric of reality itself, or at least make it so that both humans and dragons came to exist. Is that what you want?"
     c "..."
     c "You don't know that for sure!"
     Rz "That's the only logical outcome to conclude from you want to do. Deal with it, and join me."
@@ -177,7 +178,7 @@ label sqb_naomi_m5_rezafight:
     c "Yeah, they really don't seem to care about me."
     Mv nice flip "Today, I saw enough to figure out your true intentions. You might still be an unwitting pawn, but at least there's no malice on your part."
     Mv normal flip "I have no faith in your superiors, however."
-    c "Actually, I found out from Reza that most likely the hostile response you got has been due to him feeding misinformation to our superiors." 
+    c "Actually, I found out from Reza that most likely the hostile response you got has been due to him feeding misinformation to them." 
     c "They're not good people, but I think even they wouldn't turn down all the benefits a friendly relationship would bring."
     Mv angry flip "I think you're just coming up with excuses in order to make your people look better."
     c "You're wrong but it's whatever. I don't even care about that anymore because I'm going to stay here with Naomi and never go back to my own world."
@@ -199,7 +200,7 @@ label sqb_naomi_m5_maverick:
     c "Look, your conclusions were reasonable based on the information you had available at the time. I understand why it seemed to you that I blindly trusted my superiors, without realizing that I was being used."
     c "I just wasn't being used in the way you thought. To be frank, I was actually used as a kind of decoy."
     c "In other words you were right to suspect the motivations of my city-state's leadership. Even if we manage to get out of this incident without ruining the relations between our peoples, I would still be very suspicious when interacting with them."
-    c "Still, don't automatically start blaming the regular people, who are just trying to survive in our harsh world. In fact, to make sure we get along nicely, I'll do my best to make sure that my people won't be able to exploit yours."
+    c "Still, would urge you to not start harassing regular people, who are just trying to survive in our harsh world. In fact, to make sure we get along nicely, I'll do my best to make sure that my people won't be able to exploit yours."
     c "The fact of the matter is that Reza was the main culprit here. I sincerely admit that at first I had a hard time believing he would do something like this, mostly due to our shared history."
     $ renpy.pause (2.0)
     c "I would love to work together with you for the betterment of both our peoples."
@@ -216,6 +217,8 @@ label sqb_naomi_m5_ending: #I can't be bothered to make a million new labels any
     c "(The Administrator. Izumi. Of course it was her, but why? Didn't she understand the consequences?)"
     Nm sad "But what does it mean for you, though?"
     c "Nothing, really. I suppose we'll have to abandon our human migration plan, though."
+    Nm "Oh no..."
+    $ renpy.pause (2.0)
     c "Anyway, let's concentrate on diverting the comet first."
     Nm blank "Wait. There's a real danger?"
     c "According to my PDA, there's a huge chance of it crashing into your planet. All factors considered, it will cause a global extinction event unlike anything before."
@@ -309,7 +312,7 @@ label sqb_naomi_m5_ending: #I can't be bothered to make a million new labels any
     n "We went through a series of questions, a quick checkup and were promptly sent home. Bryce was both happy and relieved that Reza's case was finally closed. Naomi and I remained silent about the missing human world coordinates."
     n "The next day was nothing but a blur of meetings, talks, and planning, as I did my best to explain the situation to the council and to develop a solution for the comet. The Ministry of Science was skeptical at first, but my PDA data changed their minds in an instant."
     n "They started their work on a comet redirection plan, and the underground facility generator proved to be an invaluable asset for its realization."
-    n "When I returned to my apartment in the dark of night, I found Naomi waiting at the locked front door. She stayed overnight, and the next day we had a great time just hanging out and planning our lives together. The future was bright, and I had never been this happy before in my entire life."
+    n "When I returned to my apartment in the dark of night, I found Naomi waiting at the front door. She stayed overnight, and the next day we had a great time just hanging out and planning our upcoming lives together. The future was bright, and I had never been this happy before in my entire life."
     n "Every evening afterward we spent together, either going to places or simply just enjoying each other's company."    
     window hide
     nvl clear
@@ -319,7 +322,7 @@ label sqb_naomi_m5_ending: #I can't be bothered to make a million new labels any
     n "While the council restored the power for portal through their own means, they were unaware of missing coordinates which maintained my ambassador status."
     n "The choices previously presented were to either accept the consequences and give up on my mission and live my life among dragons or to use the portal to return to the day of my arrival. This debate in my head was entirely hypothetical of course." 
     n "I could never leave Naomi, for what, a chance to die again? Abandoning her would be very cruel and besides, why should I be responsible achieving the perfect solution?"
-    n "Then one late evening, in dark of night just before I was going to go to bed, I was awoken by an unexpected doorbell ring."   
+    n "Then one late evening, in dark of night just before I was going to go to bed, I was woken up by an unexpected doorbell ring."   
     window hide
     nvl clear
     
@@ -377,9 +380,10 @@ label sqb_naomi_m5_ending: #I can't be bothered to make a million new labels any
     As "..."
     As "It's better you don't know."
     c "What did you do?"
-    As "Honestly, I don't want to ruin your evening. Or life, for that matter."
+    As "Honestly, I don't want to ruin your night's sleep. Or life, for that matter."
     c "Whatever. Can you at least tell me if what you did the was reason you deleted the coordinates back to the human world?"
-    As "Yeah."
+    As "Yeah. It's crucial to make sure Reza doesn't escape."
+    $ renpy.pause (1.0)
     As "To be honest, you have earned your better future since I botched mine, so I'll just take the portal again."
     As "In any case, I need some of the items you're holding."
     $ renpy.pause (1.0)
@@ -389,8 +393,9 @@ label sqb_naomi_m5_ending: #I can't be bothered to make a million new labels any
     As "Thank you. I think I'm going to need it. I'll let you know that I am planning to prevent the disaster that happened to me from ever happening again to our other selves, hopefully for good."
     c "Seriously, can you just tell me what happened?"
     As "As I said, you don't want to know. Just be satisfied that you get to live out your happy life."
-    c "Oh well. I hope you succeed, other me."
-    As "Thanks."
+    c "Oh well. I hope you succeed, myself."
+    c "Or should I say I hope I succeed?"
+    As "Whatever. Thanks."
     $ naomi5stay = True
     stop music fadeout 2.0
     scene black with dissolvemed
@@ -462,7 +467,7 @@ label sqb_naomi_m5_aftermath:
     c "Not at all."
     play sound "fx/bed.ogg"
     show naomi slsmile with dissolve
-    m "She settled her chin on a cushion again and shut her eyes. Her body relaxed completely once more, her half-folded wing hitting the floor with a quiet thud."
+    m "She settled her chin on a cushion and shut her eyes. Her body relaxed completely once more, her half-folded wing hitting the floor with a quiet thud."
     m "Still firmly trapped, I wrapped one arm around Naomi in order to cuddle her to sleep, while also gently running my hand along her neck. She mumbled something inaudible and shifted to put her chin on top of my head."
     $ renpy.pause (1.0)
     show naomi sleep with dissolve
@@ -495,8 +500,8 @@ label sqb_naomi_m5_aftermath:
     stop music fadeout 1.0
     $ renpy.pause (2.0)
     play sound "fx/door/doorclose3.wav"
-    m "After drinking some water, I followed Naomi into my bedroom, and we made sweet love for almost the entire day." 
-    m "I felt like I was at the top of the world. Life was good."
+    m "After drinking some water, I followed Naomi into my bedroom, and we made sweet love for almost the entire day, in multiple different positions." 
+    m "I felt like I was at the top of the world. Life had actually turned for the better for me, which had seemed very unlikely just a few weeks ago."
     $ renpy.pause (2.0)  
 
 label sqb_naomi_m5_thebestend:
@@ -654,6 +659,8 @@ label sqb_naomi_credits_thebestest:
         scene black with dissolveslow
         stop music fadeout 2.0
         $ renpy.pause (2.5)
-        call ml_ending_check("sqb_naomi", "s-tier", "You have seen the S-tier ending for Naomi!", izumi_seen=True, is_good=True)
+        
+    $ renpy.pause (2.0)   
+    call ml_ending_check("sqb_naomi", "s-tier", "You have seen the S-tier ending for Naomi!", izumi_seen=True, is_good=True)
     
-jump sqb_naomi_m6_discussion_reality 
+jump sqb_naomi_m6_discussion_reality

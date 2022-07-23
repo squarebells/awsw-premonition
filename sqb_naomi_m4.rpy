@@ -21,9 +21,9 @@ label sqb_naomi_m4_skip:
 
 label sqb_naomi_m4_start:
 
-    Nm smile "Oh, well, hopefully that won't be an issue for you tonight. I would be very disappointed if you couldn't perform."
+    Nm smile "Oh well. Let's hope that won't be an issue for you tonight. I would be very disappointed if you couldn't perform."
     show sebastian shy b flip with dissolve
-    m "Sebastian was about to say something, but then he stopped and looked past us."
+    m "Sebastian was about to say something, but then stopped and shifted his gaze to the ground in front of us."
     $ renpy.pause (1.0)
     Nm normal "Anyway, we discovered this ancient sunken facility, explored it for a while and found some stuff. But then, its generator was about to blow up due to seawater we let in by accident. Thankfully, by working together we managed to find a solution in time."
 
@@ -121,6 +121,7 @@ label sqb_naomi_m4_meetinghumans:
     Nm smile "Very true. I can't believe how lucky I am."
     Nm normal "I never was a big fan of the human mythos personally, to be honest. But an alien from another world is no less exciting. We aren't alone in the universe, after all."
     c "I agree. For a sociologist, visiting the world of another species is a seemingly impossible dream come true."
+    $ renpy.pause (2.0)
     
 jump sqb_naomi_m4_meetinghumans_end
 
@@ -130,11 +131,11 @@ label sqb_naomi_m4_returndiscussion:
     $ renpy.pause (2.0)    
     Nm shy "This whole talk made me even more concerned about your safety. You're still going to stay here with me, right?"
     c "I don't think I have a choice, because you said you wouldn't even let me leave."
-    Nm confused "You know that I was just joking, right? If you want to leave, it's up to you, but I would urge you to really think it through before you make that choice."
+    Nm confused "You know that I was just joking, right? If you want to leave, it's up to you, but I would urge you to really think it through before you decide to make that choice."
     $ renpy.pause (2.0)
     c "I know, I was just joking as well. Of course I'll stay with you."
     show naomi smile with dissolve
-    c "To be honest, no sane person would ever want to go back to that post-apocalyptic hellhole, even if they were bound by duty to their people, like me." 
+    c "To be honest, no sane person would ever want to go back to that post-apocalyptic hellhole, even if they were bound by duty to their people, like I was." 
     c "Besides, if your conclusions are correct it seems that I basically have been betrayed by some in the leadership doing shady operations behind my back that might end up jeopardizing my mission."
     show naomi blank with dissolve
     c "So fuck them. All this would have been so easy if some of them hadn't been so greedy and hostile towards your people. They're really just a bunch of authoritarian assholes who only care about staying in power no matter the cost."
@@ -230,15 +231,15 @@ label sqb_naomi_m4_funparts:
     c "Alright, let's try this."
     hide naomi with dissolve
     m "I walked up to her and used one hand to support myself by grabbing her tail and the other to work my dick in order to fuck her."
-    m "As I started positioning myself closer in order to penetrate Naomi from behind, my foot slipped a little bit because of the wet floor. I managed to stop myself from falling by holding onto Naomi's tail."
+    m "Unfortunately, as I started positioning myself closer in order to penetrate Naomi from behind, my foot slipped a little bit because of the wet floor. I managed to stop myself from falling by holding onto her tail."
     show naomi confused with dissolve
     Nm "Phew, that was close. Are you okay?"
     c "I'm fine, but I just found out that since the floor is wet this position doesn't really work either because I might slip again when we start really getting into it. Let's try to figure out something else." 
     Nm surprisedblush "So fussy. Oh well, I should trust you to know your bodily limits."   
     c "Yeah, I don't want to hurt myself, since that would really ruin this evening. I think we should try new positions next time we do it in bed. There we can experiment safely."
-    Nm blank "Alright. How about you decide the position then?"
+    Nm blank "Alright. I think you should decide the position then."
     c "How about you lie down on your back and I'll fuck you from the front? I don't think those lounge chairs are big enough so it will have to be on the floor."
-    Nm normal "Fine. That works for me."
+    Nm normal "My scales insulate pretty well against the coldness of the floor, so that works for me."
     hide naomi with dissolve
     m "Naomi turned around again, laid down on her back and spread her wings for increased balance. After that she spread her legs, giving me unobstructed access to her draconic pussy."
     show naomi aroused with dissolve    
@@ -305,7 +306,7 @@ label sqb_naomi_m4_funparts:
     $ renpy.pause (2.0)
     Nm shy "[player_name]...{w} I'm going to come soon."
     c "Already?"    
-    m "To think of it, throughout our intimate session I had felt hints of Naomi being a lot more sensitive this time. Realizing one of the possible reasons for that made me shudder and feel a strange tingle in the back of my head."
+    m "To think of it, throughout our entire intimate session I had felt hints of Naomi being a lot more sensitive this time. Realizing one of the possible reasons for that made me shudder and feel a strange tingle in the back of my head."
     m "I stopped myself from obsessing about the extremely unlikely but still possible implications of that, and instead focused on making Naomi feel as good as possible."
     c "I'm still some ways off from coming myself."
     Nm aroused "Then I want you to keep fucking me through my orgasm. Just focus on shooting your seed inside me as soon as possible."
@@ -361,13 +362,13 @@ label sqb_naomi_m4_funparts:
     show naomi slsmile with dissolve
     play sound "fx/craphug.mp3"
     m "With my agreement, Naomi wrapped her wings around me and supported my head with her draconic hand, in order to make sure I would stay still while I sleeping on top of her. Lastly, she shifted her lower body upwards slightly, presumably to stop most of my semen from flowing out of her pussy."   
-    m "(She's really trying as hard as possible to conceive, isn't she? I'm afraid I'm going to have to break the bad news to her some time. Not right now though.)"
+    m "(She's really trying as hard as possible to conceive, isn't she? I'm afraid I'm going to have to break the bad news to her some time. Not right now, though.)"
     play sound "fx/purr.ogg"
     play sound2 "fx/rub2.ogg"
-    m "Then, she closed her eyes and started humming contently and quietly as she gently and slowly rubbed my body against hers."
+    m "Then, she closed her eyes and started humming contently as she gently rubbed my body against hers."
     stop sound fadeout 1.0
     stop sound2 fadeout 1.0
-    c "You're the best, Naomi. I love you so much."
+    c "You're the so wonderful, Naomi. I love you more than anything else in the world."
     Nm "Shh...{w} I love you too [player_name], but no talking any more. Let's just feel each other's bodies and drift off to sleep."
     c "Fine."
     scene black with dissolveslow
@@ -405,4 +406,3 @@ label sqb_naomi_m4_fun_orig2:
     $ naomiromance += 50
         
 jump eck_naomi_m4_morning
-

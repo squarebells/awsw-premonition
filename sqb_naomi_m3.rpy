@@ -45,7 +45,7 @@ label sqb_naomi_m3_undressing:
     m "Done undressing, I hid my clothes in a nearby thick shrub and switched my attention towards the scuba gear. Then I noticed Naomi peeking at me from behind her wing."
     c "Naomi!"
     show naomi smile with dissolve
-    Nm "Sorry. I couldn't help but want to find out how you would react." 
+    Nm "Sorry. I couldn't help but find out how you would react." 
     Nm normal "I honestly don't understand what's so different about undressing outside."
     m "(This is starting to be really irritating, and I want to get going already.)"
     c "It's whatever. You can watch if you want."
@@ -59,7 +59,7 @@ label sqb_naomi_m3_undressing:
     c "Eventually, after many centuries of different civilizations developing, covering oneself up became more than simple necessity, a social norm or even a tradition to follow as well. This became especially true in regards to hiding certain – more private – parts of our bodies."
     Nm smile "I see. Is that why you became visibly flustered when I stared at you after you had taken your clothes off? Were you afraid that I would look at your private parts?"
     c "..."
-    c "Are you sure you have never met a human before? You know just the correct ways to make me feel as embarrassed as possible to be one."
+    c "Are you sure you have never met a human before? You know just the right ways to make me feel as embarrassed as possible to be one."
     Nm shy "N-no...{w} it's just intuition, I guess?"
     Nm normal "Anyway to contrast your people with ours, I'll tell you openly that we don't have a problem walking around as we are, really." 
     Nm "Of course, we have specialized outfits for jobs which require them – but for the most part, it comes down to accessories with extra functionality, like bags, insignias and other minor elements, that are mostly decorative."
@@ -162,13 +162,13 @@ label sqb_naomi_m3_biolabalert:
     s "Error. Hostile environment detected in the transit chamber. Cause: outer door malfunction. Pumps: online. Please wait."
     c "Damn! No way out."
     Nm stern "Quickly, think of something. You're much more knowledgeable about mechanical things and computers than I am."
-    $ renpy.pause (1.0)
+    $ renpy.pause (2.0)
     c "I have to admit that I'm at a loss."
     $ renpy.pause (2.0)
-    Nm blank "What if we prevent the backup generator from exploding by shutting it down, and then placing it somewhere safer?"
+    Nm blank "What if we prevent the backup generator from exploding by shutting it down, removing it and then placing it somewhere safer?"
     c "Do you think that we might be able to do that?"
     Nm normal "Well, in a facility like this there has to be a way to maintain and replace the power source. They already removed one, so it should be possible to remove the other one as well." 
-    Nm "We don't know where the generator room is though, so finding out where it is should be our first priority. Could we try to look at the schematics of this complex on the console we saw earlier?"
+    Nm "We don't know how to get to the generator room though, so finding out how to do that should be our first priority. Could we try to look at the schematics of this complex in more detail on the console we saw earlier?"
     c "Alright, let's try that."
     hide naomi with dissolve
     $ renpy.pause (2.0)
@@ -215,10 +215,10 @@ label sqb_naomi_m3_panicmenureset:
     m "The program estimated that I had about half an hour before generator rupture. I set the timer up on my PDA as well."
     c "Naomi..."
     show naomi surprised with dissolve
-    Nm "Did you find out where the generator room is?"
-    c "Yes, it's below us, but I have no idea how to reach it."
-    c "The real bad news is that this console also told me that we have only half an hour before the backup generator explodes. I honestly thought we would've had a lot longer but the drainage system is completely destroyed."
-    Nm stern "Well, you better hurry up then, since I can't operate computers as fast as you can. See if you can remotely open a maintenance hatch or even extract the generator automatically."
+    Nm "Did you find out how to get to the generator room?"
+    c "Well, it's certainly below us but I still have no idea how to reach it."
+    c "The real bad news is that this console also told me that we have only half an hour before it explodes. I honestly thought we would've had a lot longer but the drainage system is completely destroyed."
+    Nm stern "Well, you better hurry up then, since I can't operate computers as fast as you can. We really need to find out how to get to the generator. Maybe it would be possible to extract it automatically using one of the consoles?"
     show naomi blank with dissolve
     c "Yes, Naomi."
     m "Looking around, I noticed another console nearby. I decided to try my luck with it."
@@ -236,7 +236,7 @@ jump eck_naomi_m3_panicterminal
 
 label sqb_naomi_m3_panicterminal:
 
-    c "Naomi, I found out how to get to the backup generator. There's a maintenance hatch somewhere around here, and I need your help to find it."
+    c "Naomi, I found out how to get to the backup generator. There's a maintenance hatch somewhere around here that opens up from the floor, and I need your help to find it."
     
     if sqbnaomim3genhatchtold == True:
         Nm stern "I know, you already told me that. Can we please start looking for it?"
@@ -327,8 +327,9 @@ label sqb_naomi_m3_ending:
     Nm normal "Fine. Hop on my back when you're ready to go."
     hide naomi with dissolve
     play sound "fx/sheet.wav"
-    m "As Naomi got down to rest on her belly to prepare to take me on as a passenger, I went to put both the scuba gear and my clothes in the same bag I had brought the scuba gear in."
-    m "Then, I walked over to Naomi and positioned myself on her back, fastening three of my limbs on her sides to be able to hold onto her, while carrying the equipment and clothing bag in one hand."
+    m "As Naomi got down to rest on her belly to prepare to take me on as a passenger, I went to put both the scuba gear and my clothes in the same bag I had brought the scuba gear in." 
+    m "I thought briefly about just sleeping on the beach but sleeping with Naomi in her bed sounded like a much better idea, and I only had to go through a little bit more of physical exertion to be able to make it to her apartment."
+    m "I walked over to Naomi and positioned myself on her back, fastening three of my limbs on her sides to be able to hold onto her, while carrying the equipment and clothing bag in one hand."
     play soundloop "fx/steps/steps.ogg"
     scene black with dissolve
     $ renpy.pause (2.0)
@@ -418,7 +419,7 @@ label sqb_naomi_m3_ending:
     Nm smile "I suppose that after living a life without a meaningful purpose for such a long time and then being stressed and overworked I deserved to get my fair share of happiness as well."
     c "Hey, I consider myself luckier than you. A few weeks ago I couldn't have even imagined that another sentient species as interesting as dragons were actually real. On top of that, I got to be the second person to come visit them." 
     c "Also, I survived a near-apocalyptical solar flare event and its aftermath even though I realistically shouldn't have."
-    Nm concern "I agree about the solar flare, but do remember that the thing regarding dragon-human relations used to be the exact same case for us as well."
+    Nm concern "I agree about the apocalypse, but do remember that the thing regarding dragon-human relations used to be the same exact case for us as well."
     c "Well...{w} yes. Good point. I still consider myself luckier than you."
     Nm smile "Yes, you're lucky to be cute and caring enough to deserve me."
     $ renpy.pause (2.0)
@@ -450,7 +451,7 @@ label sqb_naomi_m3_ending:
     $ renpy.pause (2.0)
     Nm smile "Nonsense. You're staying here with me."
     c "Won't Bryce and Sebastian get worried if I don't go back to my apartment before dark?"
-    Nm blank "No, it's fine. I asked them to give you permission to stay over at my place since we're, you know, intimate."
+    Nm blank "No, it's fine. I asked them to give you permission to stay over at my place overnight since we're, you know, intimate."
     Nm stern "Now that I think of it, I'm more than strong enough to protect you from Reza. Also, I have a security system so I doubt he's even going to be able to break in here without us noticing."
     c "But I don't want to put you in any risk."
     show naomi surprised with dissolve
@@ -471,7 +472,8 @@ label sqb_naomi_m3_ending:
     Nm shy "Actually... umm...{w} I don't feel that tired anymore. I would like to ease off my mind from what happened today by continuing on the series I was watching earlier today."
     Nm smile "I will come to sleep next to you the first moment I start feeling tired though. I promise you will have the sweetest dreams when I get back."
     Nm shy "If you need some more comforting you could always come watch the series with me."
-    c "It's fine, go ahead. I seriously can't focus on any entertainment right now. Could you bring me a tall glass of cold water before you start a late-night binge on your series?"
+    c "It's fine, go ahead. I seriously can't focus on any entertainment right now." 
+    c "Could you bring me a tall glass of cold water before you start a late-night binge on your series?"
     Nm normal "Sure."
     play sound "fx/sheet.wav"
     m "Naomi got off the bed, pushed her bedroom door open with her snout and walked out."
@@ -640,5 +642,6 @@ label sqb_naomi_m3_ending:
     play sound "fx/door/handle.wav"
     $ renpy.pause (2.0)
     play sound "fx/door/doorclose3.wav"
+    $ naomiscenesfinished = 3
 
-jump ml_date_end  
+jump ml_date_end
