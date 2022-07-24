@@ -8,7 +8,7 @@ init:
     $ sqbnaomim3nogiveup = False
     $ sqbnaomim3entrchkblk = False
     $ sqbnaomim3protect = False
-    $ sqbnaomi4hadsex = False
+    $ sqbnaomim4hadsex = False
     
     image sqbnaomiapt04 = "bg/sqbnaomiapt04.png"
     image sqbcreditsnm = "cg/sqbcreditsnm.png"
