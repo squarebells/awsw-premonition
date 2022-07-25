@@ -274,7 +274,7 @@ label sqb_naomi_m1_discussion2:
     c "Yeah, I wouldn't either. Unfortunately, we don't have a choice."
     $ renpy.pause (2.0)
     
-    if naomi1mood > 5 and sqbnaomilewd > 0:
+    if naomi1mood > 4 and sqbnaomilewd > 0:
          $ sqbnaomilewd +=1
          show naomi shy with dissolve
          m "Naomi looked past me and I noticed that she seemed to be thinking about something."
@@ -304,7 +304,7 @@ label sqb_naomi_m1_discussion2:
     show naomi surprisedblush with dissolve
     $ renpy.pause (2.0)
     
-    if naomi1mood > 5 and sqbnaomilewd > 1:
+    if naomi1mood > 4 and sqbnaomilewd > 1:
         m "Again, Naomi paused to think for a moment."
     else:
         m "Naomi paused to think for a moment."
@@ -319,7 +319,7 @@ label sqb_naomi_m1_discussion2:
     c "Oh, right."
     c "That sounds fine to me. Both of our species are sentient and we can communicate well with each other so there aren't any problems with an interspecies relationship."
     
-    if naomi1mood > 5 and sqbnaomilewd > 1:      
+    if naomi1mood > 4 and sqbnaomilewd > 1:      
          $ naomi1mood += 1
          $ sqbnaomilewd +=1         
          Nm surprisedblush "You wouldn't mind either?" 
