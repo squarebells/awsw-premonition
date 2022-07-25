@@ -291,8 +291,9 @@ label sqb_naomi_m1_discussion2:
          $ renpy.pause (2.0)        
     else:
          $ renpy.pause (1.0)
-         Nm "I can't understate how sad your people's situation is. Let's hope things start to get better."
-         Nm blank "Please, let's just talk about something else."
+         Nm "That's so very sad. I hope that things start to get better eventually."
+         $ renpy.pause (1.0)
+         Nm blank "Can we just talk about something else, please?"
          c "Alright."
          $ renpy.pause (2.0)
     
@@ -346,8 +347,8 @@ label sqb_naomi_m1_discussion2:
          c "You do have interspecies dating here, right?"
          $ renpy.pause (1.0)         
          Nm stern "Let's change the topic."
-         c "Alright. What are your parents doing these days?"
-         Nm blank "Oh, not much."
+         c "Alright. So, what are your parents doing these days?"
+         Nm blank "Oh, nothing much."
          Nm normal "They recently moved their business to the big city, and I stayed back here on my own."
  
 jump sqb_naomi_m1_discussion2_end
