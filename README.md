@@ -1,7 +1,7 @@
 # Premonition
 I really liked how Naomi's and PC's relationship started developing in the two last scenes of A Solitary Mind's (ASM) ending A, so I decided to write an expansion. This mod's content is mostly based on acting differently due to interference from other timelines. I decided to use this trope because it was the most interesting thing in the base game for me. There's also some stuff I was thinking about while playing the base game and other mods.
 
-You need to have acquired ASM's ending A to unlock this mod, because it takes place in a timeline after that. To get the the new scenes, start from the very beginning (Do not skip the intro!), select the new options whenever possible and of course be as nice as possible to Naomi. I'm not sure yet if I have patched all the holes that can be caused by skipping, so avoid doing that.
+You need to have acquired ASM's ending A to unlock this mod, because it takes place in a timeline after that. To get the the new scenes, start from the very beginning [b](Do not skip the intro!)[/b], select the new options whenever possible and of course be as nice as possible to Naomi. I'm not sure yet if I have patched all the holes that can be caused by skipping, so avoid doing that.
 
 Contains lewd scenes. In case you don't like that kind of stuff, the NSFW toggle that comes with the modtools works well. Also, this mod assumes the PC is male, at least for now.
  
