@@ -9,7 +9,7 @@ class Premonition(Mod):
     name = "Premonition"
     version = "1.0"
     author = "squarebells"
-    dependencies = ["MagmaLink", "A Solitary Mind", "Chaos_Knight core mod.", "CRAP", "?BangOk?"]
+    dependencies = ["MagmaLink", "A Solitary Mind", "Chaos_Knight core mod.", "CRAP", "?BangOk"]
     nsfw = True
     
     @classmethod
