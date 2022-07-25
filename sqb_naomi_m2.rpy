@@ -731,7 +731,7 @@ label sqb_naomi_m2_bedroomfun:
     Nm aroused "...that you actually want to have sex with me."
     m "For some reason, Naomi's forwardness made me feel like my heart had just jumped to my throat. To make things worse, my face felt so hot, I would have bet that it had turned completely red."
      
-    if modinfo.has_mod("BangOk?") and bangok_four_bryce1_unplayed == False or bangok_four_xsebastian_unplayed == False or bangok_four_anna2.unplayed == False:
+    if modinfo.has_mod("BangOk") and bangok_four_bryce1_unplayed == False or bangok_four_xsebastian_unplayed == False or bangok_four_anna2.unplayed == False:
         m "(Why am I feeling so anxious right now? It shouldn't be that much different with Naomi.)"  
     else:
         m "(Why am I feeling so anxious right now? It shouldn't be that much different with a dragon.)"
@@ -792,7 +792,7 @@ label sqb_naomi_m2_bedroomfun:
     Nm normal "When you removed your clothes, I saw where your genitals are located. I don't think our anatomies are too different to make this inconvenient for us."
     
     #Note to self for later: Naomi thinks having multiple partners is fine as long as you like her the most
-    if modinfo.has_mod("BangOk?") and  bangok_four_anna2.unplayed == False:  
+    if modinfo.has_mod("BangOk") and  bangok_four_anna2.unplayed == False:  
         c "Actually, our anatomies aren't too different. I already had sex with Anna."
         Nm confused "What, really? She hates everyone, but suddenly took a liking to you?"
         Nm stern "Hold on...{w} did she agree do it to experiment on human anatomy?"
@@ -802,7 +802,7 @@ label sqb_naomi_m2_bedroomfun:
         c "So, how do you want to proceed from here?"
         Nm "First, I have another experiment of my own in mind."
         
-    elif modinfo.has_mod("BangOk?") and bangok_four_bryce1_unplayed == False:
+    elif modinfo.has_mod("BangOk") and bangok_four_bryce1_unplayed == False:
         c "Actually, Our anatomies aren't too different. I had sex with Bryce when I went drinking with him."
         #More accurate references
         Nm confused "What, really? I'm surprised you can still walk."
@@ -812,14 +812,14 @@ label sqb_naomi_m2_bedroomfun:
         play sound "fx/system3.wav"
         s "Dialogue unfinished, for now."
     
-    elif modinfo.has_mod("BangOk?") and bangok_four_xsebastian_unplayed == False:
+    elif modinfo.has_mod("BangOk") and bangok_four_xsebastian_unplayed == False:
         c  "Actually, I already had sex with Sebastian. Our anatomies aren't too different."
         Nm "I'm not surprised, he's kinda cute. I just wish he dropped his dutiful police officer persona once in a while."
         play sound "fx/system3.wav"
         s "Dialogue unfinished, for now."
     
     #Note to self for later: PC is going to say he came here to establish friendly relations and fucking dragons is one way of achieving that
-    elif modinfo.has_mod("BangOk?") and bangok_four_bryce1_unplayed == False or bangok_four_anna2.unplayed == False:
+    elif modinfo.has_mod("BangOk") and bangok_four_bryce1_unplayed == False or bangok_four_anna2.unplayed == False:
         c "I have already had sex with Anna and Bryce. Our anatomies aren't too different."
         Nm surprised "You've already fucked two people I know since you came here?"
         Nm confused "That can't be a coincidence."
@@ -827,7 +827,7 @@ label sqb_naomi_m2_bedroomfun:
         play sound "fx/system3.wav"
         s "Dialogue unfinished, for now."
     
-    elif modinfo.has_mod("BangOk?") and bangok_four_xsebastian_unplayed == False or bangok_four_anna2.unplayed == False:
+    elif modinfo.has_mod("BangOk") and bangok_four_xsebastian_unplayed == False or bangok_four_anna2.unplayed == False:
         c "I have already had sex with Anna and Sebastian. Our anatomies aren't too different."
         Nm surprised "You've already fucked two people I know since you came here?"
         Nm confused "That can't be a coincidence."
@@ -835,7 +835,7 @@ label sqb_naomi_m2_bedroomfun:
         play sound "fx/system3.wav"
         s "Dialogue unfinished, for now."
     
-    elif modinfo.has_mod("BangOk?") and bangok_four_bryce1_unplayed == False or bangok_four_xsebastian_unplayed == False:
+    elif modinfo.has_mod("BangOk") and bangok_four_bryce1_unplayed == False or bangok_four_xsebastian_unplayed == False:
         c "I have already had sex with Bryce and Sebastian. Our anatomies aren't too different."
         Nm surprised "You've already fucked two people I know since you came here?"
         Nm confused "That can't be a coincidence."
@@ -873,7 +873,7 @@ label sqb_naomi_m2_bedroomfun:
     m "Naomi released me from the prison of her legs and spread them a bit."
     Nm shy "Can you see the slit between my legs?"
     
-    if modinfo.has_mod("BangOk?") and persistent.bangok_cloacas == False:
+    if modinfo.has_mod("BangOk") and persistent.bangok_cloacas == False:
         m "I looked down at Naomi's groin, seeing a single vertical slit and an asshole below it."
         m "It seemed that I needed to go down a little bit to reach her pussy and also to have some leverage to thrust inside."        
     else:
@@ -893,7 +893,7 @@ label sqb_naomi_m2_bedroomfun:
         play sound "fx/lewd/pussy.ogg"
         m "I found out that even though Naomi's cloaca looked pretty wide at first glance, later on it narrowed and separated into two passages positioned vertically from each other."
         
-        if modinfo.has_mod("BangOk?") and bangok_four_anna2.unplayed == False or bangok_anon_anna4.unplayed == False:
+        if modinfo.has_mod("BangOk") and bangok_four_anna2.unplayed == False or bangok_anon_anna4.unplayed == False:
             c "It's a bit different from Anna's, but I can manage everything because I am the dragon pussy master." #Cringe
             
         Nm smile "Like what you feel?"
@@ -932,7 +932,7 @@ label sqb_naomi_m2_bedroomfun:
     m "Due to our size difference, in this position my face only reached up to her chest." 
     m "To finally put myself in position to penetrate Naomi, I secured my hands behind her lower back."
     
-    if modinfo.has_mod("BangOk?") and persistent.bangok_cloacas == False:
+    if modinfo.has_mod("BangOk") and persistent.bangok_cloacas == False:
         show naomi aroused with dissolve
         play sound "fx/lewd/pussy.ogg"
         m "Then I used my fingers to spread her pussy and lined the tip of my erect penis with her opening."        
@@ -950,11 +950,11 @@ label sqb_naomi_m2_bedroomfun:
     play sound "fx/lewd/penfast.ogg"
     m "After the shallow initial penetration, I moaned as I bucked myself rest of the way in a single thrust. The sensation of fully plunging yourself into someone soft and bigger than you was exciting."
     
-    if modinfo.has_mod("BangOk?") and bangok_four_anna2.unplayed == False or bangok_anon_anna4.unplayed == False:    
+    if modinfo.has_mod("BangOk") and bangok_four_anna2.unplayed == False or bangok_anon_anna4.unplayed == False:    
         m "(Naomi's tighter than Anna. That's surprising since Naomi much bigger than her. I suppose Anna really has a preference for larger partners.)"
         m "(I'm still fortunate to have an above average penis, or else I most likely couldn't get Naomi off with it at all.)"
     else:
-        if modinfo.has_mod("BangOk?") and persistent.bangok_cloacas == False:
+        if modinfo.has_mod("BangOk") and persistent.bangok_cloacas == False:
             m "(Even though Naomi is rather large, her pussy a lot tighter than you would expect. I suppose she's only had smaller partners, like she alluded to earlier.)"
         else:
             m "(Even though Naomi's slit is rather large when aroused, she's a lot tighter from the inside than you would expect. I suppose she's only had smaller partners, like she alluded to earlier.)"
@@ -1030,7 +1030,7 @@ label sqb_naomi_m2_bedroomfun:
             m "I steadied myself on Naomi's spread-out legs and squeezed her enormous thighs. Based on her expression, she liked it when someone played with them."
             play sound "fx/lewd/penslow.ogg"
             
-            if modinfo.has_mod("BangOk?") and persistent.bangok_cloacas == False:
+            if modinfo.has_mod("BangOk") and persistent.bangok_cloacas == False:
                 show naomi smile with dissolve
                 m "With my now increased leverage, I lined the tip of my dick with her vagina and immediately pushed myself fully inside her."
             else:
@@ -1052,7 +1052,7 @@ label sqb_naomi_m2_bedroomfun:
             $ renpy.pause (2.0)
             m "As I kept fucking Naomi, some of my seed seeped out of her pussy. This made me even harder than before since it reminded me of what I had just done a few moments earlier. I hoped I would be able to do it many more times in the future, not just for the rapidly approaching second time."
             
-            if modinfo.has_mod("BangOk?") and bangok_anon_anna4.unplayed == False:
+            if modinfo.has_mod("BangOk") and bangok_anon_anna4.unplayed == False:
                 $ renpy.pause (2.0)
             else:
                 m "(I can't believe I just came inside a dragon's pussy. Doing that broke a pretty important barrier for the sake of advancing humanity.)"
@@ -1929,7 +1929,7 @@ label sqb_naomi_m2_ending:
     Sb "I'm so happy for Naomi, and for you too of course. She deserves a good boyfriend who will do right by her."
     c "Thanks, Sebastian. I really appreciate it."
     
-    if modinfo.has_mod("BangOk?") and bangok_four_xsebastian_unplayed == False:
+    if modinfo.has_mod("BangOk") and bangok_four_xsebastian_unplayed == False:
         Sb shy b "You know...{w} umm..."
         Sb "Since we've already had sex, is there any chance I could join you and Naomi? You know what they say: the more the merrier."
         c "I wouldn't mind that, so it's entirely up to her. She did call you cute and she also said she likes smaller partners, so there's a chance she might agree to it."
