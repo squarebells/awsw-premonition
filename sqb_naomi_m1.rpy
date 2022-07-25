@@ -291,7 +291,7 @@ label sqb_naomi_m1_discussion2:
          $ renpy.pause (2.0)        
     else:
          $ renpy.pause (1.0)
-         Nm "I can't understate how sad your people's situation is. Let's hope things get start to get better."
+         Nm "I can't understate how sad your people's situation is. Let's hope things start to get better."
          Nm blank "Please, let's just talk about something else."
          c "Alright."
          $ renpy.pause (2.0)
