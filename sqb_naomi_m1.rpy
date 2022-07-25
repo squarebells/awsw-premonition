@@ -381,7 +381,7 @@ label sqb_naomi_m1_escort:
     $ renpy.pause (1.0) 
     Nm shy "Uh...{w} now that I think of it, I suppose I did? You got me there."
     Nm smile "You're just such good company."
-    Nm normal "Well, mainly I just thought that – since we'd be hanging out together – there'd be no need to keep Seb stationed on security duty as well. One officer is enough."
+    Nm normal "Well, mainly I just thought that – since we'd be hanging out together – there would be no need to keep Seb stationed on security duty as well. One officer is enough."
     Nm "Bryce agreed with my suggestion, so here we are now."
 
 jump sqb_naomi_m1_escort_end
