@@ -268,14 +268,14 @@ label sqb_naomi_m2_movie:
     c "Sure, that works for me. Anyway, to continue..."
     show naomi normal with dissolve    
     c "Like you already know, our most important goal is to get one of your generators. Our need is urgent because soon we won't have enough power to run our hospital properly." 
-    c "It's pretty advanced because luckily, a decent amount of tech, especially medical equipment was spared in our city due to precautions taken before the flare. I just hope the hospital or even our entire city to be honest is still standing by the time my mission is completed."
+    c "It's pretty advanced because luckily, a decent amount of tech, especially medical equipment was spared in our city due to precautions taken before the flare. I just hope the hospital or even our entire city to be honest is still standing by the time I have completed my mission."
     show naomi blank with dissolve  
-    m "As I said that I was hit by the realization that I might not be able to come back here after I had completed my mission. After all, given the precarious situation we were in, who would care about researching dragon society and culture?"
+    m "As I said that I was hit by the realization that I might not be able to come back here from my own world after completing my mission. After all, given the precarious situation we were in, who would care about researching dragon society and culture?"
     play music "mx/flashback.ogg" 
-    m "Because of this sudden insight, it was the first time when thinking about having to return made my stomach feel like an endless pit. A surge of panic was brewing up in me, so I thought about confiding in Naomi to ease it off."
+    m "Because of this sudden insight, it was the first time when even thinking about having to return through the portal made my stomach feel like an endless pit. A surge of panic was brewing up in me, so I thought about confiding in Naomi to ease it off."
     $ renpy.pause (1.0)
     show naomi concern with dissolve
-    m "Then, she interjected about my sniffing and suddenly stopping the story."
+    m "Then, she made that choice for me by interjecting about my sniffing and stopping the story."
     $ renpy.pause (1.0)
     Nm "Is something wrong?"
     $ renpy.pause (1.0)
