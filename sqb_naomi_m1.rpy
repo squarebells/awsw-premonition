@@ -252,7 +252,7 @@ label sqb_naomi_m1_discussion2:
     
     c "I'm just kidding, because I don't really care about money. We don't even use it any more in my city-state."
     Nm surprised "Really? How does a system like that even work?"
-    c "Empirically speaking it seems to work fine for the time being. There even used to be political movements in our world that wanted to abolish the concept money, among other things."
+    c "Empirically speaking it seems to work fine for the time being. There even used to be political movements in our world that wanted to abolish the concept of money, among other things."
     Nm confused "That sounds really weird and inconvenient to me. How did the people of your city-state come to adopt a system like that?"
     c "Well, for us it's more of a necessity dictated by our circumstances rather than a calculated choice." 
     c "Money needs to be backed by an institution with enough authority to be worth anything. I'm sure it works like that here too, so you probably know this already."
