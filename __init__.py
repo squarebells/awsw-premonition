@@ -153,7 +153,7 @@ def sqb3naomi(ml):
             
        ml.find_label("eck_naomi_m3_panicmenu") \
             .search_menu("Snuggle up with Naomi and surrender to your fate.") \
-            .edit_choice(text="Snuggle up with Naomi and surrender to your fate.", condition='sqbnaomim3nogiveup == False and ecknaomim3boomstop == False and ecknaomim3naomifound or ecknaomim3naomifound2 == True').branch() \
+            .edit_choice(text="Snuggle up with Naomi and surrender to your fate.", condition='sqbnaomim3nogiveup == False and ecknaomim3boomstop == False and ecknaomim3naomifound == True').branch() \
             .search_python("renpy.pause (0.5)") \
             .hook_to("sqb_naomi_m3_nogiveup", condition='sqbnaomi2hadsex == True')
             
