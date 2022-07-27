@@ -1265,7 +1265,7 @@ label sqb_naomi_m2_cooking:
     m "(It's the mostly the same thing with the produce in her cabinets as well. Also, there's so much stuff that you would think she cooks at home.)"
     m "(Wait, did she buy all this just to impress me? That's very cute.)"
     m "(Anyway, back to the main task at hand. I think at first it would be good to move a bunch of stuff on the kitchen counter and sort everything by type.)"
-    play sound "fx/rummage.ogg"
+    play sound "fx/rummage.wav"
     m "With some effort, I moved most of the foodstuffs and ingredients onto the kitchen counter and organized them as best I could."
     m "(This is going to be fun. Still, having only two cooktops might pose a challenge. They're pretty old-fashioned as well.)"
     m "(As the second order of business, I'll put back what I won't use. I can always take something back if I need it later)"
@@ -1322,7 +1322,7 @@ label sqb_naomi_m2_cooking:
     scene ecknaomiapt02 with dissolvemed    
     m "(Where was I?)"
     m "(Oh right, let's see what else we have got.)"
-    play sound "fx/rummage.ogg"
+    play sound "fx/rummage.wav"
     $ renpy.pause (2.0)
     m "(This white, basil-flavored mouflon and aurochs cheese looks remarkably similar to something we used to have.)"
     m "I cut open the packaging with a knife and then sliced off a chunk of the cheese into my mouth for a taste test."
@@ -1338,7 +1338,7 @@ label sqb_naomi_m2_cooking:
     m "(Toast, garlic paste, black pepper, salt and herb mix here we go. Wait, where's the olive oil?)"
     play sound "fx/cabinet.ogg"
     queue sound "fx/cabinet.ogg"
-    queue sound "fx/rummage.ogg"
+    queue sound "fx/rummage.wav"
     $ renpy.pause (8.0)
     m "After looking through some more of Naomi's kitchen cabinets I found the olive oil hidden behind some boxes."
     Nm "Need help finding something?"
@@ -1358,7 +1358,7 @@ label sqb_naomi_m2_cooking:
     m "After a couple of minutes of knife-work, I managed to slice the entire bag of bread."
     m "Then to create the flavor mix, I combined a ton of garlic paste with some olive oil, pepper and salt. After that I arranged all the unbaked bread sticks on the two baking trays and used a spoon to apply the flavor mix."
     m "(Looks like I have some time left after all since the oven isn't ready yet. Let's figure out next what to do with the chicken.)"
-    play sound "fx/rummage.ogg"
+    play sound "fx/rummage.wav"
     $ renpy.pause (2.0)
     m "(Looks like we have the ingredients for batter plus some herb butter. I'll stuff the chicken fillets with the herb butter and bread and fry them. I have never met someone who doesn't like that dish.)"
     play sound "fx/metalbox.ogg"
@@ -1378,7 +1378,7 @@ label sqb_naomi_m2_cooking:
     play sound "fx/door/hallwaydoor.ogg"
     m "I put the baking trays with the bread sticks in the oven and set a timer. Our hunger was going to be alleviated soon."
     m "(I think I should figure out a side dish for the breaded chicken fillets before I do anything else. It might take a while to make.)"
-    play sound "fx/rummage.ogg"
+    play sound "fx/rummage.wav"
     $ renpy.pause (2.0)
     m "(Looks like we have some higher-starch potatoes for mashing that would go really well as a side. Luckily, I have some hot water ready.)"
     stop sound fadeout 1.0
@@ -1640,7 +1640,7 @@ label sqb_naomi_m2_cooking:
     m "I slid the rest of the chicken onto the serving plate, and spread the bacon and potatoes evenly in the same pan to fry for the omelet."   
     m "(Again, I have some time left. I should stop inventing new things to cook already, so I'll just start cleaning up what I can, in case we feel too tired to do it after eating.)"
     stop soundloop fadeout 1.0
-    play sound "fx/rummage.ogg"
+    play sound "fx/rummage.wav"
     queue sound "fx/crapfridge.mp3"
     queue sound "fx/cabinet.ogg"
     queue sound "fx/faucet1.ogg"
