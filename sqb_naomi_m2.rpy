@@ -123,7 +123,7 @@ label sqb_naomi_m2_balcony:
         $ sqbnaomilewd +=1
         Nm "Just a funny thought..." 
         Nm "I wouldn't mind if you stayed here with me. You're... um... good company."
-        Nm smile "You should also invite your friends. Like I've said before, I would love to meet more humans. There's plenty of room for everyone."
+        Nm smile "You should also invite as many people as possible from your city state. Like I've already said before, I would love to meet more humans. There's plenty of room for everyone."
         m "Naomi caught me off-guard, which caused me to feel an unexpected surge of emotions. Then, a tear slid down my cheek and I had to wipe it with my hand."
         show naomi concern with dissolve
         m "Naomi noticed it, and looked at me worriedly."
