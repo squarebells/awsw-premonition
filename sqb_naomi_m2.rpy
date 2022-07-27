@@ -363,7 +363,7 @@ label sqb_naomi_m2_movie:
     $ renpy.pause (2.5)
     scene black with dissolvemed  
     m "I focused more on Naomi's large body, breathing and warmth than watching the movie. My thoughts were a strange mix of arousal, submissiveness and terror throughout the entire session."
-    m "Thankfully, because my back was against her belly she didn't find out about the hard erection I had most of the time the movie was playing. It was for the better, because I had no idea how she would've reacted."
+    m "Thankfully, because my back was against her belly she didn't find out how aroused I was for most of the time the movie was playing. It was for the better, because I had no idea how she would've reacted."
     m "The tease was almost unbearable, but I managed to keep any dirty thoughts to myself. When the credits started rolling, Naomi released me and we sat up next to each other on the sofa."   
     $ renpy.pause (2.5)
     scene ecknaomiapt03 with dissolvemed
