@@ -324,18 +324,19 @@ label sqb_naomi_m3_ending:
     c "I would love that, if you don't mind. I can't believe you still have any energy left after our misadventure."
     Nm blank "Well, I have to admit that I'm in no state to fly with you on my back. Still, keep in mind that you can barely even walk."
     c "Hey, no need to gloat with your physical prowess so much. Can we just be quiet and get going? I feel like I'm going to die from exhaustion."
-    Nm normal "Fine. Hop on my back when you're ready to go. Also, you should take the generator because it's not that heavy."
-    c "Alright."
+    Nm normal "Fine. Hop on my back when you're ready to go." 
+    Nm "Also, you should carry the generator on our way back. I'm sure you can do it, because it's not that heavy."
+    c "Alright. I think I can do that."
     hide naomi with dissolve
     play sound "fx/sheet.wav"
     m "As Naomi got down to rest on her belly to prepare to take me on as a passenger, I went to put both the scuba gear and my clothes in the same bag I had brought the scuba gear in." 
-    m "I thought briefly about just sleeping on the beach but sleeping with Naomi in her bed sounded like a much better idea, and I only had to go through a little bit more of physical exertion to be able to make it to her apartment."
+    m "I thought briefly about just sleeping on the beach, but sleeping in Naomi's bed sounded like a much better idea. I knew I only had to go through a little bit more of physical exertion to be able to make it to her apartment."
     m "I walked over to Naomi and positioned myself on her back, fastening my legs on her sides to be able to hold onto her, while carrying the equipment and clothing bag in one hand and the generator bag in the other."
     play soundloop "fx/steps/steps.ogg"
     scene black with dissolve
     $ renpy.pause (2.0)
     scene forest1 at Pan((500, 0), (0, 0), 0) with dissolvemed
-    m "When I was secure enough, she got off from the ground and started carrying me forward slowly, but carefully."
+    m "When I was secure enough, she got off from the ground and started carrying me and my cargo forward slowly, but carefully."
     Nm normal "Now when you are on my back, I realize that you're much fatter than you look or even feel in bed."
     c "Naomi...{w} please not now. I'm going to die from any more exertion."
     Nm smile "Fine. You know I can't help but tease you, because you're so cute?"
@@ -354,7 +355,7 @@ label sqb_naomi_m3_ending:
     play sound "fx/door/door_open.wav"
     scene eckannabedroom4 with dissolvemed
     $ renpy.pause (2.0)
-    m "When we had gotten into Naomi's bedroom, I carefully lowered both of my bags on the floor and then she carried me over to her bed. She lowered me on it slowly on my back, taking extra care so I was able to lay my head on one of the pillows."
+    m "When we got into Naomi's bedroom, I carefully put my baggage down on the floor. Then she carried me over to her bed and lowered me on it slowly on my back, taking extra care so I was able to lay my head on one of the pillows."
     show naomi blank with dissolve
     Nm "What an evening."
     Nm concern "Are you okay, [player_name]?"
