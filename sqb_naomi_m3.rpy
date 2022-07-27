@@ -621,7 +621,7 @@ label sqb_naomi_m3_ending:
     $ renpy.pause (4.0)
     play sound "fx/gunshot2.wav"
     $ renpy.pause (1.0)
-    play sound "fx/impact.ogg"
+    play sound "fx/impact.wav"
     m "My entire body went limp and I fell face down on the cold, hard floor."
     $ renpy.pause (8.0)
     m "When I had finally snapped out of it, I found myself lying on the ground next to the bench I had sat on. My hair and shirt were wet, because my entire upper body had sweated profusely."
