@@ -281,7 +281,7 @@ label sqb_naomi_m3_labrest:
     Nm smile "Up for some fun while we're both still excited?"
     c "Naomi...{w} just no. Absolutely not. We just almost died."
     show naomi blank with dissolve     
-    c "Also, we have no idea what might happen if we stay here any longer than absolutely necessary. What if we end up disturbing something while we have sex and this entire place collapses on us?"
+    c "Also, we have no idea what might happen if we stay here any longer than absolutely necessary. What if we end up disturbing something we shouldn't have and this entire place collapses on us?"
     Nm normal "What's the big deal? You said it yourself, this place has probably been here a thousand years. I think it will survive a bit longer."
     c "Don't forget that the lights might stop working any minute since we removed the backup generator. Also, we need to conserve as much energy as possible because the swim back to the beach is rather long."
     Nm blank "Fine, have it your way. There's no need to be so fussy about it."
@@ -324,12 +324,13 @@ label sqb_naomi_m3_ending:
     c "I would love that, if you don't mind. I can't believe you still have any energy left after our misadventure."
     Nm blank "Well, I have to admit that I'm in no state to fly with you on my back. Still, keep in mind that you can barely even walk."
     c "Hey, no need to gloat with your physical prowess so much. Can we just be quiet and get going? I feel like I'm going to die from exhaustion."
-    Nm normal "Fine. Hop on my back when you're ready to go."
+    Nm normal "Fine. Hop on my back when you're ready to go. Also, you should take the generator because it's not that heavy."
+    c "Alright."
     hide naomi with dissolve
     play sound "fx/sheet.wav"
     m "As Naomi got down to rest on her belly to prepare to take me on as a passenger, I went to put both the scuba gear and my clothes in the same bag I had brought the scuba gear in." 
     m "I thought briefly about just sleeping on the beach but sleeping with Naomi in her bed sounded like a much better idea, and I only had to go through a little bit more of physical exertion to be able to make it to her apartment."
-    m "I walked over to Naomi and positioned myself on her back, fastening three of my limbs on her sides to be able to hold onto her, while carrying the equipment and clothing bag in one hand."
+    m "I walked over to Naomi and positioned myself on her back, fastening my legs on her sides to be able to hold onto her, while carrying the equipment and clothing bag in one hand and the generator bag in the other."
     play soundloop "fx/steps/steps.ogg"
     scene black with dissolve
     $ renpy.pause (2.0)
@@ -353,7 +354,7 @@ label sqb_naomi_m3_ending:
     play sound "fx/door/door_open.wav"
     scene eckannabedroom4 with dissolvemed
     $ renpy.pause (2.0)
-    m "When we had gotten into Naomi's bedroom, I immediately dropped my plastic bag on the floor and then she carried me over to her bed. She lowered me on it slowly on my back, taking extra care so I was able to lay my head on one of the pillows."
+    m "When we had gotten into Naomi's bedroom, I carefully lowered both of my bags on the floor and then she carried me over to her bed. She lowered me on it slowly on my back, taking extra care so I was able to lay my head on one of the pillows."
     show naomi blank with dissolve
     Nm "What an evening."
     Nm concern "Are you okay, [player_name]?"
