@@ -31,4 +31,4 @@ Contains lewd scenes. In case you don't like that kind of stuff, the NSFW toggle
 
 + You can find me on the AwSW Fan Discord -server. The place to give me feedback and bug reports is by private message or in the mod thread.
 + Remember to always download the latest version before playing the mod, if your intention is to give feedback. At first, I will probably push small fixes every couple of days.
-+ If your feedback is longer than a paragraph, formatting all it beforehand is good for easier readability. It's also useful because you can send me everything in a single go and won't have to constantly bombard me with messages, which can get annoying.
++ If your feedback is longer than a paragraph, formatting all it beforehand is good for easier readability.
