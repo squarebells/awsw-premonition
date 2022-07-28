@@ -374,7 +374,7 @@ jump sqb_naomi_m2_movie_end
 label sqb_naomi_m2_bedroomfun:
     
     c "Well, you forgot that you have me to keep you company from now on. After my duties are done, I could come watch movies or series with you every day if that's something you would like."
-    Nm shy "T-thanks...{w} but you don't have to stay with me {b}all{/b} the time, if you don't actually want to."
+    Nm shy "T-thanks...{w} but you don't have to stay with me {i}all{/i} the time, if you don't actually want to."
     c "Hey, there's no problem with us seeing each other as many times as we want. I think we have already had a lot of fun together."
     show naomi smile with dissolve
     $ renpy.pause (2.0)

@@ -44,7 +44,7 @@ label sqb_naomi_m5_rezatalk2:
     c "Now it's obvious that our moral and ethical development lagged too far behind the technological one. Humankind dug its own grave in the past years, and the flare merely did the final act of pushing us into it."
     Rz angry "And you think that's a good reason to let everyone back there die?!"
     c "Don't be hyperbolic, I don't want everyone in our city-state die. Besides, you're about to commit genocide via neglect. If you had any basic human decency in you, you would realize that it is our duty to help the dragons."
-    c "Even more so, because up to an extent we created them after our own image. We gave them sentience, so we have a duty to help them develop in their own way."
+    c "Reza, in case you didn't already realize, humanity is responsible for creating the dragons. It is our duty to help them even more, because up to an extent we made them after our own image. If you give someone sentience, you have a duty to at least help them along to develop in their own way."
     show reza annoyed with dissolve
     c "I even agree the dragon society has some flaws, but its problems are really minuscule compared to humanity's as a whole. In other words, I would rather have their problems than the massive ones humanity has had throughout most of its entire recorded history."
     c "It seems as if we have been entirely on the wrong track, always leading to our inevitable destruction. Maybe it's time to try a different path?"
@@ -200,7 +200,7 @@ label sqb_naomi_m5_maverick:
     c "Look, your conclusions were reasonable based on the information you had available at the time. I understand why it seemed to you that I blindly trusted my superiors, without realizing that I was being used."
     c "I just wasn't being used in the way you thought. To be frank, I was actually used as a kind of decoy."
     c "In other words you were right to suspect the motivations of my city-state's leadership. Even if we manage to get out of this incident without ruining the relations between our peoples, I would still be very suspicious when interacting with them."
-    c "Still, would urge you to not start harassing regular people, who are just trying to survive in our harsh world. In fact, to make sure we get along nicely, I'll do my best to make sure that my people won't be able to exploit yours."
+    c "Still, I would urge you to not start harassing regular people, who are just trying to survive in our harsh world. In fact, to make sure we get along nicely, I'll do my best to make sure that my people won't be able to exploit yours."
     c "The fact of the matter is that Reza was the main culprit here. I sincerely admit that at first I had a hard time believing he would do something like this, mostly due to our shared history."
     $ renpy.pause (2.0)
     c "I would love to work together with you for the betterment of both our peoples."
@@ -221,7 +221,7 @@ label sqb_naomi_m5_ending: #I can't be bothered to make a million new labels any
     $ renpy.pause (2.0)
     c "Anyway, let's concentrate on diverting the comet first."
     Nm blank "Wait. There's a real danger?"
-    c "According to my PDA, there's a huge chance of it crashing into your planet. All factors considered, it will cause a global extinction event unlike anything before."
+    c "According to all available data, there's a huge chance of it crashing into your planet. All factors considered, it will cause a global extinction event unlike anything before."
     show naomi concern with dissolve
     c "Luckily, we've stopped Reza from escaping with the underground facility generator. It should be enough to help us divert the comet."
     Nm blank "Just... just to make sure. Are we all going to die or not?"
@@ -239,7 +239,7 @@ label sqb_naomi_m5_ending: #I can't be bothered to make a million new labels any
     Nm smile "So, I figured out that the best course of action would be to attack him outside when he leaves for the portal. There was no way he could predict the direction of our attack, and we could also use our flight, speed, size, and strength to full advantage."
     Nm sad "I'm sorry I put you in harm's way by having you confront him alone. What I just told you was the best plan I could come up with on such short notice."
     c "No worries, it was a great plan. Reza wouldn't suddenly kill me for no reason because of our past and also because he might still hope to convert me to his cause."
-    m "(Well, he {b}did{/b} almost shoot me, but I better not tell Naomi, or I would never hear the end of it.)"
+    m "(Well, he {i}did{/i} almost shoot me, but I better not tell Naomi, or I would never hear the end of it.)"
     Nm normal "I'm relieved to hear that, even though it is after the fact. You are are unharmed, and that is all that matters to me."
     c "So are you. And Maverick, too."
     Nm stern "Sometimes I want to slap him."
@@ -310,7 +310,7 @@ label sqb_naomi_m5_ending: #I can't be bothered to make a million new labels any
     nvl clear
     window show    
     n "We went through a series of questions, a quick checkup and were promptly sent home. Bryce was both happy and relieved that Reza's case was finally closed. Naomi and I remained silent about the missing human world coordinates."
-    n "The next day was nothing but a blur of meetings, talks, and planning, as I did my best to explain the situation to the council and to develop a solution for the comet. The Ministry of Science was skeptical at first, but my PDA data changed their minds in an instant."
+    n "The next day was nothing but a blur of meetings, talks, and planning, as I did my best to explain the situation to the council and to develop a solution for the comet. The Ministry of Science was skeptical at first, but the data on the PDAs changed their minds in an instant."
     n "They started their work on a comet redirection plan, and the underground facility generator proved to be an invaluable asset for its realization."
     n "When I returned to my apartment in the dark of night, I found Naomi waiting at the front door. She stayed overnight, and the next day we had a great time just hanging out and planning our upcoming lives together. The future was bright, and I had never been this happy before in my entire life."
     n "Every evening afterward we spent together, either going to places or simply just enjoying each other's company."    
@@ -376,13 +376,15 @@ label sqb_naomi_m5_ending: #I can't be bothered to make a million new labels any
     As "Anyway, in past timelines I gave my other selves two options. If they agreed to travel back to the day of their arrival, I would have replaced them. I also would have made sure that your closest friends, like Naomi, would know that I wasn't the genuine article."
     c "That's actually very cruel. You may look and sound like me, but you're not really me." 
     c "Do you realize that your solution isn't really a solution at all? It would be far better if you had wanted to keep everyone blissfully ignorant."
-    As "I just wanted for her hear the truth, especially after what happened in my timeline where Reza escaped and I had to..."
+    As "I just wanted for her hear the truth, especially after what had happened in my timeline where Reza escaped and I had to..."
     As "..."
     As "It's better you don't know."
     c "What did you do?"
     As "Honestly, I don't want to ruin your night's sleep. Or life, for that matter."
-    c "Whatever. Can you at least tell me if what you did the was reason you deleted the coordinates back to the human world?"
-    As "Yeah. It's crucial to make sure Reza doesn't escape."
+    c "Whatever."
+    $ renpy.pause (1.0)
+    c "Wait, is what you did the was reason you deleted the coordinates back to the human world?"
+    As "You guessed correctly. It's crucial for any timeline to make sure Reza doesn't escape."
     $ renpy.pause (1.0)
     As "To be honest, you have earned your better future since I botched mine, so I'll just take the portal again."
     As "In any case, I need some of the items you're holding."
