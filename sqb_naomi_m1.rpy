@@ -107,7 +107,7 @@ label sqb_naomi_m1_eating:
             $ renpy.pause (0.5)
             m "(I'm already feeling tired. I just want to go back to my apartment before it gets late.)"
             c "So, you really do miss your lunch breaks often?"
-            jump sqb_naomi_cafe_eating_end
+            jump sqb_naomi_m1_eating_end
     
     Nm confused "Are you sure you're fine watching me eat?"
     c "Of course. I don't mind staying a while longer, because you're good company. I would love to chat some more with you."
