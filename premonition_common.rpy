@@ -13,6 +13,7 @@ init:
     image sqbnaomiapt04 = "bg/sqbnaomiapt04.png"
     image sqbcreditsnm = "cg/sqbcreditsnm.png"
     image sqbendings = "cg/sqbendingsnm.png"
+    image rezalayingdown = "cg/rezalayingdown.png"
     image eckoldbiolabsep = im.Sepia("bg/eckoldbiolab.jpg")
     image ecknaomiapt01sep = im.Sepia("bg/ecknaomiapt01.jpg")
     image naomi cry sep = im.Sepia("cr/naomi_cry.png")
