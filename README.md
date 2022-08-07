@@ -21,8 +21,9 @@ Contains lewd scenes. In case you don't like that kind of stuff, the NSFW toggle
  + BangOk by 4onen (all references not yet done though, also very NSFW). [GitHub](https://github.com/4onenm/AwSW-Bangok)
  
 ### Resources credits:
-+ `bg\sqbnaomiapt04.jpg`: Background edited by squarebells, original by Uncle Mugen.
-+ `cg\*.jpg`: Ending and credits screens modified and created squarebells in the same style than in ASM.
++ `bg\sqbnaomiapt04.png`: Background edited by squarebells, original by Uncle Mugen.
++ `cg\*.png`: Ending and credits screens modified and created squarebells in the same style than in ASM.
++ `cg\rezalayingdown.png`: Reza CG by 4onen.
 + `cr\naomi_*.png`: Put together from ECK Core's assets by squarebells.
 + `fx\lewd\`: Sounds edited by squarebells, originally extracted from COM3D2.
 + `fx\*.ogg`: Edited from base game sound assets by squarebells.

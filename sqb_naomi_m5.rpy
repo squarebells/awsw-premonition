@@ -141,15 +141,13 @@ label sqb_naomi_m5_rezafight:
     $ renpy.pause (2.0)    
     m "At a glance, I saw that Reza was most likely still alive. It seemed that the blood loss and shock from Maverick's attack had caused him to lose consciousness."    
     stop music fadeout 2.0
-    show rezadeadneck at Pan ((0, 326), (580, 126), 10.0) with fade
-    play sound "fx/system3.wav"
-    s "I'm going to edit this CG later."
+    show rezalayingdown at Pan ((0, 326), (580, 126), 10.0) with fade
     $ renpy.pause (2.5)
     stop soundloop fadeout 10.0
     play music "mx/prayer.ogg"
     $ renpy.pause (3.5)
     hide naomi
-    hide rezadeadneck with fade    
+    hide rezalayingdown with fade    
     show maverick scared flip at Position (xpos = 0.12) with dissolve
     show naomi concern at Position (xpos = 0.77) with dissolve    
     Mv "Naomi?"
