@@ -19,6 +19,7 @@ Contains lewd scenes. In case you don't like that kind of stuff, the NSFW toggle
  
 ### Optional Requirement:
  + BangOk by 4onen (all references not yet done though, also very NSFW). [GitHub](https://github.com/4onenm/AwSW-Bangok)
+ + Better Aliased Naomi (fixed sprites for Naomi) [GitHub](https://github.com/squarebells/awsw-ban)
  
 ### Resources credits:
 + `bg\sqbnaomiapt04.png`: Background edited by squarebells, original by Uncle Mugen.
