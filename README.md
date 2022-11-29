@@ -13,7 +13,7 @@ Contains lewd scenes. In case you don't like that kind of stuff, the NSFW toggle
  + Modtools by 4onen and Blue. [GitHub](https://github.com/4onen/AWSW-Modtools) [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1305731599)
  + Side Images by 4onen. [GitHub](https://github.com/4onen/AwSW-Side-Images) [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2521431664)
  
- I recommend using "manual" versions from GitHub whenever possible, because having too many steam mod subscriptions causes an annoying startup-crashing race condition bug. Also, the steam workshop versions might be older, so if you want to be absolutely sure everything works, use the provided GitHub versions. Lastly, this mod was developed with the Magmalink versions of ASM and ECK Core. There probably aren't any bugs due to this, but I can't say for sure.
+ I recommend using "manual" versions from GitHub whenever possible, because having too many steam mod subscriptions causes an annoying startup-crashing race condition bug. Also, the steam workshop versions might be older, so if you want to be absolutely sure everything works, use the provided GitHub versions.
  
  To install mods from GitHub, the folder extracted from the downloaded archive goes to `~\Angels with Scaly Wings\game\mods`.
  
