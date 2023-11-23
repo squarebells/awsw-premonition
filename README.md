@@ -13,12 +13,13 @@ Contains lewd scenes. In case you don't like that kind of stuff, the NSFW toggle
  + Modtools by 4onen and Blue. [GitHub](https://github.com/4onen/AWSW-Modtools) [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1305731599)
  + Side Images by 4onen. [GitHub](https://github.com/4onen/AwSW-Side-Images) [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2521431664)
  
- I recommend using "manual" versions from GitHub whenever possible, because having too many steam mod subscriptions causes an annoying startup-crashing race condition bug. Also, the steam workshop versions might be older, so if you want to be absolutely sure everything works, use the provided GitHub versions. Lastly, this mod was developed with the Magmalink versions of ASM and ECK Core. There probably aren't any bugs due to this, but I can't say for sure.
+ I recommend using "manual" versions from GitHub whenever possible, because having too many steam mod subscriptions causes an annoying startup-crashing race condition bug. Also, the steam workshop versions might be older, so if you want to be absolutely sure everything works, use the provided GitHub versions.
  
  To install mods from GitHub, the folder extracted from the downloaded archive goes to `~\Angels with Scaly Wings\game\mods`.
  
 ### Optional Requirement:
  + BangOk by 4onen (all references not yet done though, also very NSFW). [GitHub](https://github.com/4onenm/AwSW-Bangok)
+ + Better Aliased Naomi (fixed sprites for Naomi) [GitHub](https://github.com/squarebells/awsw-ban)
  
 ### Resources credits:
 + `bg\sqbnaomiapt04.png`: Background edited by squarebells, original by Uncle Mugen.
@@ -28,8 +29,4 @@ Contains lewd scenes. In case you don't like that kind of stuff, the NSFW toggle
 + `fx\lewd\`: Sounds edited by squarebells, originally extracted from COM3D2.
 + `fx\*.ogg`: Edited from base game sound assets by squarebells.
 
-### About giving feedback:
-
-+ You can find me on the AwSW Fan Discord -server. The place to give me feedback and bug reports is by private message or in the mod thread.
-+ Remember to always download the latest version before playing the mod, if your intention is to give feedback. At first, I will probably push small fixes every couple of days.
-+ If your feedback is longer than a paragraph, formatting all it beforehand is good for easier readability.
+### If you want to give feedback you can find me on the AwSW Fan Discord server.
