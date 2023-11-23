@@ -7,7 +7,7 @@ import renpy.parser as parser
 @loadable_mod
 class Premonition(Mod):
     name = "Premonition"
-    version = "1.0"
+    version = "1.1"
     author = "squarebells"
     dependencies = ["MagmaLink", "A Solitary Mind", "Chaos_Knight core mod.", "CRAP", "?BangOk"]
     nsfw = True
@@ -28,8 +28,17 @@ class Premonition(Mod):
 
 def sqbnaomistatus(ml):
 
+      ml.StatusBox("naomiscenesfinished", condition="naomidead") \
+          .add_status("image/ui/status/naomidead.png", "--", " ") \
+      
       ml.StatusBox("naomiscenesfinished", condition="persistent.naomimet") \
-          .add_status("image/ui/status/naomigf.png", "Girlfriend", "naomistatus == \"girlfriend\"") \
+          .add_status("image/ui/status/naomi_neutral.png", "Neutral", "naomistatus == \"none\"") \
+          .add_status("image/ui/status/naomi_good.png", "Good", "naomistatus == \"neutral\"") \
+          .add_status("image/ui/status/naomi_neutral.png", "Good", "naomistatus == \"normal\"") \
+          .add_status("image/ui/status/naomi_impressed.png", "Impressed", "naomistatus == \"good\"") \
+          .add_status("image/ui/status/naomi_stern.png", "Bad", "naomistatus == \"bad\"") \
+          .add_status("image/ui/status/naomi_abandoned.png", "Abandoned", "naomistatus == \"abandoned\"") \
+          .add_status("image/ui/status/naomi_girlfriend.png", "Girlfriend", "naomistatus == \"girlfriend\"") \
           .build()
           
 def sqbintronaomi(ml):
